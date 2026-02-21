@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nextjs_hard",
+  "language": "nextjs",
+  "level": "hard",
+  "title": "Next.js Advanced - Hard",
+  "description": "Advanced Next.js concepts: App Router internals, caching, streaming, RSC, performance, edge runtime.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the primary goal of React Server Components in Next.js?",
+      "options": [
+        { "id": "a", "text": "Faster client-side routing", "is_correct": false },
+        { "id": "b", "text": "Reduce JavaScript sent to the browser", "is_correct": true },
+        { "id": "c", "text": "Replace API routes", "is_correct": false },
+        { "id": "d", "text": "Improve CSS handling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which statement about Server Components is true?",
+      "options": [
+        { "id": "a", "text": "They can use useState", "is_correct": false },
+        { "id": "b", "text": "They run only in the browser", "is_correct": false },
+        { "id": "c", "text": "They can directly access databases", "is_correct": true },
+        { "id": "d", "text": "They always require Suspense", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "What does the 'use client' directive do?",
+      "options": [
+        { "id": "a", "text": "Forces SSR", "is_correct": false },
+        { "id": "b", "text": "Marks a file as Client Component", "is_correct": true },
+        { "id": "c", "text": "Disables caching", "is_correct": false },
+        { "id": "d", "text": "Enables Edge runtime", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which hook is NOT allowed in Server Components?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": true },
+        { "id": "b", "text": "cookies()", "is_correct": false },
+        { "id": "c", "text": "headers()", "is_correct": false },
+        { "id": "d", "text": "fetch()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "What does fetch() default to in App Router?",
+      "options": [
+        { "id": "a", "text": "no-store", "is_correct": false },
+        { "id": "b", "text": "reload", "is_correct": false },
+        { "id": "c", "text": "force-cache", "is_correct": true },
+        { "id": "d", "text": "dynamic", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "How do you make a page fully dynamic in App Router?",
+      "options": [
+        { "id": "a", "text": "export const dynamic = 'force-dynamic'", "is_correct": true },
+        { "id": "b", "text": "use client", "is_correct": false },
+        { "id": "c", "text": "cache: 'reload'", "is_correct": false },
+        { "id": "d", "text": "fallback: true", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which option disables caching for a fetch request?",
+      "options": [
+        { "id": "a", "text": "cache: 'force-cache'", "is_correct": false },
+        { "id": "b", "text": "revalidate: 60", "is_correct": false },
+        { "id": "c", "text": "cache: 'no-store'", "is_correct": true },
+        { "id": "d", "text": "dynamic: 'auto'", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "What does revalidate: 0 mean?",
+      "options": [
+        { "id": "a", "text": "Static forever", "is_correct": false },
+        { "id": "b", "text": "Same as no-store", "is_correct": true },
+        { "id": "c", "text": "Revalidate after build", "is_correct": false },
+        { "id": "d", "text": "Edge-only cache", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which feature enables streaming UI in Next.js?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "Suspense", "is_correct": true },
+        { "id": "c", "text": "Link prefetch", "is_correct": false },
+        { "id": "d", "text": "Image optimization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "What is selective hydration?",
+      "options": [
+        { "id": "a", "text": "Hydrating whole app at once", "is_correct": false },
+        { "id": "b", "text": "Hydrating components based on priority", "is_correct": true },
+        { "id": "c", "text": "Client-only rendering", "is_correct": false },
+        { "id": "d", "text": "Skipping hydration", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which runtime does Next.js Middleware use?",
+      "options": [
+        { "id": "a", "text": "Node.js", "is_correct": false },
+        { "id": "b", "text": "Browser", "is_correct": false },
+        { "id": "c", "text": "Edge Runtime", "is_correct": true },
+        { "id": "d", "text": "Deno only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "What is a common use case for middleware?",
+      "options": [
+        { "id": "a", "text": "Rendering UI", "is_correct": false },
+        { "id": "b", "text": "Authentication & redirects", "is_correct": true },
+        { "id": "c", "text": "Fetching data", "is_correct": false },
+        { "id": "d", "text": "Styling components", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which API is used to redirect inside middleware?",
+      "options": [
+        { "id": "a", "text": "Router.push()", "is_correct": false },
+        { "id": "b", "text": "redirect()", "is_correct": false },
+        { "id": "c", "text": "NextResponse.redirect()", "is_correct": true },
+        { "id": "d", "text": "window.location", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "What is the main benefit of Edge Runtime?",
+      "options": [
+        { "id": "a", "text": "More Node APIs", "is_correct": false },
+        { "id": "b", "text": "Lower latency closer to users", "is_correct": true },
+        { "id": "c", "text": "Better database support", "is_correct": false },
+        { "id": "d", "text": "Larger bundle size", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which Node.js API is NOT available in Edge Runtime?",
+      "options": [
+        { "id": "a", "text": "fetch", "is_correct": false },
+        { "id": "b", "text": "crypto.subtle", "is_correct": false },
+        { "id": "c", "text": "fs", "is_correct": true },
+        { "id": "d", "text": "Request/Response", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "What problem does Route Segment Config solve?",
+      "options": [
+        { "id": "a", "text": "Styling conflicts", "is_correct": false },
+        { "id": "b", "text": "Per-route rendering & caching control", "is_correct": true },
+        { "id": "c", "text": "API validation", "is_correct": false },
+        { "id": "d", "text": "Client navigation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which file enables per-route loading UI?",
+      "options": [
+        { "id": "a", "text": "error.js", "is_correct": false },
+        { "id": "b", "text": "loading.js", "is_correct": true },
+        { "id": "c", "text": "layout.js", "is_correct": false },
+        { "id": "d", "text": "template.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "What is template.js used for?",
+      "options": [
+        { "id": "a", "text": "Persistent layouts", "is_correct": false },
+        { "id": "b", "text": "Layouts that remount on navigation", "is_correct": true },
+        { "id": "c", "text": "Error boundaries", "is_correct": false },
+        { "id": "d", "text": "API routes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which file resets state on route change?",
+      "options": [
+        { "id": "a", "text": "layout.js", "is_correct": false },
+        { "id": "b", "text": "template.js", "is_correct": true },
+        { "id": "c", "text": "page.js", "is_correct": false },
+        { "id": "d", "text": "loading.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "What does notFound() do?",
+      "options": [
+        { "id": "a", "text": "Redirects to home", "is_correct": false },
+        { "id": "b", "text": "Triggers 404 boundary", "is_correct": true },
+        { "id": "c", "text": "Stops server", "is_correct": false },
+        { "id": "d", "text": "Returns null", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which file handles 404 in App Router?",
+      "options": [
+        { "id": "a", "text": "404.js", "is_correct": false },
+        { "id": "b", "text": "not-found.js", "is_correct": true },
+        { "id": "c", "text": "_error.js", "is_correct": false },
+        { "id": "d", "text": "error.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "What is a hydration mismatch?",
+      "options": [
+        { "id": "a", "text": "Broken CSS", "is_correct": false },
+        { "id": "b", "text": "Server HTML differs from client render", "is_correct": true },
+        { "id": "c", "text": "API cache issue", "is_correct": false },
+        { "id": "d", "text": "Routing error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which practice helps avoid hydration mismatch?",
+      "options": [
+        { "id": "a", "text": "Using Math.random()", "is_correct": false },
+        { "id": "b", "text": "Using browser-only APIs in Server Components", "is_correct": false },
+        { "id": "c", "text": "Moving browser logic to Client Components", "is_correct": true },
+        { "id": "d", "text": "Inline styles everywhere", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which feature enables code splitting automatically?",
+      "options": [
+        { "id": "a", "text": "Dynamic routing", "is_correct": false },
+        { "id": "b", "text": "Per-page bundles", "is_correct": true },
+        { "id": "c", "text": "CSS Modules", "is_correct": false },
+        { "id": "d", "text": "Middleware", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Why is App Router better for large apps?",
+      "options": [
+        { "id": "a", "text": "More boilerplate", "is_correct": false },
+        { "id": "b", "text": "Better colocation & streaming support", "is_correct": true },
+        { "id": "c", "text": "No server rendering", "is_correct": false },
+        { "id": "d", "text": "Only client-side", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which API enables optimistic UI in Next.js?",
+      "options": [
+        { "id": "a", "text": "useTransition", "is_correct": false },
+        { "id": "b", "text": "useOptimistic", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "useState", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Optimistic UI means?",
+      "options": [
+        { "id": "a", "text": "Wait for server response", "is_correct": false },
+        { "id": "b", "text": "Update UI before server confirms", "is_correct": true },
+        { "id": "c", "text": "Disable UI", "is_correct": false },
+        { "id": "d", "text": "Cache response only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which feature improves Time To First Byte (TTFB)?",
+      "options": [
+        { "id": "a", "text": "CSR", "is_correct": false },
+        { "id": "b", "text": "SSR / Streaming", "is_correct": true },
+        { "id": "c", "text": "Large bundles", "is_correct": false },
+        { "id": "d", "text": "Inline scripts", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which Next.js feature optimizes fonts automatically?",
+      "options": [
+        { "id": "a", "text": "Google Fonts CDN", "is_correct": false },
+        { "id": "b", "text": "next/font", "is_correct": true },
+        { "id": "c", "text": "CSS imports", "is_correct": false },
+        { "id": "d", "text": "Font Awesome", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "What does next/image optimize?",
+      "options": [
+        { "id": "a", "text": "Only size", "is_correct": false },
+        { "id": "b", "text": "Lazy loading, format & resizing", "is_correct": true },
+        { "id": "c", "text": "Only caching", "is_correct": false },
+        { "id": "d", "text": "Only CDN delivery", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which approach best protects sensitive environment variables?",
+      "options": [
+        { "id": "a", "text": "NEXT_PUBLIC_", "is_correct": false },
+        { "id": "b", "text": "Server Components only", "is_correct": true },
+        { "id": "c", "text": "Expose via props", "is_correct": false },
+        { "id": "d", "text": "Client Components", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which env variable prefix is exposed to browser?",
+      "options": [
+        { "id": "a", "text": "NEXT_PUBLIC_", "is_correct": true },
+        { "id": "b", "text": "NEXT_SECRET_", "is_correct": false },
+        { "id": "c", "text": "PUBLIC_ENV_", "is_correct": false },
+        { "id": "d", "text": "CLIENT_", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which config file customizes Next.js behavior?",
+      "options": [
+        { "id": "a", "text": "webpack.config.js", "is_correct": false },
+        { "id": "b", "text": "next.config.js", "is_correct": true },
+        { "id": "c", "text": "config.json", "is_correct": false },
+        { "id": "d", "text": "build.config.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which feature allows disabling SSR per component?",
+      "options": [
+        { "id": "a", "text": "use client", "is_correct": false },
+        { "id": "b", "text": "dynamic import with ssr: false", "is_correct": true },
+        { "id": "c", "text": "Suspense", "is_correct": false },
+        { "id": "d", "text": "useEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which strategy is best for SEO-heavy content sites?",
+      "options": [
+        { "id": "a", "text": "CSR", "is_correct": false },
+        { "id": "b", "text": "SSG / ISR", "is_correct": true },
+        { "id": "c", "text": "Client-only", "is_correct": false },
+        { "id": "d", "text": "No rendering", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which strategy is best for real-time dashboards?",
+      "options": [
+        { "id": "a", "text": "SSG", "is_correct": false },
+        { "id": "b", "text": "SSR + dynamic data", "is_correct": true },
+        { "id": "c", "text": "Static HTML", "is_correct": false },
+        { "id": "d", "text": "ISR only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "What is the biggest performance gain in App Router?",
+      "options": [
+        { "id": "a", "text": "More hooks", "is_correct": false },
+        { "id": "b", "text": "Reduced client-side JS", "is_correct": true },
+        { "id": "c", "text": "Bigger bundles", "is_correct": false },
+        { "id": "d", "text": "More layouts", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which feature ensures data consistency across renders?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "Request memoization", "is_correct": true },
+        { "id": "c", "text": "Local state", "is_correct": false },
+        { "id": "d", "text": "Client caching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which problem does request memoization solve?",
+      "options": [
+        { "id": "a", "text": "CSS duplication", "is_correct": false },
+        { "id": "b", "text": "Duplicate fetches in same request", "is_correct": true },
+        { "id": "c", "text": "Slow hydration", "is_correct": false },
+        { "id": "d", "text": "Routing mismatch", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which feature helps avoid prop drilling?",
+      "options": [
+        { "id": "a", "text": "Props only", "is_correct": false },
+        { "id": "b", "text": "Context + Server Components", "is_correct": true },
+        { "id": "c", "text": "CSS Modules", "is_correct": false },
+        { "id": "d", "text": "Link component", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which feature improves Core Web Vitals?",
+      "options": [
+        { "id": "a", "text": "Automatic image optimization", "is_correct": true },
+        { "id": "b", "text": "Large JS bundles", "is_correct": false },
+        { "id": "c", "text": "Client-only rendering", "is_correct": false },
+        { "id": "d", "text": "Inline scripts", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which metric is improved by streaming?",
+      "options": [
+        { "id": "a", "text": "CLS", "is_correct": false },
+        { "id": "b", "text": "TTFB & FCP", "is_correct": true },
+        { "id": "c", "text": "Bundle size", "is_correct": false },
+        { "id": "d", "text": "Memory usage", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which feature enables per-request personalization?",
+      "options": [
+        { "id": "a", "text": "SSG", "is_correct": false },
+        { "id": "b", "text": "SSR", "is_correct": true },
+        { "id": "c", "text": "Static export", "is_correct": false },
+        { "id": "d", "text": "Image optimization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which export forces static rendering?",
+      "options": [
+        { "id": "a", "text": "dynamic = 'force-static'", "is_correct": true },
+        { "id": "b", "text": "cache = 'no-store'", "is_correct": false },
+        { "id": "c", "text": "use client", "is_correct": false },
+        { "id": "d", "text": "revalidate = 0", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Why should large logic stay in Server Components?",
+      "options": [
+        { "id": "a", "text": "Better UX animations", "is_correct": false },
+        { "id": "b", "text": "Security and smaller client bundle", "is_correct": true },
+        { "id": "c", "text": "More hooks access", "is_correct": false },
+        { "id": "d", "text": "Easier styling", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which feature makes Next.js scalable by default?",
+      "options": [
+        { "id": "a", "text": "Manual routing", "is_correct": false },
+        { "id": "b", "text": "Built-in SSR, caching, and streaming", "is_correct": true },
+        { "id": "c", "text": "Client-only model", "is_correct": false },
+        { "id": "d", "text": "Custom servers only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which mistake hurts performance most?",
+      "options": [
+        { "id": "a", "text": "Using Server Components", "is_correct": false },
+        { "id": "b", "text": "Putting everything in Client Components", "is_correct": true },
+        { "id": "c", "text": "Using Suspense", "is_correct": false },
+        { "id": "d", "text": "Using layouts", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which tool helps analyze Next.js performance?",
+      "options": [
+        { "id": "a", "text": "React Profiler", "is_correct": false },
+        { "id": "b", "text": "Next.js Analyzer", "is_correct": true },
+        { "id": "c", "text": "Redux DevTools", "is_correct": false },
+        { "id": "d", "text": "ESLint", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which approach ensures long-term maintainability?",
+      "options": [
+        { "id": "a", "text": "All client components", "is_correct": false },
+        { "id": "b", "text": "Clear separation of server and client logic", "is_correct": true },
+        { "id": "c", "text": "Inline everything", "is_correct": false },
+        { "id": "d", "text": "No caching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which concept is MOST critical in modern Next.js?",
+      "options": [
+        { "id": "a", "text": "Pages Router", "is_correct": false },
+        { "id": "b", "text": "Server Components + Streaming", "is_correct": true },
+        { "id": "c", "text": "Class components", "is_correct": false },
+        { "id": "d", "text": "jQuery integration", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Coding Challenges - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <h1>Coding Challenges</h1>
+        <p>Solve coding problems and improve your programming skills</p>
+    </div>
+    
+    <form method="GET" class="filter-panel glass-card">
+        <div class="filter-group">
+            <label for="language-select">Language</label>
+            <select id="language-select" name="language" class="form-input">
+                <option value="">All</option>
+                {% for lang in languages %}
+                <option value="{{ lang }}" {% if selected_language == lang %}selected{% endif %}>{{ get_language_label(lang) }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="level-select">Level</label>
+            <select id="level-select" name="level" class="form-input">
+                <option value="">All</option>
+                {% for level in levels %}
+                <option value="{{ level }}" {% if selected_level == level %}selected{% endif %}>{{ level.title() }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter-actions">
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a href="{{ url_for('coding_list') }}" class="btn btn-secondary">Reset</a>
+        </div>
+    </form>
+
+    {% if challenges %}
+    <div class="challenge-grid">
+        {% for challenge in challenges %}
+        <div class="challenge-card glass-card card-hover">
+            <div class="challenge-header">
+                <div>
+                    <div class="challenge-tags">
+                        <span class="language-tag">{{ get_language_label(challenge.language) }}</span>
+                        <span class="level-chip level-{{ challenge.level }}">{{ challenge.level.title() }}</span>
+                    </div>
+                    <h3>{{ challenge.title }}</h3>
+                </div>
+                <span class="difficulty-badge difficulty-{{ challenge.difficulty }}">{{ challenge.difficulty|upper }}</span>
+            </div>
+            <p class="challenge-description">{{ challenge.description }}</p>
+            <div class="challenge-examples">
+                <div class="example-item">
+                    <strong>Sample Input:</strong> <code>{{ challenge.sample_input }}</code>
+                </div>
+                <div class="example-item">
+                    <strong>Sample Output:</strong> <code>{{ challenge.sample_output }}</code>
+                </div>
+            </div>
+            <a href="{{ url_for('coding_start', challenge_id=challenge.id) }}" class="btn btn-primary btn-block">Start Challenge</a>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state glass-card">
+        <h3>No challenges match your filters yet.</h3>
+        <p>Try selecting another language or level to explore more problems.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+

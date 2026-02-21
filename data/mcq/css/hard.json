@@ -1,0 +1,520 @@
+{
+  "quiz_id": "css_hard",
+  "language": "css",
+  "level": "hard",
+  "title": "CSS Advanced Concepts - Hard",
+  "description": "Specificity, stacking context, advanced layouts, animations, and performance.",
+  "duration_minutes": 35,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which CSS rule has highest specificity?",
+      "options": [
+        { "id": "a", "text": "div p", "is_correct": false },
+        { "id": "b", "text": ".box p", "is_correct": false },
+        { "id": "c", "text": "#box p", "is_correct": true },
+        { "id": "d", "text": "* p", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which property creates a new stacking context?",
+      "options": [
+        { "id": "a", "text": "z-index: 1", "is_correct": true },
+        { "id": "b", "text": "display: block", "is_correct": false },
+        { "id": "c", "text": "float: left", "is_correct": false },
+        { "id": "d", "text": "overflow: visible", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which value of position does NOT create a stacking context?",
+      "options": [
+        { "id": "a", "text": "relative", "is_correct": false },
+        { "id": "b", "text": "absolute", "is_correct": false },
+        { "id": "c", "text": "fixed", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which pseudo-element is used to style first line?",
+      "options": [
+        { "id": "a", "text": ":first-line", "is_correct": false },
+        { "id": "b", "text": "::first-line", "is_correct": true },
+        { "id": "c", "text": ":line-first", "is_correct": false },
+        { "id": "d", "text": "::line", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which unit is based on root font size?",
+      "options": [
+        { "id": "a", "text": "em", "is_correct": false },
+        { "id": "b", "text": "px", "is_correct": false },
+        { "id": "c", "text": "rem", "is_correct": true },
+        { "id": "d", "text": "%", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which property improves animation performance?",
+      "options": [
+        { "id": "a", "text": "top", "is_correct": false },
+        { "id": "b", "text": "left", "is_correct": false },
+        { "id": "c", "text": "transform", "is_correct": true },
+        { "id": "d", "text": "margin", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which CSS function delays rendering until needed?",
+      "options": [
+        { "id": "a", "text": "calc()", "is_correct": false },
+        { "id": "b", "text": "lazy()", "is_correct": false },
+        { "id": "c", "text": "attr()", "is_correct": false },
+        { "id": "d", "text": "content-visibility", "is_correct": true }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which value of will-change should be used carefully?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": false },
+        { "id": "b", "text": "transform", "is_correct": true },
+        { "id": "c", "text": "none", "is_correct": false },
+        { "id": "d", "text": "initial", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which selector matches element with both classes?",
+      "options": [
+        { "id": "a", "text": ".box .red", "is_correct": false },
+        { "id": "b", "text": ".box, .red", "is_correct": false },
+        { "id": "c", "text": ".box.red", "is_correct": true },
+        { "id": "d", "text": "#box.red", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which property defines implicit grid rows?",
+      "options": [
+        { "id": "a", "text": "grid-template-rows", "is_correct": false },
+        { "id": "b", "text": "grid-auto-rows", "is_correct": true },
+        { "id": "c", "text": "grid-rows", "is_correct": false },
+        { "id": "d", "text": "auto-rows", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which function repeats grid columns?",
+      "options": [
+        { "id": "a", "text": "repeat()", "is_correct": true },
+        { "id": "b", "text": "loop()", "is_correct": false },
+        { "id": "c", "text": "clone()", "is_correct": false },
+        { "id": "d", "text": "cycle()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which value aligns grid items vertically?",
+      "options": [
+        { "id": "a", "text": "justify-items", "is_correct": false },
+        { "id": "b", "text": "align-items", "is_correct": true },
+        { "id": "c", "text": "place-items", "is_correct": false },
+        { "id": "d", "text": "grid-align", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which shorthand sets both rows and columns gap?",
+      "options": [
+        { "id": "a", "text": "gap", "is_correct": true },
+        { "id": "b", "text": "grid-gap-x", "is_correct": false },
+        { "id": "c", "text": "space", "is_correct": false },
+        { "id": "d", "text": "grid-space", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which value preserves 3D transform?",
+      "options": [
+        { "id": "a", "text": "flat", "is_correct": false },
+        { "id": "b", "text": "preserve-3d", "is_correct": true },
+        { "id": "c", "text": "enable-3d", "is_correct": false },
+        { "id": "d", "text": "depth", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which property sets perspective depth?",
+      "options": [
+        { "id": "a", "text": "transform", "is_correct": false },
+        { "id": "b", "text": "perspective", "is_correct": true },
+        { "id": "c", "text": "depth", "is_correct": false },
+        { "id": "d", "text": "z-axis", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which selector excludes elements?",
+      "options": [
+        { "id": "a", "text": ":not()", "is_correct": true },
+        { "id": "b", "text": ":except()", "is_correct": false },
+        { "id": "c", "text": ":remove()", "is_correct": false },
+        { "id": "d", "text": ":without()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which pseudo-class targets empty elements?",
+      "options": [
+        { "id": "a", "text": ":blank", "is_correct": false },
+        { "id": "b", "text": ":null", "is_correct": false },
+        { "id": "c", "text": ":empty", "is_correct": true },
+        { "id": "d", "text": ":void", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which property prevents line breaks?",
+      "options": [
+        { "id": "a", "text": "word-break", "is_correct": false },
+        { "id": "b", "text": "white-space: nowrap", "is_correct": true },
+        { "id": "c", "text": "text-wrap", "is_correct": false },
+        { "id": "d", "text": "line-break", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which value allows long words to break?",
+      "options": [
+        { "id": "a", "text": "keep-all", "is_correct": false },
+        { "id": "b", "text": "break-word", "is_correct": true },
+        { "id": "c", "text": "nowrap", "is_correct": false },
+        { "id": "d", "text": "normal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which property controls font loading strategy?",
+      "options": [
+        { "id": "a", "text": "font-style", "is_correct": false },
+        { "id": "b", "text": "font-display", "is_correct": true },
+        { "id": "c", "text": "font-weight", "is_correct": false },
+        { "id": "d", "text": "font-render", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which value avoids invisible text on load?",
+      "options": [
+        { "id": "a", "text": "block", "is_correct": false },
+        { "id": "b", "text": "swap", "is_correct": true },
+        { "id": "c", "text": "auto", "is_correct": false },
+        { "id": "d", "text": "fallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which property clips overflow to padding box?",
+      "options": [
+        { "id": "a", "text": "background-clip", "is_correct": true },
+        { "id": "b", "text": "overflow-clip", "is_correct": false },
+        { "id": "c", "text": "clip-path", "is_correct": false },
+        { "id": "d", "text": "mask-clip", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which property creates complex shapes?",
+      "options": [
+        { "id": "a", "text": "border-radius", "is_correct": false },
+        { "id": "b", "text": "clip-path", "is_correct": true },
+        { "id": "c", "text": "shape", "is_correct": false },
+        { "id": "d", "text": "mask", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which function defines polygon shape?",
+      "options": [
+        { "id": "a", "text": "circle()", "is_correct": false },
+        { "id": "b", "text": "polygon()", "is_correct": true },
+        { "id": "c", "text": "shape()", "is_correct": false },
+        { "id": "d", "text": "path()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which property masks element content?",
+      "options": [
+        { "id": "a", "text": "clip", "is_correct": false },
+        { "id": "b", "text": "mask-image", "is_correct": true },
+        { "id": "c", "text": "filter", "is_correct": false },
+        { "id": "d", "text": "opacity", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which property defines aspect ratio?",
+      "options": [
+        { "id": "a", "text": "ratio", "is_correct": false },
+        { "id": "b", "text": "aspect-ratio", "is_correct": true },
+        { "id": "c", "text": "object-fit", "is_correct": false },
+        { "id": "d", "text": "fit-content", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which value centers grid items both axes?",
+      "options": [
+        { "id": "a", "text": "center", "is_correct": false },
+        { "id": "b", "text": "place-items: center", "is_correct": true },
+        { "id": "c", "text": "align-center", "is_correct": false },
+        { "id": "d", "text": "justify-center", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which property optimizes text rendering?",
+      "options": [
+        { "id": "a", "text": "font-smooth", "is_correct": false },
+        { "id": "b", "text": "text-rendering", "is_correct": true },
+        { "id": "c", "text": "render-text", "is_correct": false },
+        { "id": "d", "text": "smooth-font", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which value prioritizes speed over quality?",
+      "options": [
+        { "id": "a", "text": "optimizeLegibility", "is_correct": false },
+        { "id": "b", "text": "optimizeSpeed", "is_correct": true },
+        { "id": "c", "text": "geometricPrecision", "is_correct": false },
+        { "id": "d", "text": "auto", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which property defines custom counter?",
+      "options": [
+        { "id": "a", "text": "counter-reset", "is_correct": true },
+        { "id": "b", "text": "counter-set", "is_correct": false },
+        { "id": "c", "text": "counter-style", "is_correct": false },
+        { "id": "d", "text": "list-counter", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which property increments counter?",
+      "options": [
+        { "id": "a", "text": "counter-increment", "is_correct": true },
+        { "id": "b", "text": "counter-add", "is_correct": false },
+        { "id": "c", "text": "increment-counter", "is_correct": false },
+        { "id": "d", "text": "counter-next", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which property reads counter value?",
+      "options": [
+        { "id": "a", "text": "counter()", "is_correct": true },
+        { "id": "b", "text": "count()", "is_correct": false },
+        { "id": "c", "text": "value()", "is_correct": false },
+        { "id": "d", "text": "number()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which property controls caret color?",
+      "options": [
+        { "id": "a", "text": "cursor-color", "is_correct": false },
+        { "id": "b", "text": "caret-color", "is_correct": true },
+        { "id": "c", "text": "text-caret", "is_correct": false },
+        { "id": "d", "text": "selection-color", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which pseudo-element styles selection?",
+      "options": [
+        { "id": "a", "text": "::highlight", "is_correct": false },
+        { "id": "b", "text": "::selection", "is_correct": true },
+        { "id": "c", "text": ":select", "is_correct": false },
+        { "id": "d", "text": "::focus", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which property controls scroll snapping?",
+      "options": [
+        { "id": "a", "text": "scroll-snap-type", "is_correct": true },
+        { "id": "b", "text": "snap-scroll", "is_correct": false },
+        { "id": "c", "text": "scroll-lock", "is_correct": false },
+        { "id": "d", "text": "scroll-anchor", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which property defines snap position?",
+      "options": [
+        { "id": "a", "text": "snap-align", "is_correct": false },
+        { "id": "b", "text": "scroll-snap-align", "is_correct": true },
+        { "id": "c", "text": "snap-position", "is_correct": false },
+        { "id": "d", "text": "scroll-align", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which property isolates blend mode?",
+      "options": [
+        { "id": "a", "text": "mix-blend-mode", "is_correct": false },
+        { "id": "b", "text": "isolation", "is_correct": true },
+        { "id": "c", "text": "blend-isolate", "is_correct": false },
+        { "id": "d", "text": "background-blend", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which property blends background layers?",
+      "options": [
+        { "id": "a", "text": "background-blend-mode", "is_correct": true },
+        { "id": "b", "text": "mix-blend-mode", "is_correct": false },
+        { "id": "c", "text": "blend-bg", "is_correct": false },
+        { "id": "d", "text": "layer-blend", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which value hides element from accessibility tree?",
+      "options": [
+        { "id": "a", "text": "display: none", "is_correct": true },
+        { "id": "b", "text": "visibility: hidden", "is_correct": false },
+        { "id": "c", "text": "opacity: 0", "is_correct": false },
+        { "id": "d", "text": "clip-path", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which property enables subgrid?",
+      "options": [
+        { "id": "a", "text": "grid-sub", "is_correct": false },
+        { "id": "b", "text": "subgrid", "is_correct": true },
+        { "id": "c", "text": "grid-child", "is_correct": false },
+        { "id": "d", "text": "grid-inherit", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which property limits paint area?",
+      "options": [
+        { "id": "a", "text": "contain", "is_correct": true },
+        { "id": "b", "text": "limit", "is_correct": false },
+        { "id": "c", "text": "scope", "is_correct": false },
+        { "id": "d", "text": "boundary", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which value isolates layout & paint?",
+      "options": [
+        { "id": "a", "text": "contain: layout paint", "is_correct": true },
+        { "id": "b", "text": "contain: size", "is_correct": false },
+        { "id": "c", "text": "contain: strict", "is_correct": false },
+        { "id": "d", "text": "contain: style", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which property defines custom property?",
+      "options": [
+        { "id": "a", "text": "$color", "is_correct": false },
+        { "id": "b", "text": "--main-color", "is_correct": true },
+        { "id": "c", "text": "@color", "is_correct": false },
+        { "id": "d", "text": "var-color", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which function reads CSS variable?",
+      "options": [
+        { "id": "a", "text": "get()", "is_correct": false },
+        { "id": "b", "text": "var()", "is_correct": true },
+        { "id": "c", "text": "value()", "is_correct": false },
+        { "id": "d", "text": "css()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which at-rule supports condition-based CSS?",
+      "options": [
+        { "id": "a", "text": "@media", "is_correct": false },
+        { "id": "b", "text": "@supports", "is_correct": true },
+        { "id": "c", "text": "@if", "is_correct": false },
+        { "id": "d", "text": "@when", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which property changes writing direction?",
+      "options": [
+        { "id": "a", "text": "direction", "is_correct": true },
+        { "id": "b", "text": "writing-style", "is_correct": false },
+        { "id": "c", "text": "text-flow", "is_correct": false },
+        { "id": "d", "text": "flow-direction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which property controls vertical text layout?",
+      "options": [
+        { "id": "a", "text": "text-orientation", "is_correct": true },
+        { "id": "b", "text": "writing-mode", "is_correct": false },
+        { "id": "c", "text": "text-vertical", "is_correct": false },
+        { "id": "d", "text": "orientation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which value enables vertical writing?",
+      "options": [
+        { "id": "a", "text": "vertical-rl", "is_correct": true },
+        { "id": "b", "text": "vertical", "is_correct": false },
+        { "id": "c", "text": "column", "is_correct": false },
+        { "id": "d", "text": "rotate-90", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which property prevents text selection?",
+      "options": [
+        { "id": "a", "text": "user-select", "is_correct": true },
+        { "id": "b", "text": "text-select", "is_correct": false },
+        { "id": "c", "text": "select-none", "is_correct": false },
+        { "id": "d", "text": "pointer-events", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which value disables text selection?",
+      "options": [
+        { "id": "a", "text": "none", "is_correct": true },
+        { "id": "b", "text": "disable", "is_correct": false },
+        { "id": "c", "text": "false", "is_correct": false },
+        { "id": "d", "text": "off", "is_correct": false }
+      ]
+    }
+  ]
+}

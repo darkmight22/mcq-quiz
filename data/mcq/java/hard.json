@@ -1,0 +1,520 @@
+{
+  "quiz_id": "java_hard",
+  "language": "java",
+  "level": "hard",
+  "title": "Java Advanced Concepts - Hard",
+  "description": "JVM internals, concurrency, memory management, streams, advanced OOP.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which JVM memory area stores class metadata?",
+      "options": [
+        { "id": "a", "text": "Heap", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": false },
+        { "id": "c", "text": "Method Area", "is_correct": true },
+        { "id": "d", "text": "Program Counter", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which memory is thread-specific?",
+      "options": [
+        { "id": "a", "text": "Heap", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Method Area", "is_correct": false },
+        { "id": "d", "text": "Metaspace", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which GC algorithm focuses on low latency?",
+      "options": [
+        { "id": "a", "text": "Serial GC", "is_correct": false },
+        { "id": "b", "text": "Parallel GC", "is_correct": false },
+        { "id": "c", "text": "G1 GC", "is_correct": true },
+        { "id": "d", "text": "CMS GC", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which GC was deprecated in Java 9?",
+      "options": [
+        { "id": "a", "text": "G1 GC", "is_correct": false },
+        { "id": "b", "text": "ZGC", "is_correct": false },
+        { "id": "c", "text": "CMS GC", "is_correct": true },
+        { "id": "d", "text": "Parallel GC", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which keyword guarantees visibility between threads?",
+      "options": [
+        { "id": "a", "text": "synchronized", "is_correct": false },
+        { "id": "b", "text": "final", "is_correct": false },
+        { "id": "c", "text": "volatile", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which class provides atomic operations?",
+      "options": [
+        { "id": "a", "text": "ThreadSafe", "is_correct": false },
+        { "id": "b", "text": "AtomicInteger", "is_correct": true },
+        { "id": "c", "text": "VolatileInt", "is_correct": false },
+        { "id": "d", "text": "SynchronizedInt", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which package contains concurrency utilities?",
+      "options": [
+        { "id": "a", "text": "java.lang", "is_correct": false },
+        { "id": "b", "text": "java.util.concurrent", "is_correct": true },
+        { "id": "c", "text": "java.thread", "is_correct": false },
+        { "id": "d", "text": "java.sync", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which executor creates cached thread pool?",
+      "options": [
+        { "id": "a", "text": "newSingleThreadExecutor()", "is_correct": false },
+        { "id": "b", "text": "newFixedThreadPool()", "is_correct": false },
+        { "id": "c", "text": "newCachedThreadPool()", "is_correct": true },
+        { "id": "d", "text": "newScheduledThreadPool()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which interface returns result from thread?",
+      "options": [
+        { "id": "a", "text": "Runnable", "is_correct": false },
+        { "id": "b", "text": "Callable", "is_correct": true },
+        { "id": "c", "text": "Threadable", "is_correct": false },
+        { "id": "d", "text": "Executor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which method retrieves result from Future?",
+      "options": [
+        { "id": "a", "text": "result()", "is_correct": false },
+        { "id": "b", "text": "fetch()", "is_correct": false },
+        { "id": "c", "text": "get()", "is_correct": true },
+        { "id": "d", "text": "value()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword prevents instruction reordering?",
+      "options": [
+        { "id": "a", "text": "volatile", "is_correct": true },
+        { "id": "b", "text": "synchronized", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": false },
+        { "id": "d", "text": "atomic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which lock allows multiple readers?",
+      "options": [
+        { "id": "a", "text": "ReentrantLock", "is_correct": false },
+        { "id": "b", "text": "ReadWriteLock", "is_correct": true },
+        { "id": "c", "text": "Mutex", "is_correct": false },
+        { "id": "d", "text": "Semaphore", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which class supports optimistic locking?",
+      "options": [
+        { "id": "a", "text": "ReentrantLock", "is_correct": false },
+        { "id": "b", "text": "StampedLock", "is_correct": true },
+        { "id": "c", "text": "Semaphore", "is_correct": false },
+        { "id": "d", "text": "CountDownLatch", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which utility waits for threads to finish?",
+      "options": [
+        { "id": "a", "text": "CyclicBarrier", "is_correct": false },
+        { "id": "b", "text": "CountDownLatch", "is_correct": true },
+        { "id": "c", "text": "Semaphore", "is_correct": false },
+        { "id": "d", "text": "Phaser", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which utility synchronizes threads at barrier?",
+      "options": [
+        { "id": "a", "text": "Semaphore", "is_correct": false },
+        { "id": "b", "text": "CountDownLatch", "is_correct": false },
+        { "id": "c", "text": "CyclicBarrier", "is_correct": true },
+        { "id": "d", "text": "Executor", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which collection is lock-free?",
+      "options": [
+        { "id": "a", "text": "Vector", "is_correct": false },
+        { "id": "b", "text": "ConcurrentLinkedQueue", "is_correct": true },
+        { "id": "c", "text": "Hashtable", "is_correct": false },
+        { "id": "d", "text": "SynchronizedList", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which Map is highly scalable?",
+      "options": [
+        { "id": "a", "text": "HashMap", "is_correct": false },
+        { "id": "b", "text": "Hashtable", "is_correct": false },
+        { "id": "c", "text": "ConcurrentHashMap", "is_correct": true },
+        { "id": "d", "text": "TreeMap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which Stream operation is terminal?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": false },
+        { "id": "b", "text": "filter()", "is_correct": false },
+        { "id": "c", "text": "collect()", "is_correct": true },
+        { "id": "d", "text": "peek()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which Stream operation is intermediate?",
+      "options": [
+        { "id": "a", "text": "forEach()", "is_correct": false },
+        { "id": "b", "text": "count()", "is_correct": false },
+        { "id": "c", "text": "map()", "is_correct": true },
+        { "id": "d", "text": "collect()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which stream processes in parallel?",
+      "options": [
+        { "id": "a", "text": "sequential()", "is_correct": false },
+        { "id": "b", "text": "parallelStream()", "is_correct": true },
+        { "id": "c", "text": "threadStream()", "is_correct": false },
+        { "id": "d", "text": "asyncStream()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which class loader loads core classes?",
+      "options": [
+        { "id": "a", "text": "Application ClassLoader", "is_correct": false },
+        { "id": "b", "text": "Extension ClassLoader", "is_correct": false },
+        { "id": "c", "text": "Bootstrap ClassLoader", "is_correct": true },
+        { "id": "d", "text": "System ClassLoader", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which pattern ensures single instance?",
+      "options": [
+        { "id": "a", "text": "Factory", "is_correct": false },
+        { "id": "b", "text": "Prototype", "is_correct": false },
+        { "id": "c", "text": "Singleton", "is_correct": true },
+        { "id": "d", "text": "Builder", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which Singleton is thread-safe and lazy?",
+      "options": [
+        { "id": "a", "text": "Eager initialization", "is_correct": false },
+        { "id": "b", "text": "Double-checked locking", "is_correct": true },
+        { "id": "c", "text": "Static block", "is_correct": false },
+        { "id": "d", "text": "Enum singleton", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which Singleton is safest against reflection?",
+      "options": [
+        { "id": "a", "text": "Lazy singleton", "is_correct": false },
+        { "id": "b", "text": "Double-checked locking", "is_correct": false },
+        { "id": "c", "text": "Enum singleton", "is_correct": true },
+        { "id": "d", "text": "Static singleton", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword supports pattern matching (Java 16+)?",
+      "options": [
+        { "id": "a", "text": "instanceof", "is_correct": true },
+        { "id": "b", "text": "match", "is_correct": false },
+        { "id": "c", "text": "pattern", "is_correct": false },
+        { "id": "d", "text": "switch", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which feature creates immutable data carriers?",
+      "options": [
+        { "id": "a", "text": "Record", "is_correct": true },
+        { "id": "b", "text": "Sealed class", "is_correct": false },
+        { "id": "c", "text": "Enum", "is_correct": false },
+        { "id": "d", "text": "Module", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword restricts class inheritance (Java 17)?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": true },
+        { "id": "c", "text": "restricted", "is_correct": false },
+        { "id": "d", "text": "closed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which keyword allows permitted subclasses?",
+      "options": [
+        { "id": "a", "text": "permits", "is_correct": true },
+        { "id": "b", "text": "allows", "is_correct": false },
+        { "id": "c", "text": "extends", "is_correct": false },
+        { "id": "d", "text": "inherits", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which API supports reactive streams?",
+      "options": [
+        { "id": "a", "text": "java.util.stream", "is_correct": false },
+        { "id": "b", "text": "java.util.concurrent.Flow", "is_correct": true },
+        { "id": "c", "text": "java.reactive", "is_correct": false },
+        { "id": "d", "text": "java.async", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which HTTP client was added in Java 11?",
+      "options": [
+        { "id": "a", "text": "URLConnection", "is_correct": false },
+        { "id": "b", "text": "HttpClient", "is_correct": true },
+        { "id": "c", "text": "RestClient", "is_correct": false },
+        { "id": "d", "text": "WebClient", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which annotation generates metadata for compiler?",
+      "options": [
+        { "id": "a", "text": "@Override", "is_correct": true },
+        { "id": "b", "text": "@Suppress", "is_correct": false },
+        { "id": "c", "text": "@Runtime", "is_correct": false },
+        { "id": "d", "text": "@Meta", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which annotation suppresses warnings?",
+      "options": [
+        { "id": "a", "text": "@HideWarnings", "is_correct": false },
+        { "id": "b", "text": "@SuppressWarnings", "is_correct": true },
+        { "id": "c", "text": "@Ignore", "is_correct": false },
+        { "id": "d", "text": "@Warnings", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which reflection class inspects methods?",
+      "options": [
+        { "id": "a", "text": "Field", "is_correct": false },
+        { "id": "b", "text": "Method", "is_correct": true },
+        { "id": "c", "text": "Constructor", "is_correct": false },
+        { "id": "d", "text": "Modifier", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which API enables dynamic class loading?",
+      "options": [
+        { "id": "a", "text": "ClassLoader", "is_correct": true },
+        { "id": "b", "text": "Reflection", "is_correct": false },
+        { "id": "c", "text": "Module", "is_correct": false },
+        { "id": "d", "text": "ServiceLoader", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which API loads service implementations?",
+      "options": [
+        { "id": "a", "text": "ClassLoader", "is_correct": false },
+        { "id": "b", "text": "ModuleLayer", "is_correct": false },
+        { "id": "c", "text": "ServiceLoader", "is_correct": true },
+        { "id": "d", "text": "SPI", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which Java feature supports dependency injection?",
+      "options": [
+        { "id": "a", "text": "Annotations", "is_correct": true },
+        { "id": "b", "text": "Generics", "is_correct": false },
+        { "id": "c", "text": "Streams", "is_correct": false },
+        { "id": "d", "text": "Modules", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which feature enables type-safe containers?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Generics", "is_correct": true },
+        { "id": "c", "text": "Polymorphism", "is_correct": false },
+        { "id": "d", "text": "Reflection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which generic wildcard allows read-only access?",
+      "options": [
+        { "id": "a", "text": "? super T", "is_correct": false },
+        { "id": "b", "text": "? extends T", "is_correct": true },
+        { "id": "c", "text": "? T", "is_correct": false },
+        { "id": "d", "text": "? wildcard", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which wildcard allows write operations?",
+      "options": [
+        { "id": "a", "text": "? extends T", "is_correct": false },
+        { "id": "b", "text": "? super T", "is_correct": true },
+        { "id": "c", "text": "? any", "is_correct": false },
+        { "id": "d", "text": "? write", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which principle is PECS?",
+      "options": [
+        { "id": "a", "text": "Producer Extends Consumer Super", "is_correct": true },
+        { "id": "b", "text": "Process Execute Control System", "is_correct": false },
+        { "id": "c", "text": "Parallel Execution Control System", "is_correct": false },
+        { "id": "d", "text": "Producer Exception Consumer System", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which NIO class handles buffers?",
+      "options": [
+        { "id": "a", "text": "Channel", "is_correct": false },
+        { "id": "b", "text": "Buffer", "is_correct": true },
+        { "id": "c", "text": "Selector", "is_correct": false },
+        { "id": "d", "text": "Path", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which NIO component multiplexes channels?",
+      "options": [
+        { "id": "a", "text": "Channel", "is_correct": false },
+        { "id": "b", "text": "Selector", "is_correct": true },
+        { "id": "c", "text": "Buffer", "is_correct": false },
+        { "id": "d", "text": "Pipe", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which API supports asynchronous file IO?",
+      "options": [
+        { "id": "a", "text": "Files", "is_correct": false },
+        { "id": "b", "text": "AsynchronousFileChannel", "is_correct": true },
+        { "id": "c", "text": "FileChannel", "is_correct": false },
+        { "id": "d", "text": "Path", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which feature enables virtual threads (Java 21)?",
+      "options": [
+        { "id": "a", "text": "ForkJoinPool", "is_correct": false },
+        { "id": "b", "text": "Project Loom", "is_correct": true },
+        { "id": "c", "text": "Reactive Streams", "is_correct": false },
+        { "id": "d", "text": "CompletableFuture", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which API simplifies async pipelines?",
+      "options": [
+        { "id": "a", "text": "Future", "is_correct": false },
+        { "id": "b", "text": "CompletableFuture", "is_correct": true },
+        { "id": "c", "text": "ExecutorService", "is_correct": false },
+        { "id": "d", "text": "Callable", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which method chains async tasks?",
+      "options": [
+        { "id": "a", "text": "thenApply()", "is_correct": true },
+        { "id": "b", "text": "get()", "is_correct": false },
+        { "id": "c", "text": "join()", "is_correct": false },
+        { "id": "d", "text": "wait()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which method handles async exceptions?",
+      "options": [
+        { "id": "a", "text": "catch()", "is_correct": false },
+        { "id": "b", "text": "exceptionally()", "is_correct": true },
+        { "id": "c", "text": "handle()", "is_correct": false },
+        { "id": "d", "text": "error()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which method combines futures?",
+      "options": [
+        { "id": "a", "text": "allOf()", "is_correct": true },
+        { "id": "b", "text": "anyOf()", "is_correct": false },
+        { "id": "c", "text": "combine()", "is_correct": false },
+        { "id": "d", "text": "merge()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which method waits without checked exception?",
+      "options": [
+        { "id": "a", "text": "get()", "is_correct": false },
+        { "id": "b", "text": "join()", "is_correct": true },
+        { "id": "c", "text": "wait()", "is_correct": false },
+        { "id": "d", "text": "sleep()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which Java feature enforces strong encapsulation?",
+      "options": [
+        { "id": "a", "text": "Packages", "is_correct": false },
+        { "id": "b", "text": "Modules (JPMS)", "is_correct": true },
+        { "id": "c", "text": "ClassLoader", "is_correct": false },
+        { "id": "d", "text": "SecurityManager", "is_correct": false }
+      ]
+    }
+  ]
+}

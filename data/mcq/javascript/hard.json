@@ -1,0 +1,520 @@
+{
+  "quiz_id": "js_hard",
+  "language": "javascript",
+  "level": "hard",
+  "title": "JavaScript Advanced Concepts - Hard",
+  "description": "Closures, hoisting, prototypes, async behavior, performance, and memory.",
+  "duration_minutes": 35,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is a closure in JavaScript?",
+      "options": [
+        { "id": "a", "text": "A function with preserved lexical scope", "is_correct": true },
+        { "id": "b", "text": "A block-level variable", "is_correct": false },
+        { "id": "c", "text": "An immediately executed function", "is_correct": false },
+        { "id": "d", "text": "A frozen object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which phase handles variable hoisting?",
+      "options": [
+        { "id": "a", "text": "Execution phase", "is_correct": false },
+        { "id": "b", "text": "Creation phase", "is_correct": true },
+        { "id": "c", "text": "Compilation phase", "is_correct": false },
+        { "id": "d", "text": "Runtime phase", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which keyword is hoisted but not initialized?",
+      "options": [
+        { "id": "a", "text": "let", "is_correct": true },
+        { "id": "b", "text": "var", "is_correct": false },
+        { "id": "c", "text": "function", "is_correct": false },
+        { "id": "d", "text": "const", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "What does the event loop handle?",
+      "options": [
+        { "id": "a", "text": "Memory allocation", "is_correct": false },
+        { "id": "b", "text": "Async callbacks execution", "is_correct": true },
+        { "id": "c", "text": "Variable scope", "is_correct": false },
+        { "id": "d", "text": "DOM rendering only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which queue has higher priority?",
+      "options": [
+        { "id": "a", "text": "Callback queue", "is_correct": false },
+        { "id": "b", "text": "Microtask queue", "is_correct": true },
+        { "id": "c", "text": "Macro queue", "is_correct": false },
+        { "id": "d", "text": "Render queue", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Promises callbacks go to which queue?",
+      "options": [
+        { "id": "a", "text": "Macro task", "is_correct": false },
+        { "id": "b", "text": "Microtask", "is_correct": true },
+        { "id": "c", "text": "Event queue", "is_correct": false },
+        { "id": "d", "text": "Call stack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which object links inheritance?",
+      "options": [
+        { "id": "a", "text": "__proto__", "is_correct": true },
+        { "id": "b", "text": "prototype()", "is_correct": false },
+        { "id": "c", "text": "parent", "is_correct": false },
+        { "id": "d", "text": "inherit", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Where are methods stored in constructor functions?",
+      "options": [
+        { "id": "a", "text": "Inside object", "is_correct": false },
+        { "id": "b", "text": "Constructor body", "is_correct": false },
+        { "id": "c", "text": "Prototype", "is_correct": true },
+        { "id": "d", "text": "Call stack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "What does Object.create() do?",
+      "options": [
+        { "id": "a", "text": "Clones object deeply", "is_correct": false },
+        { "id": "b", "text": "Creates object with specified prototype", "is_correct": true },
+        { "id": "c", "text": "Freezes object", "is_correct": false },
+        { "id": "d", "text": "Copies properties only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which method checks prototype chain?",
+      "options": [
+        { "id": "a", "text": "hasOwn()", "is_correct": false },
+        { "id": "b", "text": "instanceof", "is_correct": true },
+        { "id": "c", "text": "typeof", "is_correct": false },
+        { "id": "d", "text": "isPrototype()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "What is temporal dead zone?",
+      "options": [
+        { "id": "a", "text": "Block before variable declaration", "is_correct": true },
+        { "id": "b", "text": "Unused memory area", "is_correct": false },
+        { "id": "c", "text": "Async callback delay", "is_correct": false },
+        { "id": "d", "text": "Garbage collection phase", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which method prevents object modification?",
+      "options": [
+        { "id": "a", "text": "Object.seal()", "is_correct": false },
+        { "id": "b", "text": "Object.freeze()", "is_correct": true },
+        { "id": "c", "text": "Object.lock()", "is_correct": false },
+        { "id": "d", "text": "Object.prevent()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which operator checks nullish values?",
+      "options": [
+        { "id": "a", "text": "||", "is_correct": false },
+        { "id": "b", "text": "??", "is_correct": true },
+        { "id": "c", "text": "&&", "is_correct": false },
+        { "id": "d", "text": "!=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Optional chaining operator is?",
+      "options": [
+        { "id": "a", "text": "::", "is_correct": false },
+        { "id": "b", "text": "?.", "is_correct": true },
+        { "id": "c", "text": "??", "is_correct": false },
+        { "id": "d", "text": "...", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword creates generator?",
+      "options": [
+        { "id": "a", "text": "function*", "is_correct": true },
+        { "id": "b", "text": "yield*", "is_correct": false },
+        { "id": "c", "text": "generator", "is_correct": false },
+        { "id": "d", "text": "async*", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which keyword pauses generator?",
+      "options": [
+        { "id": "a", "text": "return", "is_correct": false },
+        { "id": "b", "text": "yield", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "pause", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which API observes DOM changes?",
+      "options": [
+        { "id": "a", "text": "EventObserver", "is_correct": false },
+        { "id": "b", "text": "MutationObserver", "is_correct": true },
+        { "id": "c", "text": "DOMWatcher", "is_correct": false },
+        { "id": "d", "text": "ChangeObserver", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which API improves scroll performance?",
+      "options": [
+        { "id": "a", "text": "setTimeout", "is_correct": false },
+        { "id": "b", "text": "IntersectionObserver", "is_correct": true },
+        { "id": "c", "text": "MutationObserver", "is_correct": false },
+        { "id": "d", "text": "ResizeObserver", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which method schedules repaint?",
+      "options": [
+        { "id": "a", "text": "setTimeout()", "is_correct": false },
+        { "id": "b", "text": "requestAnimationFrame()", "is_correct": true },
+        { "id": "c", "text": "setInterval()", "is_correct": false },
+        { "id": "d", "text": "render()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which storage allows large structured data?",
+      "options": [
+        { "id": "a", "text": "localStorage", "is_correct": false },
+        { "id": "b", "text": "sessionStorage", "is_correct": false },
+        { "id": "c", "text": "IndexedDB", "is_correct": true },
+        { "id": "d", "text": "Cookies", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which JS feature enables multithreading?",
+      "options": [
+        { "id": "a", "text": "Async/Await", "is_correct": false },
+        { "id": "b", "text": "Web Workers", "is_correct": true },
+        { "id": "c", "text": "Promises", "is_correct": false },
+        { "id": "d", "text": "Event Loop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which object represents worker global scope?",
+      "options": [
+        { "id": "a", "text": "window", "is_correct": false },
+        { "id": "b", "text": "self", "is_correct": true },
+        { "id": "c", "text": "global", "is_correct": false },
+        { "id": "d", "text": "this", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which method copies property descriptors?",
+      "options": [
+        { "id": "a", "text": "Object.assign()", "is_correct": false },
+        { "id": "b", "text": "Object.defineProperties()", "is_correct": false },
+        { "id": "c", "text": "Object.getOwnPropertyDescriptors()", "is_correct": true },
+        { "id": "d", "text": "Object.entries()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which descriptor prevents enumeration?",
+      "options": [
+        { "id": "a", "text": "writable", "is_correct": false },
+        { "id": "b", "text": "enumerable", "is_correct": true },
+        { "id": "c", "text": "configurable", "is_correct": false },
+        { "id": "d", "text": "readonly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which method defines non-writable property?",
+      "options": [
+        { "id": "a", "text": "Object.defineProperty()", "is_correct": true },
+        { "id": "b", "text": "Object.freeze()", "is_correct": false },
+        { "id": "c", "text": "Object.lock()", "is_correct": false },
+        { "id": "d", "text": "Object.assign()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which loop is fastest generally?",
+      "options": [
+        { "id": "a", "text": "for loop", "is_correct": true },
+        { "id": "b", "text": "forEach", "is_correct": false },
+        { "id": "c", "text": "map()", "is_correct": false },
+        { "id": "d", "text": "for...of", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which technique reduces memory leaks?",
+      "options": [
+        { "id": "a", "text": "Global variables", "is_correct": false },
+        { "id": "b", "text": "WeakMap", "is_correct": true },
+        { "id": "c", "text": "Closures", "is_correct": false },
+        { "id": "d", "text": "Intervals", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which object allows weak references?",
+      "options": [
+        { "id": "a", "text": "Map", "is_correct": false },
+        { "id": "b", "text": "WeakMap", "is_correct": true },
+        { "id": "c", "text": "Set", "is_correct": false },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which feature prevents callback hell?",
+      "options": [
+        { "id": "a", "text": "setTimeout", "is_correct": false },
+        { "id": "b", "text": "Promises", "is_correct": true },
+        { "id": "c", "text": "Intervals", "is_correct": false },
+        { "id": "d", "text": "Closures", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which method handles multiple promises?",
+      "options": [
+        { "id": "a", "text": "Promise.all()", "is_correct": true },
+        { "id": "b", "text": "Promise.any()", "is_correct": false },
+        { "id": "c", "text": "Promise.race()", "is_correct": false },
+        { "id": "d", "text": "Promise.handle()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which Promise method resolves fastest?",
+      "options": [
+        { "id": "a", "text": "Promise.all()", "is_correct": false },
+        { "id": "b", "text": "Promise.any()", "is_correct": false },
+        { "id": "c", "text": "Promise.race()", "is_correct": true },
+        { "id": "d", "text": "Promise.wait()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which Promise resolves if any succeed?",
+      "options": [
+        { "id": "a", "text": "Promise.all()", "is_correct": false },
+        { "id": "b", "text": "Promise.any()", "is_correct": true },
+        { "id": "c", "text": "Promise.race()", "is_correct": false },
+        { "id": "d", "text": "Promise.one()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which API allows background sync?",
+      "options": [
+        { "id": "a", "text": "SyncManager", "is_correct": true },
+        { "id": "b", "text": "FetchManager", "is_correct": false },
+        { "id": "c", "text": "WorkerManager", "is_correct": false },
+        { "id": "d", "text": "CacheAPI", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which API caches network responses?",
+      "options": [
+        { "id": "a", "text": "Storage API", "is_correct": false },
+        { "id": "b", "text": "Cache API", "is_correct": true },
+        { "id": "c", "text": "Fetch API", "is_correct": false },
+        { "id": "d", "text": "IndexedDB", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which object exposes memory usage?",
+      "options": [
+        { "id": "a", "text": "performance", "is_correct": true },
+        { "id": "b", "text": "navigator", "is_correct": false },
+        { "id": "c", "text": "window", "is_correct": false },
+        { "id": "d", "text": "console", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which API measures performance timing?",
+      "options": [
+        { "id": "a", "text": "Performance API", "is_correct": true },
+        { "id": "b", "text": "Timing API", "is_correct": false },
+        { "id": "c", "text": "Speed API", "is_correct": false },
+        { "id": "d", "text": "Measure API", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which function debounces events?",
+      "options": [
+        { "id": "a", "text": "Throttle", "is_correct": false },
+        { "id": "b", "text": "Debounce", "is_correct": true },
+        { "id": "c", "text": "Delay", "is_correct": false },
+        { "id": "d", "text": "Pause", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which technique limits execution rate?",
+      "options": [
+        { "id": "a", "text": "Debouncing", "is_correct": false },
+        { "id": "b", "text": "Throttling", "is_correct": true },
+        { "id": "c", "text": "Memoization", "is_correct": false },
+        { "id": "d", "text": "Caching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which pattern caches function results?",
+      "options": [
+        { "id": "a", "text": "Currying", "is_correct": false },
+        { "id": "b", "text": "Memoization", "is_correct": true },
+        { "id": "c", "text": "Debounce", "is_correct": false },
+        { "id": "d", "text": "Thunk", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which pattern delays execution?",
+      "options": [
+        { "id": "a", "text": "Thunk", "is_correct": true },
+        { "id": "b", "text": "Currying", "is_correct": false },
+        { "id": "c", "text": "Memoization", "is_correct": false },
+        { "id": "d", "text": "Decorator", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which syntax enables dynamic import?",
+      "options": [
+        { "id": "a", "text": "import()", "is_correct": true },
+        { "id": "b", "text": "require()", "is_correct": false },
+        { "id": "c", "text": "load()", "is_correct": false },
+        { "id": "d", "text": "include()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which feature splits bundles?",
+      "options": [
+        { "id": "a", "text": "Tree shaking", "is_correct": false },
+        { "id": "b", "text": "Code splitting", "is_correct": true },
+        { "id": "c", "text": "Minification", "is_correct": false },
+        { "id": "d", "text": "Bundling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which technique removes unused code?",
+      "options": [
+        { "id": "a", "text": "Bundling", "is_correct": false },
+        { "id": "b", "text": "Tree shaking", "is_correct": true },
+        { "id": "c", "text": "Compression", "is_correct": false },
+        { "id": "d", "text": "Caching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which operator forces type conversion?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": true },
+        { "id": "b", "text": "===", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": false },
+        { "id": "d", "text": "!=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which comparison avoids coercion?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "===", "is_correct": true },
+        { "id": "c", "text": "!=", "is_correct": false },
+        { "id": "d", "text": "<=", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which API sends push notifications?",
+      "options": [
+        { "id": "a", "text": "Notification API", "is_correct": true },
+        { "id": "b", "text": "PushManager", "is_correct": false },
+        { "id": "c", "text": "ServiceWorker", "is_correct": false },
+        { "id": "d", "text": "Alert API", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which file controls service worker scope?",
+      "options": [
+        { "id": "a", "text": "manifest.json", "is_correct": false },
+        { "id": "b", "text": "sw.js location", "is_correct": true },
+        { "id": "c", "text": "index.html", "is_correct": false },
+        { "id": "d", "text": "package.json", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which API handles offline caching?",
+      "options": [
+        { "id": "a", "text": "LocalStorage", "is_correct": false },
+        { "id": "b", "text": "Cache API", "is_correct": true },
+        { "id": "c", "text": "IndexedDB", "is_correct": false },
+        { "id": "d", "text": "FileSystem API", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which object exposes browser information?",
+      "options": [
+        { "id": "a", "text": "window", "is_correct": false },
+        { "id": "b", "text": "navigator", "is_correct": true },
+        { "id": "c", "text": "document", "is_correct": false },
+        { "id": "d", "text": "screen", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which JS feature enables immutability?",
+      "options": [
+        { "id": "a", "text": "Object.freeze()", "is_correct": true },
+        { "id": "b", "text": "Object.seal()", "is_correct": false },
+        { "id": "c", "text": "Object.assign()", "is_correct": false },
+        { "id": "d", "text": "const", "is_correct": false }
+      ]
+    }
+  ]
+}

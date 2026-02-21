@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Question - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="quiz-container">
+    <div class="quiz-header-bar">
+        <div class="quiz-info">
+            <h2>{{ quiz.title }}</h2>
+            <div class="question-counter">Question {{ q_no + 1 }} of {{ total_questions }}</div>
+            <div class="quiz-tags">
+                <span class="language-tag">{{ get_language_label(quiz.language) }}</span>
+                <span class="level-chip level-{{ quiz.level }}">{{ quiz.level.title() }}</span>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div class="timer" id="timer">
+                <span class="timer-icon">⏱️</span>
+                <span id="timer-text">--:--</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container glass-card">
+        <div class="question-text">
+            <h3>{{ question.question_text }}</h3>
+        </div>
+        
+        <form method="POST" action="{{ url_for('quiz_question', attempt_id=attempt_id, q_no=q_no) }}" class="options-form">
+            <div class="options-list">
+                {% for option in question.options %}
+                <label class="option-item {% if selected_option == option.id %}selected{% endif %}">
+                    <input type="radio" name="option" value="{{ option.id }}" 
+                           {% if selected_option == option.id %}checked{% endif %}
+                           onchange="this.form.submit()">
+                    <span class="option-label">{{ option.id|upper }}.</span>
+                    <span class="option-text">{{ option.text }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            
+            <div class="question-nav">
+                {% if q_no > 0 %}
+                <a href="{{ url_for('quiz_question', attempt_id=attempt_id, q_no=q_no-1) }}" class="btn btn-secondary">Previous</a>
+                {% else %}
+                <div></div>
+                {% endif %}
+                
+                {% if q_no < total_questions - 1 %}
+                <button type="submit" class="btn btn-primary">Next</button>
+                {% else %}
+                <a href="{{ url_for('quiz_submit', attempt_id=attempt_id) }}" class="btn btn-primary">Submit Quiz</a>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const secondsRemaining = {{ seconds_remaining }};
+    const attemptId = {{ attempt_id }};
+    
+    let timeLeft = secondsRemaining;
+    const timerElement = document.getElementById('timer-text');
+    
+    function updateTimer() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        
+        if (timeLeft <= 0) {
+            window.location.href = `/quiz/submit/${attemptId}`;
+            return;
+        }
+        
+        timeLeft--;
+    }
+    
+    updateTimer();
+    const timerInterval = setInterval(updateTimer, 1000);
+</script>
+{% endblock %}
+

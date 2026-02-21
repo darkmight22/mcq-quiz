@@ -1,0 +1,520 @@
+{
+  "quiz_id": "react_medium",
+  "language": "react",
+  "level": "medium",
+  "title": "React Intermediate - Medium",
+  "description": "Component lifecycle, hooks in depth, state management, performance, forms, routing basics.",
+  "duration_minutes": 30,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the main purpose of useEffect hook?",
+      "options": [
+        { "id": "a", "text": "To manage state", "is_correct": false },
+        { "id": "b", "text": "To handle side effects", "is_correct": true },
+        { "id": "c", "text": "To create components", "is_correct": false },
+        { "id": "d", "text": "To handle routing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "When does useEffect run by default?",
+      "options": [
+        { "id": "a", "text": "Only on mount", "is_correct": false },
+        { "id": "b", "text": "Only on unmount", "is_correct": false },
+        { "id": "c", "text": "After every render", "is_correct": true },
+        { "id": "d", "text": "Before render", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "How do you run useEffect only once?",
+      "options": [
+        { "id": "a", "text": "Without dependency array", "is_correct": false },
+        { "id": "b", "text": "With empty dependency array []", "is_correct": true },
+        { "id": "c", "text": "Using useMemo", "is_correct": false },
+        { "id": "d", "text": "Using useCallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "What causes an infinite loop in useEffect?",
+      "options": [
+        { "id": "a", "text": "Using empty dependency array", "is_correct": false },
+        { "id": "b", "text": "Updating state without dependency control", "is_correct": true },
+        { "id": "c", "text": "Using useRef", "is_correct": false },
+        { "id": "d", "text": "Using fragments", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which hook should be used for complex state logic?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useReducer", "is_correct": true },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What does useReducer return?",
+      "options": [
+        { "id": "a", "text": "state only", "is_correct": false },
+        { "id": "b", "text": "dispatch only", "is_correct": false },
+        { "id": "c", "text": "state and dispatch", "is_correct": true },
+        { "id": "d", "text": "action and reducer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "What is prop drilling?",
+      "options": [
+        { "id": "a", "text": "Sending props to child only", "is_correct": false },
+        { "id": "b", "text": "Passing props through many components", "is_correct": true },
+        { "id": "c", "text": "Updating props", "is_correct": false },
+        { "id": "d", "text": "Using Redux", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which hook helps avoid prop drilling?",
+      "options": [
+        { "id": "a", "text": "useReducer", "is_correct": false },
+        { "id": "b", "text": "useContext", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "What is Context API mainly used for?",
+      "options": [
+        { "id": "a", "text": "API calls", "is_correct": false },
+        { "id": "b", "text": "State sharing across components", "is_correct": true },
+        { "id": "c", "text": "Routing", "is_correct": false },
+        { "id": "d", "text": "Styling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which hook should not cause re-render when value changes?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": true },
+        { "id": "d", "text": "useReducer", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "What is memoization in React?",
+      "options": [
+        { "id": "a", "text": "Saving JSX", "is_correct": false },
+        { "id": "b", "text": "Caching values to improve performance", "is_correct": true },
+        { "id": "c", "text": "Removing components", "is_correct": false },
+        { "id": "d", "text": "Handling side effects", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which hook memoizes a function?",
+      "options": [
+        { "id": "a", "text": "useMemo", "is_correct": false },
+        { "id": "b", "text": "useCallback", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "When should React.memo be used?",
+      "options": [
+        { "id": "a", "text": "For every component", "is_correct": false },
+        { "id": "b", "text": "To prevent unnecessary re-renders", "is_correct": true },
+        { "id": "c", "text": "To manage state", "is_correct": false },
+        { "id": "d", "text": "To fetch data", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "What is React.memo?",
+      "options": [
+        { "id": "a", "text": "A hook", "is_correct": false },
+        { "id": "b", "text": "A higher-order component", "is_correct": true },
+        { "id": "c", "text": "A lifecycle method", "is_correct": false },
+        { "id": "d", "text": "A router", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which comparison does React.memo use by default?",
+      "options": [
+        { "id": "a", "text": "Deep comparison", "is_correct": false },
+        { "id": "b", "text": "Shallow comparison", "is_correct": true },
+        { "id": "c", "text": "Reference comparison only", "is_correct": false },
+        { "id": "d", "text": "JSON comparison", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "What is controlled component?",
+      "options": [
+        { "id": "a", "text": "Component without state", "is_correct": false },
+        { "id": "b", "text": "Form element controlled by React state", "is_correct": true },
+        { "id": "c", "text": "Component using refs only", "is_correct": false },
+        { "id": "d", "text": "Pure component", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "What is uncontrolled component?",
+      "options": [
+        { "id": "a", "text": "Component without JSX", "is_correct": false },
+        { "id": "b", "text": "Form element controlled by DOM", "is_correct": true },
+        { "id": "c", "text": "Component without props", "is_correct": false },
+        { "id": "d", "text": "Stateless component", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which hook is commonly used for uncontrolled components?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": true },
+        { "id": "d", "text": "useContext", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which event prevents page reload on form submit?",
+      "options": [
+        { "id": "a", "text": "event.stop()", "is_correct": false },
+        { "id": "b", "text": "event.preventDefault()", "is_correct": true },
+        { "id": "c", "text": "event.cancel()", "is_correct": false },
+        { "id": "d", "text": "event.block()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which hook is best for API calls?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "What is cleanup function in useEffect?",
+      "options": [
+        { "id": "a", "text": "Function that runs before render", "is_correct": false },
+        { "id": "b", "text": "Function that runs on unmount or before next effect", "is_correct": true },
+        { "id": "c", "text": "Function that updates state", "is_correct": false },
+        { "id": "d", "text": "Function that runs once", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "What is reconciliation in React?",
+      "options": [
+        { "id": "a", "text": "Updating state", "is_correct": false },
+        { "id": "b", "text": "Comparing virtual DOM trees", "is_correct": true },
+        { "id": "c", "text": "Handling props", "is_correct": false },
+        { "id": "d", "text": "Rendering JSX", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which algorithm React uses for reconciliation?",
+      "options": [
+        { "id": "a", "text": "Binary tree algorithm", "is_correct": false },
+        { "id": "b", "text": "Diffing algorithm", "is_correct": true },
+        { "id": "c", "text": "Sorting algorithm", "is_correct": false },
+        { "id": "d", "text": "Searching algorithm", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Why keys should be stable and unique?",
+      "options": [
+        { "id": "a", "text": "For styling", "is_correct": false },
+        { "id": "b", "text": "For correct component re-rendering", "is_correct": true },
+        { "id": "c", "text": "For routing", "is_correct": false },
+        { "id": "d", "text": "For API calls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Why index is not recommended as key?",
+      "options": [
+        { "id": "a", "text": "It is slow", "is_correct": false },
+        { "id": "b", "text": "It breaks component state on reordering", "is_correct": true },
+        { "id": "c", "text": "It causes syntax error", "is_correct": false },
+        { "id": "d", "text": "It increases bundle size", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "What is lazy loading in React?",
+      "options": [
+        { "id": "a", "text": "Loading all components at once", "is_correct": false },
+        { "id": "b", "text": "Loading components only when needed", "is_correct": true },
+        { "id": "c", "text": "Delaying API calls", "is_correct": false },
+        { "id": "d", "text": "Skipping rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which function is used for lazy loading components?",
+      "options": [
+        { "id": "a", "text": "useMemo", "is_correct": false },
+        { "id": "b", "text": "React.lazy()", "is_correct": true },
+        { "id": "c", "text": "Suspense()", "is_correct": false },
+        { "id": "d", "text": "useCallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which component is required with React.lazy?",
+      "options": [
+        { "id": "a", "text": "ErrorBoundary", "is_correct": false },
+        { "id": "b", "text": "Fragment", "is_correct": false },
+        { "id": "c", "text": "Suspense", "is_correct": true },
+        { "id": "d", "text": "StrictMode", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "What does Suspense fallback show?",
+      "options": [
+        { "id": "a", "text": "Error message", "is_correct": false },
+        { "id": "b", "text": "Loader or placeholder UI", "is_correct": true },
+        { "id": "c", "text": "Final component", "is_correct": false },
+        { "id": "d", "text": "Nothing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which React feature helps code splitting?",
+      "options": [
+        { "id": "a", "text": "Fragments", "is_correct": false },
+        { "id": "b", "text": "Lazy loading", "is_correct": true },
+        { "id": "c", "text": "Context API", "is_correct": false },
+        { "id": "d", "text": "Hooks", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "What is StrictMode used for?",
+      "options": [
+        { "id": "a", "text": "Production optimization", "is_correct": false },
+        { "id": "b", "text": "Highlighting potential problems", "is_correct": true },
+        { "id": "c", "text": "Routing", "is_correct": false },
+        { "id": "d", "text": "Styling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Does StrictMode affect production build?",
+      "options": [
+        { "id": "a", "text": "Yes", "is_correct": false },
+        { "id": "b", "text": "No", "is_correct": true },
+        { "id": "c", "text": "Sometimes", "is_correct": false },
+        { "id": "d", "text": "Only in hooks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which lifecycle is simulated by useEffect cleanup?",
+      "options": [
+        { "id": "a", "text": "componentDidMount", "is_correct": false },
+        { "id": "b", "text": "componentDidUpdate", "is_correct": false },
+        { "id": "c", "text": "componentWillUnmount", "is_correct": true },
+        { "id": "d", "text": "shouldComponentUpdate", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "What is Error Boundary?",
+      "options": [
+        { "id": "a", "text": "Hook", "is_correct": false },
+        { "id": "b", "text": "Component to catch JS errors", "is_correct": true },
+        { "id": "c", "text": "Middleware", "is_correct": false },
+        { "id": "d", "text": "API handler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which components can be error boundaries?",
+      "options": [
+        { "id": "a", "text": "Functional components", "is_correct": false },
+        { "id": "b", "text": "Class components only", "is_correct": true },
+        { "id": "c", "text": "Hooks", "is_correct": false },
+        { "id": "d", "text": "Fragments", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "What is lifting state up used for?",
+      "options": [
+        { "id": "a", "text": "Better styling", "is_correct": false },
+        { "id": "b", "text": "Sharing state between siblings", "is_correct": true },
+        { "id": "c", "text": "Performance optimization", "is_correct": false },
+        { "id": "d", "text": "Routing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which hook is used for routing?",
+      "options": [
+        { "id": "a", "text": "useRoute", "is_correct": false },
+        { "id": "b", "text": "useParams (React Router)", "is_correct": true },
+        { "id": "c", "text": "usePath", "is_correct": false },
+        { "id": "d", "text": "useNavigateState", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which library is most commonly used for routing?",
+      "options": [
+        { "id": "a", "text": "Redux", "is_correct": false },
+        { "id": "b", "text": "React Router", "is_correct": true },
+        { "id": "c", "text": "Axios", "is_correct": false },
+        { "id": "d", "text": "Formik", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "What is SPA?",
+      "options": [
+        { "id": "a", "text": "Single Program App", "is_correct": false },
+        { "id": "b", "text": "Single Page Application", "is_correct": true },
+        { "id": "c", "text": "Server Page App", "is_correct": false },
+        { "id": "d", "text": "Static Page App", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Why React is suitable for SPA?",
+      "options": [
+        { "id": "a", "text": "Server-side rendering only", "is_correct": false },
+        { "id": "b", "text": "Fast UI updates using Virtual DOM", "is_correct": true },
+        { "id": "c", "text": "Database support", "is_correct": false },
+        { "id": "d", "text": "Built-in backend", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which tool is used for state management in large apps?",
+      "options": [
+        { "id": "a", "text": "Redux", "is_correct": true },
+        { "id": "b", "text": "Axios", "is_correct": false },
+        { "id": "c", "text": "React Router", "is_correct": false },
+        { "id": "d", "text": "Webpack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Redux follows which data flow?",
+      "options": [
+        { "id": "a", "text": "Two-way", "is_correct": false },
+        { "id": "b", "text": "One-way", "is_correct": true },
+        { "id": "c", "text": "Circular", "is_correct": false },
+        { "id": "d", "text": "Random", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "What is reducer in Redux?",
+      "options": [
+        { "id": "a", "text": "Function that changes state", "is_correct": true },
+        { "id": "b", "text": "Component", "is_correct": false },
+        { "id": "c", "text": "Middleware", "is_correct": false },
+        { "id": "d", "text": "Store", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which hook connects React with Redux?",
+      "options": [
+        { "id": "a", "text": "useContext", "is_correct": false },
+        { "id": "b", "text": "useSelector / useDispatch", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "useStore", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "What is middleware in Redux?",
+      "options": [
+        { "id": "a", "text": "UI component", "is_correct": false },
+        { "id": "b", "text": "Logic between action and reducer", "is_correct": true },
+        { "id": "c", "text": "Database layer", "is_correct": false },
+        { "id": "d", "text": "Router", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which middleware is used for async actions?",
+      "options": [
+        { "id": "a", "text": "Redux Logger", "is_correct": false },
+        { "id": "b", "text": "Redux Thunk", "is_correct": true },
+        { "id": "c", "text": "Redux DevTools", "is_correct": false },
+        { "id": "d", "text": "Redux Persist", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "What is hydration in React?",
+      "options": [
+        { "id": "a", "text": "Adding CSS", "is_correct": false },
+        { "id": "b", "text": "Attaching event handlers to SSR HTML", "is_correct": true },
+        { "id": "c", "text": "API data fetching", "is_correct": false },
+        { "id": "d", "text": "Component unmounting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which React feature supports SSR?",
+      "options": [
+        { "id": "a", "text": "React.memo", "is_correct": false },
+        { "id": "b", "text": "Next.js", "is_correct": true },
+        { "id": "c", "text": "Redux", "is_correct": false },
+        { "id": "d", "text": "Context API", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "What is CSR?",
+      "options": [
+        { "id": "a", "text": "Client Side Rendering", "is_correct": true },
+        { "id": "b", "text": "Component Side Rendering", "is_correct": false },
+        { "id": "c", "text": "Central Server Rendering", "is_correct": false },
+        { "id": "d", "text": "Code Side Rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which approach improves SEO in React apps?",
+      "options": [
+        { "id": "a", "text": "CSR only", "is_correct": false },
+        { "id": "b", "text": "SSR or SSG", "is_correct": true },
+        { "id": "c", "text": "Using hooks", "is_correct": false },
+        { "id": "d", "text": "Using Context API", "is_correct": false }
+      ]
+    }
+  ]
+}

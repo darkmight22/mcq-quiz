@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nodejs_medium",
+  "language": "nodejs",
+  "level": "medium",
+  "title": "Node.js Intermediate - Medium",
+  "description": "Node.js core concepts: event loop, async patterns, streams, buffers, modules, performance.",
+  "duration_minutes": 30,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the main role of the Event Loop in Node.js?",
+      "options": [
+        { "id": "a", "text": "Execute JavaScript in browser", "is_correct": false },
+        { "id": "b", "text": "Handle asynchronous operations", "is_correct": true },
+        { "id": "c", "text": "Compile JavaScript code", "is_correct": false },
+        { "id": "d", "text": "Manage database connections", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which phase of the event loop handles setTimeout callbacks?",
+      "options": [
+        { "id": "a", "text": "Poll phase", "is_correct": false },
+        { "id": "b", "text": "Check phase", "is_correct": false },
+        { "id": "c", "text": "Timers phase", "is_correct": true },
+        { "id": "d", "text": "Close callbacks phase", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which function is executed before I/O events in the event loop?",
+      "options": [
+        { "id": "a", "text": "setImmediate()", "is_correct": false },
+        { "id": "b", "text": "process.nextTick()", "is_correct": true },
+        { "id": "c", "text": "setTimeout()", "is_correct": false },
+        { "id": "d", "text": "setInterval()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which API is used to create child processes?",
+      "options": [
+        { "id": "a", "text": "cluster", "is_correct": false },
+        { "id": "b", "text": "child_process", "is_correct": true },
+        { "id": "c", "text": "worker_threads", "is_correct": false },
+        { "id": "d", "text": "os", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which method creates a new process with a shell?",
+      "options": [
+        { "id": "a", "text": "spawn()", "is_correct": false },
+        { "id": "b", "text": "fork()", "is_correct": false },
+        { "id": "c", "text": "exec()", "is_correct": true },
+        { "id": "d", "text": "run()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which module allows running JavaScript in multiple threads?",
+      "options": [
+        { "id": "a", "text": "cluster", "is_correct": false },
+        { "id": "b", "text": "worker_threads", "is_correct": true },
+        { "id": "c", "text": "child_process", "is_correct": false },
+        { "id": "d", "text": "events", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the purpose of the cluster module?",
+      "options": [
+        { "id": "a", "text": "Multithreading within a process", "is_correct": false },
+        { "id": "b", "text": "Load balancing across CPU cores", "is_correct": true },
+        { "id": "c", "text": "Handling async I/O", "is_correct": false },
+        { "id": "d", "text": "Managing memory", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which stream type can both read and write?",
+      "options": [
+        { "id": "a", "text": "Readable", "is_correct": false },
+        { "id": "b", "text": "Writable", "is_correct": false },
+        { "id": "c", "text": "Duplex", "is_correct": true },
+        { "id": "d", "text": "Transform", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which stream modifies data while passing through?",
+      "options": [
+        { "id": "a", "text": "Readable", "is_correct": false },
+        { "id": "b", "text": "Writable", "is_correct": false },
+        { "id": "c", "text": "Duplex", "is_correct": false },
+        { "id": "d", "text": "Transform", "is_correct": true }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "What is backpressure in streams?",
+      "options": [
+        { "id": "a", "text": "High memory usage", "is_correct": false },
+        { "id": "b", "text": "Slow consumer causing data buildup", "is_correct": true },
+        { "id": "c", "text": "Fast CPU processing", "is_correct": false },
+        { "id": "d", "text": "Thread blocking", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which object represents binary data in Node.js?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Buffer", "is_correct": true },
+        { "id": "c", "text": "String", "is_correct": false },
+        { "id": "d", "text": "Binary", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Why are buffers needed in Node.js?",
+      "options": [
+        { "id": "a", "text": "To store text only", "is_correct": false },
+        { "id": "b", "text": "To handle binary data", "is_correct": true },
+        { "id": "c", "text": "To replace streams", "is_correct": false },
+        { "id": "d", "text": "To speed up CPU tasks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which statement about Buffer.alloc() is true?",
+      "options": [
+        { "id": "a", "text": "Allocates uninitialized memory", "is_correct": false },
+        { "id": "b", "text": "Allocates zero-filled memory", "is_correct": true },
+        { "id": "c", "text": "Returns null", "is_correct": false },
+        { "id": "d", "text": "Is deprecated", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which module handles file compression?",
+      "options": [
+        { "id": "a", "text": "fs", "is_correct": false },
+        { "id": "b", "text": "zlib", "is_correct": true },
+        { "id": "c", "text": "crypto", "is_correct": false },
+        { "id": "d", "text": "stream", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which crypto method creates a hash?",
+      "options": [
+        { "id": "a", "text": "crypto.encrypt()", "is_correct": false },
+        { "id": "b", "text": "crypto.createHash()", "is_correct": true },
+        { "id": "c", "text": "crypto.encode()", "is_correct": false },
+        { "id": "d", "text": "crypto.sign()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which pattern helps avoid callback hell?",
+      "options": [
+        { "id": "a", "text": "Nested callbacks", "is_correct": false },
+        { "id": "b", "text": "Promises / async-await", "is_correct": true },
+        { "id": "c", "text": "Synchronous code", "is_correct": false },
+        { "id": "d", "text": "Blocking I/O", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which Promise method runs tasks in parallel?",
+      "options": [
+        { "id": "a", "text": "Promise.all()", "is_correct": true },
+        { "id": "b", "text": "Promise.race()", "is_correct": false },
+        { "id": "c", "text": "Promise.resolve()", "is_correct": false },
+        { "id": "d", "text": "Promise.reject()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "What happens when Promise.all() rejects?",
+      "options": [
+        { "id": "a", "text": "All promises resolve", "is_correct": false },
+        { "id": "b", "text": "It waits for all promises", "is_correct": false },
+        { "id": "c", "text": "It rejects immediately", "is_correct": true },
+        { "id": "d", "text": "It retries promises", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which Promise method returns the first settled result?",
+      "options": [
+        { "id": "a", "text": "Promise.any()", "is_correct": true },
+        { "id": "b", "text": "Promise.all()", "is_correct": false },
+        { "id": "c", "text": "Promise.resolve()", "is_correct": false },
+        { "id": "d", "text": "Promise.finally()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which async function keyword pauses execution?",
+      "options": [
+        { "id": "a", "text": "async", "is_correct": false },
+        { "id": "b", "text": "pause", "is_correct": false },
+        { "id": "c", "text": "wait", "is_correct": false },
+        { "id": "d", "text": "await", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which module helps schedule jobs?",
+      "options": [
+        { "id": "a", "text": "cron", "is_correct": true },
+        { "id": "b", "text": "schedule", "is_correct": false },
+        { "id": "c", "text": "timer", "is_correct": false },
+        { "id": "d", "text": "job", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which HTTP method is idempotent?",
+      "options": [
+        { "id": "a", "text": "POST", "is_correct": false },
+        { "id": "b", "text": "PATCH", "is_correct": false },
+        { "id": "c", "text": "PUT", "is_correct": true },
+        { "id": "d", "text": "CONNECT", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which status code means 'Unauthorized'?",
+      "options": [
+        { "id": "a", "text": "403", "is_correct": false },
+        { "id": "b", "text": "401", "is_correct": true },
+        { "id": "c", "text": "404", "is_correct": false },
+        { "id": "d", "text": "500", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which header indicates response format?",
+      "options": [
+        { "id": "a", "text": "Content-Type", "is_correct": true },
+        { "id": "b", "text": "Accept-Encoding", "is_correct": false },
+        { "id": "c", "text": "Authorization", "is_correct": false },
+        { "id": "d", "text": "Host", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which HTTP status code indicates success?",
+      "options": [
+        { "id": "a", "text": "301", "is_correct": false },
+        { "id": "b", "text": "400", "is_correct": false },
+        { "id": "c", "text": "200", "is_correct": true },
+        { "id": "d", "text": "500", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which approach improves Node.js performance?",
+      "options": [
+        { "id": "a", "text": "Blocking operations", "is_correct": false },
+        { "id": "b", "text": "Using streams for large data", "is_correct": true },
+        { "id": "c", "text": "Synchronous file reads", "is_correct": false },
+        { "id": "d", "text": "Nested callbacks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which tool is used for process management?",
+      "options": [
+        { "id": "a", "text": "nodemon", "is_correct": false },
+        { "id": "b", "text": "pm2", "is_correct": true },
+        { "id": "c", "text": "npm", "is_correct": false },
+        { "id": "d", "text": "nvm", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which pm2 feature improves reliability?",
+      "options": [
+        { "id": "a", "text": "Hot reload", "is_correct": false },
+        { "id": "b", "text": "Auto restart on crash", "is_correct": true },
+        { "id": "c", "text": "Linting", "is_correct": false },
+        { "id": "d", "text": "Testing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which module is used for logging in production?",
+      "options": [
+        { "id": "a", "text": "console", "is_correct": false },
+        { "id": "b", "text": "winston", "is_correct": true },
+        { "id": "c", "text": "debug", "is_correct": false },
+        { "id": "d", "text": "chalk", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which library helps validate request data?",
+      "options": [
+        { "id": "a", "text": "bcrypt", "is_correct": false },
+        { "id": "b", "text": "joi", "is_correct": true },
+        { "id": "c", "text": "jsonwebtoken", "is_correct": false },
+        { "id": "d", "text": "dotenv", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which library hashes passwords?",
+      "options": [
+        { "id": "a", "text": "jsonwebtoken", "is_correct": false },
+        { "id": "b", "text": "bcrypt", "is_correct": true },
+        { "id": "c", "text": "uuid", "is_correct": false },
+        { "id": "d", "text": "crypto-js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which token format is commonly used for auth?",
+      "options": [
+        { "id": "a", "text": "JWT", "is_correct": true },
+        { "id": "b", "text": "XML", "is_correct": false },
+        { "id": "c", "text": "CSV", "is_correct": false },
+        { "id": "d", "text": "Base64", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which HTTP header sends auth token?",
+      "options": [
+        { "id": "a", "text": "Cookie", "is_correct": false },
+        { "id": "b", "text": "Authorization", "is_correct": true },
+        { "id": "c", "text": "Accept", "is_correct": false },
+        { "id": "d", "text": "Token", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which middleware parses JSON bodies?",
+      "options": [
+        { "id": "a", "text": "body-parser / express.json()", "is_correct": true },
+        { "id": "b", "text": "cors", "is_correct": false },
+        { "id": "c", "text": "helmet", "is_correct": false },
+        { "id": "d", "text": "morgan", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which middleware improves security headers?",
+      "options": [
+        { "id": "a", "text": "cors", "is_correct": false },
+        { "id": "b", "text": "helmet", "is_correct": true },
+        { "id": "c", "text": "morgan", "is_correct": false },
+        { "id": "d", "text": "dotenv", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which tool loads environment variables?",
+      "options": [
+        { "id": "a", "text": "env", "is_correct": false },
+        { "id": "b", "text": "dotenv", "is_correct": true },
+        { "id": "c", "text": "config", "is_correct": false },
+        { "id": "d", "text": "process", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which practice is best for config management?",
+      "options": [
+        { "id": "a", "text": "Hardcoding secrets", "is_correct": false },
+        { "id": "b", "text": "Using environment variables", "is_correct": true },
+        { "id": "c", "text": "Storing in code", "is_correct": false },
+        { "id": "d", "text": "Client-side config", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which method gracefully shuts down server?",
+      "options": [
+        { "id": "a", "text": "process.exit()", "is_correct": false },
+        { "id": "b", "text": "server.close()", "is_correct": true },
+        { "id": "c", "text": "app.stop()", "is_correct": false },
+        { "id": "d", "text": "kill()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which signal is commonly used to terminate Node.js?",
+      "options": [
+        { "id": "a", "text": "SIGINT", "is_correct": true },
+        { "id": "b", "text": "SIGSTOP", "is_correct": false },
+        { "id": "c", "text": "SIGKILL", "is_correct": false },
+        { "id": "d", "text": "SIGTERM", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which practice improves scalability?",
+      "options": [
+        { "id": "a", "text": "Single process only", "is_correct": false },
+        { "id": "b", "text": "Clustering across CPU cores", "is_correct": true },
+        { "id": "c", "text": "Blocking I/O", "is_correct": false },
+        { "id": "d", "text": "Large synchronous tasks", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which API helps monitor memory usage?",
+      "options": [
+        { "id": "a", "text": "process.memoryUsage()", "is_correct": true },
+        { "id": "b", "text": "os.memory()", "is_correct": false },
+        { "id": "c", "text": "v8.heap()", "is_correct": false },
+        { "id": "d", "text": "memory.info()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which practice helps detect memory leaks?",
+      "options": [
+        { "id": "a", "text": "Logging only", "is_correct": false },
+        { "id": "b", "text": "Heap snapshots & monitoring", "is_correct": true },
+        { "id": "c", "text": "Restarting server", "is_correct": false },
+        { "id": "d", "text": "Ignoring warnings", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which V8 flag helps debug memory?",
+      "options": [
+        { "id": "a", "text": "--inspect", "is_correct": true },
+        { "id": "b", "text": "--trace-gc", "is_correct": false },
+        { "id": "c", "text": "--memory", "is_correct": false },
+        { "id": "d", "text": "--debug", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which tool profiles CPU usage?",
+      "options": [
+        { "id": "a", "text": "Chrome DevTools", "is_correct": true },
+        { "id": "b", "text": "ESLint", "is_correct": false },
+        { "id": "c", "text": "Prettier", "is_correct": false },
+        { "id": "d", "text": "Jest", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which approach avoids blocking the event loop?",
+      "options": [
+        { "id": "a", "text": "Heavy synchronous loops", "is_correct": false },
+        { "id": "b", "text": "Delegating CPU work to workers", "is_correct": true },
+        { "id": "c", "text": "Large JSON parsing inline", "is_correct": false },
+        { "id": "d", "text": "Using fs.readFileSync()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which concept ensures fault tolerance?",
+      "options": [
+        { "id": "a", "text": "Single instance", "is_correct": false },
+        { "id": "b", "text": "Process restarts & clustering", "is_correct": true },
+        { "id": "c", "text": "Hardcoded config", "is_correct": false },
+        { "id": "d", "text": "Blocking calls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which practice improves API security?",
+      "options": [
+        { "id": "a", "text": "No authentication", "is_correct": false },
+        { "id": "b", "text": "Rate limiting", "is_correct": true },
+        { "id": "c", "text": "Exposing stack traces", "is_correct": false },
+        { "id": "d", "text": "Client-side secrets", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which tool is used for rate limiting?",
+      "options": [
+        { "id": "a", "text": "express-rate-limit", "is_correct": true },
+        { "id": "b", "text": "cors", "is_correct": false },
+        { "id": "c", "text": "helmet", "is_correct": false },
+        { "id": "d", "text": "morgan", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which practice improves maintainability?",
+      "options": [
+        { "id": "a", "text": "Monolithic file", "is_correct": false },
+        { "id": "b", "text": "Modular architecture", "is_correct": true },
+        { "id": "c", "text": "Hardcoded logic", "is_correct": false },
+        { "id": "d", "text": "No documentation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which principle is key in Node.js design?",
+      "options": [
+        { "id": "a", "text": "Blocking execution", "is_correct": false },
+        { "id": "b", "text": "Event-driven, non-blocking I/O", "is_correct": true },
+        { "id": "c", "text": "Heavy multithreading", "is_correct": false },
+        { "id": "d", "text": "Client-side rendering", "is_correct": false }
+      ]
+    }
+  ]
+}

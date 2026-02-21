@@ -1,0 +1,161 @@
+{
+  "challenges": [
+    {
+      "id": "reverse_string_js_easy",
+      "title": "Reverse a String",
+      "description": "Write a function that takes a string as input and returns the reversed string. For example, if the input is 'hello', the output should be 'olleh'.",
+      "language": "javascript",
+      "level": "easy",
+      "sample_input": "hello",
+      "sample_output": "olleh",
+      "difficulty": "easy",
+      "test_cases": [
+        {
+          "input": "hello",
+          "output": "olleh"
+        },
+        {
+          "input": "python",
+          "output": "nohtyp"
+        },
+        {
+          "input": "code",
+          "output": "edoc"
+        }
+      ]
+    },
+    {
+      "id": "factorial_java_medium",
+      "title": "Calculate Factorial",
+      "description": "Write a function that calculates the factorial of a number. The factorial of n (denoted as n!) is the product of all positive integers less than or equal to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "language": "java",
+      "level": "medium",
+      "sample_input": "5",
+      "sample_output": "120",
+      "difficulty": "medium",
+      "test_cases": [
+        {
+          "input": "5",
+          "output": "120"
+        },
+        {
+          "input": "4",
+          "output": "24"
+        },
+        {
+          "input": "0",
+          "output": "1"
+        }
+      ]
+    },
+    {
+      "id": "fibonacci_dsa_medium",
+      "title": "Fibonacci Sequence",
+      "description": "Write a function that returns the nth number in the Fibonacci sequence. The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...",
+      "language": "dsa",
+      "level": "medium",
+      "sample_input": "7",
+      "sample_output": "13",
+      "difficulty": "medium",
+      "test_cases": [
+        {
+          "input": "7",
+          "output": "13"
+        },
+        {
+          "input": "5",
+          "output": "5"
+        },
+        {
+          "input": "10",
+          "output": "55"
+        }
+      ]
+    },
+    {
+      "id": "palindrome_php_easy",
+      "title": "Check Palindrome",
+      "description": "Write a function that checks if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).",
+      "language": "php",
+      "level": "easy",
+      "sample_input": "racecar",
+      "sample_output": "true",
+      "difficulty": "easy",
+      "test_cases": [
+        {
+          "input": "racecar",
+          "output": "true"
+        },
+        {
+          "input": "hello",
+          "output": "false"
+        },
+        {
+          "input": "A man a plan a canal Panama",
+          "output": "true"
+        }
+      ]
+    },
+    {
+      "id": "fizz_buzz_python_easy",
+      "title": "FizzBuzz Printer",
+      "description": "Given an integer N, print numbers from 1..N replacing multiples of 3 with \"Fizz\", multiples of 5 with \"Buzz\", and multiples of both with \"FizzBuzz\".",
+      "language": "python",
+      "level": "easy",
+      "sample_input": "5",
+      "sample_output": "1 2 Fizz 4 Buzz",
+      "difficulty": "easy",
+      "test_cases": [
+        { "input": "3", "output": "1 2 Fizz" },
+        { "input": "5", "output": "1 2 Fizz 4 Buzz" },
+        { "input": "15", "output": "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz" }
+      ]
+    },
+    {
+      "id": "rest_api_nodejs_medium",
+      "title": "Mini REST API",
+      "description": "Build an Express.js server with a single /tasks endpoint supporting GET and POST with in-memory storage.",
+      "language": "nodejs",
+      "level": "medium",
+      "sample_input": "POST /tasks {\"title\":\"Practice\"}",
+      "sample_output": "{\"id\":1,\"title\":\"Practice\"}",
+      "difficulty": "medium",
+      "test_cases": [
+        { "input": "GET /tasks", "output": "[]" },
+        { "input": "POST /tasks {\"title\":\"Code\"}", "output": "{\"id\":1,\"title\":\"Code\"}" },
+        { "input": "GET /tasks", "output": "[{\"id\":1,\"title\":\"Code\"}]" }
+      ]
+    },
+    {
+      "id": "component_testing_react_medium",
+      "title": "Test a React Counter",
+      "description": "Write a React Testing Library test that renders a Counter component, clicks increment twice, and asserts the value.",
+      "language": "react",
+      "level": "medium",
+      "sample_input": "Initial value 0",
+      "sample_output": "Value after clicks: 2",
+      "difficulty": "medium",
+      "test_cases": [
+        { "input": "Clicks:1", "output": "Value after clicks:1" },
+        { "input": "Clicks:2", "output": "Value after clicks:2" },
+        { "input": "Clicks:0", "output": "Value after clicks:0" }
+      ]
+    },
+    {
+      "id": "memory_inspector_c_hard",
+      "title": "Memory Snapshot",
+      "description": "Allocate a dynamic buffer, write bytes, and print their hexadecimal representation using pointer arithmetic.",
+      "language": "c",
+      "level": "hard",
+      "sample_input": "4\\n1 2 3 255",
+      "sample_output": "01 02 03 FF",
+      "difficulty": "hard",
+      "test_cases": [
+        { "input": "3\\n10 20 30", "output": "0A 14 1E" },
+        { "input": "2\\n0 255", "output": "00 FF" },
+        { "input": "5\\n1 1 1 1 1", "output": "01 01 01 01 01" }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,520 @@
+{
+  "quiz_id": "dsa_hard",
+  "language": "dsa",
+  "level": "hard",
+  "title": "Data Structures & Algorithms - Hard",
+  "description": "Advanced DSA concepts: advanced trees, graphs, DP optimization, complexity theory, advanced algorithms.",
+  "duration_minutes": 45,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the time complexity of Floyd–Warshall algorithm?",
+      "options": [
+        { "id": "a", "text": "O(VE)", "is_correct": false },
+        { "id": "b", "text": "O(V³)", "is_correct": true },
+        { "id": "c", "text": "O(E log V)", "is_correct": false },
+        { "id": "d", "text": "O(V²)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which algorithm finds all-pairs shortest paths?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Bellman-Ford", "is_correct": false },
+        { "id": "c", "text": "Floyd–Warshall", "is_correct": true },
+        { "id": "d", "text": "Prim", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which data structure is used in Dijkstra with optimization?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Priority Queue", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which algorithm handles negative edge weights?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Prim", "is_correct": false },
+        { "id": "c", "text": "Bellman-Ford", "is_correct": true },
+        { "id": "d", "text": "Kruskal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which algorithm detects negative cycles?",
+      "options": [
+        { "id": "a", "text": "DFS", "is_correct": false },
+        { "id": "b", "text": "Bellman-Ford", "is_correct": true },
+        { "id": "c", "text": "Dijkstra", "is_correct": false },
+        { "id": "d", "text": "BFS", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is the time complexity of Edmonds–Karp algorithm?",
+      "options": [
+        { "id": "a", "text": "O(E²)", "is_correct": false },
+        { "id": "b", "text": "O(VE²)", "is_correct": true },
+        { "id": "c", "text": "O(V³)", "is_correct": false },
+        { "id": "d", "text": "O(E log V)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which algorithm finds maximum flow in a graph?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Ford–Fulkerson", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "Kruskal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which technique is used in Rabin–Karp algorithm?",
+      "options": [
+        { "id": "a", "text": "Backtracking", "is_correct": false },
+        { "id": "b", "text": "Dynamic Programming", "is_correct": false },
+        { "id": "c", "text": "Rolling Hash", "is_correct": true },
+        { "id": "d", "text": "Greedy", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the average time complexity of Rabin–Karp?",
+      "options": [
+        { "id": "a", "text": "O(n²)", "is_correct": false },
+        { "id": "b", "text": "O(n + m)", "is_correct": true },
+        { "id": "c", "text": "O(log n)", "is_correct": false },
+        { "id": "d", "text": "O(n log n)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which string algorithm builds prefix table?",
+      "options": [
+        { "id": "a", "text": "Boyer–Moore", "is_correct": false },
+        { "id": "b", "text": "KMP", "is_correct": true },
+        { "id": "c", "text": "Rabin–Karp", "is_correct": false },
+        { "id": "d", "text": "Naive Search", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "What is the time complexity of KMP algorithm?",
+      "options": [
+        { "id": "a", "text": "O(n²)", "is_correct": false },
+        { "id": "b", "text": "O(n + m)", "is_correct": true },
+        { "id": "c", "text": "O(n log n)", "is_correct": false },
+        { "id": "d", "text": "O(m²)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which data structure is used in A* algorithm?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Priority Queue", "is_correct": true },
+        { "id": "d", "text": "Deque", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which heuristic property is required for A* to be optimal?",
+      "options": [
+        { "id": "a", "text": "Admissible heuristic", "is_correct": true },
+        { "id": "b", "text": "Random heuristic", "is_correct": false },
+        { "id": "c", "text": "Overestimated heuristic", "is_correct": false },
+        { "id": "d", "text": "Negative heuristic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which problem is solved using bitmask DP?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "Travelling Salesman Problem", "is_correct": true },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "What is the time complexity of bitmask DP for TSP?",
+      "options": [
+        { "id": "a", "text": "O(n²)", "is_correct": false },
+        { "id": "b", "text": "O(2ⁿ × n²)", "is_correct": true },
+        { "id": "c", "text": "O(n³)", "is_correct": false },
+        { "id": "d", "text": "O(n log n)", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which data structure supports range updates efficiently?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Fenwick Tree", "is_correct": true },
+        { "id": "c", "text": "Queue", "is_correct": false },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Segment Tree time complexity for query?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": true },
+        { "id": "c", "text": "O(n log n)", "is_correct": false },
+        { "id": "d", "text": "O(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which tree supports order statistics?",
+      "options": [
+        { "id": "a", "text": "Binary Tree", "is_correct": false },
+        { "id": "b", "text": "Red-Black Tree", "is_correct": true },
+        { "id": "c", "text": "Trie", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which balancing tree guarantees O(log n) operations?",
+      "options": [
+        { "id": "a", "text": "Binary Tree", "is_correct": false },
+        { "id": "b", "text": "AVL Tree", "is_correct": true },
+        { "id": "c", "text": "Trie", "is_correct": false },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which tree is used in databases and file systems?",
+      "options": [
+        { "id": "a", "text": "Binary Tree", "is_correct": false },
+        { "id": "b", "text": "B-Tree", "is_correct": true },
+        { "id": "c", "text": "Trie", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "What is amortized analysis?",
+      "options": [
+        { "id": "a", "text": "Worst-case analysis", "is_correct": false },
+        { "id": "b", "text": "Average performance over sequence of operations", "is_correct": true },
+        { "id": "c", "text": "Best-case analysis", "is_correct": false },
+        { "id": "d", "text": "Randomized analysis", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which data structure has amortized O(1) insertion?",
+      "options": [
+        { "id": "a", "text": "Linked List", "is_correct": false },
+        { "id": "b", "text": "Dynamic Array", "is_correct": true },
+        { "id": "c", "text": "Tree", "is_correct": false },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which technique is used in randomized quicksort?",
+      "options": [
+        { "id": "a", "text": "Random pivot selection", "is_correct": true },
+        { "id": "b", "text": "Dynamic Programming", "is_correct": false },
+        { "id": "c", "text": "Memoization", "is_correct": false },
+        { "id": "d", "text": "Greedy", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which algorithm guarantees O(n log n) in worst case?",
+      "options": [
+        { "id": "a", "text": "Quick Sort", "is_correct": false },
+        { "id": "b", "text": "Merge Sort", "is_correct": true },
+        { "id": "c", "text": "Insertion Sort", "is_correct": false },
+        { "id": "d", "text": "Bubble Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which algorithm finds median in linear time?",
+      "options": [
+        { "id": "a", "text": "Quick Select", "is_correct": true },
+        { "id": "b", "text": "Heap Sort", "is_correct": false },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "Binary Search", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which technique is used in Mo’s Algorithm?",
+      "options": [
+        { "id": "a", "text": "Greedy", "is_correct": false },
+        { "id": "b", "text": "Offline Query Processing", "is_correct": true },
+        { "id": "c", "text": "Dynamic Programming", "is_correct": false },
+        { "id": "d", "text": "Backtracking", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which problem uses suffix array?",
+      "options": [
+        { "id": "a", "text": "Pattern matching", "is_correct": true },
+        { "id": "b", "text": "Graph traversal", "is_correct": false },
+        { "id": "c", "text": "Sorting", "is_correct": false },
+        { "id": "d", "text": "Searching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "What is the time complexity of building suffix array?",
+      "options": [
+        { "id": "a", "text": "O(n²)", "is_correct": false },
+        { "id": "b", "text": "O(n log n)", "is_correct": true },
+        { "id": "c", "text": "O(n)", "is_correct": false },
+        { "id": "d", "text": "O(log n)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which algorithm uses suffix automaton?",
+      "options": [
+        { "id": "a", "text": "String matching", "is_correct": true },
+        { "id": "b", "text": "Sorting", "is_correct": false },
+        { "id": "c", "text": "Graph traversal", "is_correct": false },
+        { "id": "d", "text": "Binary search", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which data structure supports LCA queries efficiently?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Sparse Table", "is_correct": true },
+        { "id": "c", "text": "Queue", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "What is the time complexity of LCA with binary lifting?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": true },
+        { "id": "c", "text": "O(n log n)", "is_correct": false },
+        { "id": "d", "text": "O(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which algorithm finds articulation points?",
+      "options": [
+        { "id": "a", "text": "BFS", "is_correct": false },
+        { "id": "b", "text": "Tarjan’s Algorithm", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "Kruskal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which algorithm finds bridges in a graph?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Tarjan’s Algorithm", "is_correct": true },
+        { "id": "c", "text": "Bellman-Ford", "is_correct": false },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which algorithm is used for SCC detection?",
+      "options": [
+        { "id": "a", "text": "Prim", "is_correct": false },
+        { "id": "b", "text": "Kosaraju", "is_correct": true },
+        { "id": "c", "text": "Dijkstra", "is_correct": false },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which problem is PSPACE-complete?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "QBF (Quantified Boolean Formula)", "is_correct": true },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which complexity class contains NP?",
+      "options": [
+        { "id": "a", "text": "P", "is_correct": false },
+        { "id": "b", "text": "PSPACE", "is_correct": true },
+        { "id": "c", "text": "EXP", "is_correct": false },
+        { "id": "d", "text": "L", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which problem is NP-Complete?",
+      "options": [
+        { "id": "a", "text": "Sorting", "is_correct": false },
+        { "id": "b", "text": "Subset Sum", "is_correct": true },
+        { "id": "c", "text": "Binary Search", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which reduction proves NP-Completeness?",
+      "options": [
+        { "id": "a", "text": "Polynomial-time reduction", "is_correct": true },
+        { "id": "b", "text": "Exponential reduction", "is_correct": false },
+        { "id": "c", "text": "Greedy reduction", "is_correct": false },
+        { "id": "d", "text": "Random reduction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which approach is used in approximation algorithms?",
+      "options": [
+        { "id": "a", "text": "Exact solution", "is_correct": false },
+        { "id": "b", "text": "Greedy heuristics", "is_correct": true },
+        { "id": "c", "text": "Brute force", "is_correct": false },
+        { "id": "d", "text": "Backtracking", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which algorithm approximates vertex cover?",
+      "options": [
+        { "id": "a", "text": "Greedy matching", "is_correct": true },
+        { "id": "b", "text": "Dijkstra", "is_correct": false },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which data structure supports persistent versions?",
+      "options": [
+        { "id": "a", "text": "Persistent Segment Tree", "is_correct": true },
+        { "id": "b", "text": "Stack", "is_correct": false },
+        { "id": "c", "text": "Queue", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which technique optimizes DP from O(n²) to O(n)?",
+      "options": [
+        { "id": "a", "text": "Prefix sums", "is_correct": true },
+        { "id": "b", "text": "Backtracking", "is_correct": false },
+        { "id": "c", "text": "Greedy", "is_correct": false },
+        { "id": "d", "text": "Sorting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which algorithm finds convex hull?",
+      "options": [
+        { "id": "a", "text": "Graham Scan", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "What is the time complexity of Graham Scan?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(n log n)", "is_correct": true },
+        { "id": "c", "text": "O(n²)", "is_correct": false },
+        { "id": "d", "text": "O(log n)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which technique is used in line sweep algorithms?",
+      "options": [
+        { "id": "a", "text": "Event sorting", "is_correct": true },
+        { "id": "b", "text": "Backtracking", "is_correct": false },
+        { "id": "c", "text": "Memoization", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which algorithm finds maximum bipartite matching?",
+      "options": [
+        { "id": "a", "text": "Hopcroft–Karp", "is_correct": true },
+        { "id": "b", "text": "Dijkstra", "is_correct": false },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "What is the time complexity of Hopcroft–Karp?",
+      "options": [
+        { "id": "a", "text": "O(V³)", "is_correct": false },
+        { "id": "b", "text": "O(E√V)", "is_correct": true },
+        { "id": "c", "text": "O(E log V)", "is_correct": false },
+        { "id": "d", "text": "O(VE)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which algorithm finds minimum cut?",
+      "options": [
+        { "id": "a", "text": "Kruskal", "is_correct": false },
+        { "id": "b", "text": "Max-Flow Min-Cut Theorem", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which skill differentiates top DSA candidates?",
+      "options": [
+        { "id": "a", "text": "Syntax memorization", "is_correct": false },
+        { "id": "b", "text": "Pattern recognition & optimization", "is_correct": true },
+        { "id": "c", "text": "Using libraries", "is_correct": false },
+        { "id": "d", "text": "Writing long code", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "What is the ultimate goal of learning DSA?",
+      "options": [
+        { "id": "a", "text": "Passing exams only", "is_correct": false },
+        { "id": "b", "text": "Efficient problem solving", "is_correct": true },
+        { "id": "c", "text": "Writing complex code", "is_correct": false },
+        { "id": "d", "text": "Using frameworks", "is_correct": false }
+      ]
+    }
+  ]
+}

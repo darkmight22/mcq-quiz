@@ -1,0 +1,520 @@
+{
+  "quiz_id": "c_hard",
+  "language": "c",
+  "level": "hard",
+  "title": "C Programming Advanced - Hard",
+  "description": "Advanced pointers, memory model, preprocessor, bitwise ops, undefined behavior.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which of the following causes undefined behavior in C?",
+      "options": [
+        { "id": "a", "text": "Accessing array out of bounds", "is_correct": true },
+        { "id": "b", "text": "Using sizeof operator", "is_correct": false },
+        { "id": "c", "text": "Declaring const variable", "is_correct": false },
+        { "id": "d", "text": "Using printf()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "What does volatile keyword prevent?",
+      "options": [
+        { "id": "a", "text": "Memory allocation", "is_correct": false },
+        { "id": "b", "text": "Compiler optimization", "is_correct": true },
+        { "id": "c", "text": "Garbage collection", "is_correct": false },
+        { "id": "d", "text": "Thread creation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which operator is used for bitwise XOR?",
+      "options": [
+        { "id": "a", "text": "|", "is_correct": false },
+        { "id": "b", "text": "&", "is_correct": false },
+        { "id": "c", "text": "^", "is_correct": true },
+        { "id": "d", "text": "~", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which preprocessor directive stops compilation on condition?",
+      "options": [
+        { "id": "a", "text": "#ifdef", "is_correct": false },
+        { "id": "b", "text": "#ifndef", "is_correct": false },
+        { "id": "c", "text": "#error", "is_correct": true },
+        { "id": "d", "text": "#pragma", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which operator is evaluated first?",
+      "options": [
+        { "id": "a", "text": "=", "is_correct": false },
+        { "id": "b", "text": "?:", "is_correct": false },
+        { "id": "c", "text": "()", "is_correct": true },
+        { "id": "d", "text": "&&", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is the size of void pointer?",
+      "options": [
+        { "id": "a", "text": "0 bytes", "is_correct": false },
+        { "id": "b", "text": "1 byte", "is_correct": false },
+        { "id": "c", "text": "Depends on compiler", "is_correct": true },
+        { "id": "d", "text": "Same as int", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which function pointer syntax is correct?",
+      "options": [
+        { "id": "a", "text": "int *fp();", "is_correct": false },
+        { "id": "b", "text": "int (*fp)();", "is_correct": true },
+        { "id": "c", "text": "int fp*();", "is_correct": false },
+        { "id": "d", "text": "fp int*();", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which memory segment stores global variables?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Heap", "is_correct": false },
+        { "id": "c", "text": "Data segment", "is_correct": true },
+        { "id": "d", "text": "Register", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which function is NOT safe for string input?",
+      "options": [
+        { "id": "a", "text": "fgets()", "is_correct": false },
+        { "id": "b", "text": "scanf()", "is_correct": false },
+        { "id": "c", "text": "gets()", "is_correct": true },
+        { "id": "d", "text": "getline()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which operator is right associative?",
+      "options": [
+        { "id": "a", "text": "+", "is_correct": false },
+        { "id": "b", "text": "=", "is_correct": true },
+        { "id": "c", "text": "*", "is_correct": false },
+        { "id": "d", "text": "%", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which macro concatenates tokens?",
+      "options": [
+        { "id": "a", "text": "#", "is_correct": false },
+        { "id": "b", "text": "##", "is_correct": true },
+        { "id": "c", "text": "@@", "is_correct": false },
+        { "id": "d", "text": "$$", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which macro converts token to string?",
+      "options": [
+        { "id": "a", "text": "#", "is_correct": true },
+        { "id": "b", "text": "##", "is_correct": false },
+        { "id": "c", "text": "STR()", "is_correct": false },
+        { "id": "d", "text": "TOSTRING()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which keyword prevents variable modification?",
+      "options": [
+        { "id": "a", "text": "volatile", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "const", "is_correct": true },
+        { "id": "d", "text": "register", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which pointer arithmetic is valid?",
+      "options": [
+        { "id": "a", "text": "ptr + 1", "is_correct": true },
+        { "id": "b", "text": "ptr + ptr", "is_correct": false },
+        { "id": "c", "text": "ptr * 2", "is_correct": false },
+        { "id": "d", "text": "ptr / 2", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword allows function to be inlined?",
+      "options": [
+        { "id": "a", "text": "macro", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "inline", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which C standard introduced inline?",
+      "options": [
+        { "id": "a", "text": "C89", "is_correct": false },
+        { "id": "b", "text": "C99", "is_correct": true },
+        { "id": "c", "text": "C11", "is_correct": false },
+        { "id": "d", "text": "C17", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which type qualifier affects optimization?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "volatile", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "extern", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which function compares two memory blocks?",
+      "options": [
+        { "id": "a", "text": "strcmp()", "is_correct": false },
+        { "id": "b", "text": "memcmp()", "is_correct": true },
+        { "id": "c", "text": "memcpy()", "is_correct": false },
+        { "id": "d", "text": "strcpy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which function moves overlapping memory safely?",
+      "options": [
+        { "id": "a", "text": "memcpy()", "is_correct": false },
+        { "id": "b", "text": "memmove()", "is_correct": true },
+        { "id": "c", "text": "strcpy()", "is_correct": false },
+        { "id": "d", "text": "bcopy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which operator checks bitwise complement?",
+      "options": [
+        { "id": "a", "text": "!", "is_correct": false },
+        { "id": "b", "text": "~", "is_correct": true },
+        { "id": "c", "text": "^", "is_correct": false },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which storage class gives fastest access?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "extern", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which macro gives current function name?",
+      "options": [
+        { "id": "a", "text": "__FUNC__", "is_correct": false },
+        { "id": "b", "text": "__FUNCTION__", "is_correct": false },
+        { "id": "c", "text": "__func__", "is_correct": true },
+        { "id": "d", "text": "__name__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which C feature allows callback functions?",
+      "options": [
+        { "id": "a", "text": "Macros", "is_correct": false },
+        { "id": "b", "text": "Function pointers", "is_correct": true },
+        { "id": "c", "text": "Recursion", "is_correct": false },
+        { "id": "d", "text": "Inline functions", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which memory allocation happens at runtime?",
+      "options": [
+        { "id": "a", "text": "Static allocation", "is_correct": false },
+        { "id": "b", "text": "Dynamic allocation", "is_correct": true },
+        { "id": "c", "text": "Compile-time allocation", "is_correct": false },
+        { "id": "d", "text": "Register allocation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which function releases dynamically allocated memory?",
+      "options": [
+        { "id": "a", "text": "delete()", "is_correct": false },
+        { "id": "b", "text": "free()", "is_correct": true },
+        { "id": "c", "text": "dealloc()", "is_correct": false },
+        { "id": "d", "text": "clear()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which operator is used in ternary expression?",
+      "options": [
+        { "id": "a", "text": "?:", "is_correct": true },
+        { "id": "b", "text": "::", "is_correct": false },
+        { "id": "c", "text": "??", "is_correct": false },
+        { "id": "d", "text": "&&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which function terminates program immediately?",
+      "options": [
+        { "id": "a", "text": "exit()", "is_correct": false },
+        { "id": "b", "text": "return", "is_correct": false },
+        { "id": "c", "text": "abort()", "is_correct": true },
+        { "id": "d", "text": "stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which header file contains abort()?",
+      "options": [
+        { "id": "a", "text": "<stdio.h>", "is_correct": false },
+        { "id": "b", "text": "<signal.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<unistd.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which C feature supports generic programming?",
+      "options": [
+        { "id": "a", "text": "void pointers", "is_correct": true },
+        { "id": "b", "text": "structures", "is_correct": false },
+        { "id": "c", "text": "unions", "is_correct": false },
+        { "id": "d", "text": "macros only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which operator has lowest precedence?",
+      "options": [
+        { "id": "a", "text": "+", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which function sorts array using quicksort internally?",
+      "options": [
+        { "id": "a", "text": "sort()", "is_correct": false },
+        { "id": "b", "text": "qsort()", "is_correct": true },
+        { "id": "c", "text": "arraysort()", "is_correct": false },
+        { "id": "d", "text": "order()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which header file contains qsort()?",
+      "options": [
+        { "id": "a", "text": "<math.h>", "is_correct": false },
+        { "id": "b", "text": "<string.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<stdio.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which operator checks logical AND?",
+      "options": [
+        { "id": "a", "text": "&", "is_correct": false },
+        { "id": "b", "text": "&&", "is_correct": true },
+        { "id": "c", "text": "|", "is_correct": false },
+        { "id": "d", "text": "||", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which operator checks logical OR?",
+      "options": [
+        { "id": "a", "text": "||", "is_correct": true },
+        { "id": "b", "text": "|", "is_correct": false },
+        { "id": "c", "text": "&&", "is_correct": false },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which operator increments value?",
+      "options": [
+        { "id": "a", "text": "+=", "is_correct": false },
+        { "id": "b", "text": "++", "is_correct": true },
+        { "id": "c", "text": "--", "is_correct": false },
+        { "id": "d", "text": "+", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword creates type alias?",
+      "options": [
+        { "id": "a", "text": "define", "is_correct": false },
+        { "id": "b", "text": "typedef", "is_correct": true },
+        { "id": "c", "text": "alias", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which function converts string to integer?",
+      "options": [
+        { "id": "a", "text": "itoa()", "is_correct": false },
+        { "id": "b", "text": "atoi()", "is_correct": true },
+        { "id": "c", "text": "parse()", "is_correct": false },
+        { "id": "d", "text": "strint()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which header file contains atoi()?",
+      "options": [
+        { "id": "a", "text": "<string.h>", "is_correct": false },
+        { "id": "b", "text": "<math.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<stdio.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which operator returns address of variable?",
+      "options": [
+        { "id": "a", "text": "*", "is_correct": false },
+        { "id": "b", "text": "&", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": ".", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which operator dereferences pointer?",
+      "options": [
+        { "id": "a", "text": "&", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": ".", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which function flushes output buffer?",
+      "options": [
+        { "id": "a", "text": "clear()", "is_correct": false },
+        { "id": "b", "text": "fflush()", "is_correct": true },
+        { "id": "c", "text": "flush()", "is_correct": false },
+        { "id": "d", "text": "reset()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which file mode appends data?",
+      "options": [
+        { "id": "a", "text": "w", "is_correct": false },
+        { "id": "b", "text": "r+", "is_correct": false },
+        { "id": "c", "text": "a", "is_correct": true },
+        { "id": "d", "text": "rw", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which function reads formatted input from file?",
+      "options": [
+        { "id": "a", "text": "scanf()", "is_correct": false },
+        { "id": "b", "text": "fscanf()", "is_correct": true },
+        { "id": "c", "text": "fgets()", "is_correct": false },
+        { "id": "d", "text": "read()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which function writes formatted output to file?",
+      "options": [
+        { "id": "a", "text": "printf()", "is_correct": false },
+        { "id": "b", "text": "puts()", "is_correct": false },
+        { "id": "c", "text": "fprintf()", "is_correct": true },
+        { "id": "d", "text": "fputs()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword allows external linkage?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "extern", "is_correct": true },
+        { "id": "c", "text": "register", "is_correct": false },
+        { "id": "d", "text": "auto", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which operator is used in conditional compilation?",
+      "options": [
+        { "id": "a", "text": "?:", "is_correct": false },
+        { "id": "b", "text": "#if", "is_correct": true },
+        { "id": "c", "text": "&&", "is_correct": false },
+        { "id": "d", "text": "||", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which macro checks if macro is defined?",
+      "options": [
+        { "id": "a", "text": "#ifdef", "is_correct": true },
+        { "id": "b", "text": "#include", "is_correct": false },
+        { "id": "c", "text": "#define", "is_correct": false },
+        { "id": "d", "text": "#pragma", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword specifies no return value?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": false },
+        { "id": "b", "text": "none", "is_correct": false },
+        { "id": "c", "text": "void", "is_correct": true },
+        { "id": "d", "text": "empty", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which feature of C allows low-level memory access?",
+      "options": [
+        { "id": "a", "text": "Pointers", "is_correct": true },
+        { "id": "b", "text": "Structures", "is_correct": false },
+        { "id": "c", "text": "Unions", "is_correct": false },
+        { "id": "d", "text": "Enums", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which standard guarantees inline keyword?",
+      "options": [
+        { "id": "a", "text": "C89", "is_correct": false },
+        { "id": "b", "text": "C99 and later", "is_correct": true },
+        { "id": "c", "text": "ANSI only", "is_correct": false },
+        { "id": "d", "text": "C11 only", "is_correct": false }
+      ]
+    }
+  ]
+}

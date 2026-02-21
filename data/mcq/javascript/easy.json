@@ -1,0 +1,520 @@
+{
+  "quiz_id": "js_easy",
+  "language": "javascript",
+  "level": "easy",
+  "title": "JavaScript Basics - Easy",
+  "description": "Variables, data types, operators, and basic syntax.",
+  "duration_minutes": 15,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which keyword is used to declare a variable in JavaScript?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": true },
+        { "id": "b", "text": "int", "is_correct": false },
+        { "id": "c", "text": "string", "is_correct": false },
+        { "id": "d", "text": "define", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which symbol is used for single-line comments?",
+      "options": [
+        { "id": "a", "text": "<!-- -->", "is_correct": false },
+        { "id": "b", "text": "//", "is_correct": true },
+        { "id": "c", "text": "/* */", "is_correct": false },
+        { "id": "d", "text": "#", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which data type stores true or false?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "Boolean", "is_correct": true },
+        { "id": "c", "text": "Number", "is_correct": false },
+        { "id": "d", "text": "Object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which operator is used for assignment?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "===", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "!=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which keyword declares a constant?",
+      "options": [
+        { "id": "a", "text": "let", "is_correct": false },
+        { "id": "b", "text": "const", "is_correct": true },
+        { "id": "c", "text": "var", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which function displays message in browser?",
+      "options": [
+        { "id": "a", "text": "console.log()", "is_correct": false },
+        { "id": "b", "text": "alert()", "is_correct": true },
+        { "id": "c", "text": "prompt()", "is_correct": false },
+        { "id": "d", "text": "print()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which keyword is used for conditional statement?",
+      "options": [
+        { "id": "a", "text": "if", "is_correct": true },
+        { "id": "b", "text": "for", "is_correct": false },
+        { "id": "c", "text": "while", "is_correct": false },
+        { "id": "d", "text": "loop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which loop runs at least once?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "do...while", "is_correct": true },
+        { "id": "d", "text": "foreach", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which operator compares value and type?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "!=", "is_correct": false },
+        { "id": "c", "text": "===", "is_correct": true },
+        { "id": "d", "text": "=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which keyword exits a loop?",
+      "options": [
+        { "id": "a", "text": "stop", "is_correct": false },
+        { "id": "b", "text": "exit", "is_correct": false },
+        { "id": "c", "text": "break", "is_correct": true },
+        { "id": "d", "text": "return", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword skips one loop iteration?",
+      "options": [
+        { "id": "a", "text": "skip", "is_correct": false },
+        { "id": "b", "text": "continue", "is_correct": true },
+        { "id": "c", "text": "pass", "is_correct": false },
+        { "id": "d", "text": "next", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which function prints output to console?",
+      "options": [
+        { "id": "a", "text": "print()", "is_correct": false },
+        { "id": "b", "text": "log()", "is_correct": false },
+        { "id": "c", "text": "console.log()", "is_correct": true },
+        { "id": "d", "text": "output()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which data type stores multiple values?",
+      "options": [
+        { "id": "a", "text": "Number", "is_correct": false },
+        { "id": "b", "text": "Array", "is_correct": true },
+        { "id": "c", "text": "Boolean", "is_correct": false },
+        { "id": "d", "text": "String", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which symbol is used for array?",
+      "options": [
+        { "id": "a", "text": "{}", "is_correct": false },
+        { "id": "b", "text": "()", "is_correct": false },
+        { "id": "c", "text": "[]", "is_correct": true },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which object represents browser window?",
+      "options": [
+        { "id": "a", "text": "document", "is_correct": false },
+        { "id": "b", "text": "screen", "is_correct": false },
+        { "id": "c", "text": "window", "is_correct": true },
+        { "id": "d", "text": "navigator", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which method gets element by ID?",
+      "options": [
+        { "id": "a", "text": "getElement()", "is_correct": false },
+        { "id": "b", "text": "getElementById()", "is_correct": true },
+        { "id": "c", "text": "query()", "is_correct": false },
+        { "id": "d", "text": "selectId()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which keyword defines a function?",
+      "options": [
+        { "id": "a", "text": "method", "is_correct": false },
+        { "id": "b", "text": "function", "is_correct": true },
+        { "id": "c", "text": "def", "is_correct": false },
+        { "id": "d", "text": "fun", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which symbol is used for function parameters?",
+      "options": [
+        { "id": "a", "text": "{}", "is_correct": false },
+        { "id": "b", "text": "[]", "is_correct": false },
+        { "id": "c", "text": "()", "is_correct": true },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword returns value from function?",
+      "options": [
+        { "id": "a", "text": "send", "is_correct": false },
+        { "id": "b", "text": "break", "is_correct": false },
+        { "id": "c", "text": "return", "is_correct": true },
+        { "id": "d", "text": "output", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which event occurs on button click?",
+      "options": [
+        { "id": "a", "text": "onhover", "is_correct": false },
+        { "id": "b", "text": "onchange", "is_correct": false },
+        { "id": "c", "text": "onclick", "is_correct": true },
+        { "id": "d", "text": "onpress", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword checks multiple conditions?",
+      "options": [
+        { "id": "a", "text": "else if", "is_correct": true },
+        { "id": "b", "text": "switch", "is_correct": false },
+        { "id": "c", "text": "when", "is_correct": false },
+        { "id": "d", "text": "case", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which statement selects multiple cases?",
+      "options": [
+        { "id": "a", "text": "if", "is_correct": false },
+        { "id": "b", "text": "switch", "is_correct": true },
+        { "id": "c", "text": "select", "is_correct": false },
+        { "id": "d", "text": "case", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which method converts string to number?",
+      "options": [
+        { "id": "a", "text": "Number()", "is_correct": true },
+        { "id": "b", "text": "String()", "is_correct": false },
+        { "id": "c", "text": "toString()", "is_correct": false },
+        { "id": "d", "text": "parseText()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which operator joins strings?",
+      "options": [
+        { "id": "a", "text": "*", "is_correct": false },
+        { "id": "b", "text": "+", "is_correct": true },
+        { "id": "c", "text": "&", "is_correct": false },
+        { "id": "d", "text": ".", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which value represents no value?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": true },
+        { "id": "b", "text": "zero", "is_correct": false },
+        { "id": "c", "text": "false", "is_correct": false },
+        { "id": "d", "text": "empty", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which value means variable declared but not assigned?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": false },
+        { "id": "b", "text": "undefined", "is_correct": true },
+        { "id": "c", "text": "false", "is_correct": false },
+        { "id": "d", "text": "NaN", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword declares block-scoped variable?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": false },
+        { "id": "b", "text": "let", "is_correct": true },
+        { "id": "c", "text": "global", "is_correct": false },
+        { "id": "d", "text": "scope", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which method gets current date?",
+      "options": [
+        { "id": "a", "text": "Date()", "is_correct": true },
+        { "id": "b", "text": "now()", "is_correct": false },
+        { "id": "c", "text": "getDate()", "is_correct": false },
+        { "id": "d", "text": "today()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which function asks user input?",
+      "options": [
+        { "id": "a", "text": "alert()", "is_correct": false },
+        { "id": "b", "text": "confirm()", "is_correct": false },
+        { "id": "c", "text": "prompt()", "is_correct": true },
+        { "id": "d", "text": "input()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which operator checks NOT condition?",
+      "options": [
+        { "id": "a", "text": "&&", "is_correct": false },
+        { "id": "b", "text": "||", "is_correct": false },
+        { "id": "c", "text": "!", "is_correct": true },
+        { "id": "d", "text": "~", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which logical operator means AND?",
+      "options": [
+        { "id": "a", "text": "&", "is_correct": false },
+        { "id": "b", "text": "&&", "is_correct": true },
+        { "id": "c", "text": "and", "is_correct": false },
+        { "id": "d", "text": "+", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which logical operator means OR?",
+      "options": [
+        { "id": "a", "text": "||", "is_correct": true },
+        { "id": "b", "text": "&&", "is_correct": false },
+        { "id": "c", "text": "or", "is_correct": false },
+        { "id": "d", "text": "|=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which method adds element to array end?",
+      "options": [
+        { "id": "a", "text": "add()", "is_correct": false },
+        { "id": "b", "text": "push()", "is_correct": true },
+        { "id": "c", "text": "insert()", "is_correct": false },
+        { "id": "d", "text": "append()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which method removes last array element?",
+      "options": [
+        { "id": "a", "text": "shift()", "is_correct": false },
+        { "id": "b", "text": "remove()", "is_correct": false },
+        { "id": "c", "text": "pop()", "is_correct": true },
+        { "id": "d", "text": "delete()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword handles errors?",
+      "options": [
+        { "id": "a", "text": "catch", "is_correct": true },
+        { "id": "b", "text": "error", "is_correct": false },
+        { "id": "c", "text": "handle", "is_correct": false },
+        { "id": "d", "text": "exception", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which block always runs after try?",
+      "options": [
+        { "id": "a", "text": "catch", "is_correct": false },
+        { "id": "b", "text": "finally", "is_correct": true },
+        { "id": "c", "text": "throw", "is_correct": false },
+        { "id": "d", "text": "error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which keyword throws error?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "exception", "is_correct": false },
+        { "id": "d", "text": "stop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which type is NaN?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "Object", "is_correct": false },
+        { "id": "c", "text": "Number", "is_correct": true },
+        { "id": "d", "text": "Undefined", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which operator checks type?",
+      "options": [
+        { "id": "a", "text": "check", "is_correct": false },
+        { "id": "b", "text": "type()", "is_correct": false },
+        { "id": "c", "text": "typeof", "is_correct": true },
+        { "id": "d", "text": "instance", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which value represents not a number?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": false },
+        { "id": "b", "text": "undefined", "is_correct": false },
+        { "id": "c", "text": "NaN", "is_correct": true },
+        { "id": "d", "text": "false", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which method converts object to JSON?",
+      "options": [
+        { "id": "a", "text": "JSON.parse()", "is_correct": false },
+        { "id": "b", "text": "JSON.stringify()", "is_correct": true },
+        { "id": "c", "text": "toJSON()", "is_correct": false },
+        { "id": "d", "text": "stringify()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which method converts JSON to object?",
+      "options": [
+        { "id": "a", "text": "JSON.stringify()", "is_correct": false },
+        { "id": "b", "text": "JSON.convert()", "is_correct": false },
+        { "id": "c", "text": "JSON.parse()", "is_correct": true },
+        { "id": "d", "text": "parseJSON()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which object stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Object", "is_correct": true },
+        { "id": "c", "text": "Set", "is_correct": false },
+        { "id": "d", "text": "Map()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which symbol accesses object property?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": true },
+        { "id": "b", "text": ":", "is_correct": false },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": "#", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which loop iterates array elements?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "foreach", "is_correct": false },
+        { "id": "c", "text": "forEach()", "is_correct": true },
+        { "id": "d", "text": "loop()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword defines class?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "class", "is_correct": true },
+        { "id": "c", "text": "struct", "is_correct": false },
+        { "id": "d", "text": "prototype", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which keyword creates object from class?",
+      "options": [
+        { "id": "a", "text": "create", "is_correct": false },
+        { "id": "b", "text": "new", "is_correct": true },
+        { "id": "c", "text": "this", "is_correct": false },
+        { "id": "d", "text": "init", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword refers current object?",
+      "options": [
+        { "id": "a", "text": "self", "is_correct": false },
+        { "id": "b", "text": "that", "is_correct": false },
+        { "id": "c", "text": "this", "is_correct": true },
+        { "id": "d", "text": "current", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword imports module?",
+      "options": [
+        { "id": "a", "text": "include", "is_correct": false },
+        { "id": "b", "text": "require", "is_correct": false },
+        { "id": "c", "text": "import", "is_correct": true },
+        { "id": "d", "text": "use", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which keyword exports module?",
+      "options": [
+        { "id": "a", "text": "export", "is_correct": true },
+        { "id": "b", "text": "send", "is_correct": false },
+        { "id": "c", "text": "module", "is_correct": false },
+        { "id": "d", "text": "public", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "quiz_id": "csharp_hard",
+  "language": "csharp",
+  "level": "hard",
+  "title": "C# Advanced - Hard",
+  "description": "Advanced C# concepts: CLR internals, async/await, threading, memory, LINQ internals, design patterns.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which CLR component converts IL code to native code?",
+      "options": [
+        { "id": "a", "text": "Garbage Collector", "is_correct": false },
+        { "id": "b", "text": "JIT Compiler", "is_correct": true },
+        { "id": "c", "text": "CTS", "is_correct": false },
+        { "id": "d", "text": "GAC", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword ensures method cannot be overridden further?",
+      "options": [
+        { "id": "a", "text": "sealed", "is_correct": true },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "abstract", "is_correct": false },
+        { "id": "d", "text": "readonly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which collection is thread-safe by default?",
+      "options": [
+        { "id": "a", "text": "List<T>", "is_correct": false },
+        { "id": "b", "text": "Dictionary<T,K>", "is_correct": false },
+        { "id": "c", "text": "ConcurrentDictionary<T,K>", "is_correct": true },
+        { "id": "d", "text": "Queue<T>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which keyword forces immediate execution of LINQ query?",
+      "options": [
+        { "id": "a", "text": "Select()", "is_correct": false },
+        { "id": "b", "text": "Where()", "is_correct": false },
+        { "id": "c", "text": "ToList()", "is_correct": true },
+        { "id": "d", "text": "GroupBy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which async method return type is used when no value is returned?",
+      "options": [
+        { "id": "a", "text": "Task<T>", "is_correct": false },
+        { "id": "b", "text": "void", "is_correct": false },
+        { "id": "c", "text": "Task", "is_correct": true },
+        { "id": "d", "text": "ValueTask<T>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which keyword prevents race condition in multithreading?",
+      "options": [
+        { "id": "a", "text": "async", "is_correct": false },
+        { "id": "b", "text": "await", "is_correct": false },
+        { "id": "c", "text": "lock", "is_correct": true },
+        { "id": "d", "text": "yield", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which keyword allows pointer operations in C#?",
+      "options": [
+        { "id": "a", "text": "unsafe", "is_correct": true },
+        { "id": "b", "text": "fixed", "is_correct": false },
+        { "id": "c", "text": "stackalloc", "is_correct": false },
+        { "id": "d", "text": "volatile", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which keyword pins object in memory?",
+      "options": [
+        { "id": "a", "text": "lock", "is_correct": false },
+        { "id": "b", "text": "fixed", "is_correct": true },
+        { "id": "c", "text": "unsafe", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which type avoids heap allocation in async calls?",
+      "options": [
+        { "id": "a", "text": "Task", "is_correct": false },
+        { "id": "b", "text": "Thread", "is_correct": false },
+        { "id": "c", "text": "ValueTask", "is_correct": true },
+        { "id": "d", "text": "Action", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which feature allows lazy object initialization?",
+      "options": [
+        { "id": "a", "text": "Singleton", "is_correct": false },
+        { "id": "b", "text": "Lazy<T>", "is_correct": true },
+        { "id": "c", "text": "Static constructor", "is_correct": false },
+        { "id": "d", "text": "Factory", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which design pattern ensures single instance?",
+      "options": [
+        { "id": "a", "text": "Factory", "is_correct": false },
+        { "id": "b", "text": "Adapter", "is_correct": false },
+        { "id": "c", "text": "Singleton", "is_correct": true },
+        { "id": "d", "text": "Prototype", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which interface supports foreach iteration?",
+      "options": [
+        { "id": "a", "text": "ICloneable", "is_correct": false },
+        { "id": "b", "text": "IEnumerator", "is_correct": false },
+        { "id": "c", "text": "IEnumerable", "is_correct": true },
+        { "id": "d", "text": "IDisposable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which LINQ method throws exception if more than one element exists?",
+      "options": [
+        { "id": "a", "text": "First()", "is_correct": false },
+        { "id": "b", "text": "Single()", "is_correct": true },
+        { "id": "c", "text": "Any()", "is_correct": false },
+        { "id": "d", "text": "Last()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which keyword avoids deadlocks in async code?",
+      "options": [
+        { "id": "a", "text": "await", "is_correct": true },
+        { "id": "b", "text": "lock", "is_correct": false },
+        { "id": "c", "text": "async", "is_correct": false },
+        { "id": "d", "text": "yield", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which method releases unmanaged resources deterministically?",
+      "options": [
+        { "id": "a", "text": "Finalize()", "is_correct": false },
+        { "id": "b", "text": "Dispose()", "is_correct": true },
+        { "id": "c", "text": "GC.Collect()", "is_correct": false },
+        { "id": "d", "text": "Destructor", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which GC generation collects long-lived objects?",
+      "options": [
+        { "id": "a", "text": "Generation 0", "is_correct": false },
+        { "id": "b", "text": "Generation 1", "is_correct": false },
+        { "id": "c", "text": "Generation 2", "is_correct": true },
+        { "id": "d", "text": "LOH only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which keyword ensures visibility across threads?",
+      "options": [
+        { "id": "a", "text": "readonly", "is_correct": false },
+        { "id": "b", "text": "volatile", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which feature allows deferred execution?",
+      "options": [
+        { "id": "a", "text": "Delegates", "is_correct": false },
+        { "id": "b", "text": "Events", "is_correct": false },
+        { "id": "c", "text": "LINQ", "is_correct": true },
+        { "id": "d", "text": "Reflection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword allows multiple threads to read but one to write?",
+      "options": [
+        { "id": "a", "text": "lock", "is_correct": false },
+        { "id": "b", "text": "Monitor", "is_correct": false },
+        { "id": "c", "text": "ReaderWriterLockSlim", "is_correct": true },
+        { "id": "d", "text": "Mutex", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which class provides mutual exclusion across processes?",
+      "options": [
+        { "id": "a", "text": "SemaphoreSlim", "is_correct": false },
+        { "id": "b", "text": "Monitor", "is_correct": false },
+        { "id": "c", "text": "Mutex", "is_correct": true },
+        { "id": "d", "text": "SpinLock", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which C# feature enables pattern matching?",
+      "options": [
+        { "id": "a", "text": "switch expressions", "is_correct": true },
+        { "id": "b", "text": "delegates", "is_correct": false },
+        { "id": "c", "text": "reflection", "is_correct": false },
+        { "id": "d", "text": "attributes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which attribute marks method obsolete?",
+      "options": [
+        { "id": "a", "text": "[Deprecated]", "is_correct": false },
+        { "id": "b", "text": "[Obsolete]", "is_correct": true },
+        { "id": "c", "text": "[Legacy]", "is_correct": false },
+        { "id": "d", "text": "[Old]", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which keyword allows late binding?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": false },
+        { "id": "b", "text": "dynamic", "is_correct": true },
+        { "id": "c", "text": "object", "is_correct": false },
+        { "id": "d", "text": "ref", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which feature avoids boxing/unboxing?",
+      "options": [
+        { "id": "a", "text": "Structs", "is_correct": false },
+        { "id": "b", "text": "Interfaces", "is_correct": false },
+        { "id": "c", "text": "Generics", "is_correct": true },
+        { "id": "d", "text": "Reflection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword enables stack memory allocation?",
+      "options": [
+        { "id": "a", "text": "unsafe", "is_correct": false },
+        { "id": "b", "text": "stackalloc", "is_correct": true },
+        { "id": "c", "text": "fixed", "is_correct": false },
+        { "id": "d", "text": "alloc", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which method forces garbage collection?",
+      "options": [
+        { "id": "a", "text": "GC.Wait()", "is_correct": false },
+        { "id": "b", "text": "GC.Collect()", "is_correct": true },
+        { "id": "c", "text": "Dispose()", "is_correct": false },
+        { "id": "d", "text": "Finalize()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which pattern decouples abstraction from implementation?",
+      "options": [
+        { "id": "a", "text": "Adapter", "is_correct": false },
+        { "id": "b", "text": "Bridge", "is_correct": true },
+        { "id": "c", "text": "Facade", "is_correct": false },
+        { "id": "d", "text": "Decorator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which pattern adds behavior dynamically?",
+      "options": [
+        { "id": "a", "text": "Decorator", "is_correct": true },
+        { "id": "b", "text": "Singleton", "is_correct": false },
+        { "id": "c", "text": "Factory", "is_correct": false },
+        { "id": "d", "text": "Observer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which keyword ensures thread-local storage?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "ThreadStatic", "is_correct": true },
+        { "id": "c", "text": "volatile", "is_correct": false },
+        { "id": "d", "text": "lock", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which collection preserves insertion order?",
+      "options": [
+        { "id": "a", "text": "Dictionary", "is_correct": false },
+        { "id": "b", "text": "SortedDictionary", "is_correct": false },
+        { "id": "c", "text": "LinkedList", "is_correct": false },
+        { "id": "d", "text": "List", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which LINQ provider translates queries to SQL?",
+      "options": [
+        { "id": "a", "text": "LINQ to Objects", "is_correct": false },
+        { "id": "b", "text": "LINQ to XML", "is_correct": false },
+        { "id": "c", "text": "Entity Framework", "is_correct": true },
+        { "id": "d", "text": "Parallel LINQ", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which feature supports parallel LINQ?",
+      "options": [
+        { "id": "a", "text": "PLINQ", "is_correct": true },
+        { "id": "b", "text": "LINQPad", "is_correct": false },
+        { "id": "c", "text": "TPL", "is_correct": false },
+        { "id": "d", "text": "Async LINQ", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which keyword marks code as partially defined?",
+      "options": [
+        { "id": "a", "text": "sealed", "is_correct": false },
+        { "id": "b", "text": "partial", "is_correct": true },
+        { "id": "c", "text": "abstract", "is_correct": false },
+        { "id": "d", "text": "virtual", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which feature supports dependency injection?",
+      "options": [
+        { "id": "a", "text": "Interfaces", "is_correct": true },
+        { "id": "b", "text": "Structs", "is_correct": false },
+        { "id": "c", "text": "Enums", "is_correct": false },
+        { "id": "d", "text": "Delegates", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword is used to rethrow preserving stack trace?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": true },
+        { "id": "b", "text": "throw ex", "is_correct": false },
+        { "id": "c", "text": "rethrow", "is_correct": false },
+        { "id": "d", "text": "exception", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which feature enables immutable data?",
+      "options": [
+        { "id": "a", "text": "records", "is_correct": true },
+        { "id": "b", "text": "classes", "is_correct": false },
+        { "id": "c", "text": "structs", "is_correct": false },
+        { "id": "d", "text": "interfaces", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which keyword enables init-only setters?",
+      "options": [
+        { "id": "a", "text": "readonly", "is_correct": false },
+        { "id": "b", "text": "init", "is_correct": true },
+        { "id": "c", "text": "set", "is_correct": false },
+        { "id": "d", "text": "const", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which feature allows expression-bodied members?",
+      "options": [
+        { "id": "a", "text": "Lambda expressions", "is_correct": true },
+        { "id": "b", "text": "Delegates", "is_correct": false },
+        { "id": "c", "text": "Events", "is_correct": false },
+        { "id": "d", "text": "Attributes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which keyword is used for range slicing?",
+      "options": [
+        { "id": "a", "text": "..", "is_correct": true },
+        { "id": "b", "text": ":", "is_correct": false },
+        { "id": "c", "text": "=>", "is_correct": false },
+        { "id": "d", "text": "::", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which operator suppresses null warnings?",
+      "options": [
+        { "id": "a", "text": "??", "is_correct": false },
+        { "id": "b", "text": "!.", "is_correct": false },
+        { "id": "c", "text": "!", "is_correct": true },
+        { "id": "d", "text": "?.", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which keyword allows nullable reference types?",
+      "options": [
+        { "id": "a", "text": "nullable", "is_correct": false },
+        { "id": "b", "text": "?", "is_correct": true },
+        { "id": "c", "text": "null", "is_correct": false },
+        { "id": "d", "text": "optional", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which pattern notifies multiple subscribers?",
+      "options": [
+        { "id": "a", "text": "Observer", "is_correct": true },
+        { "id": "b", "text": "Mediator", "is_correct": false },
+        { "id": "c", "text": "Command", "is_correct": false },
+        { "id": "d", "text": "Builder", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which feature enables cross-cutting concerns?",
+      "options": [
+        { "id": "a", "text": "AOP", "is_correct": true },
+        { "id": "b", "text": "OOP", "is_correct": false },
+        { "id": "c", "text": "SOLID", "is_correct": false },
+        { "id": "d", "text": "DRY", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which principle states 'depend on abstractions'?",
+      "options": [
+        { "id": "a", "text": "SRP", "is_correct": false },
+        { "id": "b", "text": "OCP", "is_correct": false },
+        { "id": "c", "text": "DIP", "is_correct": true },
+        { "id": "d", "text": "LSP", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which SOLID principle avoids fat interfaces?",
+      "options": [
+        { "id": "a", "text": "SRP", "is_correct": false },
+        { "id": "b", "text": "ISP", "is_correct": true },
+        { "id": "c", "text": "OCP", "is_correct": false },
+        { "id": "d", "text": "DIP", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword enforces immutability of reference?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "readonly", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which feature improves startup performance?",
+      "options": [
+        { "id": "a", "text": "JIT", "is_correct": false },
+        { "id": "b", "text": "AOT", "is_correct": true },
+        { "id": "c", "text": "Reflection", "is_correct": false },
+        { "id": "d", "text": "Dynamic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which method yields elements one by one?",
+      "options": [
+        { "id": "a", "text": "return", "is_correct": false },
+        { "id": "b", "text": "yield return", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "break", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword defines readonly struct?",
+      "options": [
+        { "id": "a", "text": "immutable", "is_correct": false },
+        { "id": "b", "text": "readonly", "is_correct": true },
+        { "id": "c", "text": "sealed", "is_correct": false },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which feature ensures compile-time pattern checking?",
+      "options": [
+        { "id": "a", "text": "switch expressions", "is_correct": true },
+        { "id": "b", "text": "dynamic", "is_correct": false },
+        { "id": "c", "text": "reflection", "is_correct": false },
+        { "id": "d", "text": "delegates", "is_correct": false }
+      ]
+    }
+  ]
+}

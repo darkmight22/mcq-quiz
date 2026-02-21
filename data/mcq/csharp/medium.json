@@ -1,0 +1,520 @@
+{
+  "quiz_id": "csharp_medium",
+  "language": "csharp",
+  "level": "medium",
+  "title": "C# Intermediate - Medium",
+  "description": "OOP concepts, collections, LINQ, exceptions, delegates, async programming.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which concept combines data and methods into a single unit?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Encapsulation", "is_correct": true },
+        { "id": "c", "text": "Polymorphism", "is_correct": false },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword allows a method to be overridden in derived class?",
+      "options": [
+        { "id": "a", "text": "override", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": false },
+        { "id": "c", "text": "virtual", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which keyword is used to override a virtual method?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "override", "is_correct": true },
+        { "id": "c", "text": "new", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which keyword prevents a class from being inherited?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": true },
+        { "id": "c", "text": "abstract", "is_correct": false },
+        { "id": "d", "text": "readonly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which keyword is used to create an abstract method?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": false },
+        { "id": "c", "text": "abstract", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which collection stores elements in key-value pairs?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Dictionary", "is_correct": true },
+        { "id": "d", "text": "Stack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which collection does not allow duplicate values?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "ArrayList", "is_correct": false },
+        { "id": "c", "text": "Set", "is_correct": true },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which collection is best for FIFO operations?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": true },
+        { "id": "c", "text": "List", "is_correct": false },
+        { "id": "d", "text": "Dictionary", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which collection follows LIFO principle?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "List", "is_correct": false },
+        { "id": "c", "text": "Stack", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which interface is implemented by all collections?",
+      "options": [
+        { "id": "a", "text": "IList", "is_correct": false },
+        { "id": "b", "text": "ICollection", "is_correct": true },
+        { "id": "c", "text": "IDictionary", "is_correct": false },
+        { "id": "d", "text": "IQueryable", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword is used to handle exceptions?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "catch", "is_correct": false },
+        { "id": "d", "text": "try", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which block always executes whether exception occurs or not?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "throw", "is_correct": false },
+        { "id": "d", "text": "finally", "is_correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which exception is unchecked in C#?",
+      "options": [
+        { "id": "a", "text": "IOException", "is_correct": false },
+        { "id": "b", "text": "SqlException", "is_correct": false },
+        { "id": "c", "text": "NullReferenceException", "is_correct": true },
+        { "id": "d", "text": "FileNotFoundException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which keyword rethrows an exception?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": true },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "finally", "is_correct": false },
+        { "id": "d", "text": "error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword defines custom exception class?",
+      "options": [
+        { "id": "a", "text": "sealed", "is_correct": false },
+        { "id": "b", "text": "class", "is_correct": true },
+        { "id": "c", "text": "exception", "is_correct": false },
+        { "id": "d", "text": "struct", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which feature allows querying collections easily?",
+      "options": [
+        { "id": "a", "text": "Delegates", "is_correct": false },
+        { "id": "b", "text": "LINQ", "is_correct": true },
+        { "id": "c", "text": "Generics", "is_correct": false },
+        { "id": "d", "text": "Reflection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which LINQ method filters data?",
+      "options": [
+        { "id": "a", "text": "Select()", "is_correct": false },
+        { "id": "b", "text": "OrderBy()", "is_correct": false },
+        { "id": "c", "text": "Where()", "is_correct": true },
+        { "id": "d", "text": "GroupBy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which LINQ method transforms data?",
+      "options": [
+        { "id": "a", "text": "Where()", "is_correct": false },
+        { "id": "b", "text": "Select()", "is_correct": true },
+        { "id": "c", "text": "Any()", "is_correct": false },
+        { "id": "d", "text": "All()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which LINQ method checks existence of elements?",
+      "options": [
+        { "id": "a", "text": "Any()", "is_correct": true },
+        { "id": "b", "text": "Where()", "is_correct": false },
+        { "id": "c", "text": "Select()", "is_correct": false },
+        { "id": "d", "text": "First()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which LINQ method returns first matching element?",
+      "options": [
+        { "id": "a", "text": "Single()", "is_correct": false },
+        { "id": "b", "text": "Last()", "is_correct": false },
+        { "id": "c", "text": "First()", "is_correct": true },
+        { "id": "d", "text": "Any()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword defines a delegate?",
+      "options": [
+        { "id": "a", "text": "event", "is_correct": false },
+        { "id": "b", "text": "delegate", "is_correct": true },
+        { "id": "c", "text": "func", "is_correct": false },
+        { "id": "d", "text": "action", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which delegate returns no value?",
+      "options": [
+        { "id": "a", "text": "Func", "is_correct": false },
+        { "id": "b", "text": "Predicate", "is_correct": false },
+        { "id": "c", "text": "Action", "is_correct": true },
+        { "id": "d", "text": "EventHandler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which delegate always returns bool?",
+      "options": [
+        { "id": "a", "text": "Func", "is_correct": false },
+        { "id": "b", "text": "Action", "is_correct": false },
+        { "id": "c", "text": "Predicate", "is_correct": true },
+        { "id": "d", "text": "EventHandler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which feature allows passing method as parameter?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Delegates", "is_correct": true },
+        { "id": "c", "text": "Interfaces", "is_correct": false },
+        { "id": "d", "text": "Structs", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword is used to declare an event?",
+      "options": [
+        { "id": "a", "text": "delegate", "is_correct": false },
+        { "id": "b", "text": "action", "is_correct": false },
+        { "id": "c", "text": "event", "is_correct": true },
+        { "id": "d", "text": "func", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword makes method asynchronous?",
+      "options": [
+        { "id": "a", "text": "thread", "is_correct": false },
+        { "id": "b", "text": "await", "is_correct": false },
+        { "id": "c", "text": "async", "is_correct": true },
+        { "id": "d", "text": "task", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword waits for async task completion?",
+      "options": [
+        { "id": "a", "text": "wait", "is_correct": false },
+        { "id": "b", "text": "join", "is_correct": false },
+        { "id": "c", "text": "await", "is_correct": true },
+        { "id": "d", "text": "sleep", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which type represents asynchronous operation?",
+      "options": [
+        { "id": "a", "text": "Thread", "is_correct": false },
+        { "id": "b", "text": "Task", "is_correct": true },
+        { "id": "c", "text": "Process", "is_correct": false },
+        { "id": "d", "text": "Timer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which keyword enables type inference?",
+      "options": [
+        { "id": "a", "text": "dynamic", "is_correct": false },
+        { "id": "b", "text": "var", "is_correct": true },
+        { "id": "c", "text": "object", "is_correct": false },
+        { "id": "d", "text": "auto", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which keyword resolves method at runtime?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": false },
+        { "id": "c", "text": "dynamic", "is_correct": true },
+        { "id": "d", "text": "var", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which feature ensures type safety at compile time?",
+      "options": [
+        { "id": "a", "text": "Reflection", "is_correct": false },
+        { "id": "b", "text": "Generics", "is_correct": true },
+        { "id": "c", "text": "Dynamic", "is_correct": false },
+        { "id": "d", "text": "Casting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which generic collection is fastest for index access?",
+      "options": [
+        { "id": "a", "text": "LinkedList<T>", "is_correct": false },
+        { "id": "b", "text": "Dictionary<T>", "is_correct": false },
+        { "id": "c", "text": "List<T>", "is_correct": true },
+        { "id": "d", "text": "Queue<T>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which keyword is used to free unmanaged resources?",
+      "options": [
+        { "id": "a", "text": "delete", "is_correct": false },
+        { "id": "b", "text": "dispose", "is_correct": false },
+        { "id": "c", "text": "using", "is_correct": true },
+        { "id": "d", "text": "finalize", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which interface supports resource cleanup?",
+      "options": [
+        { "id": "a", "text": "ICloneable", "is_correct": false },
+        { "id": "b", "text": "IDisposable", "is_correct": true },
+        { "id": "c", "text": "IEnumerable", "is_correct": false },
+        { "id": "d", "text": "IComparable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword is used to lock critical section?",
+      "options": [
+        { "id": "a", "text": "mutex", "is_correct": false },
+        { "id": "b", "text": "lock", "is_correct": true },
+        { "id": "c", "text": "sync", "is_correct": false },
+        { "id": "d", "text": "thread", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword creates anonymous object?",
+      "options": [
+        { "id": "a", "text": "new", "is_correct": true },
+        { "id": "b", "text": "var", "is_correct": false },
+        { "id": "c", "text": "object", "is_correct": false },
+        { "id": "d", "text": "dynamic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which feature allows method chaining?",
+      "options": [
+        { "id": "a", "text": "Delegates", "is_correct": false },
+        { "id": "b", "text": "Fluent interface", "is_correct": true },
+        { "id": "c", "text": "Inheritance", "is_correct": false },
+        { "id": "d", "text": "Reflection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which keyword checks type compatibility?",
+      "options": [
+        { "id": "a", "text": "typeof", "is_correct": false },
+        { "id": "b", "text": "is", "is_correct": true },
+        { "id": "c", "text": "as", "is_correct": false },
+        { "id": "d", "text": "check", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which keyword performs safe casting?",
+      "options": [
+        { "id": "a", "text": "is", "is_correct": false },
+        { "id": "b", "text": "cast", "is_correct": false },
+        { "id": "c", "text": "as", "is_correct": true },
+        { "id": "d", "text": "convert", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which feature supports deferred execution?",
+      "options": [
+        { "id": "a", "text": "LINQ", "is_correct": true },
+        { "id": "b", "text": "Reflection", "is_correct": false },
+        { "id": "c", "text": "Delegates", "is_correct": false },
+        { "id": "d", "text": "Events", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which LINQ method sorts data?",
+      "options": [
+        { "id": "a", "text": "Where()", "is_correct": false },
+        { "id": "b", "text": "Select()", "is_correct": false },
+        { "id": "c", "text": "OrderBy()", "is_correct": true },
+        { "id": "d", "text": "GroupBy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which LINQ method groups data?",
+      "options": [
+        { "id": "a", "text": "OrderBy()", "is_correct": false },
+        { "id": "b", "text": "GroupBy()", "is_correct": true },
+        { "id": "c", "text": "Select()", "is_correct": false },
+        { "id": "d", "text": "Any()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which LINQ method returns single element?",
+      "options": [
+        { "id": "a", "text": "First()", "is_correct": false },
+        { "id": "b", "text": "Single()", "is_correct": true },
+        { "id": "c", "text": "Any()", "is_correct": false },
+        { "id": "d", "text": "Count()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which feature improves performance by avoiding boxing?",
+      "options": [
+        { "id": "a", "text": "Delegates", "is_correct": false },
+        { "id": "b", "text": "Generics", "is_correct": true },
+        { "id": "c", "text": "Reflection", "is_correct": false },
+        { "id": "d", "text": "Dynamic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword marks code as unsafe?",
+      "options": [
+        { "id": "a", "text": "fixed", "is_correct": false },
+        { "id": "b", "text": "unsafe", "is_correct": true },
+        { "id": "c", "text": "secure", "is_correct": false },
+        { "id": "d", "text": "pointer", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which feature allows pointer usage?",
+      "options": [
+        { "id": "a", "text": "Unsafe code", "is_correct": true },
+        { "id": "b", "text": "Managed code", "is_correct": false },
+        { "id": "c", "text": "LINQ", "is_correct": false },
+        { "id": "d", "text": "CLR", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which keyword defines extension method?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": true },
+        { "id": "b", "text": "virtual", "is_correct": false },
+        { "id": "c", "text": "partial", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword allows splitting class into multiple files?",
+      "options": [
+        { "id": "a", "text": "partial", "is_correct": true },
+        { "id": "b", "text": "sealed", "is_correct": false },
+        { "id": "c", "text": "abstract", "is_correct": false },
+        { "id": "d", "text": "virtual", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which feature supports versioning of assemblies?",
+      "options": [
+        { "id": "a", "text": "CLR", "is_correct": false },
+        { "id": "b", "text": "GAC", "is_correct": true },
+        { "id": "c", "text": "JIT", "is_correct": false },
+        { "id": "d", "text": "CTS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which C# feature manages memory automatically?",
+      "options": [
+        { "id": "a", "text": "Pointers", "is_correct": false },
+        { "id": "b", "text": "Garbage Collector", "is_correct": true },
+        { "id": "c", "text": "Manual delete", "is_correct": false },
+        { "id": "d", "text": "Dispose only", "is_correct": false }
+      ]
+    }
+  ]
+}

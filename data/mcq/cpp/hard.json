@@ -1,0 +1,520 @@
+{
+  "quiz_id": "cpp_hard",
+  "language": "cpp",
+  "level": "hard",
+  "title": "C++ Advanced - Hard",
+  "description": "Advanced OOP, memory management, templates, STL internals, C++11/14/17 features.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which concept ensures resource release automatically when object goes out of scope?",
+      "options": [
+        { "id": "a", "text": "Garbage Collection", "is_correct": false },
+        { "id": "b", "text": "RAII", "is_correct": true },
+        { "id": "c", "text": "Inheritance", "is_correct": false },
+        { "id": "d", "text": "Polymorphism", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword prevents a function from being overridden?",
+      "options": [
+        { "id": "a", "text": "override", "is_correct": false },
+        { "id": "b", "text": "virtual", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which cast is safest for downcasting polymorphic types?",
+      "options": [
+        { "id": "a", "text": "static_cast", "is_correct": false },
+        { "id": "b", "text": "reinterpret_cast", "is_correct": false },
+        { "id": "c", "text": "const_cast", "is_correct": false },
+        { "id": "d", "text": "dynamic_cast", "is_correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which STL container guarantees O(1) average lookup?",
+      "options": [
+        { "id": "a", "text": "map", "is_correct": false },
+        { "id": "b", "text": "set", "is_correct": false },
+        { "id": "c", "text": "unordered_map", "is_correct": true },
+        { "id": "d", "text": "vector", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which C++ feature enables lazy evaluation in expressions?",
+      "options": [
+        { "id": "a", "text": "Short-circuit operators", "is_correct": true },
+        { "id": "b", "text": "Templates", "is_correct": false },
+        { "id": "c", "text": "Move semantics", "is_correct": false },
+        { "id": "d", "text": "Inlining", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which constructor is invoked when returning object by value?",
+      "options": [
+        { "id": "a", "text": "Copy constructor", "is_correct": false },
+        { "id": "b", "text": "Move constructor", "is_correct": true },
+        { "id": "c", "text": "Default constructor", "is_correct": false },
+        { "id": "d", "text": "Destructor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which C++11 feature avoids unnecessary deep copies?",
+      "options": [
+        { "id": "a", "text": "References", "is_correct": false },
+        { "id": "b", "text": "Smart pointers", "is_correct": false },
+        { "id": "c", "text": "Move semantics", "is_correct": true },
+        { "id": "d", "text": "Inline functions", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which smart pointer allows shared ownership?",
+      "options": [
+        { "id": "a", "text": "unique_ptr", "is_correct": false },
+        { "id": "b", "text": "weak_ptr", "is_correct": false },
+        { "id": "c", "text": "shared_ptr", "is_correct": true },
+        { "id": "d", "text": "auto_ptr", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which smart pointer breaks cyclic dependency?",
+      "options": [
+        { "id": "a", "text": "shared_ptr", "is_correct": false },
+        { "id": "b", "text": "weak_ptr", "is_correct": true },
+        { "id": "c", "text": "unique_ptr", "is_correct": false },
+        { "id": "d", "text": "scoped_ptr", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which operator overload cannot be global?",
+      "options": [
+        { "id": "a", "text": "operator+", "is_correct": false },
+        { "id": "b", "text": "operator=", "is_correct": true },
+        { "id": "c", "text": "operator<<", "is_correct": false },
+        { "id": "d", "text": "operator==", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which STL algorithm uses IntroSort internally?",
+      "options": [
+        { "id": "a", "text": "stable_sort", "is_correct": false },
+        { "id": "b", "text": "partial_sort", "is_correct": false },
+        { "id": "c", "text": "sort", "is_correct": true },
+        { "id": "d", "text": "nth_element", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which container invalidates iterators on reallocation?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "deque", "is_correct": false },
+        { "id": "c", "text": "vector", "is_correct": true },
+        { "id": "d", "text": "set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which keyword ensures compile-time evaluation?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "constexpr", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "inline", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which C++ feature replaces macros safely?",
+      "options": [
+        { "id": "a", "text": "constexpr", "is_correct": false },
+        { "id": "b", "text": "inline functions", "is_correct": false },
+        { "id": "c", "text": "templates", "is_correct": true },
+        { "id": "d", "text": "typedef", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which cast removes constness?",
+      "options": [
+        { "id": "a", "text": "static_cast", "is_correct": false },
+        { "id": "b", "text": "dynamic_cast", "is_correct": false },
+        { "id": "c", "text": "reinterpret_cast", "is_correct": false },
+        { "id": "d", "text": "const_cast", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which feature prevents object copying?",
+      "options": [
+        { "id": "a", "text": "Deleting copy constructor", "is_correct": true },
+        { "id": "b", "text": "Virtual destructor", "is_correct": false },
+        { "id": "c", "text": "Move constructor", "is_correct": false },
+        { "id": "d", "text": "Inline destructor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which keyword deletes special member function?",
+      "options": [
+        { "id": "a", "text": "remove", "is_correct": false },
+        { "id": "b", "text": "delete", "is_correct": true },
+        { "id": "c", "text": "erase", "is_correct": false },
+        { "id": "d", "text": "disable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which destructor should be virtual?",
+      "options": [
+        { "id": "a", "text": "All destructors", "is_correct": false },
+        { "id": "b", "text": "Base class destructor", "is_correct": true },
+        { "id": "c", "text": "Derived class destructor", "is_correct": false },
+        { "id": "d", "text": "Final class destructor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which function ensures thread-safe initialization of static variables?",
+      "options": [
+        { "id": "a", "text": "mutex", "is_correct": false },
+        { "id": "b", "text": "call_once", "is_correct": true },
+        { "id": "c", "text": "lock_guard", "is_correct": false },
+        { "id": "d", "text": "atomic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which keyword supports multithreading memory order?",
+      "options": [
+        { "id": "a", "text": "thread", "is_correct": false },
+        { "id": "b", "text": "mutex", "is_correct": false },
+        { "id": "c", "text": "atomic", "is_correct": true },
+        { "id": "d", "text": "volatile", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which container preserves insertion order?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": true },
+        { "id": "b", "text": "set", "is_correct": false },
+        { "id": "c", "text": "map", "is_correct": false },
+        { "id": "d", "text": "priority_queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which STL container provides bidirectional iterators?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "deque", "is_correct": false },
+        { "id": "c", "text": "list", "is_correct": true },
+        { "id": "d", "text": "array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which algorithm rearranges elements without full sorting?",
+      "options": [
+        { "id": "a", "text": "sort", "is_correct": false },
+        { "id": "b", "text": "stable_sort", "is_correct": false },
+        { "id": "c", "text": "nth_element", "is_correct": true },
+        { "id": "d", "text": "partition", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which feature enables deferred execution?",
+      "options": [
+        { "id": "a", "text": "Futures", "is_correct": true },
+        { "id": "b", "text": "Threads", "is_correct": false },
+        { "id": "c", "text": "Mutex", "is_correct": false },
+        { "id": "d", "text": "Promises", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which C++ feature introduced parallel algorithms?",
+      "options": [
+        { "id": "a", "text": "C++11", "is_correct": false },
+        { "id": "b", "text": "C++14", "is_correct": false },
+        { "id": "c", "text": "C++17", "is_correct": true },
+        { "id": "d", "text": "C++20", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword enforces no exception guarantee?",
+      "options": [
+        { "id": "a", "text": "throw()", "is_correct": false },
+        { "id": "b", "text": "noexcept", "is_correct": true },
+        { "id": "c", "text": "try", "is_correct": false },
+        { "id": "d", "text": "catch", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which container is best for frequent insertions in middle?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "list", "is_correct": true },
+        { "id": "c", "text": "deque", "is_correct": false },
+        { "id": "d", "text": "array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which keyword enables structured bindings?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": true },
+        { "id": "b", "text": "var", "is_correct": false },
+        { "id": "c", "text": "decltype", "is_correct": false },
+        { "id": "d", "text": "tuple", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which container invalidates all iterators on erase?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": true },
+        { "id": "b", "text": "list", "is_correct": false },
+        { "id": "c", "text": "set", "is_correct": false },
+        { "id": "d", "text": "map", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which algorithm is stable?",
+      "options": [
+        { "id": "a", "text": "sort", "is_correct": false },
+        { "id": "b", "text": "partial_sort", "is_correct": false },
+        { "id": "c", "text": "stable_sort", "is_correct": true },
+        { "id": "d", "text": "nth_element", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which keyword creates type alias in modern C++?",
+      "options": [
+        { "id": "a", "text": "typedef", "is_correct": false },
+        { "id": "b", "text": "using", "is_correct": true },
+        { "id": "c", "text": "alias", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which C++ feature ensures one definition rule at compile time?",
+      "options": [
+        { "id": "a", "text": "inline variables", "is_correct": true },
+        { "id": "b", "text": "constexpr", "is_correct": false },
+        { "id": "c", "text": "static members", "is_correct": false },
+        { "id": "d", "text": "templates", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which operator resolves scope ambiguity?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": false },
+        { "id": "b", "text": "::", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": ":", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which keyword ensures variable is not optimized away?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "volatile", "is_correct": true },
+        { "id": "d", "text": "mutable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which feature enables compile-time loops?",
+      "options": [
+        { "id": "a", "text": "Templates", "is_correct": true },
+        { "id": "b", "text": "Macros", "is_correct": false },
+        { "id": "c", "text": "constexpr if", "is_correct": false },
+        { "id": "d", "text": "Recursion", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which C++20 feature supports concepts?",
+      "options": [
+        { "id": "a", "text": "requires", "is_correct": true },
+        { "id": "b", "text": "concept", "is_correct": false },
+        { "id": "c", "text": "constraint", "is_correct": false },
+        { "id": "d", "text": "typename", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which feature replaces SFINAE elegantly?",
+      "options": [
+        { "id": "a", "text": "enable_if", "is_correct": false },
+        { "id": "b", "text": "constexpr if", "is_correct": false },
+        { "id": "c", "text": "concepts", "is_correct": true },
+        { "id": "d", "text": "decltype", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which operator overload cannot be a member function?",
+      "options": [
+        { "id": "a", "text": "operator[]", "is_correct": false },
+        { "id": "b", "text": "operator()", "is_correct": false },
+        { "id": "c", "text": "operator<<", "is_correct": true },
+        { "id": "d", "text": "operator=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which feature supports reflection partially?",
+      "options": [
+        { "id": "a", "text": "typeid", "is_correct": true },
+        { "id": "b", "text": "decltype", "is_correct": false },
+        { "id": "c", "text": "auto", "is_correct": false },
+        { "id": "d", "text": "constexpr", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which STL container provides random access iterators?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "set", "is_correct": false },
+        { "id": "c", "text": "vector", "is_correct": true },
+        { "id": "d", "text": "forward_list", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which feature ensures exception safety?",
+      "options": [
+        { "id": "a", "text": "try-catch only", "is_correct": false },
+        { "id": "b", "text": "RAII", "is_correct": true },
+        { "id": "c", "text": "volatile", "is_correct": false },
+        { "id": "d", "text": "atomic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which smart pointer has zero overhead?",
+      "options": [
+        { "id": "a", "text": "shared_ptr", "is_correct": false },
+        { "id": "b", "text": "weak_ptr", "is_correct": false },
+        { "id": "c", "text": "unique_ptr", "is_correct": true },
+        { "id": "d", "text": "auto_ptr", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which feature ensures thread-safe reference counting?",
+      "options": [
+        { "id": "a", "text": "unique_ptr", "is_correct": false },
+        { "id": "b", "text": "weak_ptr", "is_correct": false },
+        { "id": "c", "text": "shared_ptr", "is_correct": true },
+        { "id": "d", "text": "scoped_ptr", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which C++ feature supports coroutines?",
+      "options": [
+        { "id": "a", "text": "C++17", "is_correct": false },
+        { "id": "b", "text": "C++20", "is_correct": true },
+        { "id": "c", "text": "C++14", "is_correct": false },
+        { "id": "d", "text": "C++11", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword marks lambda mutable?",
+      "options": [
+        { "id": "a", "text": "mutable", "is_correct": true },
+        { "id": "b", "text": "const", "is_correct": false },
+        { "id": "c", "text": "volatile", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which C++ feature allows compile-time branching?",
+      "options": [
+        { "id": "a", "text": "if constexpr", "is_correct": true },
+        { "id": "b", "text": "constexpr if", "is_correct": false },
+        { "id": "c", "text": "static if", "is_correct": false },
+        { "id": "d", "text": "template if", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which container supports constant-time splice?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "deque", "is_correct": false },
+        { "id": "c", "text": "list", "is_correct": true },
+        { "id": "d", "text": "forward_list", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which STL container supports node-based extraction?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "set", "is_correct": true },
+        { "id": "c", "text": "array", "is_correct": false },
+        { "id": "d", "text": "deque", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which feature improves compile-time error messages?",
+      "options": [
+        { "id": "a", "text": "SFINAE", "is_correct": false },
+        { "id": "b", "text": "concepts", "is_correct": true },
+        { "id": "c", "text": "decltype", "is_correct": false },
+        { "id": "d", "text": "auto", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which C++ feature allows reflection-like behavior?",
+      "options": [
+        { "id": "a", "text": "typeid", "is_correct": true },
+        { "id": "b", "text": "constexpr", "is_correct": false },
+        { "id": "c", "text": "auto", "is_correct": false },
+        { "id": "d", "text": "templates", "is_correct": false }
+      ]
+    }
+  ]
+}

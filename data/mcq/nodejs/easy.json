@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nodejs_easy",
+  "language": "nodejs",
+  "level": "easy",
+  "title": "Node.js Basics - Easy",
+  "description": "Node.js fundamentals: runtime, modules, npm, core concepts, basic APIs.",
+  "duration_minutes": 20,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is Node.js?",
+      "options": [
+        { "id": "a", "text": "A JavaScript runtime environment", "is_correct": true },
+        { "id": "b", "text": "A JavaScript framework", "is_correct": false },
+        { "id": "c", "text": "A database", "is_correct": false },
+        { "id": "d", "text": "A browser", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Node.js is built on which JavaScript engine?",
+      "options": [
+        { "id": "a", "text": "SpiderMonkey", "is_correct": false },
+        { "id": "b", "text": "Chakra", "is_correct": false },
+        { "id": "c", "text": "V8", "is_correct": true },
+        { "id": "d", "text": "JavaScriptCore", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which command initializes a new Node.js project?",
+      "options": [
+        { "id": "a", "text": "node init", "is_correct": false },
+        { "id": "b", "text": "npm start", "is_correct": false },
+        { "id": "c", "text": "npm init", "is_correct": true },
+        { "id": "d", "text": "node new", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which file stores project metadata?",
+      "options": [
+        { "id": "a", "text": "index.js", "is_correct": false },
+        { "id": "b", "text": "package-lock.json", "is_correct": false },
+        { "id": "c", "text": "package.json", "is_correct": true },
+        { "id": "d", "text": "node.json", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which command installs dependencies?",
+      "options": [
+        { "id": "a", "text": "node install", "is_correct": false },
+        { "id": "b", "text": "npm install", "is_correct": true },
+        { "id": "c", "text": "npm run", "is_correct": false },
+        { "id": "d", "text": "node run", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which global object is available in Node.js?",
+      "options": [
+        { "id": "a", "text": "window", "is_correct": false },
+        { "id": "b", "text": "document", "is_correct": false },
+        { "id": "c", "text": "global", "is_correct": true },
+        { "id": "d", "text": "navigator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which module is used to create a server?",
+      "options": [
+        { "id": "a", "text": "fs", "is_correct": false },
+        { "id": "b", "text": "http", "is_correct": true },
+        { "id": "c", "text": "path", "is_correct": false },
+        { "id": "d", "text": "url", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which module is used to work with files?",
+      "options": [
+        { "id": "a", "text": "http", "is_correct": false },
+        { "id": "b", "text": "os", "is_correct": false },
+        { "id": "c", "text": "fs", "is_correct": true },
+        { "id": "d", "text": "net", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which keyword is used to import a module (CommonJS)?",
+      "options": [
+        { "id": "a", "text": "import", "is_correct": false },
+        { "id": "b", "text": "include", "is_correct": false },
+        { "id": "c", "text": "require", "is_correct": true },
+        { "id": "d", "text": "use", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which keyword exports a module?",
+      "options": [
+        { "id": "a", "text": "export", "is_correct": false },
+        { "id": "b", "text": "module.exports", "is_correct": true },
+        { "id": "c", "text": "exports.default", "is_correct": false },
+        { "id": "d", "text": "return", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Node.js is primarily used for?",
+      "options": [
+        { "id": "a", "text": "Desktop applications", "is_correct": false },
+        { "id": "b", "text": "Server-side applications", "is_correct": true },
+        { "id": "c", "text": "Mobile UI", "is_correct": false },
+        { "id": "d", "text": "Image editing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which statement about Node.js is true?",
+      "options": [
+        { "id": "a", "text": "It is multi-threaded by default", "is_correct": false },
+        { "id": "b", "text": "It is single-threaded", "is_correct": true },
+        { "id": "c", "text": "It runs only in browser", "is_correct": false },
+        { "id": "d", "text": "It does not support async", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which concept allows Node.js to handle many requests?",
+      "options": [
+        { "id": "a", "text": "Blocking I/O", "is_correct": false },
+        { "id": "b", "text": "Multi-threading only", "is_correct": false },
+        { "id": "c", "text": "Event-driven, non-blocking I/O", "is_correct": true },
+        { "id": "d", "text": "Synchronous execution", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which function schedules code asynchronously?",
+      "options": [
+        { "id": "a", "text": "setTimeout", "is_correct": true },
+        { "id": "b", "text": "for", "is_correct": false },
+        { "id": "c", "text": "while", "is_correct": false },
+        { "id": "d", "text": "if", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which object represents the current module?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "process", "is_correct": false },
+        { "id": "c", "text": "module", "is_correct": true },
+        { "id": "d", "text": "exports", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which object provides information about the current process?",
+      "options": [
+        { "id": "a", "text": "process", "is_correct": true },
+        { "id": "b", "text": "global", "is_correct": false },
+        { "id": "c", "text": "module", "is_correct": false },
+        { "id": "d", "text": "console", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which method exits the Node.js process?",
+      "options": [
+        { "id": "a", "text": "process.exit()", "is_correct": true },
+        { "id": "b", "text": "process.stop()", "is_correct": false },
+        { "id": "c", "text": "exit()", "is_correct": false },
+        { "id": "d", "text": "stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which module provides OS-related information?",
+      "options": [
+        { "id": "a", "text": "fs", "is_correct": false },
+        { "id": "b", "text": "http", "is_correct": false },
+        { "id": "c", "text": "os", "is_correct": true },
+        { "id": "d", "text": "path", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which module helps with file paths?",
+      "options": [
+        { "id": "a", "text": "url", "is_correct": false },
+        { "id": "b", "text": "fs", "is_correct": false },
+        { "id": "c", "text": "path", "is_correct": true },
+        { "id": "d", "text": "net", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which statement prints output to console?",
+      "options": [
+        { "id": "a", "text": "print()", "is_correct": false },
+        { "id": "b", "text": "console.log()", "is_correct": true },
+        { "id": "c", "text": "echo()", "is_correct": false },
+        { "id": "d", "text": "write()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword declares a constant in Node.js?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": false },
+        { "id": "b", "text": "let", "is_correct": false },
+        { "id": "c", "text": "const", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which version manager is commonly used for Node.js?",
+      "options": [
+        { "id": "a", "text": "npm", "is_correct": false },
+        { "id": "b", "text": "nvm", "is_correct": true },
+        { "id": "c", "text": "node-pack", "is_correct": false },
+        { "id": "d", "text": "yarn", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which file locks dependency versions?",
+      "options": [
+        { "id": "a", "text": "package.json", "is_correct": false },
+        { "id": "b", "text": "lock.json", "is_correct": false },
+        { "id": "c", "text": "package-lock.json", "is_correct": true },
+        { "id": "d", "text": "node-lock.json", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which npm command installs a package globally?",
+      "options": [
+        { "id": "a", "text": "npm install package", "is_correct": false },
+        { "id": "b", "text": "npm install -g package", "is_correct": true },
+        { "id": "c", "text": "npm add package", "is_correct": false },
+        { "id": "d", "text": "npm global add", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which file usually contains the entry point?",
+      "options": [
+        { "id": "a", "text": "main.js", "is_correct": false },
+        { "id": "b", "text": "index.js", "is_correct": true },
+        { "id": "c", "text": "server.json", "is_correct": false },
+        { "id": "d", "text": "app.config.js", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword is used for asynchronous functions?",
+      "options": [
+        { "id": "a", "text": "await", "is_correct": false },
+        { "id": "b", "text": "async", "is_correct": true },
+        { "id": "c", "text": "promise", "is_correct": false },
+        { "id": "d", "text": "callback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which object handles uncaught exceptions?",
+      "options": [
+        { "id": "a", "text": "process", "is_correct": true },
+        { "id": "b", "text": "global", "is_correct": false },
+        { "id": "c", "text": "console", "is_correct": false },
+        { "id": "d", "text": "module", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which function reads a file asynchronously?",
+      "options": [
+        { "id": "a", "text": "fs.readFileSync", "is_correct": false },
+        { "id": "b", "text": "fs.readFile", "is_correct": true },
+        { "id": "c", "text": "fs.open", "is_correct": false },
+        { "id": "d", "text": "fs.read", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which method creates a directory?",
+      "options": [
+        { "id": "a", "text": "fs.create()", "is_correct": false },
+        { "id": "b", "text": "fs.mkdir()", "is_correct": true },
+        { "id": "c", "text": "fs.dir()", "is_correct": false },
+        { "id": "d", "text": "fs.make()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which method deletes a file?",
+      "options": [
+        { "id": "a", "text": "fs.delete()", "is_correct": false },
+        { "id": "b", "text": "fs.remove()", "is_correct": false },
+        { "id": "c", "text": "fs.unlink()", "is_correct": true },
+        { "id": "d", "text": "fs.clear()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which statement is true about Node.js?",
+      "options": [
+        { "id": "a", "text": "It blocks I/O by default", "is_correct": false },
+        { "id": "b", "text": "It uses non-blocking I/O", "is_correct": true },
+        { "id": "c", "text": "It cannot handle concurrency", "is_correct": false },
+        { "id": "d", "text": "It is multi-threaded only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which object handles events in Node.js?",
+      "options": [
+        { "id": "a", "text": "EventEmitter", "is_correct": true },
+        { "id": "b", "text": "Emitter", "is_correct": false },
+        { "id": "c", "text": "Listener", "is_correct": false },
+        { "id": "d", "text": "Dispatcher", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which module provides EventEmitter?",
+      "options": [
+        { "id": "a", "text": "events", "is_correct": true },
+        { "id": "b", "text": "stream", "is_correct": false },
+        { "id": "c", "text": "buffer", "is_correct": false },
+        { "id": "d", "text": "net", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which method listens for events?",
+      "options": [
+        { "id": "a", "text": "emit()", "is_correct": false },
+        { "id": "b", "text": "on()", "is_correct": true },
+        { "id": "c", "text": "listen()", "is_correct": false },
+        { "id": "d", "text": "add()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which method triggers an event?",
+      "options": [
+        { "id": "a", "text": "call()", "is_correct": false },
+        { "id": "b", "text": "fire()", "is_correct": false },
+        { "id": "c", "text": "emit()", "is_correct": true },
+        { "id": "d", "text": "dispatch()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which object handles environment variables?",
+      "options": [
+        { "id": "a", "text": "process.env", "is_correct": true },
+        { "id": "b", "text": "env", "is_correct": false },
+        { "id": "c", "text": "global.env", "is_correct": false },
+        { "id": "d", "text": "system.env", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which type of database is commonly used with Node.js?",
+      "options": [
+        { "id": "a", "text": "Only SQL", "is_correct": false },
+        { "id": "b", "text": "Only NoSQL", "is_correct": false },
+        { "id": "c", "text": "Both SQL and NoSQL", "is_correct": true },
+        { "id": "d", "text": "None", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which protocol does Node.js commonly use for APIs?",
+      "options": [
+        { "id": "a", "text": "FTP", "is_correct": false },
+        { "id": "b", "text": "SMTP", "is_correct": false },
+        { "id": "c", "text": "HTTP", "is_correct": true },
+        { "id": "d", "text": "SSH", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which statement is true about npm?",
+      "options": [
+        { "id": "a", "text": "It is a database", "is_correct": false },
+        { "id": "b", "text": "It manages Node.js packages", "is_correct": true },
+        { "id": "c", "text": "It runs Node.js code", "is_correct": false },
+        { "id": "d", "text": "It replaces Node.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which tool is an alternative to npm?",
+      "options": [
+        { "id": "a", "text": "Node", "is_correct": false },
+        { "id": "b", "text": "Yarn", "is_correct": true },
+        { "id": "c", "text": "Express", "is_correct": false },
+        { "id": "d", "text": "MongoDB", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which framework is commonly used with Node.js?",
+      "options": [
+        { "id": "a", "text": "Laravel", "is_correct": false },
+        { "id": "b", "text": "Django", "is_correct": false },
+        { "id": "c", "text": "Express.js", "is_correct": true },
+        { "id": "d", "text": "Spring", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which method starts an HTTP server?",
+      "options": [
+        { "id": "a", "text": "server.run()", "is_correct": false },
+        { "id": "b", "text": "server.start()", "is_correct": false },
+        { "id": "c", "text": "server.listen()", "is_correct": true },
+        { "id": "d", "text": "server.open()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which port is commonly used for development?",
+      "options": [
+        { "id": "a", "text": "21", "is_correct": false },
+        { "id": "b", "text": "80", "is_correct": false },
+        { "id": "c", "text": "3000", "is_correct": true },
+        { "id": "d", "text": "443", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which tool restarts Node.js server automatically?",
+      "options": [
+        { "id": "a", "text": "pm2", "is_correct": false },
+        { "id": "b", "text": "nodemon", "is_correct": true },
+        { "id": "c", "text": "forever", "is_correct": false },
+        { "id": "d", "text": "supervisor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which environment is Node.js best suited for?",
+      "options": [
+        { "id": "a", "text": "CPU-intensive tasks", "is_correct": false },
+        { "id": "b", "text": "I/O-intensive tasks", "is_correct": true },
+        { "id": "c", "text": "Graphics rendering", "is_correct": false },
+        { "id": "d", "text": "Game engines", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which module supports streams?",
+      "options": [
+        { "id": "a", "text": "events", "is_correct": false },
+        { "id": "b", "text": "stream", "is_correct": true },
+        { "id": "c", "text": "buffer", "is_correct": false },
+        { "id": "d", "text": "http", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which stream type is readable?",
+      "options": [
+        { "id": "a", "text": "Writable", "is_correct": false },
+        { "id": "b", "text": "Readable", "is_correct": true },
+        { "id": "c", "text": "Duplex", "is_correct": false },
+        { "id": "d", "text": "Transform", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which statement about streams is true?",
+      "options": [
+        { "id": "a", "text": "They load entire file in memory", "is_correct": false },
+        { "id": "b", "text": "They process data in chunks", "is_correct": true },
+        { "id": "c", "text": "They are synchronous", "is_correct": false },
+        { "id": "d", "text": "They block execution", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which core module handles buffers?",
+      "options": [
+        { "id": "a", "text": "stream", "is_correct": false },
+        { "id": "b", "text": "buffer", "is_correct": true },
+        { "id": "c", "text": "binary", "is_correct": false },
+        { "id": "d", "text": "data", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which statement best describes Node.js?",
+      "options": [
+        { "id": "a", "text": "Blocking, multi-threaded runtime", "is_correct": false },
+        { "id": "b", "text": "Event-driven, non-blocking runtime", "is_correct": true },
+        { "id": "c", "text": "Client-side framework", "is_correct": false },
+        { "id": "d", "text": "Only used for scripts", "is_correct": false }
+      ]
+    }
+  ]
+}

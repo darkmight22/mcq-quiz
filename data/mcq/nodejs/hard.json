@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nodejs_hard",
+  "language": "nodejs",
+  "level": "hard",
+  "title": "Node.js Advanced - Hard",
+  "description": "Advanced Node.js concepts: event loop internals, performance, memory, clustering, workers, security.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What happens if the event loop is blocked?",
+      "options": [
+        { "id": "a", "text": "Only async tasks fail", "is_correct": false },
+        { "id": "b", "text": "Entire Node.js process becomes unresponsive", "is_correct": true },
+        { "id": "c", "text": "Only timers are delayed", "is_correct": false },
+        { "id": "d", "text": "Garbage collection stops", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which task is MOST likely to block the event loop?",
+      "options": [
+        { "id": "a", "text": "fs.readFile()", "is_correct": false },
+        { "id": "b", "text": "HTTP request", "is_correct": false },
+        { "id": "c", "text": "Large synchronous loop", "is_correct": true },
+        { "id": "d", "text": "setTimeout()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which phase executes setImmediate callbacks?",
+      "options": [
+        { "id": "a", "text": "Timers", "is_correct": false },
+        { "id": "b", "text": "Poll", "is_correct": false },
+        { "id": "c", "text": "Check", "is_correct": true },
+        { "id": "d", "text": "Close", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Why is process.nextTick() dangerous when overused?",
+      "options": [
+        { "id": "a", "text": "It blocks I/O operations", "is_correct": false },
+        { "id": "b", "text": "It starves the event loop", "is_correct": true },
+        { "id": "c", "text": "It causes memory leaks automatically", "is_correct": false },
+        { "id": "d", "text": "It disables garbage collection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which API is best for CPU-intensive tasks?",
+      "options": [
+        { "id": "a", "text": "Promises", "is_correct": false },
+        { "id": "b", "text": "child_process", "is_correct": false },
+        { "id": "c", "text": "worker_threads", "is_correct": true },
+        { "id": "d", "text": "setImmediate()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is the main advantage of worker threads over cluster?",
+      "options": [
+        { "id": "a", "text": "Shared memory support", "is_correct": true },
+        { "id": "b", "text": "Better load balancing", "is_correct": false },
+        { "id": "c", "text": "Simpler IPC", "is_correct": false },
+        { "id": "d", "text": "Lower memory usage always", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which object allows memory sharing between threads?",
+      "options": [
+        { "id": "a", "text": "Buffer", "is_correct": false },
+        { "id": "b", "text": "SharedArrayBuffer", "is_correct": true },
+        { "id": "c", "text": "TypedArray", "is_correct": false },
+        { "id": "d", "text": "HeapSnapshot", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "What does libuv primarily handle?",
+      "options": [
+        { "id": "a", "text": "JavaScript execution", "is_correct": false },
+        { "id": "b", "text": "Event loop and async I/O", "is_correct": true },
+        { "id": "c", "text": "Garbage collection", "is_correct": false },
+        { "id": "d", "text": "HTTP routing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which V8 feature manages memory automatically?",
+      "options": [
+        { "id": "a", "text": "Heap", "is_correct": false },
+        { "id": "b", "text": "Garbage Collector", "is_correct": true },
+        { "id": "c", "text": "Call Stack", "is_correct": false },
+        { "id": "d", "text": "Event Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which symptom indicates a memory leak?",
+      "options": [
+        { "id": "a", "text": "Stable heap usage", "is_correct": false },
+        { "id": "b", "text": "Increasing memory over time", "is_correct": true },
+        { "id": "c", "text": "Fast garbage collection", "is_correct": false },
+        { "id": "d", "text": "Low CPU usage", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which flag helps analyze garbage collection?",
+      "options": [
+        { "id": "a", "text": "--inspect", "is_correct": false },
+        { "id": "b", "text": "--trace-gc", "is_correct": true },
+        { "id": "c", "text": "--heap", "is_correct": false },
+        { "id": "d", "text": "--memory", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which API captures heap snapshots?",
+      "options": [
+        { "id": "a", "text": "v8.getHeapSnapshot()", "is_correct": false },
+        { "id": "b", "text": "v8.writeHeapSnapshot()", "is_correct": true },
+        { "id": "c", "text": "process.memoryUsage()", "is_correct": false },
+        { "id": "d", "text": "os.heap()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "What happens if a promise rejection is unhandled?",
+      "options": [
+        { "id": "a", "text": "It is silently ignored", "is_correct": false },
+        { "id": "b", "text": "Process emits unhandledRejection event", "is_correct": true },
+        { "id": "c", "text": "Node crashes immediately", "is_correct": false },
+        { "id": "d", "text": "It retries automatically", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Best practice to handle unhandled rejections?",
+      "options": [
+        { "id": "a", "text": "Ignore them", "is_correct": false },
+        { "id": "b", "text": "process.on('unhandledRejection')", "is_correct": true },
+        { "id": "c", "text": "Use try/catch everywhere", "is_correct": false },
+        { "id": "d", "text": "Restart server manually", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which HTTP header mitigates XSS?",
+      "options": [
+        { "id": "a", "text": "Content-Security-Policy", "is_correct": true },
+        { "id": "b", "text": "Authorization", "is_correct": false },
+        { "id": "c", "text": "X-Powered-By", "is_correct": false },
+        { "id": "d", "text": "Accept", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which attack floods server with many requests?",
+      "options": [
+        { "id": "a", "text": "XSS", "is_correct": false },
+        { "id": "b", "text": "CSRF", "is_correct": false },
+        { "id": "c", "text": "DDoS", "is_correct": true },
+        { "id": "d", "text": "SQL Injection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Best protection against brute-force attacks?",
+      "options": [
+        { "id": "a", "text": "Logging only", "is_correct": false },
+        { "id": "b", "text": "Rate limiting", "is_correct": true },
+        { "id": "c", "text": "JWT", "is_correct": false },
+        { "id": "d", "text": "Encryption only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which module provides TLS/SSL support?",
+      "options": [
+        { "id": "a", "text": "net", "is_correct": false },
+        { "id": "b", "text": "tls", "is_correct": true },
+        { "id": "c", "text": "crypto", "is_correct": false },
+        { "id": "d", "text": "https", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which protocol secures HTTP traffic?",
+      "options": [
+        { "id": "a", "text": "FTP", "is_correct": false },
+        { "id": "b", "text": "HTTPS", "is_correct": true },
+        { "id": "c", "text": "TCP", "is_correct": false },
+        { "id": "d", "text": "UDP", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which option best improves scalability?",
+      "options": [
+        { "id": "a", "text": "Single large instance", "is_correct": false },
+        { "id": "b", "text": "Horizontal scaling", "is_correct": true },
+        { "id": "c", "text": "Blocking code", "is_correct": false },
+        { "id": "d", "text": "Synchronous I/O", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which load-balancing strategy distributes evenly?",
+      "options": [
+        { "id": "a", "text": "Random", "is_correct": false },
+        { "id": "b", "text": "Round-robin", "is_correct": true },
+        { "id": "c", "text": "Sticky sessions", "is_correct": false },
+        { "id": "d", "text": "Failover", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which tool monitors Node.js apps in production?",
+      "options": [
+        { "id": "a", "text": "nodemon", "is_correct": false },
+        { "id": "b", "text": "pm2", "is_correct": true },
+        { "id": "c", "text": "npm", "is_correct": false },
+        { "id": "d", "text": "nvm", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which pm2 mode maximizes CPU usage?",
+      "options": [
+        { "id": "a", "text": "fork", "is_correct": false },
+        { "id": "b", "text": "cluster", "is_correct": true },
+        { "id": "c", "text": "single", "is_correct": false },
+        { "id": "d", "text": "debug", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which practice reduces cold-start latency?",
+      "options": [
+        { "id": "a", "text": "Lazy loading critical code", "is_correct": false },
+        { "id": "b", "text": "Keeping processes warm", "is_correct": true },
+        { "id": "c", "text": "Large dependencies", "is_correct": false },
+        { "id": "d", "text": "Synchronous imports", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which API is best for graceful shutdown?",
+      "options": [
+        { "id": "a", "text": "process.exit()", "is_correct": false },
+        { "id": "b", "text": "server.close()", "is_correct": true },
+        { "id": "c", "text": "kill()", "is_correct": false },
+        { "id": "d", "text": "abort()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which signal indicates termination request?",
+      "options": [
+        { "id": "a", "text": "SIGTERM", "is_correct": true },
+        { "id": "b", "text": "SIGKILL", "is_correct": false },
+        { "id": "c", "text": "SIGSTOP", "is_correct": false },
+        { "id": "d", "text": "SIGUSR1", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Why should SIGKILL be avoided?",
+      "options": [
+        { "id": "a", "text": "It is slow", "is_correct": false },
+        { "id": "b", "text": "It prevents cleanup", "is_correct": true },
+        { "id": "c", "text": "It restarts process", "is_correct": false },
+        { "id": "d", "text": "It blocks I/O", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which strategy ensures zero-downtime deploys?",
+      "options": [
+        { "id": "a", "text": "Rolling updates", "is_correct": true },
+        { "id": "b", "text": "Manual restarts", "is_correct": false },
+        { "id": "c", "text": "Single instance", "is_correct": false },
+        { "id": "d", "text": "Long downtime", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which caching layer reduces DB load?",
+      "options": [
+        { "id": "a", "text": "Redis", "is_correct": true },
+        { "id": "b", "text": "MongoDB", "is_correct": false },
+        { "id": "c", "text": "File system", "is_correct": false },
+        { "id": "d", "text": "Load balancer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which pattern decouples services?",
+      "options": [
+        { "id": "a", "text": "Monolith", "is_correct": false },
+        { "id": "b", "text": "Microservices", "is_correct": true },
+        { "id": "c", "text": "Singleton", "is_correct": false },
+        { "id": "d", "text": "MVC only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which messaging system enables async communication?",
+      "options": [
+        { "id": "a", "text": "RabbitMQ", "is_correct": true },
+        { "id": "b", "text": "MySQL", "is_correct": false },
+        { "id": "c", "text": "Redis only", "is_correct": false },
+        { "id": "d", "text": "Nginx", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which Node.js feature supports streams backpressure?",
+      "options": [
+        { "id": "a", "text": "pipe()", "is_correct": true },
+        { "id": "b", "text": "emit()", "is_correct": false },
+        { "id": "c", "text": "on()", "is_correct": false },
+        { "id": "d", "text": "listen()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which HTTP version enables multiplexing?",
+      "options": [
+        { "id": "a", "text": "HTTP/1.1", "is_correct": false },
+        { "id": "b", "text": "HTTP/2", "is_correct": true },
+        { "id": "c", "text": "HTTP/1.0", "is_correct": false },
+        { "id": "d", "text": "FTP", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which Node.js module supports HTTP/2?",
+      "options": [
+        { "id": "a", "text": "http", "is_correct": false },
+        { "id": "b", "text": "http2", "is_correct": true },
+        { "id": "c", "text": "net", "is_correct": false },
+        { "id": "d", "text": "tls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which metric measures response latency?",
+      "options": [
+        { "id": "a", "text": "Throughput", "is_correct": false },
+        { "id": "b", "text": "Response time", "is_correct": true },
+        { "id": "c", "text": "Availability", "is_correct": false },
+        { "id": "d", "text": "Error rate", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which tool load-tests Node.js APIs?",
+      "options": [
+        { "id": "a", "text": "Artillery", "is_correct": true },
+        { "id": "b", "text": "Jest", "is_correct": false },
+        { "id": "c", "text": "Mocha", "is_correct": false },
+        { "id": "d", "text": "ESLint", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which practice improves observability?",
+      "options": [
+        { "id": "a", "text": "Silent failures", "is_correct": false },
+        { "id": "b", "text": "Structured logging & metrics", "is_correct": true },
+        { "id": "c", "text": "Console logs only", "is_correct": false },
+        { "id": "d", "text": "No monitoring", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which tracing tool tracks request flow?",
+      "options": [
+        { "id": "a", "text": "OpenTelemetry", "is_correct": true },
+        { "id": "b", "text": "Nodemon", "is_correct": false },
+        { "id": "c", "text": "ESLint", "is_correct": false },
+        { "id": "d", "text": "Prettier", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which principle ensures resilience?",
+      "options": [
+        { "id": "a", "text": "Fail-fast & retries", "is_correct": true },
+        { "id": "b", "text": "Single dependency", "is_correct": false },
+        { "id": "c", "text": "No timeouts", "is_correct": false },
+        { "id": "d", "text": "Blocking calls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which pattern isolates failures?",
+      "options": [
+        { "id": "a", "text": "Circuit breaker", "is_correct": true },
+        { "id": "b", "text": "Singleton", "is_correct": false },
+        { "id": "c", "text": "Observer", "is_correct": false },
+        { "id": "d", "text": "Factory", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which config reduces attack surface?",
+      "options": [
+        { "id": "a", "text": "Disable unused features", "is_correct": true },
+        { "id": "b", "text": "Expose stack traces", "is_correct": false },
+        { "id": "c", "text": "Open all ports", "is_correct": false },
+        { "id": "d", "text": "Hardcode secrets", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which principle helps scale teams?",
+      "options": [
+        { "id": "a", "text": "Tight coupling", "is_correct": false },
+        { "id": "b", "text": "Loose coupling", "is_correct": true },
+        { "id": "c", "text": "Shared state everywhere", "is_correct": false },
+        { "id": "d", "text": "Monolithic design", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which architecture improves independent deployments?",
+      "options": [
+        { "id": "a", "text": "Monolith", "is_correct": false },
+        { "id": "b", "text": "Microservices", "is_correct": true },
+        { "id": "c", "text": "MVC", "is_correct": false },
+        { "id": "d", "text": "Layered only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which approach ensures backward compatibility?",
+      "options": [
+        { "id": "a", "text": "Breaking changes", "is_correct": false },
+        { "id": "b", "text": "API versioning", "is_correct": true },
+        { "id": "c", "text": "Hardcoded clients", "is_correct": false },
+        { "id": "d", "text": "Single endpoint", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which practice improves long-term maintainability?",
+      "options": [
+        { "id": "a", "text": "Modular codebase", "is_correct": true },
+        { "id": "b", "text": "Single huge file", "is_correct": false },
+        { "id": "c", "text": "No tests", "is_correct": false },
+        { "id": "d", "text": "Hardcoded config", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which testing type validates system behavior end-to-end?",
+      "options": [
+        { "id": "a", "text": "Unit testing", "is_correct": false },
+        { "id": "b", "text": "Integration testing", "is_correct": false },
+        { "id": "c", "text": "End-to-end testing", "is_correct": true },
+        { "id": "d", "text": "Linting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which Node.js concept is MOST critical at scale?",
+      "options": [
+        { "id": "a", "text": "Blocking loops", "is_correct": false },
+        { "id": "b", "text": "Non-blocking I/O", "is_correct": true },
+        { "id": "c", "text": "Synchronous APIs", "is_correct": false },
+        { "id": "d", "text": "Global state", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which choice best summarizes Node.js philosophy?",
+      "options": [
+        { "id": "a", "text": "CPU-heavy first", "is_correct": false },
+        { "id": "b", "text": "Event-driven & scalable", "is_correct": true },
+        { "id": "c", "text": "Thread-per-request", "is_correct": false },
+        { "id": "d", "text": "Browser-centric", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which mistake most often causes outages?",
+      "options": [
+        { "id": "a", "text": "Graceful shutdown", "is_correct": false },
+        { "id": "b", "text": "Blocking the event loop", "is_correct": true },
+        { "id": "c", "text": "Using streams", "is_correct": false },
+        { "id": "d", "text": "Clustering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "What separates senior-level Node.js systems?",
+      "options": [
+        { "id": "a", "text": "More libraries", "is_correct": false },
+        { "id": "b", "text": "Performance, observability & resilience", "is_correct": true },
+        { "id": "c", "text": "Large codebase", "is_correct": false },
+        { "id": "d", "text": "Synchronous logic", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "quiz_id": "css_easy",
+  "language": "css",
+  "level": "easy",
+  "title": "CSS Foundations - Easy",
+  "description": "Selectors, properties, and basic styling.",
+  "duration_minutes": 20,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What does CSS stand for?",
+      "options": [
+        { "id": "a", "text": "Creative Style Sheets", "is_correct": false },
+        { "id": "b", "text": "Cascading Style Sheets", "is_correct": true },
+        { "id": "c", "text": "Color Style System", "is_correct": false },
+        { "id": "d", "text": "Computer Styled Sheets", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which HTML tag is used for internal CSS?",
+      "options": [
+        { "id": "a", "text": "<css>", "is_correct": false },
+        { "id": "b", "text": "<script>", "is_correct": false },
+        { "id": "c", "text": "<style>", "is_correct": true },
+        { "id": "d", "text": "<link>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which property is used to change text color?",
+      "options": [
+        { "id": "a", "text": "font-color", "is_correct": false },
+        { "id": "b", "text": "text-style", "is_correct": false },
+        { "id": "c", "text": "color", "is_correct": true },
+        { "id": "d", "text": "fgcolor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which symbol is used for class selector?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": true },
+        { "id": "b", "text": "#", "is_correct": false },
+        { "id": "c", "text": "@", "is_correct": false },
+        { "id": "d", "text": "*", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which symbol is used for ID selector?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": false },
+        { "id": "c", "text": "@", "is_correct": false },
+        { "id": "d", "text": "#", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which property controls text size?",
+      "options": [
+        { "id": "a", "text": "size", "is_correct": false },
+        { "id": "b", "text": "font-size", "is_correct": true },
+        { "id": "c", "text": "text-size", "is_correct": false },
+        { "id": "d", "text": "font-style", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which property sets background color?",
+      "options": [
+        { "id": "a", "text": "background-color", "is_correct": true },
+        { "id": "b", "text": "bgcolor", "is_correct": false },
+        { "id": "c", "text": "color", "is_correct": false },
+        { "id": "d", "text": "background-style", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "How do you write a CSS comment?",
+      "options": [
+        { "id": "a", "text": "// comment", "is_correct": false },
+        { "id": "b", "text": "<!-- comment -->", "is_correct": false },
+        { "id": "c", "text": "/* comment */", "is_correct": true },
+        { "id": "d", "text": "# comment", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which property makes text bold?",
+      "options": [
+        { "id": "a", "text": "bold", "is_correct": false },
+        { "id": "b", "text": "font-weight", "is_correct": true },
+        { "id": "c", "text": "text-bold", "is_correct": false },
+        { "id": "d", "text": "font-style", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which unit is relative in CSS?",
+      "options": [
+        { "id": "a", "text": "px", "is_correct": false },
+        { "id": "b", "text": "cm", "is_correct": false },
+        { "id": "c", "text": "mm", "is_correct": false },
+        { "id": "d", "text": "em", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which property aligns text?",
+      "options": [
+        { "id": "a", "text": "align-text", "is_correct": false },
+        { "id": "b", "text": "font-align", "is_correct": false },
+        { "id": "c", "text": "text-align", "is_correct": true },
+        { "id": "d", "text": "text-position", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which value centers text?",
+      "options": [
+        { "id": "a", "text": "center", "is_correct": true },
+        { "id": "b", "text": "middle", "is_correct": false },
+        { "id": "c", "text": "left", "is_correct": false },
+        { "id": "d", "text": "right", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which property changes font family?",
+      "options": [
+        { "id": "a", "text": "font-style", "is_correct": false },
+        { "id": "b", "text": "font-family", "is_correct": true },
+        { "id": "c", "text": "text-font", "is_correct": false },
+        { "id": "d", "text": "font-weight", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which property removes underline from links?",
+      "options": [
+        { "id": "a", "text": "underline", "is_correct": false },
+        { "id": "b", "text": "text-decoration", "is_correct": true },
+        { "id": "c", "text": "font-style", "is_correct": false },
+        { "id": "d", "text": "link-style", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which value removes underline?",
+      "options": [
+        { "id": "a", "text": "none", "is_correct": true },
+        { "id": "b", "text": "remove", "is_correct": false },
+        { "id": "c", "text": "hidden", "is_correct": false },
+        { "id": "d", "text": "no-line", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which property controls outer spacing?",
+      "options": [
+        { "id": "a", "text": "padding", "is_correct": false },
+        { "id": "b", "text": "margin", "is_correct": true },
+        { "id": "c", "text": "border", "is_correct": false },
+        { "id": "d", "text": "spacing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which property controls inner spacing?",
+      "options": [
+        { "id": "a", "text": "margin", "is_correct": false },
+        { "id": "b", "text": "border", "is_correct": false },
+        { "id": "c", "text": "padding", "is_correct": true },
+        { "id": "d", "text": "spacing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which property sets element width?",
+      "options": [
+        { "id": "a", "text": "width", "is_correct": true },
+        { "id": "b", "text": "size", "is_correct": false },
+        { "id": "c", "text": "length", "is_correct": false },
+        { "id": "d", "text": "dimension", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which property sets element height?",
+      "options": [
+        { "id": "a", "text": "length", "is_correct": false },
+        { "id": "b", "text": "dimension", "is_correct": false },
+        { "id": "c", "text": "height", "is_correct": true },
+        { "id": "d", "text": "size", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which property adds border?",
+      "options": [
+        { "id": "a", "text": "outline", "is_correct": false },
+        { "id": "b", "text": "border", "is_correct": true },
+        { "id": "c", "text": "edge", "is_correct": false },
+        { "id": "d", "text": "frame", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which value hides an element?",
+      "options": [
+        { "id": "a", "text": "none", "is_correct": true },
+        { "id": "b", "text": "hidden", "is_correct": false },
+        { "id": "c", "text": "remove", "is_correct": false },
+        { "id": "d", "text": "invisible", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which property uses 'none' to hide element?",
+      "options": [
+        { "id": "a", "text": "visibility", "is_correct": false },
+        { "id": "b", "text": "opacity", "is_correct": false },
+        { "id": "c", "text": "display", "is_correct": true },
+        { "id": "d", "text": "position", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which property changes cursor style?",
+      "options": [
+        { "id": "a", "text": "cursor", "is_correct": true },
+        { "id": "b", "text": "mouse", "is_correct": false },
+        { "id": "c", "text": "pointer-style", "is_correct": false },
+        { "id": "d", "text": "hover", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which value shows hand cursor?",
+      "options": [
+        { "id": "a", "text": "hand", "is_correct": false },
+        { "id": "b", "text": "click", "is_correct": false },
+        { "id": "c", "text": "pointer", "is_correct": true },
+        { "id": "d", "text": "move", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which property rounds corners?",
+      "options": [
+        { "id": "a", "text": "radius", "is_correct": false },
+        { "id": "b", "text": "corner-radius", "is_correct": false },
+        { "id": "c", "text": "border-radius", "is_correct": true },
+        { "id": "d", "text": "round", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which property sets transparency?",
+      "options": [
+        { "id": "a", "text": "alpha", "is_correct": false },
+        { "id": "b", "text": "transparent", "is_correct": false },
+        { "id": "c", "text": "opacity", "is_correct": true },
+        { "id": "d", "text": "visibility", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which property positions an element?",
+      "options": [
+        { "id": "a", "text": "position", "is_correct": true },
+        { "id": "b", "text": "float", "is_correct": false },
+        { "id": "c", "text": "align", "is_correct": false },
+        { "id": "d", "text": "place", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which value fixes element on screen?",
+      "options": [
+        { "id": "a", "text": "absolute", "is_correct": false },
+        { "id": "b", "text": "relative", "is_correct": false },
+        { "id": "c", "text": "fixed", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which property floats element?",
+      "options": [
+        { "id": "a", "text": "float", "is_correct": true },
+        { "id": "b", "text": "position", "is_correct": false },
+        { "id": "c", "text": "align", "is_correct": false },
+        { "id": "d", "text": "display", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which value clears float?",
+      "options": [
+        { "id": "a", "text": "both", "is_correct": true },
+        { "id": "b", "text": "none", "is_correct": false },
+        { "id": "c", "text": "clear", "is_correct": false },
+        { "id": "d", "text": "reset", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which property sets background image?",
+      "options": [
+        { "id": "a", "text": "background", "is_correct": false },
+        { "id": "b", "text": "image", "is_correct": false },
+        { "id": "c", "text": "background-image", "is_correct": true },
+        { "id": "d", "text": "bg-image", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which property repeats background?",
+      "options": [
+        { "id": "a", "text": "repeat-bg", "is_correct": false },
+        { "id": "b", "text": "background-repeat", "is_correct": true },
+        { "id": "c", "text": "image-repeat", "is_correct": false },
+        { "id": "d", "text": "bg-repeat", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which value prevents background repeat?",
+      "options": [
+        { "id": "a", "text": "no-repeat", "is_correct": true },
+        { "id": "b", "text": "none", "is_correct": false },
+        { "id": "c", "text": "stop", "is_correct": false },
+        { "id": "d", "text": "disable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which property sets list style?",
+      "options": [
+        { "id": "a", "text": "list-type", "is_correct": false },
+        { "id": "b", "text": "bullet-style", "is_correct": false },
+        { "id": "c", "text": "list-style", "is_correct": true },
+        { "id": "d", "text": "style-list", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which value removes list bullets?",
+      "options": [
+        { "id": "a", "text": "none", "is_correct": true },
+        { "id": "b", "text": "remove", "is_correct": false },
+        { "id": "c", "text": "hidden", "is_correct": false },
+        { "id": "d", "text": "no-style", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which property controls display type?",
+      "options": [
+        { "id": "a", "text": "display", "is_correct": true },
+        { "id": "b", "text": "view", "is_correct": false },
+        { "id": "c", "text": "layout", "is_correct": false },
+        { "id": "d", "text": "show", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which value makes element inline?",
+      "options": [
+        { "id": "a", "text": "inline", "is_correct": true },
+        { "id": "b", "text": "block", "is_correct": false },
+        { "id": "c", "text": "flex", "is_correct": false },
+        { "id": "d", "text": "grid", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which value makes element block?",
+      "options": [
+        { "id": "a", "text": "inline", "is_correct": false },
+        { "id": "b", "text": "block", "is_correct": true },
+        { "id": "c", "text": "flex", "is_correct": false },
+        { "id": "d", "text": "grid", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which property controls stacking order?",
+      "options": [
+        { "id": "a", "text": "layer", "is_correct": false },
+        { "id": "b", "text": "index", "is_correct": false },
+        { "id": "c", "text": "z-index", "is_correct": true },
+        { "id": "d", "text": "stack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which value makes text italic?",
+      "options": [
+        { "id": "a", "text": "italic", "is_correct": true },
+        { "id": "b", "text": "bold", "is_correct": false },
+        { "id": "c", "text": "normal", "is_correct": false },
+        { "id": "d", "text": "capitalize", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which property sets line spacing?",
+      "options": [
+        { "id": "a", "text": "line-height", "is_correct": true },
+        { "id": "b", "text": "text-spacing", "is_correct": false },
+        { "id": "c", "text": "word-spacing", "is_correct": false },
+        { "id": "d", "text": "letter-spacing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which property sets word spacing?",
+      "options": [
+        { "id": "a", "text": "word-spacing", "is_correct": true },
+        { "id": "b", "text": "letter-spacing", "is_correct": false },
+        { "id": "c", "text": "line-height", "is_correct": false },
+        { "id": "d", "text": "text-spacing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which property sets letter spacing?",
+      "options": [
+        { "id": "a", "text": "letter-spacing", "is_correct": true },
+        { "id": "b", "text": "word-spacing", "is_correct": false },
+        { "id": "c", "text": "line-spacing", "is_correct": false },
+        { "id": "d", "text": "font-spacing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which property transforms text case?",
+      "options": [
+        { "id": "a", "text": "text-transform", "is_correct": true },
+        { "id": "b", "text": "font-case", "is_correct": false },
+        { "id": "c", "text": "text-style", "is_correct": false },
+        { "id": "d", "text": "uppercase", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which value makes text uppercase?",
+      "options": [
+        { "id": "a", "text": "uppercase", "is_correct": true },
+        { "id": "b", "text": "capital", "is_correct": false },
+        { "id": "c", "text": "upper", "is_correct": false },
+        { "id": "d", "text": "big", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which property controls overflow?",
+      "options": [
+        { "id": "a", "text": "overflow", "is_correct": true },
+        { "id": "b", "text": "clip", "is_correct": false },
+        { "id": "c", "text": "scroll", "is_correct": false },
+        { "id": "d", "text": "hidden", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which value hides overflow content?",
+      "options": [
+        { "id": "a", "text": "hidden", "is_correct": true },
+        { "id": "b", "text": "none", "is_correct": false },
+        { "id": "c", "text": "clip", "is_correct": false },
+        { "id": "d", "text": "remove", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which property adds box shadow?",
+      "options": [
+        { "id": "a", "text": "box-shadow", "is_correct": true },
+        { "id": "b", "text": "shadow", "is_correct": false },
+        { "id": "c", "text": "border-shadow", "is_correct": false },
+        { "id": "d", "text": "element-shadow", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which property adds text shadow?",
+      "options": [
+        { "id": "a", "text": "text-shadow", "is_correct": true },
+        { "id": "b", "text": "font-shadow", "is_correct": false },
+        { "id": "c", "text": "shadow-text", "is_correct": false },
+        { "id": "d", "text": "text-effect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which property controls visibility?",
+      "options": [
+        { "id": "a", "text": "display", "is_correct": false },
+        { "id": "b", "text": "opacity", "is_correct": false },
+        { "id": "c", "text": "visibility", "is_correct": true },
+        { "id": "d", "text": "hidden", "is_correct": false }
+      ]
+    }
+  ]
+}

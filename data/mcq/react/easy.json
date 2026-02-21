@@ -1,0 +1,520 @@
+{
+  "quiz_id": "react_easy",
+  "language": "react",
+  "level": "easy",
+  "title": "React Basics - Easy",
+  "description": "React fundamentals, JSX, components, props, state, hooks basics.",
+  "duration_minutes": 20,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is React?",
+      "options": [
+        { "id": "a", "text": "A database", "is_correct": false },
+        { "id": "b", "text": "A JavaScript library for building UI", "is_correct": true },
+        { "id": "c", "text": "A backend framework", "is_correct": false },
+        { "id": "d", "text": "An operating system", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Who developed React?",
+      "options": [
+        { "id": "a", "text": "Google", "is_correct": false },
+        { "id": "b", "text": "Microsoft", "is_correct": false },
+        { "id": "c", "text": "Facebook", "is_correct": true },
+        { "id": "d", "text": "Amazon", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which language is used to write React components?",
+      "options": [
+        { "id": "a", "text": "Python", "is_correct": false },
+        { "id": "b", "text": "Java", "is_correct": false },
+        { "id": "c", "text": "JavaScript", "is_correct": true },
+        { "id": "d", "text": "C++", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "What is JSX?",
+      "options": [
+        { "id": "a", "text": "A CSS preprocessor", "is_correct": false },
+        { "id": "b", "text": "A database query language", "is_correct": false },
+        { "id": "c", "text": "JavaScript XML syntax", "is_correct": true },
+        { "id": "d", "text": "A template engine", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which method is used to create components in React?",
+      "options": [
+        { "id": "a", "text": "Functions or Classes", "is_correct": true },
+        { "id": "b", "text": "Loops", "is_correct": false },
+        { "id": "c", "text": "Arrays", "is_correct": false },
+        { "id": "d", "text": "Objects only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is a React component?",
+      "options": [
+        { "id": "a", "text": "A CSS file", "is_correct": false },
+        { "id": "b", "text": "A reusable UI block", "is_correct": true },
+        { "id": "c", "text": "A database table", "is_correct": false },
+        { "id": "d", "text": "A server", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "What is props in React?",
+      "options": [
+        { "id": "a", "text": "Internal component data", "is_correct": false },
+        { "id": "b", "text": "Functions only", "is_correct": false },
+        { "id": "c", "text": "Data passed to components", "is_correct": true },
+        { "id": "d", "text": "CSS styles", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Are props mutable?",
+      "options": [
+        { "id": "a", "text": "Yes", "is_correct": false },
+        { "id": "b", "text": "No", "is_correct": true },
+        { "id": "c", "text": "Sometimes", "is_correct": false },
+        { "id": "d", "text": "Only in class components", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "What is state in React?",
+      "options": [
+        { "id": "a", "text": "External data", "is_correct": false },
+        { "id": "b", "text": "Component local data", "is_correct": true },
+        { "id": "c", "text": "Props", "is_correct": false },
+        { "id": "d", "text": "CSS styles", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which hook is used to manage state in functional components?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useState", "is_correct": true },
+        { "id": "c", "text": "useContext", "is_correct": false },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which hook is used for side effects?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": true },
+        { "id": "c", "text": "useMemo", "is_correct": false },
+        { "id": "d", "text": "useCallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which hook replaces lifecycle methods?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useEffect", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useReducer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "What does Virtual DOM do?",
+      "options": [
+        { "id": "a", "text": "Directly updates browser DOM", "is_correct": false },
+        { "id": "b", "text": "Improves performance by minimizing DOM updates", "is_correct": true },
+        { "id": "c", "text": "Stores data permanently", "is_correct": false },
+        { "id": "d", "text": "Handles routing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which method is used to render React app?",
+      "options": [
+        { "id": "a", "text": "render()", "is_correct": false },
+        { "id": "b", "text": "ReactDOM.render()", "is_correct": true },
+        { "id": "c", "text": "createApp()", "is_correct": false },
+        { "id": "d", "text": "mount()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which symbol is used to embed JavaScript in JSX?",
+      "options": [
+        { "id": "a", "text": "()", "is_correct": false },
+        { "id": "b", "text": "[]", "is_correct": false },
+        { "id": "c", "text": "{}", "is_correct": true },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "What is the default behavior of React when state changes?",
+      "options": [
+        { "id": "a", "text": "Reload page", "is_correct": false },
+        { "id": "b", "text": "Re-render component", "is_correct": true },
+        { "id": "c", "text": "Restart server", "is_correct": false },
+        { "id": "d", "text": "Clear DOM", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which hook is used to reference DOM elements?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useRef", "is_correct": true },
+        { "id": "c", "text": "useMemo", "is_correct": false },
+        { "id": "d", "text": "useState", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which hook is used for global state sharing?",
+      "options": [
+        { "id": "a", "text": "useContext", "is_correct": true },
+        { "id": "b", "text": "useState", "is_correct": false },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "useReducer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which hook is similar to Redux pattern?",
+      "options": [
+        { "id": "a", "text": "useMemo", "is_correct": false },
+        { "id": "b", "text": "useReducer", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which hook improves performance by memoization?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useMemo", "is_correct": true },
+        { "id": "c", "text": "useState", "is_correct": false },
+        { "id": "d", "text": "useContext", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which hook memoizes functions?",
+      "options": [
+        { "id": "a", "text": "useCallback", "is_correct": true },
+        { "id": "b", "text": "useMemo", "is_correct": false },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which prop is required when rendering list items?",
+      "options": [
+        { "id": "a", "text": "id", "is_correct": false },
+        { "id": "b", "text": "name", "is_correct": false },
+        { "id": "c", "text": "key", "is_correct": true },
+        { "id": "d", "text": "index", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Why is key prop important?",
+      "options": [
+        { "id": "a", "text": "Styling", "is_correct": false },
+        { "id": "b", "text": "Unique identification for rendering optimization", "is_correct": true },
+        { "id": "c", "text": "Routing", "is_correct": false },
+        { "id": "d", "text": "API calls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which event handles input change?",
+      "options": [
+        { "id": "a", "text": "onClick", "is_correct": false },
+        { "id": "b", "text": "onSubmit", "is_correct": false },
+        { "id": "c", "text": "onChange", "is_correct": true },
+        { "id": "d", "text": "onHover", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which attribute replaces class in JSX?",
+      "options": [
+        { "id": "a", "text": "class", "is_correct": false },
+        { "id": "b", "text": "className", "is_correct": true },
+        { "id": "c", "text": "style", "is_correct": false },
+        { "id": "d", "text": "css", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which attribute is used for inline styling?",
+      "options": [
+        { "id": "a", "text": "className", "is_correct": false },
+        { "id": "b", "text": "css", "is_correct": false },
+        { "id": "c", "text": "style", "is_correct": true },
+        { "id": "d", "text": "design", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "How are styles written in JSX?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "Object", "is_correct": true },
+        { "id": "c", "text": "Array", "is_correct": false },
+        { "id": "d", "text": "Function", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which lifecycle phase runs after render?",
+      "options": [
+        { "id": "a", "text": "Mounting", "is_correct": false },
+        { "id": "b", "text": "Updating", "is_correct": false },
+        { "id": "c", "text": "useEffect", "is_correct": true },
+        { "id": "d", "text": "Unmounting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which hook runs only once on mount?",
+      "options": [
+        { "id": "a", "text": "useEffect with empty dependency", "is_correct": true },
+        { "id": "b", "text": "useState", "is_correct": false },
+        { "id": "c", "text": "useMemo", "is_correct": false },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which tool is commonly used to create React app?",
+      "options": [
+        { "id": "a", "text": "create-react-app", "is_correct": true },
+        { "id": "b", "text": "react-init", "is_correct": false },
+        { "id": "c", "text": "npm-start", "is_correct": false },
+        { "id": "d", "text": "react-cli", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which command starts React development server?",
+      "options": [
+        { "id": "a", "text": "npm run build", "is_correct": false },
+        { "id": "b", "text": "npm start", "is_correct": true },
+        { "id": "c", "text": "npm deploy", "is_correct": false },
+        { "id": "d", "text": "npm init", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which folder contains React components?",
+      "options": [
+        { "id": "a", "text": "node_modules", "is_correct": false },
+        { "id": "b", "text": "public", "is_correct": false },
+        { "id": "c", "text": "src", "is_correct": true },
+        { "id": "d", "text": "build", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which file is entry point of React app?",
+      "options": [
+        { "id": "a", "text": "App.js", "is_correct": false },
+        { "id": "b", "text": "index.js", "is_correct": true },
+        { "id": "c", "text": "main.js", "is_correct": false },
+        { "id": "d", "text": "start.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which hook handles form inputs?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": true },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useContext", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which feature allows conditional rendering?",
+      "options": [
+        { "id": "a", "text": "Loops", "is_correct": false },
+        { "id": "b", "text": "Ternary / logical operators", "is_correct": true },
+        { "id": "c", "text": "Functions only", "is_correct": false },
+        { "id": "d", "text": "Hooks", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which operator is used for conditional rendering?",
+      "options": [
+        { "id": "a", "text": "??", "is_correct": false },
+        { "id": "b", "text": "&&", "is_correct": true },
+        { "id": "c", "text": "::", "is_correct": false },
+        { "id": "d", "text": "=>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which hook cleans up side effects?",
+      "options": [
+        { "id": "a", "text": "return function in useEffect", "is_correct": true },
+        { "id": "b", "text": "useMemo", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useState", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "What is lifting state up?",
+      "options": [
+        { "id": "a", "text": "Moving state to parent component", "is_correct": true },
+        { "id": "b", "text": "Using Redux", "is_correct": false },
+        { "id": "c", "text": "Deleting state", "is_correct": false },
+        { "id": "d", "text": "Using props", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which hook shares data without props drilling?",
+      "options": [
+        { "id": "a", "text": "useReducer", "is_correct": false },
+        { "id": "b", "text": "useContext", "is_correct": true },
+        { "id": "c", "text": "useMemo", "is_correct": false },
+        { "id": "d", "text": "useCallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which hook optimizes expensive calculations?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useMemo", "is_correct": true },
+        { "id": "c", "text": "useState", "is_correct": false },
+        { "id": "d", "text": "useContext", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which hook prevents unnecessary re-renders of child components?",
+      "options": [
+        { "id": "a", "text": "useCallback", "is_correct": true },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useReducer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which function is used to update state?",
+      "options": [
+        { "id": "a", "text": "setState", "is_correct": true },
+        { "id": "b", "text": "updateState", "is_correct": false },
+        { "id": "c", "text": "changeState", "is_correct": false },
+        { "id": "d", "text": "modifyState", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Can React components return multiple elements?",
+      "options": [
+        { "id": "a", "text": "No", "is_correct": false },
+        { "id": "b", "text": "Yes using fragments", "is_correct": true },
+        { "id": "c", "text": "Only div", "is_correct": false },
+        { "id": "d", "text": "Only arrays", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which syntax is used for fragments?",
+      "options": [
+        { "id": "a", "text": "<div></div>", "is_correct": false },
+        { "id": "b", "text": "<React.Fragment></React.Fragment>", "is_correct": true },
+        { "id": "c", "text": "<span></span>", "is_correct": false },
+        { "id": "d", "text": "<container></container>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which shorthand syntax is used for fragments?",
+      "options": [
+        { "id": "a", "text": "[]", "is_correct": false },
+        { "id": "b", "text": "<></>", "is_correct": true },
+        { "id": "c", "text": "{}", "is_correct": false },
+        { "id": "d", "text": "()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which hook is NOT built-in?",
+      "options": [
+        { "id": "a", "text": "useFetch", "is_correct": true },
+        { "id": "b", "text": "useState", "is_correct": false },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "useContext", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "What are custom hooks?",
+      "options": [
+        { "id": "a", "text": "Hooks made by developers", "is_correct": true },
+        { "id": "b", "text": "Built-in hooks", "is_correct": false },
+        { "id": "c", "text": "Server hooks", "is_correct": false },
+        { "id": "d", "text": "Browser hooks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which naming convention is used for hooks?",
+      "options": [
+        { "id": "a", "text": "start with get", "is_correct": false },
+        { "id": "b", "text": "start with use", "is_correct": true },
+        { "id": "c", "text": "camelCase only", "is_correct": false },
+        { "id": "d", "text": "snake_case", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which rule must hooks follow?",
+      "options": [
+        { "id": "a", "text": "Call hooks conditionally", "is_correct": false },
+        { "id": "b", "text": "Call hooks at top level", "is_correct": true },
+        { "id": "c", "text": "Call hooks in loops", "is_correct": false },
+        { "id": "d", "text": "Call hooks inside if blocks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which React feature improves UI performance?",
+      "options": [
+        { "id": "a", "text": "Virtual DOM", "is_correct": true },
+        { "id": "b", "text": "Direct DOM access", "is_correct": false },
+        { "id": "c", "text": "Manual rendering", "is_correct": false },
+        { "id": "d", "text": "Server reload", "is_correct": false }
+      ]
+    }
+  ]
+}

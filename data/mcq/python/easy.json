@@ -1,0 +1,520 @@
+{
+  "quiz_id": "python_easy",
+  "language": "python",
+  "level": "easy",
+  "title": "Python Basics - Easy",
+  "description": "Python syntax, variables, data types, conditions, loops, and basics.",
+  "duration_minutes": 15,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Python is a ____ language.",
+      "options": [
+        { "id": "a", "text": "Low-level", "is_correct": false },
+        { "id": "b", "text": "Machine-level", "is_correct": false },
+        { "id": "c", "text": "High-level", "is_correct": true },
+        { "id": "d", "text": "Assembly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword is used to define a function?",
+      "options": [
+        { "id": "a", "text": "function", "is_correct": false },
+        { "id": "b", "text": "def", "is_correct": true },
+        { "id": "c", "text": "fun", "is_correct": false },
+        { "id": "d", "text": "define", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which symbol is used for comments?",
+      "options": [
+        { "id": "a", "text": "//", "is_correct": false },
+        { "id": "b", "text": "<!-- -->", "is_correct": false },
+        { "id": "c", "text": "#", "is_correct": true },
+        { "id": "d", "text": "/* */", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which function prints output?",
+      "options": [
+        { "id": "a", "text": "echo()", "is_correct": false },
+        { "id": "b", "text": "write()", "is_correct": false },
+        { "id": "c", "text": "print()", "is_correct": true },
+        { "id": "d", "text": "output()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which data type stores whole numbers?",
+      "options": [
+        { "id": "a", "text": "float", "is_correct": false },
+        { "id": "b", "text": "complex", "is_correct": false },
+        { "id": "c", "text": "int", "is_correct": true },
+        { "id": "d", "text": "str", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which data type stores decimal values?",
+      "options": [
+        { "id": "a", "text": "int", "is_correct": false },
+        { "id": "b", "text": "float", "is_correct": true },
+        { "id": "c", "text": "bool", "is_correct": false },
+        { "id": "d", "text": "str", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which data type stores True or False?",
+      "options": [
+        { "id": "a", "text": "int", "is_correct": false },
+        { "id": "b", "text": "str", "is_correct": false },
+        { "id": "c", "text": "bool", "is_correct": true },
+        { "id": "d", "text": "float", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which keyword is used for condition checking?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "if", "is_correct": true },
+        { "id": "c", "text": "while", "is_correct": false },
+        { "id": "d", "text": "loop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which keyword is used for loop?",
+      "options": [
+        { "id": "a", "text": "repeat", "is_correct": false },
+        { "id": "b", "text": "foreach", "is_correct": false },
+        { "id": "c", "text": "for", "is_correct": true },
+        { "id": "d", "text": "iterate", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which loop runs while condition is true?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "do-while", "is_correct": false },
+        { "id": "c", "text": "while", "is_correct": true },
+        { "id": "d", "text": "repeat", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword exits loop?",
+      "options": [
+        { "id": "a", "text": "stop", "is_correct": false },
+        { "id": "b", "text": "exit", "is_correct": false },
+        { "id": "c", "text": "break", "is_correct": true },
+        { "id": "d", "text": "end", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword skips current iteration?",
+      "options": [
+        { "id": "a", "text": "skip", "is_correct": false },
+        { "id": "b", "text": "pass", "is_correct": false },
+        { "id": "c", "text": "continue", "is_correct": true },
+        { "id": "d", "text": "next", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which keyword does nothing?",
+      "options": [
+        { "id": "a", "text": "break", "is_correct": false },
+        { "id": "b", "text": "continue", "is_correct": false },
+        { "id": "c", "text": "pass", "is_correct": true },
+        { "id": "d", "text": "null", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which operator is used for assignment?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "!=", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "<=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which operator compares equality?",
+      "options": [
+        { "id": "a", "text": "=", "is_correct": false },
+        { "id": "b", "text": "==", "is_correct": true },
+        { "id": "c", "text": "!=", "is_correct": false },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which data structure stores ordered items?",
+      "options": [
+        { "id": "a", "text": "set", "is_correct": false },
+        { "id": "b", "text": "list", "is_correct": true },
+        { "id": "c", "text": "dict", "is_correct": false },
+        { "id": "d", "text": "tuple", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which data structure stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "tuple", "is_correct": false },
+        { "id": "c", "text": "dict", "is_correct": true },
+        { "id": "d", "text": "set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which data structure does not allow duplicates?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "tuple", "is_correct": false },
+        { "id": "c", "text": "set", "is_correct": true },
+        { "id": "d", "text": "dict", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which data structure is immutable?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "set", "is_correct": false },
+        { "id": "c", "text": "tuple", "is_correct": true },
+        { "id": "d", "text": "dict", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which function returns length?",
+      "options": [
+        { "id": "a", "text": "count()", "is_correct": false },
+        { "id": "b", "text": "size()", "is_correct": false },
+        { "id": "c", "text": "len()", "is_correct": true },
+        { "id": "d", "text": "length()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which function takes user input?",
+      "options": [
+        { "id": "a", "text": "scan()", "is_correct": false },
+        { "id": "b", "text": "read()", "is_correct": false },
+        { "id": "c", "text": "input()", "is_correct": true },
+        { "id": "d", "text": "get()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which keyword is used to import module?",
+      "options": [
+        { "id": "a", "text": "include", "is_correct": false },
+        { "id": "b", "text": "require", "is_correct": false },
+        { "id": "c", "text": "import", "is_correct": true },
+        { "id": "d", "text": "use", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which module supports math operations?",
+      "options": [
+        { "id": "a", "text": "random", "is_correct": false },
+        { "id": "b", "text": "sys", "is_correct": false },
+        { "id": "c", "text": "math", "is_correct": true },
+        { "id": "d", "text": "os", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which operator is used for exponent?",
+      "options": [
+        { "id": "a", "text": "^", "is_correct": false },
+        { "id": "b", "text": "**", "is_correct": true },
+        { "id": "c", "text": "//", "is_correct": false },
+        { "id": "d", "text": "%", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which operator returns remainder?",
+      "options": [
+        { "id": "a", "text": "/", "is_correct": false },
+        { "id": "b", "text": "//", "is_correct": false },
+        { "id": "c", "text": "%", "is_correct": true },
+        { "id": "d", "text": "**", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword defines class?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "define", "is_correct": false },
+        { "id": "c", "text": "class", "is_correct": true },
+        { "id": "d", "text": "struct", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword refers to current object?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "self", "is_correct": true },
+        { "id": "c", "text": "current", "is_correct": false },
+        { "id": "d", "text": "obj", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which keyword inherits class?",
+      "options": [
+        { "id": "a", "text": "implements", "is_correct": false },
+        { "id": "b", "text": "inherits", "is_correct": false },
+        { "id": "c", "text": "extends", "is_correct": false },
+        { "id": "d", "text": "class Child(Parent)", "is_correct": true }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which keyword handles exceptions?",
+      "options": [
+        { "id": "a", "text": "catch", "is_correct": false },
+        { "id": "b", "text": "try", "is_correct": true },
+        { "id": "c", "text": "handle", "is_correct": false },
+        { "id": "d", "text": "error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which block always executes?",
+      "options": [
+        { "id": "a", "text": "except", "is_correct": false },
+        { "id": "b", "text": "try", "is_correct": false },
+        { "id": "c", "text": "finally", "is_correct": true },
+        { "id": "d", "text": "raise", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which keyword raises exception?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": false },
+        { "id": "b", "text": "raise", "is_correct": true },
+        { "id": "c", "text": "error", "is_correct": false },
+        { "id": "d", "text": "except", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which file extension is used for Python?",
+      "options": [
+        { "id": "a", "text": ".java", "is_correct": false },
+        { "id": "b", "text": ".exe", "is_correct": false },
+        { "id": "c", "text": ".py", "is_correct": true },
+        { "id": "d", "text": ".class", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which function converts string to integer?",
+      "options": [
+        { "id": "a", "text": "str()", "is_correct": false },
+        { "id": "b", "text": "int()", "is_correct": true },
+        { "id": "c", "text": "float()", "is_correct": false },
+        { "id": "d", "text": "parse()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which function converts integer to string?",
+      "options": [
+        { "id": "a", "text": "int()", "is_correct": false },
+        { "id": "b", "text": "string()", "is_correct": false },
+        { "id": "c", "text": "str()", "is_correct": true },
+        { "id": "d", "text": "text()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword defines anonymous function?",
+      "options": [
+        { "id": "a", "text": "def", "is_correct": false },
+        { "id": "b", "text": "lambda", "is_correct": true },
+        { "id": "c", "text": "func", "is_correct": false },
+        { "id": "d", "text": "anon", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which function returns absolute value?",
+      "options": [
+        { "id": "a", "text": "abs()", "is_correct": true },
+        { "id": "b", "text": "absolute()", "is_correct": false },
+        { "id": "c", "text": "fabs()", "is_correct": false },
+        { "id": "d", "text": "mod()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which module generates random numbers?",
+      "options": [
+        { "id": "a", "text": "math", "is_correct": false },
+        { "id": "b", "text": "sys", "is_correct": false },
+        { "id": "c", "text": "random", "is_correct": true },
+        { "id": "d", "text": "time", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which keyword deletes variable?",
+      "options": [
+        { "id": "a", "text": "remove", "is_correct": false },
+        { "id": "b", "text": "delete", "is_correct": false },
+        { "id": "c", "text": "del", "is_correct": true },
+        { "id": "d", "text": "free", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which function sorts list?",
+      "options": [
+        { "id": "a", "text": "sort()", "is_correct": true },
+        { "id": "b", "text": "order()", "is_correct": false },
+        { "id": "c", "text": "arrange()", "is_correct": false },
+        { "id": "d", "text": "sortedlist()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which function returns sorted copy?",
+      "options": [
+        { "id": "a", "text": "sort()", "is_correct": false },
+        { "id": "b", "text": "sorted()", "is_correct": true },
+        { "id": "c", "text": "order()", "is_correct": false },
+        { "id": "d", "text": "arrange()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which keyword checks membership?",
+      "options": [
+        { "id": "a", "text": "has", "is_correct": false },
+        { "id": "b", "text": "in", "is_correct": true },
+        { "id": "c", "text": "contains", "is_correct": false },
+        { "id": "d", "text": "exists", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which function opens file?",
+      "options": [
+        { "id": "a", "text": "file()", "is_correct": false },
+        { "id": "b", "text": "open()", "is_correct": true },
+        { "id": "c", "text": "read()", "is_correct": false },
+        { "id": "d", "text": "load()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which mode reads file?",
+      "options": [
+        { "id": "a", "text": "w", "is_correct": false },
+        { "id": "b", "text": "a", "is_correct": false },
+        { "id": "c", "text": "r", "is_correct": true },
+        { "id": "d", "text": "x", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which mode appends file?",
+      "options": [
+        { "id": "a", "text": "w", "is_correct": false },
+        { "id": "b", "text": "r", "is_correct": false },
+        { "id": "c", "text": "a", "is_correct": true },
+        { "id": "d", "text": "x", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword creates generator?",
+      "options": [
+        { "id": "a", "text": "return", "is_correct": false },
+        { "id": "b", "text": "yield", "is_correct": true },
+        { "id": "c", "text": "gen", "is_correct": false },
+        { "id": "d", "text": "produce", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword defines decorator?",
+      "options": [
+        { "id": "a", "text": "#", "is_correct": false },
+        { "id": "b", "text": "@", "is_correct": true },
+        { "id": "c", "text": "$", "is_correct": false },
+        { "id": "d", "text": "%", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which function returns type?",
+      "options": [
+        { "id": "a", "text": "typeof()", "is_correct": false },
+        { "id": "b", "text": "class()", "is_correct": false },
+        { "id": "c", "text": "type()", "is_correct": true },
+        { "id": "d", "text": "kind()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which value represents nothing?",
+      "options": [
+        { "id": "a", "text": "0", "is_correct": false },
+        { "id": "b", "text": "false", "is_correct": false },
+        { "id": "c", "text": "none", "is_correct": false },
+        { "id": "d", "text": "None", "is_correct": true }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword checks identity?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "equals", "is_correct": false },
+        { "id": "c", "text": "is", "is_correct": true },
+        { "id": "d", "text": "same", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which function returns memory address reference?",
+      "options": [
+        { "id": "a", "text": "ref()", "is_correct": false },
+        { "id": "b", "text": "addr()", "is_correct": false },
+        { "id": "c", "text": "id()", "is_correct": true },
+        { "id": "d", "text": "memory()", "is_correct": false }
+      ]
+    }
+  ]
+}

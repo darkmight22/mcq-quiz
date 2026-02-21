@@ -1,0 +1,520 @@
+{
+  "quiz_id": "python_medium",
+  "language": "python",
+  "level": "medium",
+  "title": "Python Core Concepts - Medium",
+  "description": "Functions, OOP, modules, exceptions, iterators, comprehensions.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which feature allows a function to accept variable arguments?",
+      "options": [
+        { "id": "a", "text": "Default arguments", "is_correct": false },
+        { "id": "b", "text": "*args and **kwargs", "is_correct": true },
+        { "id": "c", "text": "Lambda functions", "is_correct": false },
+        { "id": "d", "text": "Closures", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword is used to create anonymous functions?",
+      "options": [
+        { "id": "a", "text": "def", "is_correct": false },
+        { "id": "b", "text": "func", "is_correct": false },
+        { "id": "c", "text": "lambda", "is_correct": true },
+        { "id": "d", "text": "anon", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which concept allows function to remember its state?",
+      "options": [
+        { "id": "a", "text": "Decorator", "is_correct": false },
+        { "id": "b", "text": "Closure", "is_correct": true },
+        { "id": "c", "text": "Generator", "is_correct": false },
+        { "id": "d", "text": "Recursion", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which keyword is used to create generator?",
+      "options": [
+        { "id": "a", "text": "return", "is_correct": false },
+        { "id": "b", "text": "yield", "is_correct": true },
+        { "id": "c", "text": "gen", "is_correct": false },
+        { "id": "d", "text": "iterator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which method converts iterable to list?",
+      "options": [
+        { "id": "a", "text": "array()", "is_correct": false },
+        { "id": "b", "text": "tuple()", "is_correct": false },
+        { "id": "c", "text": "list()", "is_correct": true },
+        { "id": "d", "text": "set()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which data structure uses key hashing?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "Tuple", "is_correct": false },
+        { "id": "c", "text": "Dictionary", "is_correct": true },
+        { "id": "d", "text": "Set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which comprehension creates dictionary?",
+      "options": [
+        { "id": "a", "text": "[x for x in y]", "is_correct": false },
+        { "id": "b", "text": "(x for x in y)", "is_correct": false },
+        { "id": "c", "text": "{k:v for k,v in x}", "is_correct": true },
+        { "id": "d", "text": "{x for x in y}", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which operator checks object identity?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "equals", "is_correct": false },
+        { "id": "c", "text": "is", "is_correct": true },
+        { "id": "d", "text": "in", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which function returns iterator?",
+      "options": [
+        { "id": "a", "text": "iter()", "is_correct": true },
+        { "id": "b", "text": "next()", "is_correct": false },
+        { "id": "c", "text": "range()", "is_correct": false },
+        { "id": "d", "text": "loop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which function fetches next item?",
+      "options": [
+        { "id": "a", "text": "iter()", "is_correct": false },
+        { "id": "b", "text": "next()", "is_correct": true },
+        { "id": "c", "text": "get()", "is_correct": false },
+        { "id": "d", "text": "fetch()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword makes variable global?",
+      "options": [
+        { "id": "a", "text": "global", "is_correct": true },
+        { "id": "b", "text": "public", "is_correct": false },
+        { "id": "c", "text": "extern", "is_correct": false },
+        { "id": "d", "text": "scope", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword modifies outer function variable?",
+      "options": [
+        { "id": "a", "text": "outer", "is_correct": false },
+        { "id": "b", "text": "global", "is_correct": false },
+        { "id": "c", "text": "nonlocal", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which OOP concept bundles data and methods?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Polymorphism", "is_correct": false },
+        { "id": "c", "text": "Encapsulation", "is_correct": true },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which method initializes object?",
+      "options": [
+        { "id": "a", "text": "__init__", "is_correct": true },
+        { "id": "b", "text": "__new__", "is_correct": false },
+        { "id": "c", "text": "__start__", "is_correct": false },
+        { "id": "d", "text": "__create__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword supports multiple inheritance?",
+      "options": [
+        { "id": "a", "text": "extends", "is_correct": false },
+        { "id": "b", "text": "implements", "is_correct": false },
+        { "id": "c", "text": "class Child(A,B)", "is_correct": true },
+        { "id": "d", "text": "inherits", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which method returns object attributes?",
+      "options": [
+        { "id": "a", "text": "get()", "is_correct": false },
+        { "id": "b", "text": "vars()", "is_correct": true },
+        { "id": "c", "text": "dict()", "is_correct": false },
+        { "id": "d", "text": "dir()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which function returns all attributes including methods?",
+      "options": [
+        { "id": "a", "text": "vars()", "is_correct": false },
+        { "id": "b", "text": "dir()", "is_correct": true },
+        { "id": "c", "text": "getattr()", "is_correct": false },
+        { "id": "d", "text": "inspect()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which method checks attribute existence?",
+      "options": [
+        { "id": "a", "text": "get()", "is_correct": false },
+        { "id": "b", "text": "hasattr()", "is_correct": true },
+        { "id": "c", "text": "in", "is_correct": false },
+        { "id": "d", "text": "exists()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which function accesses attribute dynamically?",
+      "options": [
+        { "id": "a", "text": "getattr()", "is_correct": true },
+        { "id": "b", "text": "setattr()", "is_correct": false },
+        { "id": "c", "text": "hasattr()", "is_correct": false },
+        { "id": "d", "text": "property()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which function sets attribute dynamically?",
+      "options": [
+        { "id": "a", "text": "getattr()", "is_correct": false },
+        { "id": "b", "text": "setattr()", "is_correct": true },
+        { "id": "c", "text": "update()", "is_correct": false },
+        { "id": "d", "text": "assign()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which module supports regular expressions?",
+      "options": [
+        { "id": "a", "text": "regex", "is_correct": false },
+        { "id": "b", "text": "re", "is_correct": true },
+        { "id": "c", "text": "pattern", "is_correct": false },
+        { "id": "d", "text": "match", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which function finds all matches?",
+      "options": [
+        { "id": "a", "text": "re.match()", "is_correct": false },
+        { "id": "b", "text": "re.search()", "is_correct": false },
+        { "id": "c", "text": "re.findall()", "is_correct": true },
+        { "id": "d", "text": "re.find()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which module handles JSON?",
+      "options": [
+        { "id": "a", "text": "json", "is_correct": true },
+        { "id": "b", "text": "pickle", "is_correct": false },
+        { "id": "c", "text": "marshal", "is_correct": false },
+        { "id": "d", "text": "yaml", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which function converts object to JSON string?",
+      "options": [
+        { "id": "a", "text": "json.load()", "is_correct": false },
+        { "id": "b", "text": "json.read()", "is_correct": false },
+        { "id": "c", "text": "json.dumps()", "is_correct": true },
+        { "id": "d", "text": "json.write()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which function reads JSON from file?",
+      "options": [
+        { "id": "a", "text": "json.loads()", "is_correct": false },
+        { "id": "b", "text": "json.parse()", "is_correct": false },
+        { "id": "c", "text": "json.load()", "is_correct": true },
+        { "id": "d", "text": "json.open()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which module supports date and time?",
+      "options": [
+        { "id": "a", "text": "clock", "is_correct": false },
+        { "id": "b", "text": "time", "is_correct": false },
+        { "id": "c", "text": "datetime", "is_correct": true },
+        { "id": "d", "text": "calendar", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which decorator converts method to static?",
+      "options": [
+        { "id": "a", "text": "@staticmethod", "is_correct": true },
+        { "id": "b", "text": "@classmethod", "is_correct": false },
+        { "id": "c", "text": "@static", "is_correct": false },
+        { "id": "d", "text": "@method", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which decorator receives class reference?",
+      "options": [
+        { "id": "a", "text": "@staticmethod", "is_correct": false },
+        { "id": "b", "text": "@classmethod", "is_correct": true },
+        { "id": "c", "text": "@decorator", "is_correct": false },
+        { "id": "d", "text": "@method", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which method resolves attribute lookup order?",
+      "options": [
+        { "id": "a", "text": "__dict__", "is_correct": false },
+        { "id": "b", "text": "MRO", "is_correct": true },
+        { "id": "c", "text": "__slots__", "is_correct": false },
+        { "id": "d", "text": "__bases__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which method returns MRO?",
+      "options": [
+        { "id": "a", "text": "mro()", "is_correct": true },
+        { "id": "b", "text": "order()", "is_correct": false },
+        { "id": "c", "text": "__mro__", "is_correct": false },
+        { "id": "d", "text": "resolve()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which feature restricts attribute creation?",
+      "options": [
+        { "id": "a", "text": "__dict__", "is_correct": false },
+        { "id": "b", "text": "__slots__", "is_correct": true },
+        { "id": "c", "text": "__init__", "is_correct": false },
+        { "id": "d", "text": "__new__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which module serializes objects to bytes?",
+      "options": [
+        { "id": "a", "text": "json", "is_correct": false },
+        { "id": "b", "text": "pickle", "is_correct": true },
+        { "id": "c", "text": "marshal", "is_correct": false },
+        { "id": "d", "text": "bytes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which method writes object to file using pickle?",
+      "options": [
+        { "id": "a", "text": "pickle.dump()", "is_correct": true },
+        { "id": "b", "text": "pickle.save()", "is_correct": false },
+        { "id": "c", "text": "pickle.write()", "is_correct": false },
+        { "id": "d", "text": "pickle.store()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which method reads object from pickle?",
+      "options": [
+        { "id": "a", "text": "pickle.read()", "is_correct": false },
+        { "id": "b", "text": "pickle.load()", "is_correct": true },
+        { "id": "c", "text": "pickle.open()", "is_correct": false },
+        { "id": "d", "text": "pickle.get()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword ensures cleanup code?",
+      "options": [
+        { "id": "a", "text": "except", "is_correct": false },
+        { "id": "b", "text": "finally", "is_correct": true },
+        { "id": "c", "text": "raise", "is_correct": false },
+        { "id": "d", "text": "close", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which statement auto-closes resources?",
+      "options": [
+        { "id": "a", "text": "try-finally", "is_correct": false },
+        { "id": "b", "text": "with", "is_correct": true },
+        { "id": "c", "text": "open-close", "is_correct": false },
+        { "id": "d", "text": "resource", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which function maps values?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": true },
+        { "id": "b", "text": "filter()", "is_correct": false },
+        { "id": "c", "text": "reduce()", "is_correct": false },
+        { "id": "d", "text": "apply()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which function filters values?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": false },
+        { "id": "b", "text": "filter()", "is_correct": true },
+        { "id": "c", "text": "reduce()", "is_correct": false },
+        { "id": "d", "text": "select()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which module supports functional tools?",
+      "options": [
+        { "id": "a", "text": "functools", "is_correct": true },
+        { "id": "b", "text": "itertools", "is_correct": false },
+        { "id": "c", "text": "operator", "is_correct": false },
+        { "id": "d", "text": "functions", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which function reduces iterable?",
+      "options": [
+        { "id": "a", "text": "reduce()", "is_correct": true },
+        { "id": "b", "text": "sum()", "is_correct": false },
+        { "id": "c", "text": "accumulate()", "is_correct": false },
+        { "id": "d", "text": "merge()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which module supports permutations?",
+      "options": [
+        { "id": "a", "text": "functools", "is_correct": false },
+        { "id": "b", "text": "itertools", "is_correct": true },
+        { "id": "c", "text": "collections", "is_correct": false },
+        { "id": "d", "text": "math", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which data structure counts elements?",
+      "options": [
+        { "id": "a", "text": "dict", "is_correct": false },
+        { "id": "b", "text": "Counter", "is_correct": true },
+        { "id": "c", "text": "defaultdict", "is_correct": false },
+        { "id": "d", "text": "OrderedDict", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which dictionary provides default values?",
+      "options": [
+        { "id": "a", "text": "dict", "is_correct": false },
+        { "id": "b", "text": "Counter", "is_correct": false },
+        { "id": "c", "text": "defaultdict", "is_correct": true },
+        { "id": "d", "text": "OrderedDict", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which decorator caches results?",
+      "options": [
+        { "id": "a", "text": "@cache", "is_correct": false },
+        { "id": "b", "text": "@lru_cache", "is_correct": true },
+        { "id": "c", "text": "@memo", "is_correct": false },
+        { "id": "d", "text": "@remember", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which module supports logging?",
+      "options": [
+        { "id": "a", "text": "debug", "is_correct": false },
+        { "id": "b", "text": "logger", "is_correct": false },
+        { "id": "c", "text": "logging", "is_correct": true },
+        { "id": "d", "text": "log", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which logging level is highest severity?",
+      "options": [
+        { "id": "a", "text": "WARNING", "is_correct": false },
+        { "id": "b", "text": "ERROR", "is_correct": false },
+        { "id": "c", "text": "CRITICAL", "is_correct": true },
+        { "id": "d", "text": "INFO", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which module supports multithreading?",
+      "options": [
+        { "id": "a", "text": "multiprocessing", "is_correct": false },
+        { "id": "b", "text": "threading", "is_correct": true },
+        { "id": "c", "text": "asyncio", "is_correct": false },
+        { "id": "d", "text": "concurrent", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which module supports async programming?",
+      "options": [
+        { "id": "a", "text": "threading", "is_correct": false },
+        { "id": "b", "text": "multiprocessing", "is_correct": false },
+        { "id": "c", "text": "asyncio", "is_correct": true },
+        { "id": "d", "text": "queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword defines async function?",
+      "options": [
+        { "id": "a", "text": "async", "is_correct": true },
+        { "id": "b", "text": "await", "is_correct": false },
+        { "id": "c", "text": "future", "is_correct": false },
+        { "id": "d", "text": "coroutine", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which keyword waits for async result?",
+      "options": [
+        { "id": "a", "text": "yield", "is_correct": false },
+        { "id": "b", "text": "wait", "is_correct": false },
+        { "id": "c", "text": "await", "is_correct": true },
+        { "id": "d", "text": "get", "is_correct": false }
+      ]
+    }
+  ]
+}

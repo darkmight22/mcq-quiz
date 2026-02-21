@@ -1,0 +1,520 @@
+{
+  "quiz_id": "react_hard",
+  "language": "react",
+  "level": "hard",
+  "title": "React Advanced - Hard",
+  "description": "Advanced React concepts: reconciliation, fiber, hooks internals, performance, SSR, concurrent rendering.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the primary goal of React Fiber?",
+      "options": [
+        { "id": "a", "text": "Better styling support", "is_correct": false },
+        { "id": "b", "text": "Incremental rendering and scheduling", "is_correct": true },
+        { "id": "c", "text": "Simpler syntax", "is_correct": false },
+        { "id": "d", "text": "Faster API calls", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "What problem does reconciliation solve?",
+      "options": [
+        { "id": "a", "text": "Routing issues", "is_correct": false },
+        { "id": "b", "text": "State synchronization", "is_correct": false },
+        { "id": "c", "text": "Efficient DOM updates", "is_correct": true },
+        { "id": "d", "text": "Memory leaks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which data structure does Fiber architecture use?",
+      "options": [
+        { "id": "a", "text": "Binary tree", "is_correct": false },
+        { "id": "b", "text": "Linked list of fibers", "is_correct": true },
+        { "id": "c", "text": "Hash table", "is_correct": false },
+        { "id": "d", "text": "Queue only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which phase can be paused and resumed in React?",
+      "options": [
+        { "id": "a", "text": "Commit phase", "is_correct": false },
+        { "id": "b", "text": "Render phase", "is_correct": true },
+        { "id": "c", "text": "Unmount phase", "is_correct": false },
+        { "id": "d", "text": "Cleanup phase", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which phase must be synchronous?",
+      "options": [
+        { "id": "a", "text": "Render phase", "is_correct": false },
+        { "id": "b", "text": "Commit phase", "is_correct": true },
+        { "id": "c", "text": "Diff phase", "is_correct": false },
+        { "id": "d", "text": "Scheduling phase", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is Concurrent React mainly used for?",
+      "options": [
+        { "id": "a", "text": "Server-side rendering", "is_correct": false },
+        { "id": "b", "text": "Blocking UI updates", "is_correct": false },
+        { "id": "c", "text": "Interruptible rendering", "is_correct": true },
+        { "id": "d", "text": "CSS optimization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which hook enables concurrent rendering features?",
+      "options": [
+        { "id": "a", "text": "useDeferredValue", "is_correct": true },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "useLayoutEffect", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which hook delays non-urgent state updates?",
+      "options": [
+        { "id": "a", "text": "useTransition", "is_correct": true },
+        { "id": "b", "text": "useCallback", "is_correct": false },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useReducer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "What does useTransition return?",
+      "options": [
+        { "id": "a", "text": "state and dispatch", "is_correct": false },
+        { "id": "b", "text": "value and setter", "is_correct": false },
+        { "id": "c", "text": "isPending and startTransition", "is_correct": true },
+        { "id": "d", "text": "ref and callback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which hook runs synchronously after DOM mutations?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useLayoutEffect", "is_correct": true },
+        { "id": "c", "text": "useInsertionEffect", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Why use useLayoutEffect carefully?",
+      "options": [
+        { "id": "a", "text": "It runs twice", "is_correct": false },
+        { "id": "b", "text": "It blocks browser painting", "is_correct": true },
+        { "id": "c", "text": "It causes memory leaks", "is_correct": false },
+        { "id": "d", "text": "It cannot access DOM", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which hook is designed for CSS-in-JS libraries?",
+      "options": [
+        { "id": "a", "text": "useInsertionEffect", "is_correct": true },
+        { "id": "b", "text": "useLayoutEffect", "is_correct": false },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "What causes tearing in concurrent rendering?",
+      "options": [
+        { "id": "a", "text": "Multiple renders of same state", "is_correct": true },
+        { "id": "b", "text": "CSS conflicts", "is_correct": false },
+        { "id": "c", "text": "Slow network", "is_correct": false },
+        { "id": "d", "text": "Memory leaks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which hook prevents tearing in external stores?",
+      "options": [
+        { "id": "a", "text": "useContext", "is_correct": false },
+        { "id": "b", "text": "useSyncExternalStore", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "What does useSyncExternalStore replace?",
+      "options": [
+        { "id": "a", "text": "Redux", "is_correct": false },
+        { "id": "b", "text": "useEffect subscriptions", "is_correct": true },
+        { "id": "c", "text": "useState", "is_correct": false },
+        { "id": "d", "text": "Context API", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which API enables server components?",
+      "options": [
+        { "id": "a", "text": "React.lazy", "is_correct": false },
+        { "id": "b", "text": "React Server Components", "is_correct": true },
+        { "id": "c", "text": "Suspense", "is_correct": false },
+        { "id": "d", "text": "StrictMode", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which feature allows streaming HTML from server?",
+      "options": [
+        { "id": "a", "text": "CSR", "is_correct": false },
+        { "id": "b", "text": "Streaming SSR with Suspense", "is_correct": true },
+        { "id": "c", "text": "Static rendering", "is_correct": false },
+        { "id": "d", "text": "Hydration only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "What is selective hydration?",
+      "options": [
+        { "id": "a", "text": "Hydrating entire app at once", "is_correct": false },
+        { "id": "b", "text": "Hydrating parts based on priority", "is_correct": true },
+        { "id": "c", "text": "Skipping hydration", "is_correct": false },
+        { "id": "d", "text": "Client-only rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which library popularized SSR with React?",
+      "options": [
+        { "id": "a", "text": "Gatsby", "is_correct": false },
+        { "id": "b", "text": "Next.js", "is_correct": true },
+        { "id": "c", "text": "Vite", "is_correct": false },
+        { "id": "d", "text": "Parcel", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which rendering strategy generates HTML at build time?",
+      "options": [
+        { "id": "a", "text": "SSR", "is_correct": false },
+        { "id": "b", "text": "CSR", "is_correct": false },
+        { "id": "c", "text": "SSG", "is_correct": true },
+        { "id": "d", "text": "ISR only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "What is ISR in Next.js?",
+      "options": [
+        { "id": "a", "text": "Instant Server Rendering", "is_correct": false },
+        { "id": "b", "text": "Incremental Static Regeneration", "is_correct": true },
+        { "id": "c", "text": "Internal State Rendering", "is_correct": false },
+        { "id": "d", "text": "Interactive Server Routing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which hook helps avoid blocking updates during typing?",
+      "options": [
+        { "id": "a", "text": "useMemo", "is_correct": false },
+        { "id": "b", "text": "useDeferredValue", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "useLayoutEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "What is hydration mismatch?",
+      "options": [
+        { "id": "a", "text": "CSS loading issue", "is_correct": false },
+        { "id": "b", "text": "Server and client HTML not matching", "is_correct": true },
+        { "id": "c", "text": "State mismatch between components", "is_correct": false },
+        { "id": "d", "text": "Routing error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which API forces client-only rendering in Next.js?",
+      "options": [
+        { "id": "a", "text": "use client", "is_correct": true },
+        { "id": "b", "text": "dynamic()", "is_correct": false },
+        { "id": "c", "text": "Suspense", "is_correct": false },
+        { "id": "d", "text": "useEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Why are keys critical in concurrent rendering?",
+      "options": [
+        { "id": "a", "text": "For styling", "is_correct": false },
+        { "id": "b", "text": "To preserve component identity", "is_correct": true },
+        { "id": "c", "text": "For routing", "is_correct": false },
+        { "id": "d", "text": "For SSR", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which optimization avoids re-rendering unchanged subtrees?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "React.memo", "is_correct": true },
+        { "id": "c", "text": "useRef", "is_correct": false },
+        { "id": "d", "text": "Fragments", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "What is render-as-you-fetch pattern?",
+      "options": [
+        { "id": "a", "text": "Fetching after render", "is_correct": false },
+        { "id": "b", "text": "Fetching before render blocks UI", "is_correct": false },
+        { "id": "c", "text": "Fetching during render with Suspense", "is_correct": true },
+        { "id": "d", "text": "Fetching in useEffect only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which API enables Suspense for data fetching?",
+      "options": [
+        { "id": "a", "text": "fetch()", "is_correct": false },
+        { "id": "b", "text": "use()", "is_correct": true },
+        { "id": "c", "text": "useEffect()", "is_correct": false },
+        { "id": "d", "text": "axios()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which version introduced Concurrent features?",
+      "options": [
+        { "id": "a", "text": "React 15", "is_correct": false },
+        { "id": "b", "text": "React 16", "is_correct": false },
+        { "id": "c", "text": "React 18", "is_correct": true },
+        { "id": "d", "text": "React 17", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which API batches state updates automatically?",
+      "options": [
+        { "id": "a", "text": "flushSync", "is_correct": false },
+        { "id": "b", "text": "Automatic batching (React 18)", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "setTimeout", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which API forces synchronous rendering?",
+      "options": [
+        { "id": "a", "text": "startTransition", "is_correct": false },
+        { "id": "b", "text": "flushSync", "is_correct": true },
+        { "id": "c", "text": "useDeferredValue", "is_correct": false },
+        { "id": "d", "text": "Suspense", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Why is flushSync discouraged?",
+      "options": [
+        { "id": "a", "text": "It causes errors", "is_correct": false },
+        { "id": "b", "text": "It breaks concurrent rendering benefits", "is_correct": true },
+        { "id": "c", "text": "It cannot update DOM", "is_correct": false },
+        { "id": "d", "text": "It is deprecated", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which hook should not be used for subscriptions?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "useLayoutEffect", "is_correct": false },
+        { "id": "c", "text": "useMemo", "is_correct": true },
+        { "id": "d", "text": "useSyncExternalStore", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which optimization reduces bundle size?",
+      "options": [
+        { "id": "a", "text": "Code splitting", "is_correct": true },
+        { "id": "b", "text": "Context API", "is_correct": false },
+        { "id": "c", "text": "useCallback", "is_correct": false },
+        { "id": "d", "text": "useRef", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which tool analyzes React performance?",
+      "options": [
+        { "id": "a", "text": "Redux DevTools", "is_correct": false },
+        { "id": "b", "text": "React Profiler", "is_correct": true },
+        { "id": "c", "text": "Webpack", "is_correct": false },
+        { "id": "d", "text": "ESLint", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "What does the Profiler measure?",
+      "options": [
+        { "id": "a", "text": "Network latency", "is_correct": false },
+        { "id": "b", "text": "Rendering time", "is_correct": true },
+        { "id": "c", "text": "Memory leaks", "is_correct": false },
+        { "id": "d", "text": "Bundle size", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which hook helps avoid stale closures?",
+      "options": [
+        { "id": "a", "text": "useRef", "is_correct": true },
+        { "id": "b", "text": "useMemo", "is_correct": false },
+        { "id": "c", "text": "useCallback", "is_correct": false },
+        { "id": "d", "text": "useLayoutEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "What is stale closure?",
+      "options": [
+        { "id": "a", "text": "Closed browser tab", "is_correct": false },
+        { "id": "b", "text": "Function capturing outdated state", "is_correct": true },
+        { "id": "c", "text": "Memory leak", "is_correct": false },
+        { "id": "d", "text": "Unmounted component", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which hook is best for mutable values without re-render?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": false },
+        { "id": "b", "text": "useRef", "is_correct": true },
+        { "id": "c", "text": "useReducer", "is_correct": false },
+        { "id": "d", "text": "useMemo", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which pattern avoids prop drilling at scale?",
+      "options": [
+        { "id": "a", "text": "Context + reducers", "is_correct": true },
+        { "id": "b", "text": "Lifting state only", "is_correct": false },
+        { "id": "c", "text": "Fragments", "is_correct": false },
+        { "id": "d", "text": "Refs", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which principle React follows?",
+      "options": [
+        { "id": "a", "text": "Two-way data binding", "is_correct": false },
+        { "id": "b", "text": "Unidirectional data flow", "is_correct": true },
+        { "id": "c", "text": "Bidirectional rendering", "is_correct": false },
+        { "id": "d", "text": "Implicit state updates", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which mistake causes unnecessary re-renders?",
+      "options": [
+        { "id": "a", "text": "Stable keys", "is_correct": false },
+        { "id": "b", "text": "Inline object/array props", "is_correct": true },
+        { "id": "c", "text": "React.memo", "is_correct": false },
+        { "id": "d", "text": "useCallback", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which hook order rule must be followed?",
+      "options": [
+        { "id": "a", "text": "Hooks can be conditional", "is_correct": false },
+        { "id": "b", "text": "Hooks must be called in same order", "is_correct": true },
+        { "id": "c", "text": "Hooks can be nested", "is_correct": false },
+        { "id": "d", "text": "Hooks can be dynamic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Why hooks cannot be called conditionally?",
+      "options": [
+        { "id": "a", "text": "Syntax limitation", "is_correct": false },
+        { "id": "b", "text": "React relies on call order", "is_correct": true },
+        { "id": "c", "text": "Performance issue", "is_correct": false },
+        { "id": "d", "text": "JS limitation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which hook shares logic, not state?",
+      "options": [
+        { "id": "a", "text": "Custom hooks", "is_correct": true },
+        { "id": "b", "text": "Context API", "is_correct": false },
+        { "id": "c", "text": "Redux", "is_correct": false },
+        { "id": "d", "text": "Props", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "What is the main risk of overusing Context?",
+      "options": [
+        { "id": "a", "text": "Memory leak", "is_correct": false },
+        { "id": "b", "text": "Unnecessary re-renders", "is_correct": true },
+        { "id": "c", "text": "Broken JSX", "is_correct": false },
+        { "id": "d", "text": "Routing issues", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which feature isolates rendering errors?",
+      "options": [
+        { "id": "a", "text": "Suspense", "is_correct": false },
+        { "id": "b", "text": "Error Boundaries", "is_correct": true },
+        { "id": "c", "text": "StrictMode", "is_correct": false },
+        { "id": "d", "text": "Fragments", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which API enables optimistic UI updates?",
+      "options": [
+        { "id": "a", "text": "useOptimistic", "is_correct": true },
+        { "id": "b", "text": "useReducer", "is_correct": false },
+        { "id": "c", "text": "useTransition", "is_correct": false },
+        { "id": "d", "text": "useEffect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Optimistic UI means?",
+      "options": [
+        { "id": "a", "text": "Wait for server response", "is_correct": false },
+        { "id": "b", "text": "Update UI before server confirms", "is_correct": true },
+        { "id": "c", "text": "Disable UI", "is_correct": false },
+        { "id": "d", "text": "Cache server data", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which React concept is most critical for scalability?",
+      "options": [
+        { "id": "a", "text": "JSX", "is_correct": false },
+        { "id": "b", "text": "Component architecture", "is_correct": true },
+        { "id": "c", "text": "Inline styles", "is_correct": false },
+        { "id": "d", "text": "Fragments", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "quiz_id": "css_medium",
+  "language": "css",
+  "level": "medium",
+  "title": "CSS Core Concepts - Medium",
+  "description": "Box model, positioning, layout, selectors, and responsiveness.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which CSS property controls the order of stacked elements?",
+      "options": [
+        { "id": "a", "text": "position", "is_correct": false },
+        { "id": "b", "text": "z-index", "is_correct": true },
+        { "id": "c", "text": "float", "is_correct": false },
+        { "id": "d", "text": "display", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which position value places element relative to browser window?",
+      "options": [
+        { "id": "a", "text": "absolute", "is_correct": false },
+        { "id": "b", "text": "relative", "is_correct": false },
+        { "id": "c", "text": "fixed", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which property is NOT part of CSS box model?",
+      "options": [
+        { "id": "a", "text": "margin", "is_correct": false },
+        { "id": "b", "text": "padding", "is_correct": false },
+        { "id": "c", "text": "border", "is_correct": false },
+        { "id": "d", "text": "outline", "is_correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which selector has highest specificity?",
+      "options": [
+        { "id": "a", "text": "element selector", "is_correct": false },
+        { "id": "b", "text": "class selector", "is_correct": false },
+        { "id": "c", "text": "ID selector", "is_correct": true },
+        { "id": "d", "text": "universal selector", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which property makes element a flex container?",
+      "options": [
+        { "id": "a", "text": "display: flex", "is_correct": true },
+        { "id": "b", "text": "position: flex", "is_correct": false },
+        { "id": "c", "text": "float: flex", "is_correct": false },
+        { "id": "d", "text": "flex: container", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which property aligns flex items horizontally?",
+      "options": [
+        { "id": "a", "text": "align-items", "is_correct": false },
+        { "id": "b", "text": "justify-content", "is_correct": true },
+        { "id": "c", "text": "flex-direction", "is_correct": false },
+        { "id": "d", "text": "align-content", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which value makes flex items vertical?",
+      "options": [
+        { "id": "a", "text": "row", "is_correct": false },
+        { "id": "b", "text": "column", "is_correct": true },
+        { "id": "c", "text": "inline", "is_correct": false },
+        { "id": "d", "text": "block", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which pseudo-class targets first child element?",
+      "options": [
+        { "id": "a", "text": ":first", "is_correct": false },
+        { "id": "b", "text": ":first-child", "is_correct": true },
+        { "id": "c", "text": ":child-first", "is_correct": false },
+        { "id": "d", "text": ":nth-child(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which property hides element but keeps space?",
+      "options": [
+        { "id": "a", "text": "display: none", "is_correct": false },
+        { "id": "b", "text": "visibility: hidden", "is_correct": true },
+        { "id": "c", "text": "opacity: 0", "is_correct": false },
+        { "id": "d", "text": "overflow: hidden", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which unit is viewport based?",
+      "options": [
+        { "id": "a", "text": "em", "is_correct": false },
+        { "id": "b", "text": "rem", "is_correct": false },
+        { "id": "c", "text": "vh", "is_correct": true },
+        { "id": "d", "text": "px", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which property controls element overflow scrolling?",
+      "options": [
+        { "id": "a", "text": "overflow", "is_correct": true },
+        { "id": "b", "text": "scroll", "is_correct": false },
+        { "id": "c", "text": "clip", "is_correct": false },
+        { "id": "d", "text": "hidden", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which value shows scrollbar only when needed?",
+      "options": [
+        { "id": "a", "text": "scroll", "is_correct": false },
+        { "id": "b", "text": "hidden", "is_correct": false },
+        { "id": "c", "text": "auto", "is_correct": true },
+        { "id": "d", "text": "visible", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which selector selects all <p> inside div?",
+      "options": [
+        { "id": "a", "text": "div + p", "is_correct": false },
+        { "id": "b", "text": "div > p", "is_correct": false },
+        { "id": "c", "text": "div p", "is_correct": true },
+        { "id": "d", "text": "div ~ p", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which property controls image fitting?",
+      "options": [
+        { "id": "a", "text": "object-fit", "is_correct": true },
+        { "id": "b", "text": "background-size", "is_correct": false },
+        { "id": "c", "text": "image-fit", "is_correct": false },
+        { "id": "d", "text": "fit-content", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which value maintains aspect ratio?",
+      "options": [
+        { "id": "a", "text": "stretch", "is_correct": false },
+        { "id": "b", "text": "contain", "is_correct": true },
+        { "id": "c", "text": "fill", "is_correct": false },
+        { "id": "d", "text": "scale", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which media query targets screen width ≤ 768px?",
+      "options": [
+        { "id": "a", "text": "@media (min-width: 768px)", "is_correct": false },
+        { "id": "b", "text": "@media (max-width: 768px)", "is_correct": true },
+        { "id": "c", "text": "@media screen-768", "is_correct": false },
+        { "id": "d", "text": "@media width:768", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which property changes element transparency only?",
+      "options": [
+        { "id": "a", "text": "visibility", "is_correct": false },
+        { "id": "b", "text": "opacity", "is_correct": true },
+        { "id": "c", "text": "display", "is_correct": false },
+        { "id": "d", "text": "filter", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which property creates shadow around element?",
+      "options": [
+        { "id": "a", "text": "text-shadow", "is_correct": false },
+        { "id": "b", "text": "box-shadow", "is_correct": true },
+        { "id": "c", "text": "border-shadow", "is_correct": false },
+        { "id": "d", "text": "element-shadow", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which value centers block element horizontally?",
+      "options": [
+        { "id": "a", "text": "text-align: center", "is_correct": false },
+        { "id": "b", "text": "margin: auto", "is_correct": true },
+        { "id": "c", "text": "align: center", "is_correct": false },
+        { "id": "d", "text": "float: center", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which property defines transition duration?",
+      "options": [
+        { "id": "a", "text": "transition-time", "is_correct": false },
+        { "id": "b", "text": "animation-duration", "is_correct": false },
+        { "id": "c", "text": "transition-duration", "is_correct": true },
+        { "id": "d", "text": "duration", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which property specifies transition effect?",
+      "options": [
+        { "id": "a", "text": "transition-property", "is_correct": true },
+        { "id": "b", "text": "transition-style", "is_correct": false },
+        { "id": "c", "text": "transition-name", "is_correct": false },
+        { "id": "d", "text": "effect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which value delays transition start?",
+      "options": [
+        { "id": "a", "text": "transition-delay", "is_correct": true },
+        { "id": "b", "text": "transition-wait", "is_correct": false },
+        { "id": "c", "text": "delay", "is_correct": false },
+        { "id": "d", "text": "wait-time", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which property rotates element?",
+      "options": [
+        { "id": "a", "text": "rotate", "is_correct": false },
+        { "id": "b", "text": "transform", "is_correct": true },
+        { "id": "c", "text": "translate", "is_correct": false },
+        { "id": "d", "text": "skew", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which function moves element on X-axis?",
+      "options": [
+        { "id": "a", "text": "translateX()", "is_correct": true },
+        { "id": "b", "text": "moveX()", "is_correct": false },
+        { "id": "c", "text": "shiftX()", "is_correct": false },
+        { "id": "d", "text": "positionX()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which property enables smooth scrolling?",
+      "options": [
+        { "id": "a", "text": "scroll-behavior", "is_correct": true },
+        { "id": "b", "text": "scroll-style", "is_correct": false },
+        { "id": "c", "text": "smooth-scroll", "is_correct": false },
+        { "id": "d", "text": "overflow-scroll", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which value enables smooth scrolling?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": false },
+        { "id": "b", "text": "smooth", "is_correct": true },
+        { "id": "c", "text": "ease", "is_correct": false },
+        { "id": "d", "text": "scroll", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which property changes list bullet position?",
+      "options": [
+        { "id": "a", "text": "list-style-position", "is_correct": true },
+        { "id": "b", "text": "list-position", "is_correct": false },
+        { "id": "c", "text": "bullet-position", "is_correct": false },
+        { "id": "d", "text": "position-list", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which value places bullets inside content box?",
+      "options": [
+        { "id": "a", "text": "inside", "is_correct": true },
+        { "id": "b", "text": "outside", "is_correct": false },
+        { "id": "c", "text": "inner", "is_correct": false },
+        { "id": "d", "text": "content", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which property controls grid layout?",
+      "options": [
+        { "id": "a", "text": "display: grid", "is_correct": true },
+        { "id": "b", "text": "position: grid", "is_correct": false },
+        { "id": "c", "text": "grid-layout", "is_correct": false },
+        { "id": "d", "text": "layout: grid", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which property defines grid columns?",
+      "options": [
+        { "id": "a", "text": "grid-template-columns", "is_correct": true },
+        { "id": "b", "text": "grid-columns", "is_correct": false },
+        { "id": "c", "text": "template-columns", "is_correct": false },
+        { "id": "d", "text": "grid-column-size", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which property creates gap between grid items?",
+      "options": [
+        { "id": "a", "text": "grid-gap", "is_correct": true },
+        { "id": "b", "text": "grid-space", "is_correct": false },
+        { "id": "c", "text": "gap-grid", "is_correct": false },
+        { "id": "d", "text": "space", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which pseudo-class targets hovered element?",
+      "options": [
+        { "id": "a", "text": ":focus", "is_correct": false },
+        { "id": "b", "text": ":active", "is_correct": false },
+        { "id": "c", "text": ":hover", "is_correct": true },
+        { "id": "d", "text": ":visited", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which pseudo-class targets clicked link?",
+      "options": [
+        { "id": "a", "text": ":hover", "is_correct": false },
+        { "id": "b", "text": ":active", "is_correct": true },
+        { "id": "c", "text": ":focus", "is_correct": false },
+        { "id": "d", "text": ":visited", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which property changes element resizing?",
+      "options": [
+        { "id": "a", "text": "resize", "is_correct": true },
+        { "id": "b", "text": "scale", "is_correct": false },
+        { "id": "c", "text": "size", "is_correct": false },
+        { "id": "d", "text": "transform", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which value allows resizing both directions?",
+      "options": [
+        { "id": "a", "text": "horizontal", "is_correct": false },
+        { "id": "b", "text": "vertical", "is_correct": false },
+        { "id": "c", "text": "both", "is_correct": true },
+        { "id": "d", "text": "auto", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which property controls text overflow?",
+      "options": [
+        { "id": "a", "text": "text-overflow", "is_correct": true },
+        { "id": "b", "text": "overflow-text", "is_correct": false },
+        { "id": "c", "text": "clip-text", "is_correct": false },
+        { "id": "d", "text": "word-wrap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which value shows ellipsis (...) ?",
+      "options": [
+        { "id": "a", "text": "clip", "is_correct": false },
+        { "id": "b", "text": "ellipsis", "is_correct": true },
+        { "id": "c", "text": "dots", "is_correct": false },
+        { "id": "d", "text": "truncate", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which property wraps long words?",
+      "options": [
+        { "id": "a", "text": "word-wrap", "is_correct": true },
+        { "id": "b", "text": "text-wrap", "is_correct": false },
+        { "id": "c", "text": "line-break", "is_correct": false },
+        { "id": "d", "text": "overflow-wrap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which property changes cursor to wait?",
+      "options": [
+        { "id": "a", "text": "cursor: wait", "is_correct": true },
+        { "id": "b", "text": "cursor: loading", "is_correct": false },
+        { "id": "c", "text": "cursor: progress", "is_correct": false },
+        { "id": "d", "text": "cursor: pause", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which property clips background to text?",
+      "options": [
+        { "id": "a", "text": "background-clip: text", "is_correct": true },
+        { "id": "b", "text": "background-text", "is_correct": false },
+        { "id": "c", "text": "text-clip", "is_correct": false },
+        { "id": "d", "text": "clip-text", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which property sets minimum width?",
+      "options": [
+        { "id": "a", "text": "min-width", "is_correct": true },
+        { "id": "b", "text": "width-min", "is_correct": false },
+        { "id": "c", "text": "minimum-width", "is_correct": false },
+        { "id": "d", "text": "limit-width", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which property sets maximum height?",
+      "options": [
+        { "id": "a", "text": "max-height", "is_correct": true },
+        { "id": "b", "text": "height-max", "is_correct": false },
+        { "id": "c", "text": "maximum-height", "is_correct": false },
+        { "id": "d", "text": "limit-height", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which property aligns items vertically in flexbox?",
+      "options": [
+        { "id": "a", "text": "justify-content", "is_correct": false },
+        { "id": "b", "text": "align-items", "is_correct": true },
+        { "id": "c", "text": "flex-align", "is_correct": false },
+        { "id": "d", "text": "align-content", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which value stretches flex items?",
+      "options": [
+        { "id": "a", "text": "center", "is_correct": false },
+        { "id": "b", "text": "stretch", "is_correct": true },
+        { "id": "c", "text": "flex", "is_correct": false },
+        { "id": "d", "text": "expand", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which property controls element order in flexbox?",
+      "options": [
+        { "id": "a", "text": "order", "is_correct": true },
+        { "id": "b", "text": "flex-order", "is_correct": false },
+        { "id": "c", "text": "z-index", "is_correct": false },
+        { "id": "d", "text": "sequence", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which property enables animation?",
+      "options": [
+        { "id": "a", "text": "animation-name", "is_correct": true },
+        { "id": "b", "text": "transition-name", "is_correct": false },
+        { "id": "c", "text": "animate", "is_correct": false },
+        { "id": "d", "text": "motion", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which property controls animation speed?",
+      "options": [
+        { "id": "a", "text": "animation-duration", "is_correct": true },
+        { "id": "b", "text": "animation-time", "is_correct": false },
+        { "id": "c", "text": "animation-delay", "is_correct": false },
+        { "id": "d", "text": "animation-speed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which value repeats animation infinitely?",
+      "options": [
+        { "id": "a", "text": "repeat", "is_correct": false },
+        { "id": "b", "text": "loop", "is_correct": false },
+        { "id": "c", "text": "infinite", "is_correct": true },
+        { "id": "d", "text": "always", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which property changes animation direction?",
+      "options": [
+        { "id": "a", "text": "animation-flow", "is_correct": false },
+        { "id": "b", "text": "animation-direction", "is_correct": true },
+        { "id": "c", "text": "animation-path", "is_correct": false },
+        { "id": "d", "text": "animation-order", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which value reverses animation direction?",
+      "options": [
+        { "id": "a", "text": "alternate", "is_correct": false },
+        { "id": "b", "text": "reverse", "is_correct": true },
+        { "id": "c", "text": "backward", "is_correct": false },
+        { "id": "d", "text": "flip", "is_correct": false }
+      ]
+    }
+  ]
+}

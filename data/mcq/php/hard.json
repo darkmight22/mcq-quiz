@@ -1,0 +1,520 @@
+{
+  "quiz_id": "php_hard",
+  "language": "php",
+  "level": "hard",
+  "title": "PHP Advanced - Hard",
+  "description": "Advanced PHP concepts: internals, performance, security, OOP patterns, memory, modern PHP features.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which PHP feature allows enforcing return types?",
+      "options": [
+        { "id": "a", "text": "Type hinting", "is_correct": true },
+        { "id": "b", "text": "Magic methods", "is_correct": false },
+        { "id": "c", "text": "Namespaces", "is_correct": false },
+        { "id": "d", "text": "Traits", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "What does declare(strict_types=1) enforce?",
+      "options": [
+        { "id": "a", "text": "Runtime type casting", "is_correct": false },
+        { "id": "b", "text": "Strict type checking for parameters", "is_correct": true },
+        { "id": "c", "text": "Faster execution", "is_correct": false },
+        { "id": "d", "text": "Memory optimization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which PHP feature enables multiple inheritance-like behavior?",
+      "options": [
+        { "id": "a", "text": "Interfaces", "is_correct": false },
+        { "id": "b", "text": "Abstract classes", "is_correct": false },
+        { "id": "c", "text": "Traits", "is_correct": true },
+        { "id": "d", "text": "Final classes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which keyword resolves method conflicts in traits?",
+      "options": [
+        { "id": "a", "text": "use", "is_correct": false },
+        { "id": "b", "text": "insteadOf", "is_correct": true },
+        { "id": "c", "text": "override", "is_correct": false },
+        { "id": "d", "text": "conflict", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which SPL interface allows objects to be iterated using foreach?",
+      "options": [
+        { "id": "a", "text": "ArrayAccess", "is_correct": false },
+        { "id": "b", "text": "Iterator", "is_correct": true },
+        { "id": "c", "text": "Serializable", "is_correct": false },
+        { "id": "d", "text": "Countable", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which SPL interface allows objects to be counted?",
+      "options": [
+        { "id": "a", "text": "Iterator", "is_correct": false },
+        { "id": "b", "text": "Countable", "is_correct": true },
+        { "id": "c", "text": "ArrayAccess", "is_correct": false },
+        { "id": "d", "text": "Traversable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which function generates cryptographically secure random bytes?",
+      "options": [
+        { "id": "a", "text": "rand()", "is_correct": false },
+        { "id": "b", "text": "mt_rand()", "is_correct": false },
+        { "id": "c", "text": "random_bytes()", "is_correct": true },
+        { "id": "d", "text": "uniqid()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which PHP feature supports immutability?",
+      "options": [
+        { "id": "a", "text": "Readonly properties", "is_correct": true },
+        { "id": "b", "text": "Static variables", "is_correct": false },
+        { "id": "c", "text": "Global scope", "is_correct": false },
+        { "id": "d", "text": "Magic setters", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Readonly properties were introduced in which PHP version?",
+      "options": [
+        { "id": "a", "text": "PHP 7.4", "is_correct": false },
+        { "id": "b", "text": "PHP 8.0", "is_correct": false },
+        { "id": "c", "text": "PHP 8.1", "is_correct": true },
+        { "id": "d", "text": "PHP 8.2", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which operator handles null-safe method calls?",
+      "options": [
+        { "id": "a", "text": "??", "is_correct": false },
+        { "id": "b", "text": "?.", "is_correct": false },
+        { "id": "c", "text": "?->", "is_correct": true },
+        { "id": "d", "text": "::?", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which operator provides default value if variable is null?",
+      "options": [
+        { "id": "a", "text": "?:", "is_correct": false },
+        { "id": "b", "text": "??", "is_correct": true },
+        { "id": "c", "text": "!=", "is_correct": false },
+        { "id": "d", "text": "=>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which PHP feature improves performance by caching opcodes?",
+      "options": [
+        { "id": "a", "text": "JIT", "is_correct": false },
+        { "id": "b", "text": "OPcache", "is_correct": true },
+        { "id": "c", "text": "Composer", "is_correct": false },
+        { "id": "d", "text": "APCu", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which PHP 8 feature improves CPU-heavy performance?",
+      "options": [
+        { "id": "a", "text": "Named arguments", "is_correct": false },
+        { "id": "b", "text": "Attributes", "is_correct": false },
+        { "id": "c", "text": "JIT compilation", "is_correct": true },
+        { "id": "d", "text": "Union types", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which function measures script execution time?",
+      "options": [
+        { "id": "a", "text": "time()", "is_correct": false },
+        { "id": "b", "text": "microtime(true)", "is_correct": true },
+        { "id": "c", "text": "clock()", "is_correct": false },
+        { "id": "d", "text": "execTime()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which PHP feature replaces annotations?",
+      "options": [
+        { "id": "a", "text": "Traits", "is_correct": false },
+        { "id": "b", "text": "Attributes", "is_correct": true },
+        { "id": "c", "text": "Enums", "is_correct": false },
+        { "id": "d", "text": "Namespaces", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Attributes were introduced in which PHP version?",
+      "options": [
+        { "id": "a", "text": "PHP 7.4", "is_correct": false },
+        { "id": "b", "text": "PHP 8.0", "is_correct": true },
+        { "id": "c", "text": "PHP 8.1", "is_correct": false },
+        { "id": "d", "text": "PHP 8.2", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which pattern ensures only one instance of a class?",
+      "options": [
+        { "id": "a", "text": "Factory", "is_correct": false },
+        { "id": "b", "text": "Observer", "is_correct": false },
+        { "id": "c", "text": "Singleton", "is_correct": true },
+        { "id": "d", "text": "Strategy", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which pattern decouples object creation logic?",
+      "options": [
+        { "id": "a", "text": "Factory", "is_correct": true },
+        { "id": "b", "text": "Singleton", "is_correct": false },
+        { "id": "c", "text": "Decorator", "is_correct": false },
+        { "id": "d", "text": "Adapter", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which pattern adds behavior without modifying class?",
+      "options": [
+        { "id": "a", "text": "Adapter", "is_correct": false },
+        { "id": "b", "text": "Decorator", "is_correct": true },
+        { "id": "c", "text": "Facade", "is_correct": false },
+        { "id": "d", "text": "Prototype", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which PHP interface allows array-style access?",
+      "options": [
+        { "id": "a", "text": "Iterator", "is_correct": false },
+        { "id": "b", "text": "ArrayAccess", "is_correct": true },
+        { "id": "c", "text": "Countable", "is_correct": false },
+        { "id": "d", "text": "Traversable", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which function prevents timing attacks in comparisons?",
+      "options": [
+        { "id": "a", "text": "strcmp()", "is_correct": false },
+        { "id": "b", "text": "hash_equals()", "is_correct": true },
+        { "id": "c", "text": "equals()", "is_correct": false },
+        { "id": "d", "text": "compare()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which PHP feature improves memory safety?",
+      "options": [
+        { "id": "a", "text": "Garbage Collection", "is_correct": true },
+        { "id": "b", "text": "Global variables", "is_correct": false },
+        { "id": "c", "text": "Static caching", "is_correct": false },
+        { "id": "d", "text": "Error suppression", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which function forces garbage collection?",
+      "options": [
+        { "id": "a", "text": "gc_start()", "is_correct": false },
+        { "id": "b", "text": "gc_collect_cycles()", "is_correct": true },
+        { "id": "c", "text": "gc_clean()", "is_correct": false },
+        { "id": "d", "text": "gc_run()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which PHP configuration limits memory usage?",
+      "options": [
+        { "id": "a", "text": "max_execution_time", "is_correct": false },
+        { "id": "b", "text": "memory_limit", "is_correct": true },
+        { "id": "c", "text": "post_max_size", "is_correct": false },
+        { "id": "d", "text": "upload_max_filesize", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which feature prevents accidental type coercion?",
+      "options": [
+        { "id": "a", "text": "Loose typing", "is_correct": false },
+        { "id": "b", "text": "Strict typing", "is_correct": true },
+        { "id": "c", "text": "Dynamic variables", "is_correct": false },
+        { "id": "d", "text": "Magic methods", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which function is best for password hashing?",
+      "options": [
+        { "id": "a", "text": "md5()", "is_correct": false },
+        { "id": "b", "text": "sha1()", "is_correct": false },
+        { "id": "c", "text": "password_hash()", "is_correct": true },
+        { "id": "d", "text": "crc32()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which PHP feature supports dependency injection?",
+      "options": [
+        { "id": "a", "text": "Constructors", "is_correct": true },
+        { "id": "b", "text": "Static methods", "is_correct": false },
+        { "id": "c", "text": "Globals", "is_correct": false },
+        { "id": "d", "text": "Facades", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which principle reduces class coupling?",
+      "options": [
+        { "id": "a", "text": "Tight coupling", "is_correct": false },
+        { "id": "b", "text": "Dependency Inversion", "is_correct": true },
+        { "id": "c", "text": "Global state", "is_correct": false },
+        { "id": "d", "text": "Static access", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which SOLID principle focuses on extensibility?",
+      "options": [
+        { "id": "a", "text": "Single Responsibility", "is_correct": false },
+        { "id": "b", "text": "Open/Closed", "is_correct": true },
+        { "id": "c", "text": "Liskov Substitution", "is_correct": false },
+        { "id": "d", "text": "Interface Segregation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which principle ensures subclasses remain compatible?",
+      "options": [
+        { "id": "a", "text": "Open/Closed", "is_correct": false },
+        { "id": "b", "text": "Liskov Substitution", "is_correct": true },
+        { "id": "c", "text": "Dependency Inversion", "is_correct": false },
+        { "id": "d", "text": "Single Responsibility", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which PHP feature supports union types?",
+      "options": [
+        { "id": "a", "text": "PHP 7.4", "is_correct": false },
+        { "id": "b", "text": "PHP 8.0", "is_correct": true },
+        { "id": "c", "text": "PHP 8.1", "is_correct": false },
+        { "id": "d", "text": "PHP 8.2", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which PHP feature represents fixed set of values?",
+      "options": [
+        { "id": "a", "text": "Constants", "is_correct": false },
+        { "id": "b", "text": "Enums", "is_correct": true },
+        { "id": "c", "text": "Interfaces", "is_correct": false },
+        { "id": "d", "text": "Traits", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Enums were introduced in which PHP version?",
+      "options": [
+        { "id": "a", "text": "PHP 8.0", "is_correct": false },
+        { "id": "b", "text": "PHP 8.1", "is_correct": true },
+        { "id": "c", "text": "PHP 8.2", "is_correct": false },
+        { "id": "d", "text": "PHP 7.4", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which operator spreads array elements?",
+      "options": [
+        { "id": "a", "text": "...", "is_correct": true },
+        { "id": "b", "text": "=>", "is_correct": false },
+        { "id": "c", "text": "::", "is_correct": false },
+        { "id": "d", "text": "??", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which function improves performance by caching user data?",
+      "options": [
+        { "id": "a", "text": "OPcache", "is_correct": false },
+        { "id": "b", "text": "APCu", "is_correct": true },
+        { "id": "c", "text": "Redis", "is_correct": false },
+        { "id": "d", "text": "Memcached", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which attack exploits unserialize()?",
+      "options": [
+        { "id": "a", "text": "SQL Injection", "is_correct": false },
+        { "id": "b", "text": "Object Injection", "is_correct": true },
+        { "id": "c", "text": "XSS", "is_correct": false },
+        { "id": "d", "text": "CSRF", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which best practice avoids object injection?",
+      "options": [
+        { "id": "a", "text": "Using serialize()", "is_correct": false },
+        { "id": "b", "text": "Avoiding unserialize on user input", "is_correct": true },
+        { "id": "c", "text": "Using globals", "is_correct": false },
+        { "id": "d", "text": "Disabling classes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which HTTP header mitigates clickjacking?",
+      "options": [
+        { "id": "a", "text": "X-Frame-Options", "is_correct": true },
+        { "id": "b", "text": "X-XSS-Protection", "is_correct": false },
+        { "id": "c", "text": "CORS", "is_correct": false },
+        { "id": "d", "text": "Authorization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which PHP config hides error details in production?",
+      "options": [
+        { "id": "a", "text": "display_errors=On", "is_correct": false },
+        { "id": "b", "text": "display_errors=Off", "is_correct": true },
+        { "id": "c", "text": "error_reporting=E_ALL", "is_correct": false },
+        { "id": "d", "text": "log_errors=Off", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which logging approach is recommended in production?",
+      "options": [
+        { "id": "a", "text": "echo errors", "is_correct": false },
+        { "id": "b", "text": "File / centralized logging", "is_correct": true },
+        { "id": "c", "text": "var_dump()", "is_correct": false },
+        { "id": "d", "text": "die()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which feature supports lazy loading?",
+      "options": [
+        { "id": "a", "text": "Autoloading", "is_correct": true },
+        { "id": "b", "text": "Global includes", "is_correct": false },
+        { "id": "c", "text": "require_once", "is_correct": false },
+        { "id": "d", "text": "Manual includes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which standard defines PHP autoloading?",
+      "options": [
+        { "id": "a", "text": "PSR-1", "is_correct": false },
+        { "id": "b", "text": "PSR-4", "is_correct": true },
+        { "id": "c", "text": "PSR-7", "is_correct": false },
+        { "id": "d", "text": "PSR-12", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which PSR standard defines HTTP messages?",
+      "options": [
+        { "id": "a", "text": "PSR-4", "is_correct": false },
+        { "id": "b", "text": "PSR-7", "is_correct": true },
+        { "id": "c", "text": "PSR-12", "is_correct": false },
+        { "id": "d", "text": "PSR-3", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which PSR defines logging interfaces?",
+      "options": [
+        { "id": "a", "text": "PSR-3", "is_correct": true },
+        { "id": "b", "text": "PSR-7", "is_correct": false },
+        { "id": "c", "text": "PSR-11", "is_correct": false },
+        { "id": "d", "text": "PSR-15", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which PSR defines coding style?",
+      "options": [
+        { "id": "a", "text": "PSR-1 / PSR-12", "is_correct": true },
+        { "id": "b", "text": "PSR-7", "is_correct": false },
+        { "id": "c", "text": "PSR-4", "is_correct": false },
+        { "id": "d", "text": "PSR-3", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which approach improves large PHP app scalability?",
+      "options": [
+        { "id": "a", "text": "Monolithic global code", "is_correct": false },
+        { "id": "b", "text": "Modular architecture", "is_correct": true },
+        { "id": "c", "text": "Hardcoded dependencies", "is_correct": false },
+        { "id": "d", "text": "Static globals", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which technique improves API performance?",
+      "options": [
+        { "id": "a", "text": "No caching", "is_correct": false },
+        { "id": "b", "text": "HTTP caching", "is_correct": true },
+        { "id": "c", "text": "Verbose responses", "is_correct": false },
+        { "id": "d", "text": "Large payloads", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which principle is most important for maintainability?",
+      "options": [
+        { "id": "a", "text": "Premature optimization", "is_correct": false },
+        { "id": "b", "text": "Separation of concerns", "is_correct": true },
+        { "id": "c", "text": "Global state", "is_correct": false },
+        { "id": "d", "text": "Hardcoding logic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which mistake most often causes PHP security issues?",
+      "options": [
+        { "id": "a", "text": "Input validation", "is_correct": false },
+        { "id": "b", "text": "Trusting user input", "is_correct": true },
+        { "id": "c", "text": "Prepared statements", "is_correct": false },
+        { "id": "d", "text": "Output encoding", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "What defines senior-level PHP development?",
+      "options": [
+        { "id": "a", "text": "Knowing syntax only", "is_correct": false },
+        { "id": "b", "text": "Security, performance, architecture", "is_correct": true },
+        { "id": "c", "text": "Using many frameworks", "is_correct": false },
+        { "id": "d", "text": "Writing procedural code", "is_correct": false }
+      ]
+    }
+  ]
+}

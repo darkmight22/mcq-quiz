@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Result - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="result-container">
+    <div class="result-header">
+        <h1>{{ quiz.title }}</h1>
+        <p class="result-subtitle">Quiz Completed</p>
+        <div class="result-tags">
+            <span class="language-tag">{{ get_language_label(quiz.language) }}</span>
+            <span class="level-chip level-{{ quiz.level }}">{{ quiz.level.title() }}</span>
+        </div>
+    </div>
+    
+    <div class="result-stats">
+        <div class="score-circle glass-card">
+            <div class="score-ring">
+                <svg class="progress-ring" width="200" height="200">
+                    <circle class="progress-ring-circle" cx="100" cy="100" r="90" />
+                </svg>
+                <div class="score-content">
+                    <div class="score-value" id="score-value">{{ attempt.score }}</div>
+                    <div class="score-total">/ {{ quiz.questions|length }}</div>
+                    <div class="score-percentage" id="score-percentage">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-breakdown">
+            <div class="stat-item glass-card">
+                <div class="stat-icon correct">✓</div>
+                <div class="stat-details">
+                    <div class="stat-number">{{ attempt.total_correct }}</div>
+                    <div class="stat-label">Correct</div>
+                </div>
+            </div>
+            <div class="stat-item glass-card">
+                <div class="stat-icon wrong">✗</div>
+                <div class="stat-details">
+                    <div class="stat-number">{{ attempt.total_wrong }}</div>
+                    <div class="stat-label">Wrong</div>
+                </div>
+            </div>
+            <div class="stat-item glass-card">
+                <div class="stat-icon unanswered">○</div>
+                <div class="stat-details">
+                    <div class="stat-number">{{ attempt.total_unanswered }}</div>
+                    <div class="stat-label">Unanswered</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="results-table-container glass-card">
+        <h2 class="table-title">Question Review</h2>
+        <div class="results-table">
+            {% for result in results %}
+            <div class="result-row {% if result.is_correct %}correct-row{% else %}wrong-row{% endif %}">
+                <div class="result-question">
+                    <div class="question-number">Q{{ loop.index }}</div>
+                    <div class="question-text">{{ result.question.question_text }}</div>
+                </div>
+                <div class="result-answers">
+                    <div class="answer-item">
+                        <span class="answer-label">Your Answer:</span>
+                        <span class="answer-value {% if result.selected_option_id == result.correct_option_id %}correct{% else %}wrong{% endif %}">
+                            {% if result.selected_option_text %}
+                                <strong>{{ result.selected_option_id|upper }}.</strong> {{ result.selected_option_text }}
+                            {% else %}
+                                Not answered
+                            {% endif %}
+                        </span>
+                    </div>
+                    <div class="answer-item">
+                        <span class="answer-label">Correct Answer:</span>
+                        <span class="answer-value correct"><strong>{{ result.correct_option_id|upper }}.</strong> {{ result.correct_option_text }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="result-actions">
+        <a href="{{ url_for('quiz_select') }}" class="btn btn-primary">Take Another Quiz</a>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Animate score percentage
+    const totalQuestions = { quiz.questions|length };
+    const score = { attempt.score };
+    const percentage = Math.round((score / totalQuestions) * 100);
+    
+    const percentageElement = document.getElementById('score-percentage');
+    const scoreValueElement = document.getElementById('score-value');
+    
+    // Animate percentage
+    let currentPercent = 0;
+    const percentageInterval = setInterval(() => {
+        currentPercent += 2;
+        if (currentPercent >= percentage) {
+            currentPercent = percentage;
+            clearInterval(percentageInterval);
+        }
+        percentageElement.textContent = currentPercent + '%';
+    }, 20);
+    
+    // Animate score count-up
+    let currentScore = 0;
+    const scoreInterval = setInterval(() => {
+        currentScore += 1;
+        if (currentScore >= score) {
+            currentScore = score;
+            clearInterval(scoreInterval);
+        }
+        scoreValueElement.textContent = currentScore;
+    }, 50);
+    
+    // Animate progress ring
+    const circle = document.querySelector('.progress-ring-circle');
+    const radius = circle.r.baseVal.value;
+    const circumference = radius * 2 * Math.PI;
+    
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = circumference;
+    
+    const offset = circumference - (percentage / 100) * circumference;
+    setTimeout(() => {
+        circle.style.transition = 'stroke-dashoffset 1s ease-in-out';
+        circle.style.strokeDashoffset = offset;
+    }, 100);
+</script>
+{% endblock %}
+

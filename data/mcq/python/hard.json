@@ -1,0 +1,520 @@
+{
+  "quiz_id": "python_hard",
+  "language": "python",
+  "level": "hard",
+  "title": "Python Advanced Concepts - Hard",
+  "description": "Internals, memory management, decorators, async, metaclasses, GIL.",
+  "duration_minutes": 40,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which Python feature manages memory automatically?",
+      "options": [
+        { "id": "a", "text": "Reference counting", "is_correct": true },
+        { "id": "b", "text": "Manual allocation", "is_correct": false },
+        { "id": "c", "text": "Pointer arithmetic", "is_correct": false },
+        { "id": "d", "text": "Stack frames", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which module helps in garbage collection?",
+      "options": [
+        { "id": "a", "text": "sys", "is_correct": false },
+        { "id": "b", "text": "memory", "is_correct": false },
+        { "id": "c", "text": "gc", "is_correct": true },
+        { "id": "d", "text": "collect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which statement about Python GIL is true?",
+      "options": [
+        { "id": "a", "text": "Allows true parallel threads", "is_correct": false },
+        { "id": "b", "text": "Restricts bytecode execution to one thread", "is_correct": true },
+        { "id": "c", "text": "Exists only in Python 2", "is_correct": false },
+        { "id": "d", "text": "Improves CPU-bound performance", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which module bypasses GIL using processes?",
+      "options": [
+        { "id": "a", "text": "threading", "is_correct": false },
+        { "id": "b", "text": "asyncio", "is_correct": false },
+        { "id": "c", "text": "multiprocessing", "is_correct": true },
+        { "id": "d", "text": "concurrent.futures", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which decorator preserves function metadata?",
+      "options": [
+        { "id": "a", "text": "@wraps", "is_correct": true },
+        { "id": "b", "text": "@metadata", "is_correct": false },
+        { "id": "c", "text": "@copy", "is_correct": false },
+        { "id": "d", "text": "@decorate", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which module provides @wraps decorator?",
+      "options": [
+        { "id": "a", "text": "itertools", "is_correct": false },
+        { "id": "b", "text": "functools", "is_correct": true },
+        { "id": "c", "text": "inspect", "is_correct": false },
+        { "id": "d", "text": "contextlib", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which magic method controls object creation?",
+      "options": [
+        { "id": "a", "text": "__init__", "is_correct": false },
+        { "id": "b", "text": "__call__", "is_correct": false },
+        { "id": "c", "text": "__new__", "is_correct": true },
+        { "id": "d", "text": "__build__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which magic method controls object initialization?",
+      "options": [
+        { "id": "a", "text": "__new__", "is_correct": false },
+        { "id": "b", "text": "__start__", "is_correct": false },
+        { "id": "c", "text": "__init__", "is_correct": true },
+        { "id": "d", "text": "__create__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which feature allows class creation customization?",
+      "options": [
+        { "id": "a", "text": "Decorators", "is_correct": false },
+        { "id": "b", "text": "Closures", "is_correct": false },
+        { "id": "c", "text": "Metaclasses", "is_correct": true },
+        { "id": "d", "text": "Annotations", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which default metaclass is used in Python?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "type", "is_correct": true },
+        { "id": "c", "text": "meta", "is_correct": false },
+        { "id": "d", "text": "class", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which statement creates context manager?",
+      "options": [
+        { "id": "a", "text": "try-finally", "is_correct": false },
+        { "id": "b", "text": "with", "is_correct": true },
+        { "id": "c", "text": "open-close", "is_correct": false },
+        { "id": "d", "text": "context", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which module helps create custom context managers?",
+      "options": [
+        { "id": "a", "text": "inspect", "is_correct": false },
+        { "id": "b", "text": "contextlib", "is_correct": true },
+        { "id": "c", "text": "functools", "is_correct": false },
+        { "id": "d", "text": "sys", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which decorator converts generator to context manager?",
+      "options": [
+        { "id": "a", "text": "@context", "is_correct": false },
+        { "id": "b", "text": "@manager", "is_correct": false },
+        { "id": "c", "text": "@contextmanager", "is_correct": true },
+        { "id": "d", "text": "@generator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which module inspects live objects?",
+      "options": [
+        { "id": "a", "text": "inspect", "is_correct": true },
+        { "id": "b", "text": "sys", "is_correct": false },
+        { "id": "c", "text": "gc", "is_correct": false },
+        { "id": "d", "text": "types", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which attribute stores instance attributes?",
+      "options": [
+        { "id": "a", "text": "__slots__", "is_correct": false },
+        { "id": "b", "text": "__dict__", "is_correct": true },
+        { "id": "c", "text": "__mro__", "is_correct": false },
+        { "id": "d", "text": "__bases__", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which feature reduces memory usage by restricting attributes?",
+      "options": [
+        { "id": "a", "text": "__dict__", "is_correct": false },
+        { "id": "b", "text": "__slots__", "is_correct": true },
+        { "id": "c", "text": "__init__", "is_correct": false },
+        { "id": "d", "text": "__new__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which method is called on attribute access failure?",
+      "options": [
+        { "id": "a", "text": "__getattr__", "is_correct": true },
+        { "id": "b", "text": "__getattribute__", "is_correct": false },
+        { "id": "c", "text": "__missing__", "is_correct": false },
+        { "id": "d", "text": "__attr__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which method intercepts all attribute access?",
+      "options": [
+        { "id": "a", "text": "__getattr__", "is_correct": false },
+        { "id": "b", "text": "__access__", "is_correct": false },
+        { "id": "c", "text": "__getattribute__", "is_correct": true },
+        { "id": "d", "text": "__lookup__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which dunder method customizes object call?",
+      "options": [
+        { "id": "a", "text": "__invoke__", "is_correct": false },
+        { "id": "b", "text": "__run__", "is_correct": false },
+        { "id": "c", "text": "__call__", "is_correct": true },
+        { "id": "d", "text": "__exec__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which method handles missing dictionary keys?",
+      "options": [
+        { "id": "a", "text": "__missing__", "is_correct": true },
+        { "id": "b", "text": "__get__", "is_correct": false },
+        { "id": "c", "text": "__default__", "is_correct": false },
+        { "id": "d", "text": "__none__", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which module supports weak references?",
+      "options": [
+        { "id": "a", "text": "weakref", "is_correct": true },
+        { "id": "b", "text": "gc", "is_correct": false },
+        { "id": "c", "text": "memory", "is_correct": false },
+        { "id": "d", "text": "ref", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which weak reference does not increase ref count?",
+      "options": [
+        { "id": "a", "text": "Strong reference", "is_correct": false },
+        { "id": "b", "text": "Soft reference", "is_correct": false },
+        { "id": "c", "text": "Weak reference", "is_correct": true },
+        { "id": "d", "text": "Hard reference", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which protocol enables iteration?",
+      "options": [
+        { "id": "a", "text": "__next__ only", "is_correct": false },
+        { "id": "b", "text": "__iter__ only", "is_correct": false },
+        { "id": "c", "text": "__iter__ and __next__", "is_correct": true },
+        { "id": "d", "text": "__loop__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which exception ends iteration?",
+      "options": [
+        { "id": "a", "text": "StopIteration", "is_correct": true },
+        { "id": "b", "text": "IterationError", "is_correct": false },
+        { "id": "c", "text": "EndOfLoop", "is_correct": false },
+        { "id": "d", "text": "BreakException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which protocol supports async iteration?",
+      "options": [
+        { "id": "a", "text": "__iter__", "is_correct": false },
+        { "id": "b", "text": "__aiter__ and __anext__", "is_correct": true },
+        { "id": "c", "text": "__async__", "is_correct": false },
+        { "id": "d", "text": "__await__", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword defines coroutine?",
+      "options": [
+        { "id": "a", "text": "coroutine", "is_correct": false },
+        { "id": "b", "text": "async", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "yield", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword pauses coroutine?",
+      "options": [
+        { "id": "a", "text": "yield", "is_correct": false },
+        { "id": "b", "text": "wait", "is_correct": false },
+        { "id": "c", "text": "await", "is_correct": true },
+        { "id": "d", "text": "sleep", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which function runs event loop?",
+      "options": [
+        { "id": "a", "text": "loop()", "is_correct": false },
+        { "id": "b", "text": "asyncio.run()", "is_correct": true },
+        { "id": "c", "text": "await()", "is_correct": false },
+        { "id": "d", "text": "eventloop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which function schedules coroutine?",
+      "options": [
+        { "id": "a", "text": "asyncio.create_task()", "is_correct": true },
+        { "id": "b", "text": "asyncio.call()", "is_correct": false },
+        { "id": "c", "text": "asyncio.exec()", "is_correct": false },
+        { "id": "d", "text": "asyncio.wait()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which async primitive controls concurrency?",
+      "options": [
+        { "id": "a", "text": "Lock", "is_correct": false },
+        { "id": "b", "text": "Semaphore", "is_correct": true },
+        { "id": "c", "text": "Thread", "is_correct": false },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which exception handles async cancellation?",
+      "options": [
+        { "id": "a", "text": "CancelError", "is_correct": false },
+        { "id": "b", "text": "TaskCancelled", "is_correct": false },
+        { "id": "c", "text": "asyncio.CancelledError", "is_correct": true },
+        { "id": "d", "text": "StopAsyncIteration", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which method finalizes generator?",
+      "options": [
+        { "id": "a", "text": "close()", "is_correct": true },
+        { "id": "b", "text": "end()", "is_correct": false },
+        { "id": "c", "text": "stop()", "is_correct": false },
+        { "id": "d", "text": "finish()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which statement captures exception details?",
+      "options": [
+        { "id": "a", "text": "except", "is_correct": false },
+        { "id": "b", "text": "except Exception as e", "is_correct": true },
+        { "id": "c", "text": "catch as e", "is_correct": false },
+        { "id": "d", "text": "error as e", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which module provides stack frames?",
+      "options": [
+        { "id": "a", "text": "inspect", "is_correct": false },
+        { "id": "b", "text": "traceback", "is_correct": true },
+        { "id": "c", "text": "sys", "is_correct": false },
+        { "id": "d", "text": "frame", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which function raises custom exception?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": false },
+        { "id": "b", "text": "raise", "is_correct": true },
+        { "id": "c", "text": "error", "is_correct": false },
+        { "id": "d", "text": "panic", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which feature supports operator overloading?",
+      "options": [
+        { "id": "a", "text": "Magic methods", "is_correct": true },
+        { "id": "b", "text": "Decorators", "is_correct": false },
+        { "id": "c", "text": "Closures", "is_correct": false },
+        { "id": "d", "text": "Annotations", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which method overloads + operator?",
+      "options": [
+        { "id": "a", "text": "__add__", "is_correct": true },
+        { "id": "b", "text": "__sum__", "is_correct": false },
+        { "id": "c", "text": "__plus__", "is_correct": false },
+        { "id": "d", "text": "__concat__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which method overloads len()?",
+      "options": [
+        { "id": "a", "text": "__length__", "is_correct": false },
+        { "id": "b", "text": "__count__", "is_correct": false },
+        { "id": "c", "text": "__len__", "is_correct": true },
+        { "id": "d", "text": "__size__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which protocol enables context manager?",
+      "options": [
+        { "id": "a", "text": "__enter__ and __exit__", "is_correct": true },
+        { "id": "b", "text": "__start__ and __stop__", "is_correct": false },
+        { "id": "c", "text": "__open__ and __close__", "is_correct": false },
+        { "id": "d", "text": "__with__ and __end__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which method controls attribute setting?",
+      "options": [
+        { "id": "a", "text": "__setattr__", "is_correct": true },
+        { "id": "b", "text": "__set__", "is_correct": false },
+        { "id": "c", "text": "__assign__", "is_correct": false },
+        { "id": "d", "text": "__put__", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which method deletes attribute?",
+      "options": [
+        { "id": "a", "text": "__remove__", "is_correct": false },
+        { "id": "b", "text": "__delete__", "is_correct": false },
+        { "id": "c", "text": "__delattr__", "is_correct": true },
+        { "id": "d", "text": "__unset__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which module handles command-line arguments?",
+      "options": [
+        { "id": "a", "text": "argparse", "is_correct": true },
+        { "id": "b", "text": "sysargs", "is_correct": false },
+        { "id": "c", "text": "cli", "is_correct": false },
+        { "id": "d", "text": "arguments", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which function exits program immediately?",
+      "options": [
+        { "id": "a", "text": "exit()", "is_correct": false },
+        { "id": "b", "text": "quit()", "is_correct": false },
+        { "id": "c", "text": "sys.exit()", "is_correct": true },
+        { "id": "d", "text": "stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which feature enables lazy evaluation?",
+      "options": [
+        { "id": "a", "text": "List comprehension", "is_correct": false },
+        { "id": "b", "text": "Generator expression", "is_correct": true },
+        { "id": "c", "text": "Lambda", "is_correct": false },
+        { "id": "d", "text": "Decorator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which operator unpacks iterables?",
+      "options": [
+        { "id": "a", "text": "&", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": true },
+        { "id": "c", "text": "**", "is_correct": false },
+        { "id": "d", "text": ">>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which operator unpacks dictionaries?",
+      "options": [
+        { "id": "a", "text": "*", "is_correct": false },
+        { "id": "b", "text": "&", "is_correct": false },
+        { "id": "c", "text": "**", "is_correct": true },
+        { "id": "d", "text": "##", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which feature enables structural pattern matching?",
+      "options": [
+        { "id": "a", "text": "switch-case", "is_correct": false },
+        { "id": "b", "text": "match-case (Python 3.10+)", "is_correct": true },
+        { "id": "c", "text": "if-elif", "is_correct": false },
+        { "id": "d", "text": "pattern()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword is used in pattern matching?",
+      "options": [
+        { "id": "a", "text": "case", "is_correct": true },
+        { "id": "b", "text": "when", "is_correct": false },
+        { "id": "c", "text": "then", "is_correct": false },
+        { "id": "d", "text": "match", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which feature supports type hints?",
+      "options": [
+        { "id": "a", "text": "Annotations", "is_correct": true },
+        { "id": "b", "text": "Decorators", "is_correct": false },
+        { "id": "c", "text": "Comments", "is_correct": false },
+        { "id": "d", "text": "Docstrings", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which module validates type hints at runtime?",
+      "options": [
+        { "id": "a", "text": "typing", "is_correct": false },
+        { "id": "b", "text": "mypy", "is_correct": false },
+        { "id": "c", "text": "typing_extensions", "is_correct": false },
+        { "id": "d", "text": "No built-in runtime enforcement", "is_correct": true }
+      ]
+    }
+  ]
+}

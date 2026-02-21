@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}{{ challenge.title }} - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="coding-container">
+    <div class="coding-layout">
+        <div class="coding-description glass-card">
+            <h2>{{ challenge.title }}</h2>
+            <div class="challenge-meta">
+                <div class="challenge-tags">
+                    <span class="language-tag">{{ get_language_label(challenge.language) }}</span>
+                    <span class="level-chip level-{{ challenge.level }}">{{ challenge.level.title() }}</span>
+                </div>
+                <span class="difficulty-badge difficulty-{{ challenge.difficulty }}">{{ challenge.difficulty|upper }}</span>
+            </div>
+            <div class="challenge-content">
+                <p>{{ challenge.description }}</p>
+                
+                <div class="challenge-examples">
+                    <h3>Example</h3>
+                    <div class="example-box">
+                        <div class="example-row">
+                            <strong>Input:</strong> <code>{{ challenge.sample_input }}</code>
+                        </div>
+                        <div class="example-row">
+                            <strong>Output:</strong> <code>{{ challenge.sample_output }}</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="coding-editor glass-card">
+            <div class="editor-header">
+                <h3>Your Solution</h3>
+            </div>
+            <form id="coding-form" method="POST" action="{{ url_for('coding_submit') }}">
+                <input type="hidden" name="challenge_id" value="{{ challenge.id }}">
+                <textarea 
+                    id="code-input" 
+                    name="code" 
+                    class="code-editor" 
+                    placeholder="Write your code here..."
+                    rows="20"
+                ></textarea>
+                <div class="editor-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.getElementById('code-input').value = ''">Reset</button>
+                    <button type="button" class="btn btn-primary" onclick="runCode()">Run</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <div id="output-area" class="output-area"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function runCode() {
+        const code = document.getElementById('code-input').value;
+        const outputArea = document.getElementById('output-area');
+        
+        if (!code.trim()) {
+            outputArea.innerHTML = '<div class="output-error">Please write some code first!</div>';
+            return;
+        }
+        
+        // Simulate code execution (in a real app, this would call a backend API)
+        outputArea.innerHTML = '<div class="output-info">Code execution simulation (not implemented in demo)</div>';
+    }
+    
+    // Auto-resize textarea
+    const textarea = document.getElementById('code-input');
+    textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+</script>
+{% endblock %}
+

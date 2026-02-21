@@ -1,0 +1,520 @@
+{
+  "quiz_id": "php_easy",
+  "language": "php",
+  "level": "easy",
+  "title": "PHP Basics - Easy",
+  "description": "PHP fundamentals: syntax, variables, operators, forms, arrays, basic functions.",
+  "duration_minutes": 20,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What does PHP stand for?",
+      "options": [
+        { "id": "a", "text": "Personal Home Page", "is_correct": false },
+        { "id": "b", "text": "Private Hypertext Processor", "is_correct": false },
+        { "id": "c", "text": "PHP: Hypertext Preprocessor", "is_correct": true },
+        { "id": "d", "text": "Preprocessed Home Page", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "PHP code is executed on the?",
+      "options": [
+        { "id": "a", "text": "Client", "is_correct": false },
+        { "id": "b", "text": "Browser", "is_correct": false },
+        { "id": "c", "text": "Server", "is_correct": true },
+        { "id": "d", "text": "Database", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which symbol is used to declare a variable in PHP?",
+      "options": [
+        { "id": "a", "text": "#", "is_correct": false },
+        { "id": "b", "text": "$", "is_correct": true },
+        { "id": "c", "text": "@", "is_correct": false },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which tag is used to start PHP code?",
+      "options": [
+        { "id": "a", "text": "<script>", "is_correct": false },
+        { "id": "b", "text": "<php>", "is_correct": false },
+        { "id": "c", "text": "<?php", "is_correct": true },
+        { "id": "d", "text": "<%php", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which function outputs text in PHP?",
+      "options": [
+        { "id": "a", "text": "print()", "is_correct": false },
+        { "id": "b", "text": "echo", "is_correct": true },
+        { "id": "c", "text": "write()", "is_correct": false },
+        { "id": "d", "text": "display()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which statement is used for comments in PHP?",
+      "options": [
+        { "id": "a", "text": "// comment", "is_correct": true },
+        { "id": "b", "text": "<!-- comment -->", "is_correct": false },
+        { "id": "c", "text": "#! comment", "is_correct": false },
+        { "id": "d", "text": "** comment **", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which data type is NOT supported by PHP?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "Boolean", "is_correct": false },
+        { "id": "c", "text": "Integer", "is_correct": false },
+        { "id": "d", "text": "Character", "is_correct": true }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which operator is used for concatenation?",
+      "options": [
+        { "id": "a", "text": "+", "is_correct": false },
+        { "id": "b", "text": ".", "is_correct": true },
+        { "id": "c", "text": "&", "is_correct": false },
+        { "id": "d", "text": "*", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which function counts array elements?",
+      "options": [
+        { "id": "a", "text": "length()", "is_correct": false },
+        { "id": "b", "text": "size()", "is_correct": false },
+        { "id": "c", "text": "count()", "is_correct": true },
+        { "id": "d", "text": "total()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which superglobal stores form data (POST)?",
+      "options": [
+        { "id": "a", "text": "$_GET", "is_correct": false },
+        { "id": "b", "text": "$_REQUEST", "is_correct": false },
+        { "id": "c", "text": "$_FORM", "is_correct": false },
+        { "id": "d", "text": "$_POST", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which superglobal stores URL parameters?",
+      "options": [
+        { "id": "a", "text": "$_POST", "is_correct": false },
+        { "id": "b", "text": "$_SERVER", "is_correct": false },
+        { "id": "c", "text": "$_GET", "is_correct": true },
+        { "id": "d", "text": "$_SESSION", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which function checks variable type?",
+      "options": [
+        { "id": "a", "text": "type()", "is_correct": false },
+        { "id": "b", "text": "gettype()", "is_correct": true },
+        { "id": "c", "text": "vartype()", "is_correct": false },
+        { "id": "d", "text": "typeof()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which keyword defines a constant?",
+      "options": [
+        { "id": "a", "text": "let", "is_correct": false },
+        { "id": "b", "text": "var", "is_correct": false },
+        { "id": "c", "text": "define()", "is_correct": true },
+        { "id": "d", "text": "constvar", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which loop runs at least once?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "foreach", "is_correct": false },
+        { "id": "d", "text": "do...while", "is_correct": true }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which loop is best for arrays?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "foreach", "is_correct": true },
+        { "id": "d", "text": "do...while", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which function starts a session?",
+      "options": [
+        { "id": "a", "text": "start_session()", "is_correct": false },
+        { "id": "b", "text": "session_start()", "is_correct": true },
+        { "id": "c", "text": "begin_session()", "is_correct": false },
+        { "id": "d", "text": "init_session()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which superglobal stores session data?",
+      "options": [
+        { "id": "a", "text": "$_COOKIE", "is_correct": false },
+        { "id": "b", "text": "$_SESSION", "is_correct": true },
+        { "id": "c", "text": "$_SERVER", "is_correct": false },
+        { "id": "d", "text": "$_ENV", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which function includes a file once?",
+      "options": [
+        { "id": "a", "text": "include()", "is_correct": false },
+        { "id": "b", "text": "require()", "is_correct": false },
+        { "id": "c", "text": "include_once()", "is_correct": true },
+        { "id": "d", "text": "load()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which statement stops script execution on error?",
+      "options": [
+        { "id": "a", "text": "include()", "is_correct": false },
+        { "id": "b", "text": "require()", "is_correct": true },
+        { "id": "c", "text": "echo()", "is_correct": false },
+        { "id": "d", "text": "print()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which function gets string length?",
+      "options": [
+        { "id": "a", "text": "length()", "is_correct": false },
+        { "id": "b", "text": "strlen()", "is_correct": true },
+        { "id": "c", "text": "strcount()", "is_correct": false },
+        { "id": "d", "text": "size()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which function converts string to lowercase?",
+      "options": [
+        { "id": "a", "text": "lower()", "is_correct": false },
+        { "id": "b", "text": "strlower()", "is_correct": false },
+        { "id": "c", "text": "tolower()", "is_correct": false },
+        { "id": "d", "text": "strtolower()", "is_correct": true }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which function converts array to string?",
+      "options": [
+        { "id": "a", "text": "implode()", "is_correct": true },
+        { "id": "b", "text": "explode()", "is_correct": false },
+        { "id": "c", "text": "joinArray()", "is_correct": false },
+        { "id": "d", "text": "arrayToString()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which function converts string to array?",
+      "options": [
+        { "id": "a", "text": "implode()", "is_correct": false },
+        { "id": "b", "text": "explode()", "is_correct": true },
+        { "id": "c", "text": "split()", "is_correct": false },
+        { "id": "d", "text": "array()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which function removes whitespace?",
+      "options": [
+        { "id": "a", "text": "strip()", "is_correct": false },
+        { "id": "b", "text": "clean()", "is_correct": false },
+        { "id": "c", "text": "trim()", "is_correct": true },
+        { "id": "d", "text": "remove()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which function checks if variable is empty?",
+      "options": [
+        { "id": "a", "text": "isset()", "is_correct": false },
+        { "id": "b", "text": "empty()", "is_correct": true },
+        { "id": "c", "text": "null()", "is_correct": false },
+        { "id": "d", "text": "check()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which function checks variable existence?",
+      "options": [
+        { "id": "a", "text": "isset()", "is_correct": true },
+        { "id": "b", "text": "empty()", "is_correct": false },
+        { "id": "c", "text": "exists()", "is_correct": false },
+        { "id": "d", "text": "check()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which function terminates script?",
+      "options": [
+        { "id": "a", "text": "stop()", "is_correct": false },
+        { "id": "b", "text": "exit()", "is_correct": true },
+        { "id": "c", "text": "close()", "is_correct": false },
+        { "id": "d", "text": "end()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which PHP version introduced namespaces?",
+      "options": [
+        { "id": "a", "text": "PHP 4", "is_correct": false },
+        { "id": "b", "text": "PHP 5.3", "is_correct": true },
+        { "id": "c", "text": "PHP 6", "is_correct": false },
+        { "id": "d", "text": "PHP 7", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which operator checks equality and type?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "=", "is_correct": false },
+        { "id": "c", "text": "===", "is_correct": true },
+        { "id": "d", "text": "!=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which function sorts array values?",
+      "options": [
+        { "id": "a", "text": "order()", "is_correct": false },
+        { "id": "b", "text": "sort()", "is_correct": true },
+        { "id": "c", "text": "arrange()", "is_correct": false },
+        { "id": "d", "text": "shuffle()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which function generates random number?",
+      "options": [
+        { "id": "a", "text": "random()", "is_correct": false },
+        { "id": "b", "text": "rand()", "is_correct": true },
+        { "id": "c", "text": "num()", "is_correct": false },
+        { "id": "d", "text": "generate()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which function hashes passwords?",
+      "options": [
+        { "id": "a", "text": "md5()", "is_correct": false },
+        { "id": "b", "text": "sha1()", "is_correct": false },
+        { "id": "c", "text": "password_hash()", "is_correct": true },
+        { "id": "d", "text": "crypt()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which function verifies hashed password?",
+      "options": [
+        { "id": "a", "text": "password_check()", "is_correct": false },
+        { "id": "b", "text": "password_verify()", "is_correct": true },
+        { "id": "c", "text": "hash_verify()", "is_correct": false },
+        { "id": "d", "text": "verify()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which extension connects to MySQL?",
+      "options": [
+        { "id": "a", "text": "mysql", "is_correct": false },
+        { "id": "b", "text": "mysqli / PDO", "is_correct": true },
+        { "id": "c", "text": "db", "is_correct": false },
+        { "id": "d", "text": "sql", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which method prevents SQL injection?",
+      "options": [
+        { "id": "a", "text": "String concatenation", "is_correct": false },
+        { "id": "b", "text": "Prepared statements", "is_correct": true },
+        { "id": "c", "text": "Echo input", "is_correct": false },
+        { "id": "d", "text": "GET method", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which HTTP method submits sensitive data?",
+      "options": [
+        { "id": "a", "text": "GET", "is_correct": false },
+        { "id": "b", "text": "POST", "is_correct": true },
+        { "id": "c", "text": "PUT", "is_correct": false },
+        { "id": "d", "text": "DELETE", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which function sends HTTP header?",
+      "options": [
+        { "id": "a", "text": "send()", "is_correct": false },
+        { "id": "b", "text": "header()", "is_correct": true },
+        { "id": "c", "text": "setHeader()", "is_correct": false },
+        { "id": "d", "text": "http()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which header redirects page?",
+      "options": [
+        { "id": "a", "text": "Location", "is_correct": true },
+        { "id": "b", "text": "Redirect", "is_correct": false },
+        { "id": "c", "text": "Refresh", "is_correct": false },
+        { "id": "d", "text": "URL", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which function uploads files?",
+      "options": [
+        { "id": "a", "text": "$_FILES", "is_correct": true },
+        { "id": "b", "text": "$_UPLOAD", "is_correct": false },
+        { "id": "c", "text": "$_FORM", "is_correct": false },
+        { "id": "d", "text": "$_DATA", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which function checks uploaded file error?",
+      "options": [
+        { "id": "a", "text": "file_error()", "is_correct": false },
+        { "id": "b", "text": "$_FILES['error']", "is_correct": true },
+        { "id": "c", "text": "upload_error()", "is_correct": false },
+        { "id": "d", "text": "error()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which function sets cookie?",
+      "options": [
+        { "id": "a", "text": "addcookie()", "is_correct": false },
+        { "id": "b", "text": "setcookie()", "is_correct": true },
+        { "id": "c", "text": "cookie()", "is_correct": false },
+        { "id": "d", "text": "makecookie()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which superglobal stores cookies?",
+      "options": [
+        { "id": "a", "text": "$_SESSION", "is_correct": false },
+        { "id": "b", "text": "$_ENV", "is_correct": false },
+        { "id": "c", "text": "$_COOKIE", "is_correct": true },
+        { "id": "d", "text": "$_DATA", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which PHP feature handles errors?",
+      "options": [
+        { "id": "a", "text": "Exceptions", "is_correct": true },
+        { "id": "b", "text": "Sessions", "is_correct": false },
+        { "id": "c", "text": "Cookies", "is_correct": false },
+        { "id": "d", "text": "Forms", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which keyword throws exception?",
+      "options": [
+        { "id": "a", "text": "catch", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "error", "is_correct": false },
+        { "id": "d", "text": "raise", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword handles exception?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": true },
+        { "id": "c", "text": "throw", "is_correct": false },
+        { "id": "d", "text": "handle", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which operator suppresses errors?",
+      "options": [
+        { "id": "a", "text": "!", "is_correct": false },
+        { "id": "b", "text": "@", "is_correct": true },
+        { "id": "c", "text": "#", "is_correct": false },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which function outputs array structure?",
+      "options": [
+        { "id": "a", "text": "echo()", "is_correct": false },
+        { "id": "b", "text": "print_r()", "is_correct": true },
+        { "id": "c", "text": "var()", "is_correct": false },
+        { "id": "d", "text": "dump()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which function gives detailed variable info?",
+      "options": [
+        { "id": "a", "text": "print_r()", "is_correct": false },
+        { "id": "b", "text": "var_dump()", "is_correct": true },
+        { "id": "c", "text": "debug()", "is_correct": false },
+        { "id": "d", "text": "inspect()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which PHP version improved performance significantly?",
+      "options": [
+        { "id": "a", "text": "PHP 5", "is_correct": false },
+        { "id": "b", "text": "PHP 6", "is_correct": false },
+        { "id": "c", "text": "PHP 7", "is_correct": true },
+        { "id": "d", "text": "PHP 8", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which feature makes PHP suitable for web development?",
+      "options": [
+        { "id": "a", "text": "Client-side execution", "is_correct": false },
+        { "id": "b", "text": "Built-in server-side scripting support", "is_correct": true },
+        { "id": "c", "text": "Only desktop support", "is_correct": false },
+        { "id": "d", "text": "No database support", "is_correct": false }
+      ]
+    }
+  ]
+}

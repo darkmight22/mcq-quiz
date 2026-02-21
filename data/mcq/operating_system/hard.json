@@ -1,0 +1,520 @@
+{
+  "quiz_id": "os_hard",
+  "language": "operating_system",
+  "level": "hard",
+  "title": "Operating System - Hard",
+  "description": "Advanced OS concepts: scheduling analysis, deadlocks, virtual memory, file systems, OS internals, concurrency.",
+  "duration_minutes": 45,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which scheduling algorithm is provably optimal for minimizing average waiting time?",
+      "options": [
+        { "id": "a", "text": "FCFS", "is_correct": false },
+        { "id": "b", "text": "Round Robin", "is_correct": false },
+        { "id": "c", "text": "Shortest Job First", "is_correct": true },
+        { "id": "d", "text": "Priority Scheduling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which scheduling algorithm can be both preemptive and non-preemptive?",
+      "options": [
+        { "id": "a", "text": "Round Robin", "is_correct": false },
+        { "id": "b", "text": "Priority Scheduling", "is_correct": true },
+        { "id": "c", "text": "FCFS", "is_correct": false },
+        { "id": "d", "text": "Multilevel Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which deadlock handling strategy allows deadlock to occur and then recovers?",
+      "options": [
+        { "id": "a", "text": "Prevention", "is_correct": false },
+        { "id": "b", "text": "Avoidance", "is_correct": false },
+        { "id": "c", "text": "Detection and Recovery", "is_correct": true },
+        { "id": "d", "text": "Starvation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which condition is violated to prevent deadlock?",
+      "options": [
+        { "id": "a", "text": "Mutual exclusion", "is_correct": false },
+        { "id": "b", "text": "Circular wait", "is_correct": true },
+        { "id": "c", "text": "Hold and wait", "is_correct": false },
+        { "id": "d", "text": "No preemption", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which algorithm is used for deadlock detection in single-instance resources?",
+      "options": [
+        { "id": "a", "text": "Banker’s algorithm", "is_correct": false },
+        { "id": "b", "text": "Wait-for graph", "is_correct": true },
+        { "id": "c", "text": "FCFS", "is_correct": false },
+        { "id": "d", "text": "Priority scheduling", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which page replacement algorithm is stack-based?",
+      "options": [
+        { "id": "a", "text": "FIFO", "is_correct": false },
+        { "id": "b", "text": "LRU", "is_correct": true },
+        { "id": "c", "text": "Random", "is_correct": false },
+        { "id": "d", "text": "Second Chance", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which algorithm never suffers from Belady’s anomaly?",
+      "options": [
+        { "id": "a", "text": "FIFO", "is_correct": false },
+        { "id": "b", "text": "Optimal", "is_correct": true },
+        { "id": "c", "text": "Second Chance", "is_correct": false },
+        { "id": "d", "text": "Clock", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "What causes internal fragmentation?",
+      "options": [
+        { "id": "a", "text": "Paging", "is_correct": true },
+        { "id": "b", "text": "Segmentation", "is_correct": false },
+        { "id": "c", "text": "Swapping", "is_correct": false },
+        { "id": "d", "text": "Demand paging", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which memory allocation suffers from external fragmentation?",
+      "options": [
+        { "id": "a", "text": "Paging", "is_correct": false },
+        { "id": "b", "text": "Segmentation", "is_correct": true },
+        { "id": "c", "text": "Virtual memory", "is_correct": false },
+        { "id": "d", "text": "Cache memory", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which technique maps virtual addresses to physical addresses?",
+      "options": [
+        { "id": "a", "text": "Scheduler", "is_correct": false },
+        { "id": "b", "text": "MMU", "is_correct": true },
+        { "id": "c", "text": "Kernel", "is_correct": false },
+        { "id": "d", "text": "Compiler", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which OS structure provides highest reliability?",
+      "options": [
+        { "id": "a", "text": "Monolithic kernel", "is_correct": false },
+        { "id": "b", "text": "Microkernel", "is_correct": true },
+        { "id": "c", "text": "Hybrid kernel", "is_correct": false },
+        { "id": "d", "text": "Batch OS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which OS structure has maximum performance?",
+      "options": [
+        { "id": "a", "text": "Microkernel", "is_correct": false },
+        { "id": "b", "text": "Layered OS", "is_correct": false },
+        { "id": "c", "text": "Monolithic kernel", "is_correct": true },
+        { "id": "d", "text": "Virtual OS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which system call creates a new process in UNIX?",
+      "options": [
+        { "id": "a", "text": "exec()", "is_correct": false },
+        { "id": "b", "text": "fork()", "is_correct": true },
+        { "id": "c", "text": "wait()", "is_correct": false },
+        { "id": "d", "text": "exit()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which system call replaces process memory image?",
+      "options": [
+        { "id": "a", "text": "fork()", "is_correct": false },
+        { "id": "b", "text": "wait()", "is_correct": false },
+        { "id": "c", "text": "exec()", "is_correct": true },
+        { "id": "d", "text": "kill()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which scheduling metric measures system throughput?",
+      "options": [
+        { "id": "a", "text": "Waiting time", "is_correct": false },
+        { "id": "b", "text": "Turnaround time", "is_correct": false },
+        { "id": "c", "text": "Number of completed processes per unit time", "is_correct": true },
+        { "id": "d", "text": "Response time", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which synchronization primitive avoids busy waiting?",
+      "options": [
+        { "id": "a", "text": "Spinlock", "is_correct": false },
+        { "id": "b", "text": "Semaphore", "is_correct": true },
+        { "id": "c", "text": "Busy loop", "is_correct": false },
+        { "id": "d", "text": "Atomic flag", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which problem occurs if semaphore wait and signal are misplaced?",
+      "options": [
+        { "id": "a", "text": "Paging fault", "is_correct": false },
+        { "id": "b", "text": "Deadlock", "is_correct": true },
+        { "id": "c", "text": "Fragmentation", "is_correct": false },
+        { "id": "d", "text": "Thrashing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which problem demonstrates synchronization complexity?",
+      "options": [
+        { "id": "a", "text": "Dining Philosophers", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "Page replacement", "is_correct": false },
+        { "id": "d", "text": "Disk scheduling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which mechanism ensures mutual exclusion?",
+      "options": [
+        { "id": "a", "text": "Paging", "is_correct": false },
+        { "id": "b", "text": "Mutex", "is_correct": true },
+        { "id": "c", "text": "Thrashing", "is_correct": false },
+        { "id": "d", "text": "Segmentation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which condition is necessary for race condition?",
+      "options": [
+        { "id": "a", "text": "Single process", "is_correct": false },
+        { "id": "b", "text": "Shared data access", "is_correct": true },
+        { "id": "c", "text": "Paging", "is_correct": false },
+        { "id": "d", "text": "Context switch disabled", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which disk scheduling algorithm gives uniform waiting time?",
+      "options": [
+        { "id": "a", "text": "SCAN", "is_correct": false },
+        { "id": "b", "text": "C-SCAN", "is_correct": true },
+        { "id": "c", "text": "SSTF", "is_correct": false },
+        { "id": "d", "text": "LOOK", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which disk scheduling may cause starvation?",
+      "options": [
+        { "id": "a", "text": "FCFS", "is_correct": false },
+        { "id": "b", "text": "SCAN", "is_correct": false },
+        { "id": "c", "text": "SSTF", "is_correct": true },
+        { "id": "d", "text": "C-SCAN", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which file allocation method supports random access efficiently?",
+      "options": [
+        { "id": "a", "text": "Contiguous", "is_correct": false },
+        { "id": "b", "text": "Linked", "is_correct": false },
+        { "id": "c", "text": "Indexed", "is_correct": true },
+        { "id": "d", "text": "Sequential", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which file system structure stores file attributes?",
+      "options": [
+        { "id": "a", "text": "FAT", "is_correct": false },
+        { "id": "b", "text": "Inode", "is_correct": true },
+        { "id": "c", "text": "Superblock", "is_correct": false },
+        { "id": "d", "text": "Data block", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which OS supports virtual memory concept fully?",
+      "options": [
+        { "id": "a", "text": "DOS", "is_correct": false },
+        { "id": "b", "text": "Modern operating systems", "is_correct": true },
+        { "id": "c", "text": "Batch OS", "is_correct": false },
+        { "id": "d", "text": "Single-task OS", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which OS metric evaluates fairness?",
+      "options": [
+        { "id": "a", "text": "Throughput", "is_correct": false },
+        { "id": "b", "text": "Starvation avoidance", "is_correct": true },
+        { "id": "c", "text": "Response time", "is_correct": false },
+        { "id": "d", "text": "CPU utilization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which scheduling algorithm uses aging technique?",
+      "options": [
+        { "id": "a", "text": "FCFS", "is_correct": false },
+        { "id": "b", "text": "Priority Scheduling", "is_correct": true },
+        { "id": "c", "text": "Round Robin", "is_correct": false },
+        { "id": "d", "text": "Multilevel Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which OS concept allows isolation between processes?",
+      "options": [
+        { "id": "a", "text": "Virtual memory", "is_correct": true },
+        { "id": "b", "text": "Batch processing", "is_correct": false },
+        { "id": "c", "text": "Spooling", "is_correct": false },
+        { "id": "d", "text": "Polling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which interrupt has highest priority?",
+      "options": [
+        { "id": "a", "text": "I/O interrupt", "is_correct": false },
+        { "id": "b", "text": "Timer interrupt", "is_correct": false },
+        { "id": "c", "text": "Power failure interrupt", "is_correct": true },
+        { "id": "d", "text": "Keyboard interrupt", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which OS component handles hardware interrupts?",
+      "options": [
+        { "id": "a", "text": "Shell", "is_correct": false },
+        { "id": "b", "text": "Kernel", "is_correct": true },
+        { "id": "c", "text": "Application", "is_correct": false },
+        { "id": "d", "text": "Compiler", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which OS scheduling uses time quantum?",
+      "options": [
+        { "id": "a", "text": "FCFS", "is_correct": false },
+        { "id": "b", "text": "Round Robin", "is_correct": true },
+        { "id": "c", "text": "SJF", "is_correct": false },
+        { "id": "d", "text": "Priority", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which OS structure isolates drivers from kernel?",
+      "options": [
+        { "id": "a", "text": "Monolithic kernel", "is_correct": false },
+        { "id": "b", "text": "Microkernel", "is_correct": true },
+        { "id": "c", "text": "Hybrid kernel", "is_correct": false },
+        { "id": "d", "text": "Layered OS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which problem occurs when CPU spends more time paging than executing?",
+      "options": [
+        { "id": "a", "text": "Deadlock", "is_correct": false },
+        { "id": "b", "text": "Thrashing", "is_correct": true },
+        { "id": "c", "text": "Starvation", "is_correct": false },
+        { "id": "d", "text": "Fragmentation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which algorithm reduces thrashing?",
+      "options": [
+        { "id": "a", "text": "FIFO", "is_correct": false },
+        { "id": "b", "text": "Working Set Model", "is_correct": true },
+        { "id": "c", "text": "Round Robin", "is_correct": false },
+        { "id": "d", "text": "Priority Scheduling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which memory structure stores page table entries?",
+      "options": [
+        { "id": "a", "text": "TLB", "is_correct": true },
+        { "id": "b", "text": "Cache", "is_correct": false },
+        { "id": "c", "text": "Register", "is_correct": false },
+        { "id": "d", "text": "Stack", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which OS technique overlaps I/O and CPU execution?",
+      "options": [
+        { "id": "a", "text": "Spooling", "is_correct": true },
+        { "id": "b", "text": "Polling", "is_correct": false },
+        { "id": "c", "text": "Busy waiting", "is_correct": false },
+        { "id": "d", "text": "Fragmentation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which OS feature enables concurrent execution?",
+      "options": [
+        { "id": "a", "text": "Single-tasking", "is_correct": false },
+        { "id": "b", "text": "Multitasking", "is_correct": true },
+        { "id": "c", "text": "Batch processing", "is_correct": false },
+        { "id": "d", "text": "Spooling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which OS mode has highest privilege?",
+      "options": [
+        { "id": "a", "text": "User mode", "is_correct": false },
+        { "id": "b", "text": "Kernel mode", "is_correct": true },
+        { "id": "c", "text": "Supervisor mode", "is_correct": false },
+        { "id": "d", "text": "Application mode", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which OS mechanism enforces protection?",
+      "options": [
+        { "id": "a", "text": "Dual mode operation", "is_correct": true },
+        { "id": "b", "text": "Spooling", "is_correct": false },
+        { "id": "c", "text": "Batch processing", "is_correct": false },
+        { "id": "d", "text": "Polling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which OS concept provides abstraction to hardware?",
+      "options": [
+        { "id": "a", "text": "Application software", "is_correct": false },
+        { "id": "b", "text": "Operating system", "is_correct": true },
+        { "id": "c", "text": "Firmware", "is_correct": false },
+        { "id": "d", "text": "Compiler", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which OS metric indicates efficiency?",
+      "options": [
+        { "id": "a", "text": "CPU utilization", "is_correct": true },
+        { "id": "b", "text": "Waiting time", "is_correct": false },
+        { "id": "c", "text": "Response time", "is_correct": false },
+        { "id": "d", "text": "Turnaround time", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which OS concept supports fault tolerance?",
+      "options": [
+        { "id": "a", "text": "Microkernel design", "is_correct": true },
+        { "id": "b", "text": "Batch OS", "is_correct": false },
+        { "id": "c", "text": "Single-task OS", "is_correct": false },
+        { "id": "d", "text": "FCFS scheduling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which OS issue arises due to improper resource allocation?",
+      "options": [
+        { "id": "a", "text": "Deadlock", "is_correct": true },
+        { "id": "b", "text": "Paging", "is_correct": false },
+        { "id": "c", "text": "Booting", "is_correct": false },
+        { "id": "d", "text": "Spooling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which OS feature enables scalability?",
+      "options": [
+        { "id": "a", "text": "Multiprocessing", "is_correct": true },
+        { "id": "b", "text": "Batch processing", "is_correct": false },
+        { "id": "c", "text": "Polling", "is_correct": false },
+        { "id": "d", "text": "Single-user mode", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which OS concept ensures fairness among processes?",
+      "options": [
+        { "id": "a", "text": "Starvation avoidance", "is_correct": true },
+        { "id": "b", "text": "Batch processing", "is_correct": false },
+        { "id": "c", "text": "Thrashing", "is_correct": false },
+        { "id": "d", "text": "Segmentation", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which OS technique supports virtual machines?",
+      "options": [
+        { "id": "a", "text": "Time-sharing", "is_correct": false },
+        { "id": "b", "text": "Virtualization", "is_correct": true },
+        { "id": "c", "text": "Batch processing", "is_correct": false },
+        { "id": "d", "text": "Spooling", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which OS component schedules threads?",
+      "options": [
+        { "id": "a", "text": "File manager", "is_correct": false },
+        { "id": "b", "text": "Scheduler", "is_correct": true },
+        { "id": "c", "text": "Loader", "is_correct": false },
+        { "id": "d", "text": "Shell", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which OS issue occurs if a low-priority process never executes?",
+      "options": [
+        { "id": "a", "text": "Deadlock", "is_correct": false },
+        { "id": "b", "text": "Starvation", "is_correct": true },
+        { "id": "c", "text": "Thrashing", "is_correct": false },
+        { "id": "d", "text": "Fragmentation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which OS metric measures responsiveness?",
+      "options": [
+        { "id": "a", "text": "Turnaround time", "is_correct": false },
+        { "id": "b", "text": "Response time", "is_correct": true },
+        { "id": "c", "text": "Throughput", "is_correct": false },
+        { "id": "d", "text": "CPU utilization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "What is the ultimate goal of OS design?",
+      "options": [
+        { "id": "a", "text": "Complexity", "is_correct": false },
+        { "id": "b", "text": "Performance, reliability, security, usability", "is_correct": true },
+        { "id": "c", "text": "Using latest hardware", "is_correct": false },
+        { "id": "d", "text": "Supporting all applications", "is_correct": false }
+      ]
+    }
+  ]
+}

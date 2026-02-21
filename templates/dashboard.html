@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">Welcome, {{ user_name }} 👋</h1>
+        <p class="dashboard-subtitle">Ready to test your skills?</p>
+    </div>
+    
+    <div class="stats-grid">
+        <div class="stat-card glass-card">
+            <div class="stat-icon">📊</div>
+            <div class="stat-value">{{ stats.total_attempts or 0 }}</div>
+            <div class="stat-label">Total Quizzes</div>
+        </div>
+        <div class="stat-card glass-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-value">{{ stats.best_score or 0 }}</div>
+            <div class="stat-label">Best Score</div>
+        </div>
+        <div class="stat-card glass-card">
+            <div class="stat-icon">📈</div>
+            <div class="stat-value">{{ "%.1f"|format(stats.avg_score or 0) }}</div>
+            <div class="stat-label">Average Score</div>
+        </div>
+    </div>
+    
+    <div class="action-cards">
+        <a href="{{ url_for('quiz_select') }}" class="action-card glass-card card-hover">
+            <div class="action-icon">📝</div>
+            <h3>Take MCQ Quiz</h3>
+            <p>Test your knowledge with multiple choice questions</p>
+        </a>
+        <a href="{{ url_for('coding_list') }}" class="action-card glass-card card-hover">
+            <div class="action-icon">💻</div>
+            <h3>Coding Challenges</h3>
+            <p>Solve coding problems and improve your skills</p>
+        </a>
+    </div>
+    
+    {% if recent_attempts %}
+    <div class="recent-section">
+        <h2 class="section-title">Recent Attempts</h2>
+        <div class="recent-list">
+            {% for attempt in recent_attempts %}
+            <div class="recent-item glass-card">
+                <div class="recent-info">
+                    <h4>{{ attempt.quiz_title }}</h4>
+                    <p class="recent-date">{{ attempt.completed_at or attempt.started_at }}</p>
+                </div>
+                <div class="recent-score">
+                    <span class="score-value">{{ attempt.score }}</span>
+                    {% if attempt.completed_at %}
+                    <a href="{{ url_for('result', attempt_id=attempt.id) }}" class="btn btn-small">View Result</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+

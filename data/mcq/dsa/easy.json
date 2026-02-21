@@ -1,0 +1,520 @@
+{
+  "quiz_id": "dsa_easy",
+  "language": "dsa",
+  "level": "easy",
+  "title": "Data Structures & Algorithms - Easy",
+  "description": "Basic concepts of data structures and algorithms: arrays, strings, stacks, queues, recursion, complexity.",
+  "duration_minutes": 25,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is a data structure?",
+      "options": [
+        { "id": "a", "text": "A programming language", "is_correct": false },
+        { "id": "b", "text": "A way to organize and store data", "is_correct": true },
+        { "id": "c", "text": "An operating system", "is_correct": false },
+        { "id": "d", "text": "A compiler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which data structure stores elements in contiguous memory?",
+      "options": [
+        { "id": "a", "text": "Linked List", "is_correct": false },
+        { "id": "b", "text": "Tree", "is_correct": false },
+        { "id": "c", "text": "Array", "is_correct": true },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which data structure follows FIFO principle?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": true },
+        { "id": "c", "text": "Array", "is_correct": false },
+        { "id": "d", "text": "Tree", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which data structure follows LIFO principle?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Deque", "is_correct": false },
+        { "id": "c", "text": "Stack", "is_correct": true },
+        { "id": "d", "text": "Linked List", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which operation adds an element to a stack?",
+      "options": [
+        { "id": "a", "text": "Pop", "is_correct": false },
+        { "id": "b", "text": "Push", "is_correct": true },
+        { "id": "c", "text": "Peek", "is_correct": false },
+        { "id": "d", "text": "Delete", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which operation removes an element from a stack?",
+      "options": [
+        { "id": "a", "text": "Push", "is_correct": false },
+        { "id": "b", "text": "Insert", "is_correct": false },
+        { "id": "c", "text": "Pop", "is_correct": true },
+        { "id": "d", "text": "Peek", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which data structure is used for recursion?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Array", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the time complexity of accessing an element in an array by index?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(1)", "is_correct": true },
+        { "id": "d", "text": "O(n²)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which data structure uses nodes with data and next pointer?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": false },
+        { "id": "c", "text": "Linked List", "is_correct": true },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which linked list has pointers to both next and previous nodes?",
+      "options": [
+        { "id": "a", "text": "Singly Linked List", "is_correct": false },
+        { "id": "b", "text": "Circular Linked List", "is_correct": false },
+        { "id": "c", "text": "Doubly Linked List", "is_correct": true },
+        { "id": "d", "text": "Linear List", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which data structure represents hierarchical data?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Tree", "is_correct": true },
+        { "id": "d", "text": "Stack", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "What is the top element of a stack called?",
+      "options": [
+        { "id": "a", "text": "Front", "is_correct": false },
+        { "id": "b", "text": "Rear", "is_correct": false },
+        { "id": "c", "text": "Top", "is_correct": true },
+        { "id": "d", "text": "Head", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which traversal is used in a queue?",
+      "options": [
+        { "id": "a", "text": "LIFO", "is_correct": false },
+        { "id": "b", "text": "FIFO", "is_correct": true },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Inorder", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "What is recursion?",
+      "options": [
+        { "id": "a", "text": "Looping without condition", "is_correct": false },
+        { "id": "b", "text": "Function calling itself", "is_correct": true },
+        { "id": "c", "text": "Calling multiple functions", "is_correct": false },
+        { "id": "d", "text": "Infinite loop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which condition stops recursion?",
+      "options": [
+        { "id": "a", "text": "Recursive call", "is_correct": false },
+        { "id": "b", "text": "Base condition", "is_correct": true },
+        { "id": "c", "text": "Loop", "is_correct": false },
+        { "id": "d", "text": "Return statement", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which algorithm technique divides problem into smaller parts?",
+      "options": [
+        { "id": "a", "text": "Greedy", "is_correct": false },
+        { "id": "b", "text": "Divide and Conquer", "is_correct": true },
+        { "id": "c", "text": "Brute Force", "is_correct": false },
+        { "id": "d", "text": "Backtracking", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which sorting algorithm is easiest to understand?",
+      "options": [
+        { "id": "a", "text": "Merge Sort", "is_correct": false },
+        { "id": "b", "text": "Quick Sort", "is_correct": false },
+        { "id": "c", "text": "Bubble Sort", "is_correct": true },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which sorting algorithm compares adjacent elements?",
+      "options": [
+        { "id": "a", "text": "Insertion Sort", "is_correct": false },
+        { "id": "b", "text": "Bubble Sort", "is_correct": true },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "Selection Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which sorting algorithm has best average time complexity?",
+      "options": [
+        { "id": "a", "text": "Bubble Sort", "is_correct": false },
+        { "id": "b", "text": "Quick Sort", "is_correct": true },
+        { "id": "c", "text": "Selection Sort", "is_correct": false },
+        { "id": "d", "text": "Insertion Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "What is linear search time complexity in worst case?",
+      "options": [
+        { "id": "a", "text": "O(1)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(n)", "is_correct": true },
+        { "id": "d", "text": "O(n²)", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which searching algorithm requires sorted array?",
+      "options": [
+        { "id": "a", "text": "Linear Search", "is_correct": false },
+        { "id": "b", "text": "Binary Search", "is_correct": true },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "BFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "What is the time complexity of binary search?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": true },
+        { "id": "c", "text": "O(n²)", "is_correct": false },
+        { "id": "d", "text": "O(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which data structure is used in BFS?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": true },
+        { "id": "c", "text": "Array", "is_correct": false },
+        { "id": "d", "text": "Tree", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which data structure is used in DFS?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which data structure allows insertion and deletion at both ends?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Deque", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "What is Big-O notation used for?",
+      "options": [
+        { "id": "a", "text": "Memory allocation", "is_correct": false },
+        { "id": "b", "text": "Algorithm complexity analysis", "is_correct": true },
+        { "id": "c", "text": "Syntax checking", "is_correct": false },
+        { "id": "d", "text": "Data storage", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which complexity is fastest?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(1)", "is_correct": true },
+        { "id": "d", "text": "O(n²)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which data structure is non-linear?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": false },
+        { "id": "c", "text": "Tree", "is_correct": true },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which tree has maximum two children?",
+      "options": [
+        { "id": "a", "text": "Binary Tree", "is_correct": true },
+        { "id": "b", "text": "General Tree", "is_correct": false },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which traversal visits root first?",
+      "options": [
+        { "id": "a", "text": "Inorder", "is_correct": false },
+        { "id": "b", "text": "Postorder", "is_correct": false },
+        { "id": "c", "text": "Preorder", "is_correct": true },
+        { "id": "d", "text": "Level order", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which traversal visits root last?",
+      "options": [
+        { "id": "a", "text": "Inorder", "is_correct": false },
+        { "id": "b", "text": "Postorder", "is_correct": true },
+        { "id": "c", "text": "Preorder", "is_correct": false },
+        { "id": "d", "text": "Level order", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which data structure is used in priority scheduling?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": false },
+        { "id": "c", "text": "Heap", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which heap property is used in max heap?",
+      "options": [
+        { "id": "a", "text": "Parent is smaller", "is_correct": false },
+        { "id": "b", "text": "Parent is greater", "is_correct": true },
+        { "id": "c", "text": "Left child greater", "is_correct": false },
+        { "id": "d", "text": "Right child greater", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which graph traversal uses queue?",
+      "options": [
+        { "id": "a", "text": "DFS", "is_correct": false },
+        { "id": "b", "text": "BFS", "is_correct": true },
+        { "id": "c", "text": "Inorder", "is_correct": false },
+        { "id": "d", "text": "Preorder", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which graph traversal uses stack?",
+      "options": [
+        { "id": "a", "text": "BFS", "is_correct": false },
+        { "id": "b", "text": "DFS", "is_correct": true },
+        { "id": "c", "text": "Level Order", "is_correct": false },
+        { "id": "d", "text": "Inorder", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which algorithm finds shortest path?",
+      "options": [
+        { "id": "a", "text": "Bubble Sort", "is_correct": false },
+        { "id": "b", "text": "Dijkstra", "is_correct": true },
+        { "id": "c", "text": "Binary Search", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which algorithm uses greedy approach?",
+      "options": [
+        { "id": "a", "text": "Merge Sort", "is_correct": false },
+        { "id": "b", "text": "Dijkstra", "is_correct": true },
+        { "id": "c", "text": "Binary Search", "is_correct": false },
+        { "id": "d", "text": "Linear Search", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which case gives best time complexity?",
+      "options": [
+        { "id": "a", "text": "Worst case", "is_correct": false },
+        { "id": "b", "text": "Average case", "is_correct": false },
+        { "id": "c", "text": "Best case", "is_correct": true },
+        { "id": "d", "text": "All same", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which structure stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Hash Table", "is_correct": true },
+        { "id": "c", "text": "Stack", "is_correct": false },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "What is collision in hashing?",
+      "options": [
+        { "id": "a", "text": "Same key twice", "is_correct": false },
+        { "id": "b", "text": "Different keys same hash", "is_correct": true },
+        { "id": "c", "text": "Hash deletion", "is_correct": false },
+        { "id": "d", "text": "Hash overflow", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which technique resolves collision?",
+      "options": [
+        { "id": "a", "text": "Sorting", "is_correct": false },
+        { "id": "b", "text": "Chaining", "is_correct": true },
+        { "id": "c", "text": "Searching", "is_correct": false },
+        { "id": "d", "text": "Traversal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which algorithm uses backtracking?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "N-Queen", "is_correct": true },
+        { "id": "c", "text": "Bubble Sort", "is_correct": false },
+        { "id": "d", "text": "Merge Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which problem uses dynamic programming?",
+      "options": [
+        { "id": "a", "text": "Fibonacci", "is_correct": true },
+        { "id": "b", "text": "Linear Search", "is_correct": false },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Bubble Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which technique stores overlapping subproblems?",
+      "options": [
+        { "id": "a", "text": "Greedy", "is_correct": false },
+        { "id": "b", "text": "Dynamic Programming", "is_correct": true },
+        { "id": "c", "text": "Divide and Conquer", "is_correct": false },
+        { "id": "d", "text": "Brute Force", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which algorithm is stable?",
+      "options": [
+        { "id": "a", "text": "Quick Sort", "is_correct": false },
+        { "id": "b", "text": "Merge Sort", "is_correct": true },
+        { "id": "c", "text": "Heap Sort", "is_correct": false },
+        { "id": "d", "text": "Selection Sort", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which sorting algorithm uses extra space?",
+      "options": [
+        { "id": "a", "text": "Bubble Sort", "is_correct": false },
+        { "id": "b", "text": "Selection Sort", "is_correct": false },
+        { "id": "c", "text": "Merge Sort", "is_correct": true },
+        { "id": "d", "text": "Insertion Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which algorithm is NOT comparison based?",
+      "options": [
+        { "id": "a", "text": "Quick Sort", "is_correct": false },
+        { "id": "b", "text": "Merge Sort", "is_correct": false },
+        { "id": "c", "text": "Counting Sort", "is_correct": true },
+        { "id": "d", "text": "Bubble Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which complexity grows fastest?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(n²)", "is_correct": true },
+        { "id": "d", "text": "O(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which structure is best for undo operation?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Array", "is_correct": false },
+        { "id": "d", "text": "Tree", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which is most important in DSA?",
+      "options": [
+        { "id": "a", "text": "Syntax", "is_correct": false },
+        { "id": "b", "text": "Choosing correct data structure", "is_correct": true },
+        { "id": "c", "text": "Writing long code", "is_correct": false },
+        { "id": "d", "text": "Using frameworks", "is_correct": false }
+      ]
+    }
+  ]
+}

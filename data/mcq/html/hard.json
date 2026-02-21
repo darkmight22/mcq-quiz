@@ -1,0 +1,520 @@
+{
+  "quiz_id": "html_hard",
+  "language": "html",
+  "level": "hard",
+  "title": "HTML Advanced Concepts - Hard",
+  "description": "Accessibility, SEO, advanced forms, media optimization, and ARIA.",
+  "duration_minutes": 35,
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which HTML attribute prevents search engines from indexing a page?",
+      "options": [
+        { "id": "a", "text": "nofollow", "is_correct": false },
+        { "id": "b", "text": "noindex", "is_correct": true },
+        { "id": "c", "text": "nosnippet", "is_correct": false },
+        { "id": "d", "text": "indexoff", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which meta tag controls viewport scaling on mobile?",
+      "options": [
+        { "id": "a", "text": "meta screen", "is_correct": false },
+        { "id": "b", "text": "meta scale", "is_correct": false },
+        { "id": "c", "text": "meta viewport", "is_correct": true },
+        { "id": "d", "text": "meta device", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which value enables lazy loading of images?",
+      "options": [
+        { "id": "a", "text": "loading=\"lazy\"", "is_correct": true },
+        { "id": "b", "text": "defer=\"img\"", "is_correct": false },
+        { "id": "c", "text": "async=\"image\"", "is_correct": false },
+        { "id": "d", "text": "delay=\"load\"", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which attribute improves accessibility for form errors?",
+      "options": [
+        { "id": "a", "text": "aria-describedby", "is_correct": true },
+        { "id": "b", "text": "aria-hidden", "is_correct": false },
+        { "id": "c", "text": "aria-error", "is_correct": false },
+        { "id": "d", "text": "aria-invalid-text", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which tag defines machine-readable data?",
+      "options": [
+        { "id": "a", "text": "<meta>", "is_correct": false },
+        { "id": "b", "text": "<time>", "is_correct": false },
+        { "id": "c", "text": "<data>", "is_correct": true },
+        { "id": "d", "text": "<output>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which attribute links label and input for screen readers?",
+      "options": [
+        { "id": "a", "text": "name", "is_correct": false },
+        { "id": "b", "text": "for", "is_correct": true },
+        { "id": "c", "text": "aria-label", "is_correct": false },
+        { "id": "d", "text": "connect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which attribute disables autocomplete in forms?",
+      "options": [
+        { "id": "a", "text": "autofill=\"off\"", "is_correct": false },
+        { "id": "b", "text": "autocomplete=\"false\"", "is_correct": false },
+        { "id": "c", "text": "autocomplete=\"off\"", "is_correct": true },
+        { "id": "d", "text": "auto=\"disable\"", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which HTML element represents self-contained content?",
+      "options": [
+        { "id": "a", "text": "<section>", "is_correct": false },
+        { "id": "b", "text": "<article>", "is_correct": true },
+        { "id": "c", "text": "<aside>", "is_correct": false },
+        { "id": "d", "text": "<main>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which attribute provides fallback text for media?",
+      "options": [
+        { "id": "a", "text": "title", "is_correct": false },
+        { "id": "b", "text": "alt", "is_correct": true },
+        { "id": "c", "text": "aria-text", "is_correct": false },
+        { "id": "d", "text": "label", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which tag improves SEO by defining main content?",
+      "options": [
+        { "id": "a", "text": "<content>", "is_correct": false },
+        { "id": "b", "text": "<section>", "is_correct": false },
+        { "id": "c", "text": "<main>", "is_correct": true },
+        { "id": "d", "text": "<article>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which attribute specifies relationship for SEO links?",
+      "options": [
+        { "id": "a", "text": "type", "is_correct": false },
+        { "id": "b", "text": "rel", "is_correct": true },
+        { "id": "c", "text": "connect", "is_correct": false },
+        { "id": "d", "text": "role", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which value prevents referrer information leakage?",
+      "options": [
+        { "id": "a", "text": "noopener", "is_correct": false },
+        { "id": "b", "text": "noreferrer", "is_correct": true },
+        { "id": "c", "text": "nofollow", "is_correct": false },
+        { "id": "d", "text": "external", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which attribute enables file upload in form?",
+      "options": [
+        { "id": "a", "text": "upload", "is_correct": false },
+        { "id": "b", "text": "enctype", "is_correct": true },
+        { "id": "c", "text": "file-type", "is_correct": false },
+        { "id": "d", "text": "method", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which enctype value is required for file upload?",
+      "options": [
+        { "id": "a", "text": "application/json", "is_correct": false },
+        { "id": "b", "text": "text/plain", "is_correct": false },
+        { "id": "c", "text": "multipart/form-data", "is_correct": true },
+        { "id": "d", "text": "application/xml", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which attribute restricts file types in input?",
+      "options": [
+        { "id": "a", "text": "type", "is_correct": false },
+        { "id": "b", "text": "filter", "is_correct": false },
+        { "id": "c", "text": "accept", "is_correct": true },
+        { "id": "d", "text": "mime", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which tag defines responsive images container?",
+      "options": [
+        { "id": "a", "text": "<img>", "is_correct": false },
+        { "id": "b", "text": "<picture>", "is_correct": true },
+        { "id": "c", "text": "<source>", "is_correct": false },
+        { "id": "d", "text": "<media>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which tag specifies multiple image sources?",
+      "options": [
+        { "id": "a", "text": "<img>", "is_correct": false },
+        { "id": "b", "text": "<picture>", "is_correct": false },
+        { "id": "c", "text": "<source>", "is_correct": true },
+        { "id": "d", "text": "<set>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which attribute defines media query for source?",
+      "options": [
+        { "id": "a", "text": "sizes", "is_correct": false },
+        { "id": "b", "text": "media", "is_correct": true },
+        { "id": "c", "text": "query", "is_correct": false },
+        { "id": "d", "text": "condition", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which tag provides fallback content for older browsers?",
+      "options": [
+        { "id": "a", "text": "<fallback>", "is_correct": false },
+        { "id": "b", "text": "<noscript>", "is_correct": true },
+        { "id": "c", "text": "<support>", "is_correct": false },
+        { "id": "d", "text": "<script-fallback>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which attribute prevents script execution blocking?",
+      "options": [
+        { "id": "a", "text": "defer", "is_correct": true },
+        { "id": "b", "text": "delay", "is_correct": false },
+        { "id": "c", "text": "async", "is_correct": false },
+        { "id": "d", "text": "wait", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which attribute executes script as soon as loaded?",
+      "options": [
+        { "id": "a", "text": "defer", "is_correct": false },
+        { "id": "b", "text": "delay", "is_correct": false },
+        { "id": "c", "text": "async", "is_correct": true },
+        { "id": "d", "text": "instant", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which tag defines metadata charset?",
+      "options": [
+        { "id": "a", "text": "<meta charset=\"UTF-8\">", "is_correct": true },
+        { "id": "b", "text": "<charset>", "is_correct": false },
+        { "id": "c", "text": "<encoding>", "is_correct": false },
+        { "id": "d", "text": "<meta encoding>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which attribute specifies base URL for relative links?",
+      "options": [
+        { "id": "a", "text": "href", "is_correct": false },
+        { "id": "b", "text": "src", "is_correct": false },
+        { "id": "c", "text": "base", "is_correct": false },
+        { "id": "d", "text": "href (in <base>)", "is_correct": true }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which tag defines accessibility landmark for navigation?",
+      "options": [
+        { "id": "a", "text": "<menu>", "is_correct": false },
+        { "id": "b", "text": "<nav>", "is_correct": true },
+        { "id": "c", "text": "<links>", "is_correct": false },
+        { "id": "d", "text": "<section>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which ARIA role defines main content?",
+      "options": [
+        { "id": "a", "text": "content", "is_correct": false },
+        { "id": "b", "text": "primary", "is_correct": false },
+        { "id": "c", "text": "main", "is_correct": true },
+        { "id": "d", "text": "body", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which ARIA attribute hides element from screen readers?",
+      "options": [
+        { "id": "a", "text": "aria-hidden=\"true\"", "is_correct": true },
+        { "id": "b", "text": "hidden=\"aria\"", "is_correct": false },
+        { "id": "c", "text": "aria-disable", "is_correct": false },
+        { "id": "d", "text": "aria-ignore", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which tag defines expandable disclosure widget?",
+      "options": [
+        { "id": "a", "text": "<toggle>", "is_correct": false },
+        { "id": "b", "text": "<details>", "is_correct": true },
+        { "id": "c", "text": "<summary>", "is_correct": false },
+        { "id": "d", "text": "<accordion>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which attribute auto-focuses input on load?",
+      "options": [
+        { "id": "a", "text": "focus", "is_correct": false },
+        { "id": "b", "text": "autofocus", "is_correct": true },
+        { "id": "c", "text": "auto-focus", "is_correct": false },
+        { "id": "d", "text": "start", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which attribute sends form data using URL encoding?",
+      "options": [
+        { "id": "a", "text": "POST", "is_correct": false },
+        { "id": "b", "text": "method=\"get\"", "is_correct": true },
+        { "id": "c", "text": "enctype", "is_correct": false },
+        { "id": "d", "text": "action", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which tag groups options in select menu?",
+      "options": [
+        { "id": "a", "text": "<group>", "is_correct": false },
+        { "id": "b", "text": "<optgroup>", "is_correct": true },
+        { "id": "c", "text": "<option-set>", "is_correct": false },
+        { "id": "d", "text": "<fieldset>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which attribute allows multiple file upload?",
+      "options": [
+        { "id": "a", "text": "many", "is_correct": false },
+        { "id": "b", "text": "multiple", "is_correct": true },
+        { "id": "c", "text": "files", "is_correct": false },
+        { "id": "d", "text": "multi", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which tag defines description list?",
+      "options": [
+        { "id": "a", "text": "<ul>", "is_correct": false },
+        { "id": "b", "text": "<dl>", "is_correct": true },
+        { "id": "c", "text": "<ol>", "is_correct": false },
+        { "id": "d", "text": "<list>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which tag defines description term?",
+      "options": [
+        { "id": "a", "text": "<dd>", "is_correct": false },
+        { "id": "b", "text": "<dt>", "is_correct": true },
+        { "id": "c", "text": "<term>", "is_correct": false },
+        { "id": "d", "text": "<li>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which tag defines description details?",
+      "options": [
+        { "id": "a", "text": "<dt>", "is_correct": false },
+        { "id": "b", "text": "<li>", "is_correct": false },
+        { "id": "c", "text": "<dd>", "is_correct": true },
+        { "id": "d", "text": "<desc>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which attribute defines element role for accessibility?",
+      "options": [
+        { "id": "a", "text": "aria-role", "is_correct": false },
+        { "id": "b", "text": "role", "is_correct": true },
+        { "id": "c", "text": "access", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which ARIA role defines dialog?",
+      "options": [
+        { "id": "a", "text": "popup", "is_correct": false },
+        { "id": "b", "text": "window", "is_correct": false },
+        { "id": "c", "text": "dialog", "is_correct": true },
+        { "id": "d", "text": "modal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which attribute ensures external link security?",
+      "options": [
+        { "id": "a", "text": "noopener", "is_correct": true },
+        { "id": "b", "text": "nofollow", "is_correct": false },
+        { "id": "c", "text": "secure", "is_correct": false },
+        { "id": "d", "text": "sandbox", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which attribute defines refresh time?",
+      "options": [
+        { "id": "a", "text": "meta refresh", "is_correct": true },
+        { "id": "b", "text": "reload", "is_correct": false },
+        { "id": "c", "text": "http-refresh", "is_correct": false },
+        { "id": "d", "text": "timer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which tag defines inline semantic emphasis?",
+      "options": [
+        { "id": "a", "text": "<b>", "is_correct": false },
+        { "id": "b", "text": "<strong>", "is_correct": true },
+        { "id": "c", "text": "<i>", "is_correct": false },
+        { "id": "d", "text": "<mark>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which attribute prevents form submission?",
+      "options": [
+        { "id": "a", "text": "disabled", "is_correct": false },
+        { "id": "b", "text": "novalidate", "is_correct": false },
+        { "id": "c", "text": "formnovalidate", "is_correct": true },
+        { "id": "d", "text": "stop", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which tag defines inline time machine-readable?",
+      "options": [
+        { "id": "a", "text": "<data>", "is_correct": false },
+        { "id": "b", "text": "<time>", "is_correct": true },
+        { "id": "c", "text": "<meta>", "is_correct": false },
+        { "id": "d", "text": "<datetime>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which attribute improves performance by preloading?",
+      "options": [
+        { "id": "a", "text": "rel=\"preload\"", "is_correct": true },
+        { "id": "b", "text": "rel=\"load\"", "is_correct": false },
+        { "id": "c", "text": "rel=\"fetch\"", "is_correct": false },
+        { "id": "d", "text": "rel=\"prefetching\"", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which attribute specifies resource type for preload?",
+      "options": [
+        { "id": "a", "text": "type", "is_correct": false },
+        { "id": "b", "text": "as", "is_correct": true },
+        { "id": "c", "text": "kind", "is_correct": false },
+        { "id": "d", "text": "resource", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which tag defines navigation breadcrumb?",
+      "options": [
+        { "id": "a", "text": "<breadcrumb>", "is_correct": false },
+        { "id": "b", "text": "<nav>", "is_correct": false },
+        { "id": "c", "text": "<ol>", "is_correct": true },
+        { "id": "d", "text": "<ul>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which attribute defines canonical URL?",
+      "options": [
+        { "id": "a", "text": "rel=\"canonical\"", "is_correct": true },
+        { "id": "b", "text": "canonical", "is_correct": false },
+        { "id": "c", "text": "href=\"canonical\"", "is_correct": false },
+        { "id": "d", "text": "url=\"canonical\"", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which tag defines inline SVG?",
+      "options": [
+        { "id": "a", "text": "<img>", "is_correct": false },
+        { "id": "b", "text": "<canvas>", "is_correct": false },
+        { "id": "c", "text": "<svg>", "is_correct": true },
+        { "id": "d", "text": "<vector>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which tag provides fallback for video?",
+      "options": [
+        { "id": "a", "text": "<track>", "is_correct": false },
+        { "id": "b", "text": "<source>", "is_correct": true },
+        { "id": "c", "text": "<fallback>", "is_correct": false },
+        { "id": "d", "text": "<media>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which attribute enables captions for video?",
+      "options": [
+        { "id": "a", "text": "subtitle", "is_correct": false },
+        { "id": "b", "text": "captions", "is_correct": false },
+        { "id": "c", "text": "track kind=\"captions\"", "is_correct": true },
+        { "id": "d", "text": "cc", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which tag defines accessibility description list?",
+      "options": [
+        { "id": "a", "text": "<dl>", "is_correct": true },
+        { "id": "b", "text": "<list>", "is_correct": false },
+        { "id": "c", "text": "<desc>", "is_correct": false },
+        { "id": "d", "text": "<access>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which attribute explicitly defines page direction?",
+      "options": [
+        { "id": "a", "text": "lang", "is_correct": false },
+        { "id": "b", "text": "direction", "is_correct": false },
+        { "id": "c", "text": "dir", "is_correct": true },
+        { "id": "d", "text": "flow", "is_correct": false }
+      ]
+    }
+  ]
+}

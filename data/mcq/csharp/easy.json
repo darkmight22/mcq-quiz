@@ -1,0 +1,520 @@
+{
+  "quiz_id": "csharp_easy",
+  "language": "csharp",
+  "level": "easy",
+  "title": "C# Basics - Easy",
+  "description": "C# fundamentals, syntax, OOP basics, data types, control statements.",
+  "duration_minutes": 15,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Who developed the C# programming language?",
+      "options": [
+        { "id": "a", "text": "James Gosling", "is_correct": false },
+        { "id": "b", "text": "Bjarne Stroustrup", "is_correct": false },
+        { "id": "c", "text": "Microsoft", "is_correct": true },
+        { "id": "d", "text": "Dennis Ritchie", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "C# is mainly used for?",
+      "options": [
+        { "id": "a", "text": "Web and Windows applications", "is_correct": true },
+        { "id": "b", "text": "Embedded systems only", "is_correct": false },
+        { "id": "c", "text": "Database queries only", "is_correct": false },
+        { "id": "d", "text": "Low-level hardware programming", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which framework is primarily used with C#?",
+      "options": [
+        { "id": "a", "text": "Spring", "is_correct": false },
+        { "id": "b", "text": ".NET", "is_correct": true },
+        { "id": "c", "text": "Django", "is_correct": false },
+        { "id": "d", "text": "Laravel", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which method is the entry point of a C# program?",
+      "options": [
+        { "id": "a", "text": "Start()", "is_correct": false },
+        { "id": "b", "text": "Init()", "is_correct": false },
+        { "id": "c", "text": "Main()", "is_correct": true },
+        { "id": "d", "text": "Run()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which keyword is used to define a class in C#?",
+      "options": [
+        { "id": "a", "text": "struct", "is_correct": false },
+        { "id": "b", "text": "define", "is_correct": false },
+        { "id": "c", "text": "class", "is_correct": true },
+        { "id": "d", "text": "object", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which keyword is used to create an object?",
+      "options": [
+        { "id": "a", "text": "create", "is_correct": false },
+        { "id": "b", "text": "object", "is_correct": false },
+        { "id": "c", "text": "new", "is_correct": true },
+        { "id": "d", "text": "alloc", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which data type stores whole numbers?",
+      "options": [
+        { "id": "a", "text": "float", "is_correct": false },
+        { "id": "b", "text": "double", "is_correct": false },
+        { "id": "c", "text": "int", "is_correct": true },
+        { "id": "d", "text": "bool", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which data type stores true or false?",
+      "options": [
+        { "id": "a", "text": "int", "is_correct": false },
+        { "id": "b", "text": "string", "is_correct": false },
+        { "id": "c", "text": "bool", "is_correct": true },
+        { "id": "d", "text": "char", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which keyword is used for decision making?",
+      "options": [
+        { "id": "a", "text": "loop", "is_correct": false },
+        { "id": "b", "text": "if", "is_correct": true },
+        { "id": "c", "text": "switch", "is_correct": false },
+        { "id": "d", "text": "goto", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which loop executes at least once?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "do-while", "is_correct": true },
+        { "id": "d", "text": "foreach", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword is used to stop a loop?",
+      "options": [
+        { "id": "a", "text": "exit", "is_correct": false },
+        { "id": "b", "text": "stop", "is_correct": false },
+        { "id": "c", "text": "break", "is_correct": true },
+        { "id": "d", "text": "return", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword skips the current loop iteration?",
+      "options": [
+        { "id": "a", "text": "skip", "is_correct": false },
+        { "id": "b", "text": "continue", "is_correct": true },
+        { "id": "c", "text": "pass", "is_correct": false },
+        { "id": "d", "text": "next", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which access modifier allows access everywhere?",
+      "options": [
+        { "id": "a", "text": "private", "is_correct": false },
+        { "id": "b", "text": "protected", "is_correct": false },
+        { "id": "c", "text": "public", "is_correct": true },
+        { "id": "d", "text": "internal", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which access modifier allows access within same assembly?",
+      "options": [
+        { "id": "a", "text": "public", "is_correct": false },
+        { "id": "b", "text": "private", "is_correct": false },
+        { "id": "c", "text": "protected", "is_correct": false },
+        { "id": "d", "text": "internal", "is_correct": true }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword is used to inherit a class?",
+      "options": [
+        { "id": "a", "text": "implements", "is_correct": false },
+        { "id": "b", "text": "inherits", "is_correct": false },
+        { "id": "c", "text": "extends", "is_correct": false },
+        { "id": "d", "text": ":", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which concept allows same method name with different parameters?",
+      "options": [
+        { "id": "a", "text": "Overriding", "is_correct": false },
+        { "id": "b", "text": "Inheritance", "is_correct": false },
+        { "id": "c", "text": "Overloading", "is_correct": true },
+        { "id": "d", "text": "Encapsulation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which concept supports runtime polymorphism?",
+      "options": [
+        { "id": "a", "text": "Overloading", "is_correct": false },
+        { "id": "b", "text": "Inheritance", "is_correct": false },
+        { "id": "c", "text": "Method overriding", "is_correct": true },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which keyword is used to define an interface?",
+      "options": [
+        { "id": "a", "text": "class", "is_correct": false },
+        { "id": "b", "text": "abstract", "is_correct": false },
+        { "id": "c", "text": "interface", "is_correct": true },
+        { "id": "d", "text": "implements", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword is used to implement an interface?",
+      "options": [
+        { "id": "a", "text": "implements", "is_correct": false },
+        { "id": "b", "text": "extends", "is_correct": false },
+        { "id": "c", "text": ":", "is_correct": true },
+        { "id": "d", "text": "inherits", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which keyword is used to define constant?",
+      "options": [
+        { "id": "a", "text": "readonly", "is_correct": false },
+        { "id": "b", "text": "const", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword prevents method overriding?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": true },
+        { "id": "c", "text": "abstract", "is_correct": false },
+        { "id": "d", "text": "readonly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which keyword is used to handle exceptions?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "catch", "is_correct": false },
+        { "id": "d", "text": "try", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which block handles an exception?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": false },
+        { "id": "c", "text": "catch", "is_correct": true },
+        { "id": "d", "text": "finally", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which block always executes?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "throw", "is_correct": false },
+        { "id": "d", "text": "finally", "is_correct": true }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword is used to create an abstract class?",
+      "options": [
+        { "id": "a", "text": "interface", "is_correct": false },
+        { "id": "b", "text": "virtual", "is_correct": false },
+        { "id": "c", "text": "abstract", "is_correct": true },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword is used to call parent class constructor?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "base", "is_correct": true },
+        { "id": "c", "text": "super", "is_correct": false },
+        { "id": "d", "text": "parent", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which keyword is used to define static members?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "const", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": true },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which type stores sequence of characters?",
+      "options": [
+        { "id": "a", "text": "char", "is_correct": false },
+        { "id": "b", "text": "string", "is_correct": true },
+        { "id": "c", "text": "bool", "is_correct": false },
+        { "id": "d", "text": "object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which keyword is used to check null safety?",
+      "options": [
+        { "id": "a", "text": "?:", "is_correct": false },
+        { "id": "b", "text": "??", "is_correct": true },
+        { "id": "c", "text": "=>", "is_correct": false },
+        { "id": "d", "text": "::", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which loop is used to iterate over collections?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "do-while", "is_correct": false },
+        { "id": "d", "text": "foreach", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which keyword is used to stop program execution?",
+      "options": [
+        { "id": "a", "text": "break", "is_correct": false },
+        { "id": "b", "text": "stop", "is_correct": false },
+        { "id": "c", "text": "return", "is_correct": true },
+        { "id": "d", "text": "exit", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which operator compares values?",
+      "options": [
+        { "id": "a", "text": "=", "is_correct": false },
+        { "id": "b", "text": "==", "is_correct": true },
+        { "id": "c", "text": "!=", "is_correct": false },
+        { "id": "d", "text": "<=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which operator assigns value?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "!=", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which C# feature ensures platform independence?",
+      "options": [
+        { "id": "a", "text": "Compiler", "is_correct": false },
+        { "id": "b", "text": "CLR", "is_correct": true },
+        { "id": "c", "text": "Interpreter", "is_correct": false },
+        { "id": "d", "text": "Assembler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which file extension is used for C# source code?",
+      "options": [
+        { "id": "a", "text": ".class", "is_correct": false },
+        { "id": "b", "text": ".cs", "is_correct": true },
+        { "id": "c", "text": ".csharp", "is_correct": false },
+        { "id": "d", "text": ".exe", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword defines a sealed class?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "sealed", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "abstract", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which keyword allows method overriding?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "virtual", "is_correct": true },
+        { "id": "c", "text": "sealed", "is_correct": false },
+        { "id": "d", "text": "readonly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which keyword is used to override a method?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "new", "is_correct": false },
+        { "id": "c", "text": "override", "is_correct": true },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which keyword checks object type at runtime?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "typeof", "is_correct": false },
+        { "id": "c", "text": "is", "is_correct": true },
+        { "id": "d", "text": "as", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which keyword is used for safe type casting?",
+      "options": [
+        { "id": "a", "text": "is", "is_correct": false },
+        { "id": "b", "text": "as", "is_correct": true },
+        { "id": "c", "text": "cast", "is_correct": false },
+        { "id": "d", "text": "convert", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which collection stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "Dictionary", "is_correct": true },
+        { "id": "c", "text": "ArrayList", "is_correct": false },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which collection allows duplicate values?",
+      "options": [
+        { "id": "a", "text": "HashSet", "is_correct": false },
+        { "id": "b", "text": "Dictionary", "is_correct": false },
+        { "id": "c", "text": "List", "is_correct": true },
+        { "id": "d", "text": "SortedSet", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which keyword creates lambda expression?",
+      "options": [
+        { "id": "a", "text": "::", "is_correct": false },
+        { "id": "b", "text": "=>", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": "==>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which namespace contains basic C# classes?",
+      "options": [
+        { "id": "a", "text": "System", "is_correct": true },
+        { "id": "b", "text": "Microsoft", "is_correct": false },
+        { "id": "c", "text": "Collections", "is_correct": false },
+        { "id": "d", "text": "Runtime", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword is used to import namespace?",
+      "options": [
+        { "id": "a", "text": "import", "is_correct": false },
+        { "id": "b", "text": "include", "is_correct": false },
+        { "id": "c", "text": "using", "is_correct": true },
+        { "id": "d", "text": "require", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword creates immutable field after initialization?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "readonly", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which keyword is used to define enum?",
+      "options": [
+        { "id": "a", "text": "struct", "is_correct": false },
+        { "id": "b", "text": "enum", "is_correct": true },
+        { "id": "c", "text": "constant", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword makes method asynchronous?",
+      "options": [
+        { "id": "a", "text": "thread", "is_correct": false },
+        { "id": "b", "text": "async", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "task", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword waits for async task?",
+      "options": [
+        { "id": "a", "text": "wait", "is_correct": false },
+        { "id": "b", "text": "await", "is_correct": true },
+        { "id": "c", "text": "join", "is_correct": false },
+        { "id": "d", "text": "sleep", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which C# feature supports automatic memory management?",
+      "options": [
+        { "id": "a", "text": "Pointers", "is_correct": false },
+        { "id": "b", "text": "Garbage Collector", "is_correct": true },
+        { "id": "c", "text": "Manual delete", "is_correct": false },
+        { "id": "d", "text": "Destructor only", "is_correct": false }
+      ]
+    }
+  ]
+}

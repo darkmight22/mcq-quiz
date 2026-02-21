@@ -1,0 +1,520 @@
+{
+  "quiz_id": "php_medium",
+  "language": "php",
+  "level": "medium",
+  "title": "PHP Intermediate - Medium",
+  "description": "Intermediate PHP concepts: OOP, namespaces, exceptions, file handling, MySQL, security basics.",
+  "duration_minutes": 30,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which keyword is used to create a class in PHP?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "class", "is_correct": true },
+        { "id": "c", "text": "struct", "is_correct": false },
+        { "id": "d", "text": "define", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword is used to create an object?",
+      "options": [
+        { "id": "a", "text": "create", "is_correct": false },
+        { "id": "b", "text": "object", "is_correct": false },
+        { "id": "c", "text": "new", "is_correct": true },
+        { "id": "d", "text": "init", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which method is automatically called when an object is created?",
+      "options": [
+        { "id": "a", "text": "__call()", "is_correct": false },
+        { "id": "b", "text": "__init()", "is_correct": false },
+        { "id": "c", "text": "__construct()", "is_correct": true },
+        { "id": "d", "text": "__create()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which access modifier makes properties accessible only inside the class?",
+      "options": [
+        { "id": "a", "text": "public", "is_correct": false },
+        { "id": "b", "text": "protected", "is_correct": false },
+        { "id": "c", "text": "private", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which keyword is used for inheritance?",
+      "options": [
+        { "id": "a", "text": "implements", "is_correct": false },
+        { "id": "b", "text": "inherits", "is_correct": false },
+        { "id": "c", "text": "extends", "is_correct": true },
+        { "id": "d", "text": "uses", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which keyword prevents class inheritance?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "abstract", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which keyword is used to define an abstract class?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "abstract", "is_correct": true },
+        { "id": "c", "text": "interface", "is_correct": false },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which keyword forces child classes to implement methods?",
+      "options": [
+        { "id": "a", "text": "abstract", "is_correct": false },
+        { "id": "b", "text": "implements", "is_correct": true },
+        { "id": "c", "text": "extends", "is_correct": false },
+        { "id": "d", "text": "requires", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which keyword is used to create an interface?",
+      "options": [
+        { "id": "a", "text": "interface", "is_correct": true },
+        { "id": "b", "text": "abstract", "is_correct": false },
+        { "id": "c", "text": "implements", "is_correct": false },
+        { "id": "d", "text": "contract", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which magic method is called when an object is destroyed?",
+      "options": [
+        { "id": "a", "text": "__delete()", "is_correct": false },
+        { "id": "b", "text": "__remove()", "is_correct": false },
+        { "id": "c", "text": "__destruct()", "is_correct": true },
+        { "id": "d", "text": "__unset()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword is used to access parent class methods?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "self", "is_correct": false },
+        { "id": "c", "text": "parent", "is_correct": true },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword is used to access class properties inside class?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": true },
+        { "id": "b", "text": "self", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "var", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which keyword defines a static property?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": true },
+        { "id": "c", "text": "global", "is_correct": false },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "How do you access a static method?",
+      "options": [
+        { "id": "a", "text": "$this->method()", "is_correct": false },
+        { "id": "b", "text": "ClassName->method()", "is_correct": false },
+        { "id": "c", "text": "ClassName::method()", "is_correct": true },
+        { "id": "d", "text": "static::method()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which operator is used for scope resolution?",
+      "options": [
+        { "id": "a", "text": "->", "is_correct": false },
+        { "id": "b", "text": "::", "is_correct": true },
+        { "id": "c", "text": "=>", "is_correct": false },
+        { "id": "d", "text": ".", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which function reads entire file into a string?",
+      "options": [
+        { "id": "a", "text": "fread()", "is_correct": false },
+        { "id": "b", "text": "file()", "is_correct": false },
+        { "id": "c", "text": "file_get_contents()", "is_correct": true },
+        { "id": "d", "text": "readfile()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which function writes data to a file?",
+      "options": [
+        { "id": "a", "text": "file_write()", "is_correct": false },
+        { "id": "b", "text": "fwrite()", "is_correct": true },
+        { "id": "c", "text": "write()", "is_correct": false },
+        { "id": "d", "text": "put()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which function checks if a file exists?",
+      "options": [
+        { "id": "a", "text": "is_file()", "is_correct": false },
+        { "id": "b", "text": "file_exists()", "is_correct": true },
+        { "id": "c", "text": "exists()", "is_correct": false },
+        { "id": "d", "text": "checkfile()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which function deletes a file?",
+      "options": [
+        { "id": "a", "text": "remove()", "is_correct": false },
+        { "id": "b", "text": "delete()", "is_correct": false },
+        { "id": "c", "text": "unlink()", "is_correct": true },
+        { "id": "d", "text": "erase()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which function uploads files securely?",
+      "options": [
+        { "id": "a", "text": "copy()", "is_correct": false },
+        { "id": "b", "text": "upload()", "is_correct": false },
+        { "id": "c", "text": "move_uploaded_file()", "is_correct": true },
+        { "id": "d", "text": "savefile()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which extension is recommended for database access?",
+      "options": [
+        { "id": "a", "text": "mysql", "is_correct": false },
+        { "id": "b", "text": "mysqli", "is_correct": false },
+        { "id": "c", "text": "PDO", "is_correct": true },
+        { "id": "d", "text": "db", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which PDO method prepares a statement?",
+      "options": [
+        { "id": "a", "text": "query()", "is_correct": false },
+        { "id": "b", "text": "prepare()", "is_correct": true },
+        { "id": "c", "text": "execute()", "is_correct": false },
+        { "id": "d", "text": "bind()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which PDO method executes prepared statement?",
+      "options": [
+        { "id": "a", "text": "run()", "is_correct": false },
+        { "id": "b", "text": "query()", "is_correct": false },
+        { "id": "c", "text": "execute()", "is_correct": true },
+        { "id": "d", "text": "start()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which method fetches data as associative array?",
+      "options": [
+        { "id": "a", "text": "fetchRow()", "is_correct": false },
+        { "id": "b", "text": "fetchArray()", "is_correct": false },
+        { "id": "c", "text": "fetch(PDO::FETCH_ASSOC)", "is_correct": true },
+        { "id": "d", "text": "fetchAll()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which SQL injection prevention method is best?",
+      "options": [
+        { "id": "a", "text": "Escaping strings only", "is_correct": false },
+        { "id": "b", "text": "Prepared statements", "is_correct": true },
+        { "id": "c", "text": "GET parameters", "is_correct": false },
+        { "id": "d", "text": "Cookies", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which function starts output buffering?",
+      "options": [
+        { "id": "a", "text": "buffer_start()", "is_correct": false },
+        { "id": "b", "text": "ob_start()", "is_correct": true },
+        { "id": "c", "text": "start_buffer()", "is_correct": false },
+        { "id": "d", "text": "output()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which function cleans output buffer?",
+      "options": [
+        { "id": "a", "text": "ob_clean()", "is_correct": true },
+        { "id": "b", "text": "buffer_clean()", "is_correct": false },
+        { "id": "c", "text": "output_clear()", "is_correct": false },
+        { "id": "d", "text": "clear()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which function sends buffered output?",
+      "options": [
+        { "id": "a", "text": "ob_send()", "is_correct": false },
+        { "id": "b", "text": "ob_end_flush()", "is_correct": true },
+        { "id": "c", "text": "flush()", "is_correct": false },
+        { "id": "d", "text": "output()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which function escapes HTML entities?",
+      "options": [
+        { "id": "a", "text": "htmlspecialchars()", "is_correct": true },
+        { "id": "b", "text": "htmlentities_decode()", "is_correct": false },
+        { "id": "c", "text": "strip_tags()", "is_correct": false },
+        { "id": "d", "text": "encode()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which function removes HTML tags?",
+      "options": [
+        { "id": "a", "text": "htmlspecialchars()", "is_correct": false },
+        { "id": "b", "text": "htmlentities()", "is_correct": false },
+        { "id": "c", "text": "strip_tags()", "is_correct": true },
+        { "id": "d", "text": "clean_html()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which feature helps prevent XSS?",
+      "options": [
+        { "id": "a", "text": "htmlspecialchars()", "is_correct": true },
+        { "id": "b", "text": "md5()", "is_correct": false },
+        { "id": "c", "text": "password_hash()", "is_correct": false },
+        { "id": "d", "text": "session_id()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which function regenerates session ID?",
+      "options": [
+        { "id": "a", "text": "session_new()", "is_correct": false },
+        { "id": "b", "text": "session_reset()", "is_correct": false },
+        { "id": "c", "text": "session_regenerate_id()", "is_correct": true },
+        { "id": "d", "text": "session_destroy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which attack is prevented by regenerating session ID?",
+      "options": [
+        { "id": "a", "text": "SQL Injection", "is_correct": false },
+        { "id": "b", "text": "Session Fixation", "is_correct": true },
+        { "id": "c", "text": "XSS", "is_correct": false },
+        { "id": "d", "text": "CSRF", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which token is used to prevent CSRF?",
+      "options": [
+        { "id": "a", "text": "JWT", "is_correct": false },
+        { "id": "b", "text": "CSRF token", "is_correct": true },
+        { "id": "c", "text": "Session ID", "is_correct": false },
+        { "id": "d", "text": "API key", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which function validates email?",
+      "options": [
+        { "id": "a", "text": "is_email()", "is_correct": false },
+        { "id": "b", "text": "filter_var()", "is_correct": true },
+        { "id": "c", "text": "check_email()", "is_correct": false },
+        { "id": "d", "text": "email_validate()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which filter validates integer?",
+      "options": [
+        { "id": "a", "text": "FILTER_SANITIZE_INT", "is_correct": false },
+        { "id": "b", "text": "FILTER_VALIDATE_INT", "is_correct": true },
+        { "id": "c", "text": "FILTER_INT", "is_correct": false },
+        { "id": "d", "text": "FILTER_NUMBER", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which function serializes data?",
+      "options": [
+        { "id": "a", "text": "json_encode()", "is_correct": false },
+        { "id": "b", "text": "serialize()", "is_correct": true },
+        { "id": "c", "text": "pack()", "is_correct": false },
+        { "id": "d", "text": "encode()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which function converts JSON to array?",
+      "options": [
+        { "id": "a", "text": "json_parse()", "is_correct": false },
+        { "id": "b", "text": "json_decode()", "is_correct": true },
+        { "id": "c", "text": "decode_json()", "is_correct": false },
+        { "id": "d", "text": "array_json()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which function converts array to JSON?",
+      "options": [
+        { "id": "a", "text": "json_encode()", "is_correct": true },
+        { "id": "b", "text": "array_encode()", "is_correct": false },
+        { "id": "c", "text": "to_json()", "is_correct": false },
+        { "id": "d", "text": "encode()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which PHP feature allows code reuse?",
+      "options": [
+        { "id": "a", "text": "Functions & Classes", "is_correct": true },
+        { "id": "b", "text": "Sessions", "is_correct": false },
+        { "id": "c", "text": "Cookies", "is_correct": false },
+        { "id": "d", "text": "Forms", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which keyword includes files automatically?",
+      "options": [
+        { "id": "a", "text": "autoload", "is_correct": false },
+        { "id": "b", "text": "require_once", "is_correct": false },
+        { "id": "c", "text": "spl_autoload_register()", "is_correct": true },
+        { "id": "d", "text": "include_all", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which standard manages PHP packages?",
+      "options": [
+        { "id": "a", "text": "npm", "is_correct": false },
+        { "id": "b", "text": "composer", "is_correct": true },
+        { "id": "c", "text": "pip", "is_correct": false },
+        { "id": "d", "text": "brew", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which file defines composer dependencies?",
+      "options": [
+        { "id": "a", "text": "package.json", "is_correct": false },
+        { "id": "b", "text": "composer.lock", "is_correct": false },
+        { "id": "c", "text": "composer.json", "is_correct": true },
+        { "id": "d", "text": "php.json", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which command installs composer dependencies?",
+      "options": [
+        { "id": "a", "text": "composer add", "is_correct": false },
+        { "id": "b", "text": "composer install", "is_correct": true },
+        { "id": "c", "text": "composer run", "is_correct": false },
+        { "id": "d", "text": "composer get", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which PHP version introduced typed properties?",
+      "options": [
+        { "id": "a", "text": "PHP 7.0", "is_correct": false },
+        { "id": "b", "text": "PHP 7.4", "is_correct": true },
+        { "id": "c", "text": "PHP 8.0", "is_correct": false },
+        { "id": "d", "text": "PHP 5.6", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which feature improves type safety?",
+      "options": [
+        { "id": "a", "text": "Loose typing", "is_correct": false },
+        { "id": "b", "text": "Strict types", "is_correct": true },
+        { "id": "c", "text": "Global variables", "is_correct": false },
+        { "id": "d", "text": "Magic methods", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which declaration enables strict typing?",
+      "options": [
+        { "id": "a", "text": "declare(strict_types=1);", "is_correct": true },
+        { "id": "b", "text": "strict(true);", "is_correct": false },
+        { "id": "c", "text": "use strict;", "is_correct": false },
+        { "id": "d", "text": "types(strict);", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which feature handles runtime errors cleanly?",
+      "options": [
+        { "id": "a", "text": "die()", "is_correct": false },
+        { "id": "b", "text": "Exceptions", "is_correct": true },
+        { "id": "c", "text": "echo", "is_correct": false },
+        { "id": "d", "text": "exit()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which practice improves PHP application security?",
+      "options": [
+        { "id": "a", "text": "Hardcoding credentials", "is_correct": false },
+        { "id": "b", "text": "Validating and sanitizing input", "is_correct": true },
+        { "id": "c", "text": "Using GET for passwords", "is_correct": false },
+        { "id": "d", "text": "Disabling errors always", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which principle improves maintainability?",
+      "options": [
+        { "id": "a", "text": "Tight coupling", "is_correct": false },
+        { "id": "b", "text": "Separation of concerns", "is_correct": true },
+        { "id": "c", "text": "Global variables", "is_correct": false },
+        { "id": "d", "text": "Single large file", "is_correct": false }
+      ]
+    }
+  ]
+}

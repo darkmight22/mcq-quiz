@@ -1,0 +1,520 @@
+{
+  "quiz_id": "dsa_medium",
+  "language": "dsa",
+  "level": "medium",
+  "title": "Data Structures & Algorithms - Medium",
+  "description": "Intermediate DSA concepts: trees, graphs, sorting, searching, recursion, DP basics, hashing.",
+  "duration_minutes": 35,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the height of a binary tree?",
+      "options": [
+        { "id": "a", "text": "Number of nodes", "is_correct": false },
+        { "id": "b", "text": "Number of edges on longest path from root to leaf", "is_correct": true },
+        { "id": "c", "text": "Number of leaves", "is_correct": false },
+        { "id": "d", "text": "Degree of root", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which traversal of BST gives sorted order?",
+      "options": [
+        { "id": "a", "text": "Preorder", "is_correct": false },
+        { "id": "b", "text": "Postorder", "is_correct": false },
+        { "id": "c", "text": "Inorder", "is_correct": true },
+        { "id": "d", "text": "Level order", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the average time complexity of searching in a BST?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": true },
+        { "id": "c", "text": "O(1)", "is_correct": false },
+        { "id": "d", "text": "O(n log n)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which tree is always height-balanced?",
+      "options": [
+        { "id": "a", "text": "Binary Tree", "is_correct": false },
+        { "id": "b", "text": "BST", "is_correct": false },
+        { "id": "c", "text": "AVL Tree", "is_correct": true },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which rotation is used in AVL tree balancing?",
+      "options": [
+        { "id": "a", "text": "Single and Double rotation", "is_correct": true },
+        { "id": "b", "text": "Only left rotation", "is_correct": false },
+        { "id": "c", "text": "Only right rotation", "is_correct": false },
+        { "id": "d", "text": "Circular rotation", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which data structure is used to implement recursion internally?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the worst-case time complexity of Quick Sort?",
+      "options": [
+        { "id": "a", "text": "O(n log n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(n)", "is_correct": false },
+        { "id": "d", "text": "O(n²)", "is_correct": true }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which sorting algorithm is NOT stable?",
+      "options": [
+        { "id": "a", "text": "Merge Sort", "is_correct": false },
+        { "id": "b", "text": "Insertion Sort", "is_correct": false },
+        { "id": "c", "text": "Bubble Sort", "is_correct": false },
+        { "id": "d", "text": "Quick Sort", "is_correct": true }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which sorting algorithm uses heap data structure?",
+      "options": [
+        { "id": "a", "text": "Merge Sort", "is_correct": false },
+        { "id": "b", "text": "Heap Sort", "is_correct": true },
+        { "id": "c", "text": "Quick Sort", "is_correct": false },
+        { "id": "d", "text": "Insertion Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the time complexity of Heap Sort?",
+      "options": [
+        { "id": "a", "text": "O(n²)", "is_correct": false },
+        { "id": "b", "text": "O(n)", "is_correct": false },
+        { "id": "c", "text": "O(n log n)", "is_correct": true },
+        { "id": "d", "text": "O(log n)", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which algorithm is used for finding shortest path in weighted graph?",
+      "options": [
+        { "id": "a", "text": "DFS", "is_correct": false },
+        { "id": "b", "text": "BFS", "is_correct": false },
+        { "id": "c", "text": "Dijkstra", "is_correct": true },
+        { "id": "d", "text": "Topological Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which graph traversal is best for finding connected components?",
+      "options": [
+        { "id": "a", "text": "DFS", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Greedy", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which data structure is used in Prim’s algorithm?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Queue", "is_correct": false },
+        { "id": "c", "text": "Priority Queue", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which algorithm is used to find Minimum Spanning Tree?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Kruskal", "is_correct": true },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Binary Search", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which data structure is used in Kruskal’s algorithm?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Disjoint Set (Union-Find)", "is_correct": true },
+        { "id": "c", "text": "Stack", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "What is the time complexity of Union-Find with path compression?",
+      "options": [
+        { "id": "a", "text": "O(log n)", "is_correct": false },
+        { "id": "b", "text": "O(n)", "is_correct": false },
+        { "id": "c", "text": "O(α(n))", "is_correct": true },
+        { "id": "d", "text": "O(n log n)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which problem is solved using sliding window technique?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "Maximum subarray sum of size k", "is_correct": true },
+        { "id": "c", "text": "Tree traversal", "is_correct": false },
+        { "id": "d", "text": "Graph coloring", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which algorithm uses two-pointer technique?",
+      "options": [
+        { "id": "a", "text": "Merge two sorted arrays", "is_correct": true },
+        { "id": "b", "text": "DFS", "is_correct": false },
+        { "id": "c", "text": "Dijkstra", "is_correct": false },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which problem is best solved using hashing?",
+      "options": [
+        { "id": "a", "text": "Finding duplicates in array", "is_correct": true },
+        { "id": "b", "text": "Tree height", "is_correct": false },
+        { "id": "c", "text": "Graph traversal", "is_correct": false },
+        { "id": "d", "text": "Sorting numbers", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "What is the average time complexity of hash table operations?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(1)", "is_correct": true },
+        { "id": "d", "text": "O(n log n)", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which collision resolution technique uses linked lists?",
+      "options": [
+        { "id": "a", "text": "Open addressing", "is_correct": false },
+        { "id": "b", "text": "Chaining", "is_correct": true },
+        { "id": "c", "text": "Double hashing", "is_correct": false },
+        { "id": "d", "text": "Rehashing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which technique is used in dynamic programming?",
+      "options": [
+        { "id": "a", "text": "Memoization", "is_correct": true },
+        { "id": "b", "text": "Randomization", "is_correct": false },
+        { "id": "c", "text": "Sorting", "is_correct": false },
+        { "id": "d", "text": "Backtracking only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which DP problem has overlapping subproblems?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "Fibonacci sequence", "is_correct": true },
+        { "id": "c", "text": "Linear search", "is_correct": false },
+        { "id": "d", "text": "Bubble sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which problem is solved using longest common subsequence?",
+      "options": [
+        { "id": "a", "text": "String matching", "is_correct": true },
+        { "id": "b", "text": "Graph traversal", "is_correct": false },
+        { "id": "c", "text": "Sorting", "is_correct": false },
+        { "id": "d", "text": "Searching", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which algorithm solves 0/1 Knapsack?",
+      "options": [
+        { "id": "a", "text": "Greedy", "is_correct": false },
+        { "id": "b", "text": "Dynamic Programming", "is_correct": true },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Sorting", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which traversal is used in topological sorting?",
+      "options": [
+        { "id": "a", "text": "BFS / DFS", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "Inorder", "is_correct": false },
+        { "id": "d", "text": "Level order", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Topological sort is applicable to which graph?",
+      "options": [
+        { "id": "a", "text": "Undirected graph", "is_correct": false },
+        { "id": "b", "text": "Weighted graph", "is_correct": false },
+        { "id": "c", "text": "Directed Acyclic Graph", "is_correct": true },
+        { "id": "d", "text": "Complete graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which algorithm detects cycle in directed graph?",
+      "options": [
+        { "id": "a", "text": "BFS only", "is_correct": false },
+        { "id": "b", "text": "DFS with recursion stack", "is_correct": true },
+        { "id": "c", "text": "Binary Search", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which graph algorithm uses coloring method?",
+      "options": [
+        { "id": "a", "text": "DFS", "is_correct": false },
+        { "id": "b", "text": "Bipartite graph check", "is_correct": true },
+        { "id": "c", "text": "Dijkstra", "is_correct": false },
+        { "id": "d", "text": "Prim", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which algorithm uses greedy + DP concept?",
+      "options": [
+        { "id": "a", "text": "Huffman Coding", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "DFS", "is_correct": false },
+        { "id": "d", "text": "Selection Sort", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which data structure is used in LRU Cache?",
+      "options": [
+        { "id": "a", "text": "Queue + Stack", "is_correct": false },
+        { "id": "b", "text": "HashMap + Doubly Linked List", "is_correct": true },
+        { "id": "c", "text": "Tree", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which algorithm uses divide and conquer?",
+      "options": [
+        { "id": "a", "text": "Merge Sort", "is_correct": true },
+        { "id": "b", "text": "Bubble Sort", "is_correct": false },
+        { "id": "c", "text": "Insertion Sort", "is_correct": false },
+        { "id": "d", "text": "Counting Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which data structure is best for range queries?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Segment Tree", "is_correct": true },
+        { "id": "c", "text": "Queue", "is_correct": false },
+        { "id": "d", "text": "Array only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which tree is used for range minimum query?",
+      "options": [
+        { "id": "a", "text": "AVL Tree", "is_correct": false },
+        { "id": "b", "text": "Segment Tree", "is_correct": true },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Trie", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which data structure is used in autocomplete?",
+      "options": [
+        { "id": "a", "text": "Heap", "is_correct": false },
+        { "id": "b", "text": "Trie", "is_correct": true },
+        { "id": "c", "text": "Graph", "is_correct": false },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "What is the time complexity of inserting in Trie?",
+      "options": [
+        { "id": "a", "text": "O(n)", "is_correct": false },
+        { "id": "b", "text": "O(log n)", "is_correct": false },
+        { "id": "c", "text": "O(length of word)", "is_correct": true },
+        { "id": "d", "text": "O(1)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which algorithm finds strongly connected components?",
+      "options": [
+        { "id": "a", "text": "Prim", "is_correct": false },
+        { "id": "b", "text": "Kruskal", "is_correct": false },
+        { "id": "c", "text": "Kosaraju", "is_correct": true },
+        { "id": "d", "text": "Binary Search", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which algorithm uses two DFS traversals?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Kosaraju", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "BFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which data structure helps detect cycle in undirected graph?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Union-Find", "is_correct": true },
+        { "id": "c", "text": "Queue", "is_correct": false },
+        { "id": "d", "text": "Trie", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which algorithm is used for maximum flow problem?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Ford-Fulkerson", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which algorithm uses BFS for max flow?",
+      "options": [
+        { "id": "a", "text": "Kruskal", "is_correct": false },
+        { "id": "b", "text": "Edmonds-Karp", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "Bellman-Ford", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which algorithm handles negative weight edges?",
+      "options": [
+        { "id": "a", "text": "Dijkstra", "is_correct": false },
+        { "id": "b", "text": "Bellman-Ford", "is_correct": true },
+        { "id": "c", "text": "Prim", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which algorithm detects negative cycles?",
+      "options": [
+        { "id": "a", "text": "BFS", "is_correct": false },
+        { "id": "b", "text": "Bellman-Ford", "is_correct": true },
+        { "id": "c", "text": "Kruskal", "is_correct": false },
+        { "id": "d", "text": "Heap Sort", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which algorithm uses bitmasking technique?",
+      "options": [
+        { "id": "a", "text": "Travelling Salesman Problem", "is_correct": true },
+        { "id": "b", "text": "Binary Search", "is_correct": false },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "Linear Search", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which approach is used in N-Queen problem?",
+      "options": [
+        { "id": "a", "text": "Dynamic Programming", "is_correct": false },
+        { "id": "b", "text": "Backtracking", "is_correct": true },
+        { "id": "c", "text": "Greedy", "is_correct": false },
+        { "id": "d", "text": "Divide and Conquer", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which complexity class represents polynomial time?",
+      "options": [
+        { "id": "a", "text": "P", "is_correct": true },
+        { "id": "b", "text": "NP-Complete", "is_correct": false },
+        { "id": "c", "text": "EXP", "is_correct": false },
+        { "id": "d", "text": "PSPACE", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which problem is NP-Complete?",
+      "options": [
+        { "id": "a", "text": "Binary Search", "is_correct": false },
+        { "id": "b", "text": "Travelling Salesman Problem", "is_correct": true },
+        { "id": "c", "text": "Merge Sort", "is_correct": false },
+        { "id": "d", "text": "DFS", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which approach reduces exponential complexity?",
+      "options": [
+        { "id": "a", "text": "Greedy", "is_correct": false },
+        { "id": "b", "text": "Dynamic Programming", "is_correct": true },
+        { "id": "c", "text": "Brute Force", "is_correct": false },
+        { "id": "d", "text": "Sorting", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which structure is used in expression evaluation?",
+      "options": [
+        { "id": "a", "text": "Queue", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Heap", "is_correct": false },
+        { "id": "d", "text": "Graph", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which skill is most important for DSA mastery?",
+      "options": [
+        { "id": "a", "text": "Memorizing code", "is_correct": false },
+        { "id": "b", "text": "Problem solving practice", "is_correct": true },
+        { "id": "c", "text": "Using libraries", "is_correct": false },
+        { "id": "d", "text": "Writing long programs", "is_correct": false }
+      ]
+    }
+  ]
+}

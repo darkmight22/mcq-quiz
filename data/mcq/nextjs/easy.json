@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nextjs_easy",
+  "language": "nextjs",
+  "level": "easy",
+  "title": "Next.js Basics - Easy",
+  "description": "Next.js fundamentals: pages, routing, SSR basics, static generation, project structure.",
+  "duration_minutes": 20,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is Next.js?",
+      "options": [
+        { "id": "a", "text": "A database", "is_correct": false },
+        { "id": "b", "text": "A React framework", "is_correct": true },
+        { "id": "c", "text": "A CSS library", "is_correct": false },
+        { "id": "d", "text": "A backend language", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which company maintains Next.js?",
+      "options": [
+        { "id": "a", "text": "Google", "is_correct": false },
+        { "id": "b", "text": "Meta", "is_correct": false },
+        { "id": "c", "text": "Vercel", "is_correct": true },
+        { "id": "d", "text": "Microsoft", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Next.js is built on top of which library?",
+      "options": [
+        { "id": "a", "text": "Vue", "is_correct": false },
+        { "id": "b", "text": "Angular", "is_correct": false },
+        { "id": "c", "text": "React", "is_correct": true },
+        { "id": "d", "text": "Svelte", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which command creates a new Next.js app?",
+      "options": [
+        { "id": "a", "text": "npm init next-app", "is_correct": false },
+        { "id": "b", "text": "npx create-next-app", "is_correct": true },
+        { "id": "c", "text": "npm create-react-app", "is_correct": false },
+        { "id": "d", "text": "next new app", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which folder is used for routing in Next.js (Pages Router)?",
+      "options": [
+        { "id": "a", "text": "components", "is_correct": false },
+        { "id": "b", "text": "pages", "is_correct": true },
+        { "id": "c", "text": "public", "is_correct": false },
+        { "id": "d", "text": "styles", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which file represents the home route (/)?",
+      "options": [
+        { "id": "a", "text": "home.js", "is_correct": false },
+        { "id": "b", "text": "main.js", "is_correct": false },
+        { "id": "c", "text": "index.js", "is_correct": true },
+        { "id": "d", "text": "app.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which folder serves static files?",
+      "options": [
+        { "id": "a", "text": "assets", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "public", "is_correct": true },
+        { "id": "d", "text": "media", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "How do you navigate between pages in Next.js?",
+      "options": [
+        { "id": "a", "text": "anchor tag only", "is_correct": false },
+        { "id": "b", "text": "Link component", "is_correct": true },
+        { "id": "c", "text": "window.location", "is_correct": false },
+        { "id": "d", "text": "useHistory", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which component is used for client-side navigation?",
+      "options": [
+        { "id": "a", "text": "Route", "is_correct": false },
+        { "id": "b", "text": "NavLink", "is_correct": false },
+        { "id": "c", "text": "Link", "is_correct": true },
+        { "id": "d", "text": "Anchor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which hook gives access to route parameters?",
+      "options": [
+        { "id": "a", "text": "useRoute", "is_correct": false },
+        { "id": "b", "text": "useRouter", "is_correct": true },
+        { "id": "c", "text": "useParams", "is_correct": false },
+        { "id": "d", "text": "usePath", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "What is SSR in Next.js?",
+      "options": [
+        { "id": "a", "text": "Static Site Rendering", "is_correct": false },
+        { "id": "b", "text": "Server Side Rendering", "is_correct": true },
+        { "id": "c", "text": "Single State Rendering", "is_correct": false },
+        { "id": "d", "text": "Script Side Rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which function is used for Server Side Rendering?",
+      "options": [
+        { "id": "a", "text": "getStaticProps", "is_correct": false },
+        { "id": "b", "text": "getServerSideProps", "is_correct": true },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "getInitialProps", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which function is used for Static Site Generation?",
+      "options": [
+        { "id": "a", "text": "getServerSideProps", "is_correct": false },
+        { "id": "b", "text": "getStaticProps", "is_correct": true },
+        { "id": "c", "text": "useState", "is_correct": false },
+        { "id": "d", "text": "getProps", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "When does getStaticProps run?",
+      "options": [
+        { "id": "a", "text": "On every request", "is_correct": false },
+        { "id": "b", "text": "At build time", "is_correct": true },
+        { "id": "c", "text": "On client only", "is_correct": false },
+        { "id": "d", "text": "On server startup only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which feature improves SEO in Next.js?",
+      "options": [
+        { "id": "a", "text": "Client-side rendering only", "is_correct": false },
+        { "id": "b", "text": "Server-side rendering", "is_correct": true },
+        { "id": "c", "text": "Inline styles", "is_correct": false },
+        { "id": "d", "text": "Local storage", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which file is used to customize the HTML document?",
+      "options": [
+        { "id": "a", "text": "_app.js", "is_correct": false },
+        { "id": "b", "text": "_document.js", "is_correct": true },
+        { "id": "c", "text": "_layout.js", "is_correct": false },
+        { "id": "d", "text": "index.html", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which file wraps all pages?",
+      "options": [
+        { "id": "a", "text": "_document.js", "is_correct": false },
+        { "id": "b", "text": "_app.js", "is_correct": true },
+        { "id": "c", "text": "layout.js", "is_correct": false },
+        { "id": "d", "text": "main.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which component is used to manage head tags?",
+      "options": [
+        { "id": "a", "text": "Meta", "is_correct": false },
+        { "id": "b", "text": "Head", "is_correct": true },
+        { "id": "c", "text": "Helmet", "is_correct": false },
+        { "id": "d", "text": "Seo", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Where do API routes live in Next.js?",
+      "options": [
+        { "id": "a", "text": "pages/api", "is_correct": true },
+        { "id": "b", "text": "api/", "is_correct": false },
+        { "id": "c", "text": "server/", "is_correct": false },
+        { "id": "d", "text": "backend/", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "API routes run on which side?",
+      "options": [
+        { "id": "a", "text": "Client", "is_correct": false },
+        { "id": "b", "text": "Server", "is_correct": true },
+        { "id": "c", "text": "Browser only", "is_correct": false },
+        { "id": "d", "text": "CDN only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which HTTP methods are supported in API routes?",
+      "options": [
+        { "id": "a", "text": "GET only", "is_correct": false },
+        { "id": "b", "text": "POST only", "is_correct": false },
+        { "id": "c", "text": "All standard methods", "is_correct": true },
+        { "id": "d", "text": "PUT only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which feature allows dynamic routing?",
+      "options": [
+        { "id": "a", "text": "Curly braces {}", "is_correct": false },
+        { "id": "b", "text": "[param].js", "is_correct": true },
+        { "id": "c", "text": "(param).js", "is_correct": false },
+        { "id": "d", "text": "{param}.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "What does [id].js represent?",
+      "options": [
+        { "id": "a", "text": "Static route", "is_correct": false },
+        { "id": "b", "text": "Dynamic route", "is_correct": true },
+        { "id": "c", "text": "API route", "is_correct": false },
+        { "id": "d", "text": "Layout file", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which function generates dynamic paths at build time?",
+      "options": [
+        { "id": "a", "text": "getServerSideProps", "is_correct": false },
+        { "id": "b", "text": "getStaticPaths", "is_correct": true },
+        { "id": "c", "text": "getInitialProps", "is_correct": false },
+        { "id": "d", "text": "useRouter", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which rendering method uses getStaticPaths?",
+      "options": [
+        { "id": "a", "text": "SSR", "is_correct": false },
+        { "id": "b", "text": "SSG", "is_correct": true },
+        { "id": "c", "text": "CSR", "is_correct": false },
+        { "id": "d", "text": "ISR only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "What is ISR?",
+      "options": [
+        { "id": "a", "text": "Internal Server Routing", "is_correct": false },
+        { "id": "b", "text": "Incremental Static Regeneration", "is_correct": true },
+        { "id": "c", "text": "Instant State Rendering", "is_correct": false },
+        { "id": "d", "text": "Integrated Server Rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which option enables ISR?",
+      "options": [
+        { "id": "a", "text": "fallback", "is_correct": false },
+        { "id": "b", "text": "revalidate", "is_correct": true },
+        { "id": "c", "text": "cache", "is_correct": false },
+        { "id": "d", "text": "refresh", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which Next.js feature optimizes images automatically?",
+      "options": [
+        { "id": "a", "text": "Image component", "is_correct": true },
+        { "id": "b", "text": "Picture tag", "is_correct": false },
+        { "id": "c", "text": "Lazy loading only", "is_correct": false },
+        { "id": "d", "text": "CDN", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which component is used for optimized images?",
+      "options": [
+        { "id": "a", "text": "img", "is_correct": false },
+        { "id": "b", "text": "NextImage", "is_correct": false },
+        { "id": "c", "text": "Image", "is_correct": true },
+        { "id": "d", "text": "OptimizedImage", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which feature optimizes fonts in Next.js?",
+      "options": [
+        { "id": "a", "text": "Google Fonts CDN", "is_correct": false },
+        { "id": "b", "text": "next/font", "is_correct": true },
+        { "id": "c", "text": "Font Loader", "is_correct": false },
+        { "id": "d", "text": "CSS imports", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which file defines global styles?",
+      "options": [
+        { "id": "a", "text": "styles.css", "is_correct": false },
+        { "id": "b", "text": "globals.css", "is_correct": true },
+        { "id": "c", "text": "main.css", "is_correct": false },
+        { "id": "d", "text": "app.css", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "How do you import global CSS?",
+      "options": [
+        { "id": "a", "text": "In any component", "is_correct": false },
+        { "id": "b", "text": "In _app.js", "is_correct": true },
+        { "id": "c", "text": "In _document.js", "is_correct": false },
+        { "id": "d", "text": "In index.js only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which styling method scopes styles locally?",
+      "options": [
+        { "id": "a", "text": "Global CSS", "is_correct": false },
+        { "id": "b", "text": "CSS Modules", "is_correct": true },
+        { "id": "c", "text": "Inline styles", "is_correct": false },
+        { "id": "d", "text": "Bootstrap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "CSS Modules file name format?",
+      "options": [
+        { "id": "a", "text": "style.css", "is_correct": false },
+        { "id": "b", "text": "style.module.css", "is_correct": true },
+        { "id": "c", "text": "module.style.css", "is_correct": false },
+        { "id": "d", "text": "style.local.css", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which rendering happens in the browser?",
+      "options": [
+        { "id": "a", "text": "SSR", "is_correct": false },
+        { "id": "b", "text": "SSG", "is_correct": false },
+        { "id": "c", "text": "CSR", "is_correct": true },
+        { "id": "d", "text": "ISR", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "What is hydration?",
+      "options": [
+        { "id": "a", "text": "Generating HTML", "is_correct": false },
+        { "id": "b", "text": "Attaching event handlers on client", "is_correct": true },
+        { "id": "c", "text": "Fetching API data", "is_correct": false },
+        { "id": "d", "text": "Caching pages", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which command builds a Next.js app?",
+      "options": [
+        { "id": "a", "text": "npm start", "is_correct": false },
+        { "id": "b", "text": "npm run build", "is_correct": true },
+        { "id": "c", "text": "next dev", "is_correct": false },
+        { "id": "d", "text": "npm compile", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which command runs Next.js in development?",
+      "options": [
+        { "id": "a", "text": "npm run dev", "is_correct": true },
+        { "id": "b", "text": "npm start", "is_correct": false },
+        { "id": "c", "text": "npm build", "is_correct": false },
+        { "id": "d", "text": "next start", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which command runs production server?",
+      "options": [
+        { "id": "a", "text": "npm run dev", "is_correct": false },
+        { "id": "b", "text": "next start", "is_correct": true },
+        { "id": "c", "text": "npm serve", "is_correct": false },
+        { "id": "d", "text": "next prod", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which feature enables SEO metadata per page?",
+      "options": [
+        { "id": "a", "text": "useRouter", "is_correct": false },
+        { "id": "b", "text": "Head component", "is_correct": true },
+        { "id": "c", "text": "Image component", "is_correct": false },
+        { "id": "d", "text": "Script component", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which component optimizes third-party scripts?",
+      "options": [
+        { "id": "a", "text": "Script", "is_correct": true },
+        { "id": "b", "text": "Head", "is_correct": false },
+        { "id": "c", "text": "Link", "is_correct": false },
+        { "id": "d", "text": "Image", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which strategy loads script after page is interactive?",
+      "options": [
+        { "id": "a", "text": "beforeInteractive", "is_correct": false },
+        { "id": "b", "text": "afterInteractive", "is_correct": true },
+        { "id": "c", "text": "lazyOnload", "is_correct": false },
+        { "id": "d", "text": "onDemand", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which strategy loads script during idle time?",
+      "options": [
+        { "id": "a", "text": "afterInteractive", "is_correct": false },
+        { "id": "b", "text": "lazyOnload", "is_correct": true },
+        { "id": "c", "text": "beforeInteractive", "is_correct": false },
+        { "id": "d", "text": "defer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which feature improves performance automatically?",
+      "options": [
+        { "id": "a", "text": "Automatic code splitting", "is_correct": true },
+        { "id": "b", "text": "Manual bundling", "is_correct": false },
+        { "id": "c", "text": "Inline scripts", "is_correct": false },
+        { "id": "d", "text": "Global state", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which rendering type is best for blogs?",
+      "options": [
+        { "id": "a", "text": "CSR", "is_correct": false },
+        { "id": "b", "text": "SSG", "is_correct": true },
+        { "id": "c", "text": "SSR", "is_correct": false },
+        { "id": "d", "text": "Client-only", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which rendering type is best for dashboards?",
+      "options": [
+        { "id": "a", "text": "SSG", "is_correct": false },
+        { "id": "b", "text": "CSR or SSR", "is_correct": true },
+        { "id": "c", "text": "ISR only", "is_correct": false },
+        { "id": "d", "text": "Static HTML only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which Next.js feature supports backend logic?",
+      "options": [
+        { "id": "a", "text": "Middleware", "is_correct": false },
+        { "id": "b", "text": "API Routes", "is_correct": true },
+        { "id": "c", "text": "Components", "is_correct": false },
+        { "id": "d", "text": "Hooks", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which file is used for edge middleware?",
+      "options": [
+        { "id": "a", "text": "middleware.js", "is_correct": true },
+        { "id": "b", "text": "edge.js", "is_correct": false },
+        { "id": "c", "text": "server.js", "is_correct": false },
+        { "id": "d", "text": "api.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Middleware runs on which layer?",
+      "options": [
+        { "id": "a", "text": "Browser", "is_correct": false },
+        { "id": "b", "text": "Edge", "is_correct": true },
+        { "id": "c", "text": "Database", "is_correct": false },
+        { "id": "d", "text": "Client only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which Next.js feature makes it production ready by default?",
+      "options": [
+        { "id": "a", "text": "Manual optimization", "is_correct": false },
+        { "id": "b", "text": "Built-in optimizations", "is_correct": true },
+        { "id": "c", "text": "Third-party plugins", "is_correct": false },
+        { "id": "d", "text": "Custom server only", "is_correct": false }
+      ]
+    }
+  ]
+}

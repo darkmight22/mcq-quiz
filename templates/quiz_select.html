@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Select Quiz - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="quiz-select-container">
+    <div class="page-header">
+        <h1>Choose Your Challenge</h1>
+        <p>Select a language and difficulty level to begin.</p>
+    </div>
+
+    <form method="POST" class="quiz-select-form glass-card">
+        <div class="select-section">
+            <div class="section-heading">
+                <h3>Language</h3>
+                <span class="section-hint">Pick one to unlock matching levels</span>
+            </div>
+            <div class="language-grid">
+                {% for lang in languages %}
+                <label class="language-pill" data-language="{{ lang }}">
+                    <input type="radio" name="language" value="{{ lang }}">
+                    <span class="pill-label">{{ get_language_label(lang) }}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="select-section">
+            <div class="section-heading">
+                <h3>Level</h3>
+                <span class="section-hint">Three futuristic tiers per stack</span>
+            </div>
+            <div class="level-grid">
+                {% for level in levels %}
+                <label class="level-badge level-{{ level }}" data-level="{{ level }}">
+                    <input type="radio" name="level" value="{{ level }}">
+                    <span class="badge-label">{{ level.title() }}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="selected-quiz-panel">
+            {% if selected_quiz %}
+            <div class="quiz-meta">
+                <div>
+                    <h3>{{ selected_quiz.title }}</h3>
+                    <p>{{ selected_quiz.description }}</p>
+                </div>
+                <div class="meta-stats">
+                    <span>⏱ {{ selected_quiz.duration_minutes }} mins</span>
+                    <span>📋 {{ selected_quiz.questions|length }} questions</span>
+                </div>
+            </div>
+            {% else %}
+            <p class="missing-quiz">No quiz file found for this combination yet.</p>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-start">
+            Start Quiz
+            <span class="btn-glow"></span>
+        </button>
+    </form>
+
+    <div class="quiz-catalog" id="quiz-catalog" style="display: none;">
+        <h2>All Tracks</h2>
+        <div class="catalog-grid">
+            {% for quiz in quiz_catalog %}
+            <div class="catalog-card glass-card" data-language="{{ quiz.language }}" data-level="{{ quiz.level }}">
+                <div class="catalog-head">
+                    <span class="language-tag">{{ get_language_label(quiz.language) }}</span>
+                    <span class="level-chip level-{{ quiz.level }}">{{ quiz.level }}</span>
+                </div>
+                <h4>{{ quiz.title }}</h4>
+                <p>{{ quiz.description }}</p>
+                <div class="catalog-meta">
+                    <span>⏱ {{ quiz.duration_minutes }}m</span>
+                    <span>📋 {{ quiz.questions_count }}Q</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

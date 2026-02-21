@@ -1,0 +1,520 @@
+{
+  "quiz_id": "html_medium",
+  "language": "html",
+  "level": "medium",
+  "title": "HTML Core Concepts - Medium",
+  "description": "Forms, semantic elements, media, attributes, and accessibility.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which HTML5 tag represents independent content?",
+      "options": [
+        { "id": "a", "text": "<section>", "is_correct": false },
+        { "id": "b", "text": "<article>", "is_correct": true },
+        { "id": "c", "text": "<div>", "is_correct": false },
+        { "id": "d", "text": "<main>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which tag defines navigation links?",
+      "options": [
+        { "id": "a", "text": "<menu>", "is_correct": false },
+        { "id": "b", "text": "<ul>", "is_correct": false },
+        { "id": "c", "text": "<nav>", "is_correct": true },
+        { "id": "d", "text": "<links>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which attribute opens link in new tab?",
+      "options": [
+        { "id": "a", "text": "rel=\"new\"", "is_correct": false },
+        { "id": "b", "text": "target=\"_blank\"", "is_correct": true },
+        { "id": "c", "text": "window=\"new\"", "is_correct": false },
+        { "id": "d", "text": "open=\"tab\"", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which attribute improves accessibility for images?",
+      "options": [
+        { "id": "a", "text": "title", "is_correct": false },
+        { "id": "b", "text": "src", "is_correct": false },
+        { "id": "c", "text": "alt", "is_correct": true },
+        { "id": "d", "text": "aria-img", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which tag groups related form controls?",
+      "options": [
+        { "id": "a", "text": "<group>", "is_correct": false },
+        { "id": "b", "text": "<fieldset>", "is_correct": true },
+        { "id": "c", "text": "<section>", "is_correct": false },
+        { "id": "d", "text": "<form-group>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which tag provides label for form input?",
+      "options": [
+        { "id": "a", "text": "<name>", "is_correct": false },
+        { "id": "b", "text": "<caption>", "is_correct": false },
+        { "id": "c", "text": "<label>", "is_correct": true },
+        { "id": "d", "text": "<legend>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which input type allows multiple selections?",
+      "options": [
+        { "id": "a", "text": "radio", "is_correct": false },
+        { "id": "b", "text": "checkbox", "is_correct": true },
+        { "id": "c", "text": "select", "is_correct": false },
+        { "id": "d", "text": "multi", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which attribute makes input read-only?",
+      "options": [
+        { "id": "a", "text": "disabled", "is_correct": false },
+        { "id": "b", "text": "readonly", "is_correct": true },
+        { "id": "c", "text": "lock", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which attribute disables form input?",
+      "options": [
+        { "id": "a", "text": "readonly", "is_correct": false },
+        { "id": "b", "text": "inactive", "is_correct": false },
+        { "id": "c", "text": "disabled", "is_correct": true },
+        { "id": "d", "text": "block", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which tag defines dropdown list?",
+      "options": [
+        { "id": "a", "text": "<list>", "is_correct": false },
+        { "id": "b", "text": "<option>", "is_correct": false },
+        { "id": "c", "text": "<select>", "is_correct": true },
+        { "id": "d", "text": "<dropdown>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which tag defines option in dropdown?",
+      "options": [
+        { "id": "a", "text": "<item>", "is_correct": false },
+        { "id": "b", "text": "<choice>", "is_correct": false },
+        { "id": "c", "text": "<option>", "is_correct": true },
+        { "id": "d", "text": "<select-item>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which attribute submits form automatically?",
+      "options": [
+        { "id": "a", "text": "submit", "is_correct": false },
+        { "id": "b", "text": "action", "is_correct": false },
+        { "id": "c", "text": "autofocus", "is_correct": true },
+        { "id": "d", "text": "send", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which input type validates email?",
+      "options": [
+        { "id": "a", "text": "text", "is_correct": false },
+        { "id": "b", "text": "mail", "is_correct": false },
+        { "id": "c", "text": "email", "is_correct": true },
+        { "id": "d", "text": "validate", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which attribute limits input length?",
+      "options": [
+        { "id": "a", "text": "limit", "is_correct": false },
+        { "id": "b", "text": "maxlength", "is_correct": true },
+        { "id": "c", "text": "max", "is_correct": false },
+        { "id": "d", "text": "length", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which attribute specifies placeholder text?",
+      "options": [
+        { "id": "a", "text": "hint", "is_correct": false },
+        { "id": "b", "text": "value", "is_correct": false },
+        { "id": "c", "text": "placeholder", "is_correct": true },
+        { "id": "d", "text": "sample", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which tag embeds external webpage?",
+      "options": [
+        { "id": "a", "text": "<object>", "is_correct": false },
+        { "id": "b", "text": "<embed>", "is_correct": false },
+        { "id": "c", "text": "<iframe>", "is_correct": true },
+        { "id": "d", "text": "<frame>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which attribute improves iframe security?",
+      "options": [
+        { "id": "a", "text": "secure", "is_correct": false },
+        { "id": "b", "text": "sandbox", "is_correct": true },
+        { "id": "c", "text": "protect", "is_correct": false },
+        { "id": "d", "text": "policy", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which tag defines figure caption?",
+      "options": [
+        { "id": "a", "text": "<caption>", "is_correct": false },
+        { "id": "b", "text": "<legend>", "is_correct": false },
+        { "id": "c", "text": "<figcaption>", "is_correct": true },
+        { "id": "d", "text": "<figure-text>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which tag groups media and caption?",
+      "options": [
+        { "id": "a", "text": "<media>", "is_correct": false },
+        { "id": "b", "text": "<figure>", "is_correct": true },
+        { "id": "c", "text": "<section>", "is_correct": false },
+        { "id": "d", "text": "<img>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which attribute specifies responsive images?",
+      "options": [
+        { "id": "a", "text": "sizes", "is_correct": false },
+        { "id": "b", "text": "media", "is_correct": false },
+        { "id": "c", "text": "srcset", "is_correct": true },
+        { "id": "d", "text": "resolution", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which tag defines time/date?",
+      "options": [
+        { "id": "a", "text": "<date>", "is_correct": false },
+        { "id": "b", "text": "<datetime>", "is_correct": false },
+        { "id": "c", "text": "<time>", "is_correct": true },
+        { "id": "d", "text": "<clock>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which attribute specifies machine-readable date?",
+      "options": [
+        { "id": "a", "text": "date", "is_correct": false },
+        { "id": "b", "text": "value", "is_correct": false },
+        { "id": "c", "text": "datetime", "is_correct": true },
+        { "id": "d", "text": "format", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which tag defines progress bar?",
+      "options": [
+        { "id": "a", "text": "<meter>", "is_correct": false },
+        { "id": "b", "text": "<progress>", "is_correct": true },
+        { "id": "c", "text": "<loading>", "is_correct": false },
+        { "id": "d", "text": "<status>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which tag defines scalar measurement?",
+      "options": [
+        { "id": "a", "text": "<scale>", "is_correct": false },
+        { "id": "b", "text": "<range>", "is_correct": false },
+        { "id": "c", "text": "<meter>", "is_correct": true },
+        { "id": "d", "text": "<value>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which tag marks text as highlighted?",
+      "options": [
+        { "id": "a", "text": "<highlight>", "is_correct": false },
+        { "id": "b", "text": "<em>", "is_correct": false },
+        { "id": "c", "text": "<mark>", "is_correct": true },
+        { "id": "d", "text": "<strong>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which tag defines abbreviation?",
+      "options": [
+        { "id": "a", "text": "<acronym>", "is_correct": false },
+        { "id": "b", "text": "<abbr>", "is_correct": true },
+        { "id": "c", "text": "<short>", "is_correct": false },
+        { "id": "d", "text": "<title>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which tag represents contact information?",
+      "options": [
+        { "id": "a", "text": "<info>", "is_correct": false },
+        { "id": "b", "text": "<address>", "is_correct": true },
+        { "id": "c", "text": "<contact>", "is_correct": false },
+        { "id": "d", "text": "<footer>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which attribute links label to input?",
+      "options": [
+        { "id": "a", "text": "name", "is_correct": false },
+        { "id": "b", "text": "for", "is_correct": true },
+        { "id": "c", "text": "id", "is_correct": false },
+        { "id": "d", "text": "connect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which attribute groups radio buttons?",
+      "options": [
+        { "id": "a", "text": "group", "is_correct": false },
+        { "id": "b", "text": "type", "is_correct": false },
+        { "id": "c", "text": "name", "is_correct": true },
+        { "id": "d", "text": "value", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which tag defines dialog box?",
+      "options": [
+        { "id": "a", "text": "<popup>", "is_correct": false },
+        { "id": "b", "text": "<dialog>", "is_correct": true },
+        { "id": "c", "text": "<modal>", "is_correct": false },
+        { "id": "d", "text": "<window>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which attribute opens dialog by default?",
+      "options": [
+        { "id": "a", "text": "active", "is_correct": false },
+        { "id": "b", "text": "open", "is_correct": true },
+        { "id": "c", "text": "show", "is_correct": false },
+        { "id": "d", "text": "visible", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which tag defines collapsible content?",
+      "options": [
+        { "id": "a", "text": "<collapse>", "is_correct": false },
+        { "id": "b", "text": "<details>", "is_correct": true },
+        { "id": "c", "text": "<summary>", "is_correct": false },
+        { "id": "d", "text": "<section>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which tag defines summary for details?",
+      "options": [
+        { "id": "a", "text": "<title>", "is_correct": false },
+        { "id": "b", "text": "<caption>", "is_correct": false },
+        { "id": "c", "text": "<summary>", "is_correct": true },
+        { "id": "d", "text": "<header>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which tag defines keyboard shortcut text?",
+      "options": [
+        { "id": "a", "text": "<code>", "is_correct": false },
+        { "id": "b", "text": "<kbd>", "is_correct": true },
+        { "id": "c", "text": "<samp>", "is_correct": false },
+        { "id": "d", "text": "<var>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which tag defines sample output?",
+      "options": [
+        { "id": "a", "text": "<code>", "is_correct": false },
+        { "id": "b", "text": "<output>", "is_correct": true },
+        { "id": "c", "text": "<result>", "is_correct": false },
+        { "id": "d", "text": "<sample>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which attribute associates output with form?",
+      "options": [
+        { "id": "a", "text": "bind", "is_correct": false },
+        { "id": "b", "text": "for", "is_correct": false },
+        { "id": "c", "text": "form", "is_correct": true },
+        { "id": "d", "text": "connect", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which tag defines ruby annotation?",
+      "options": [
+        { "id": "a", "text": "<rt>", "is_correct": false },
+        { "id": "b", "text": "<ruby>", "is_correct": true },
+        { "id": "c", "text": "<rb>", "is_correct": false },
+        { "id": "d", "text": "<annotation>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which tag defines ruby pronunciation?",
+      "options": [
+        { "id": "a", "text": "<rp>", "is_correct": false },
+        { "id": "b", "text": "<rb>", "is_correct": false },
+        { "id": "c", "text": "<rt>", "is_correct": true },
+        { "id": "d", "text": "<ruby-text>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which attribute specifies page language?",
+      "options": [
+        { "id": "a", "text": "language", "is_correct": false },
+        { "id": "b", "text": "data-lang", "is_correct": false },
+        { "id": "c", "text": "lang", "is_correct": true },
+        { "id": "d", "text": "locale", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which tag defines base URL?",
+      "options": [
+        { "id": "a", "text": "<meta>", "is_correct": false },
+        { "id": "b", "text": "<link>", "is_correct": false },
+        { "id": "c", "text": "<base>", "is_correct": true },
+        { "id": "d", "text": "<url>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which attribute prevents form validation?",
+      "options": [
+        { "id": "a", "text": "disable", "is_correct": false },
+        { "id": "b", "text": "novalidate", "is_correct": true },
+        { "id": "c", "text": "no-check", "is_correct": false },
+        { "id": "d", "text": "skip", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which attribute sends form without validation?",
+      "options": [
+        { "id": "a", "text": "novalidate", "is_correct": false },
+        { "id": "b", "text": "formnovalidate", "is_correct": true },
+        { "id": "c", "text": "ignore", "is_correct": false },
+        { "id": "d", "text": "bypass", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which tag defines command result?",
+      "options": [
+        { "id": "a", "text": "<command>", "is_correct": false },
+        { "id": "b", "text": "<output>", "is_correct": true },
+        { "id": "c", "text": "<result>", "is_correct": false },
+        { "id": "d", "text": "<console>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which tag defines variable?",
+      "options": [
+        { "id": "a", "text": "<code>", "is_correct": false },
+        { "id": "b", "text": "<var>", "is_correct": true },
+        { "id": "c", "text": "<samp>", "is_correct": false },
+        { "id": "d", "text": "<data>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which tag defines sample output?",
+      "options": [
+        { "id": "a", "text": "<samp>", "is_correct": true },
+        { "id": "b", "text": "<output>", "is_correct": false },
+        { "id": "c", "text": "<result>", "is_correct": false },
+        { "id": "d", "text": "<sample>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which attribute defines character encoding?",
+      "options": [
+        { "id": "a", "text": "lang", "is_correct": false },
+        { "id": "b", "text": "charset", "is_correct": true },
+        { "id": "c", "text": "encoding", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which tag specifies metadata charset?",
+      "options": [
+        { "id": "a", "text": "<meta charset=\"UTF-8\">", "is_correct": true },
+        { "id": "b", "text": "<charset>", "is_correct": false },
+        { "id": "c", "text": "<encoding>", "is_correct": false },
+        { "id": "d", "text": "<meta encoding>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which tag improves SEO semantics?",
+      "options": [
+        { "id": "a", "text": "<div>", "is_correct": false },
+        { "id": "b", "text": "<span>", "is_correct": false },
+        { "id": "c", "text": "<article>", "is_correct": true },
+        { "id": "d", "text": "<b>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which attribute describes element purpose?",
+      "options": [
+        { "id": "a", "text": "aria-label", "is_correct": true },
+        { "id": "b", "text": "alt", "is_correct": false },
+        { "id": "c", "text": "title", "is_correct": false },
+        { "id": "d", "text": "role", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which ARIA role defines navigation?",
+      "options": [
+        { "id": "a", "text": "content", "is_correct": false },
+        { "id": "b", "text": "menu", "is_correct": false },
+        { "id": "c", "text": "navigation", "is_correct": true },
+        { "id": "d", "text": "toolbar", "is_correct": false }
+      ]
+    }
+  ]
+}

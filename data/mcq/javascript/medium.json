@@ -1,0 +1,520 @@
+{
+  "quiz_id": "js_medium",
+  "language": "javascript",
+  "level": "medium",
+  "title": "JavaScript Core Concepts - Medium",
+  "description": "Functions, scope, arrays, objects, DOM, events, and ES6 basics.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which keyword has block scope?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": false },
+        { "id": "b", "text": "let", "is_correct": true },
+        { "id": "c", "text": "global", "is_correct": false },
+        { "id": "d", "text": "scope", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword also has block scope?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": true },
+        { "id": "b", "text": "var", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "define", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the output type of typeof null?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": false },
+        { "id": "b", "text": "object", "is_correct": true },
+        { "id": "c", "text": "undefined", "is_correct": false },
+        { "id": "d", "text": "number", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which method iterates over array elements?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": false },
+        { "id": "b", "text": "forEach()", "is_correct": true },
+        { "id": "c", "text": "filter()", "is_correct": false },
+        { "id": "d", "text": "reduce()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which array method returns a new array?",
+      "options": [
+        { "id": "a", "text": "push()", "is_correct": false },
+        { "id": "b", "text": "pop()", "is_correct": false },
+        { "id": "c", "text": "map()", "is_correct": true },
+        { "id": "d", "text": "shift()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which method filters elements based on condition?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": false },
+        { "id": "b", "text": "filter()", "is_correct": true },
+        { "id": "c", "text": "reduce()", "is_correct": false },
+        { "id": "d", "text": "forEach()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which method reduces array to single value?",
+      "options": [
+        { "id": "a", "text": "reduce()", "is_correct": true },
+        { "id": "b", "text": "map()", "is_correct": false },
+        { "id": "c", "text": "filter()", "is_correct": false },
+        { "id": "d", "text": "join()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which keyword creates arrow function?",
+      "options": [
+        { "id": "a", "text": "=>", "is_correct": true },
+        { "id": "b", "text": "->", "is_correct": false },
+        { "id": "c", "text": "function", "is_correct": false },
+        { "id": "d", "text": "arrow", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Arrow functions do NOT have which binding?",
+      "options": [
+        { "id": "a", "text": "arguments", "is_correct": true },
+        { "id": "b", "text": "scope", "is_correct": false },
+        { "id": "c", "text": "closure", "is_correct": false },
+        { "id": "d", "text": "return", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which keyword refers to current object?",
+      "options": [
+        { "id": "a", "text": "self", "is_correct": false },
+        { "id": "b", "text": "that", "is_correct": false },
+        { "id": "c", "text": "this", "is_correct": true },
+        { "id": "d", "text": "object", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which method binds this permanently?",
+      "options": [
+        { "id": "a", "text": "call()", "is_correct": false },
+        { "id": "b", "text": "apply()", "is_correct": false },
+        { "id": "c", "text": "bind()", "is_correct": true },
+        { "id": "d", "text": "attach()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which method calls function with arguments array?",
+      "options": [
+        { "id": "a", "text": "call()", "is_correct": false },
+        { "id": "b", "text": "bind()", "is_correct": false },
+        { "id": "c", "text": "apply()", "is_correct": true },
+        { "id": "d", "text": "execute()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which statement handles errors?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": true },
+        { "id": "c", "text": "handle", "is_correct": false },
+        { "id": "d", "text": "exception", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which block always executes?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "finally", "is_correct": true },
+        { "id": "d", "text": "throw", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which keyword throws custom error?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "exception", "is_correct": false },
+        { "id": "d", "text": "stop", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which object represents the DOM?",
+      "options": [
+        { "id": "a", "text": "window", "is_correct": false },
+        { "id": "b", "text": "document", "is_correct": true },
+        { "id": "c", "text": "screen", "is_correct": false },
+        { "id": "d", "text": "navigator", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which method selects first matching element?",
+      "options": [
+        { "id": "a", "text": "getElement()", "is_correct": false },
+        { "id": "b", "text": "querySelector()", "is_correct": true },
+        { "id": "c", "text": "getElements()", "is_correct": false },
+        { "id": "d", "text": "select()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which method selects all matching elements?",
+      "options": [
+        { "id": "a", "text": "querySelectorAll()", "is_correct": true },
+        { "id": "b", "text": "querySelector()", "is_correct": false },
+        { "id": "c", "text": "getElementById()", "is_correct": false },
+        { "id": "d", "text": "selectAll()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which event fires when page loads?",
+      "options": [
+        { "id": "a", "text": "onopen", "is_correct": false },
+        { "id": "b", "text": "onload", "is_correct": true },
+        { "id": "c", "text": "onready", "is_correct": false },
+        { "id": "d", "text": "onstart", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which event fires when input value changes?",
+      "options": [
+        { "id": "a", "text": "onclick", "is_correct": false },
+        { "id": "b", "text": "oninput", "is_correct": true },
+        { "id": "c", "text": "onfocus", "is_correct": false },
+        { "id": "d", "text": "onhover", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword creates Promise?",
+      "options": [
+        { "id": "a", "text": "async", "is_correct": false },
+        { "id": "b", "text": "Promise", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "resolve", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which method handles Promise success?",
+      "options": [
+        { "id": "a", "text": "catch()", "is_correct": false },
+        { "id": "b", "text": "then()", "is_correct": true },
+        { "id": "c", "text": "finally()", "is_correct": false },
+        { "id": "d", "text": "done()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which keyword waits for Promise?",
+      "options": [
+        { "id": "a", "text": "wait", "is_correct": false },
+        { "id": "b", "text": "async", "is_correct": false },
+        { "id": "c", "text": "await", "is_correct": true },
+        { "id": "d", "text": "delay", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which keyword marks async function?",
+      "options": [
+        { "id": "a", "text": "promise", "is_correct": false },
+        { "id": "b", "text": "async", "is_correct": true },
+        { "id": "c", "text": "await", "is_correct": false },
+        { "id": "d", "text": "defer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which API fetches network data?",
+      "options": [
+        { "id": "a", "text": "request()", "is_correct": false },
+        { "id": "b", "text": "fetch()", "is_correct": true },
+        { "id": "c", "text": "ajax()", "is_correct": false },
+        { "id": "d", "text": "http()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which method converts response to JSON?",
+      "options": [
+        { "id": "a", "text": "toJSON()", "is_correct": false },
+        { "id": "b", "text": "JSON.parse()", "is_correct": false },
+        { "id": "c", "text": "response.json()", "is_correct": true },
+        { "id": "d", "text": "parse()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which storage persists data permanently?",
+      "options": [
+        { "id": "a", "text": "sessionStorage", "is_correct": false },
+        { "id": "b", "text": "localStorage", "is_correct": true },
+        { "id": "c", "text": "cookie", "is_correct": false },
+        { "id": "d", "text": "cache", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which storage clears on tab close?",
+      "options": [
+        { "id": "a", "text": "localStorage", "is_correct": false },
+        { "id": "b", "text": "sessionStorage", "is_correct": true },
+        { "id": "c", "text": "indexedDB", "is_correct": false },
+        { "id": "d", "text": "memory", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which method converts object to JSON string?",
+      "options": [
+        { "id": "a", "text": "JSON.parse()", "is_correct": false },
+        { "id": "b", "text": "JSON.stringify()", "is_correct": true },
+        { "id": "c", "text": "toString()", "is_correct": false },
+        { "id": "d", "text": "stringify()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which operator spreads array elements?",
+      "options": [
+        { "id": "a", "text": "rest", "is_correct": false },
+        { "id": "b", "text": "...", "is_correct": true },
+        { "id": "c", "text": "**", "is_correct": false },
+        { "id": "d", "text": "=>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which operator collects arguments?",
+      "options": [
+        { "id": "a", "text": "...", "is_correct": true },
+        { "id": "b", "text": "spread", "is_correct": false },
+        { "id": "c", "text": "rest()", "is_correct": false },
+        { "id": "d", "text": "**", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which feature copies object safely?",
+      "options": [
+        { "id": "a", "text": "spread operator", "is_correct": true },
+        { "id": "b", "text": "assign()", "is_correct": false },
+        { "id": "c", "text": "clone()", "is_correct": false },
+        { "id": "d", "text": "copy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which method merges objects?",
+      "options": [
+        { "id": "a", "text": "merge()", "is_correct": false },
+        { "id": "b", "text": "Object.assign()", "is_correct": true },
+        { "id": "c", "text": "combine()", "is_correct": false },
+        { "id": "d", "text": "spread()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which keyword defines class?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "class", "is_correct": true },
+        { "id": "c", "text": "struct", "is_correct": false },
+        { "id": "d", "text": "prototype", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword inherits class?",
+      "options": [
+        { "id": "a", "text": "super", "is_correct": false },
+        { "id": "b", "text": "extends", "is_correct": true },
+        { "id": "c", "text": "implements", "is_correct": false },
+        { "id": "d", "text": "inherits", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword calls parent constructor?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "parent", "is_correct": false },
+        { "id": "c", "text": "super", "is_correct": true },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which type supports unique values?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Set", "is_correct": true },
+        { "id": "c", "text": "Object", "is_correct": false },
+        { "id": "d", "text": "Map", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which type stores key-value pairs with any key type?",
+      "options": [
+        { "id": "a", "text": "Object", "is_correct": false },
+        { "id": "b", "text": "Array", "is_correct": false },
+        { "id": "c", "text": "Map", "is_correct": true },
+        { "id": "d", "text": "Set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which loop iterates object keys?",
+      "options": [
+        { "id": "a", "text": "for...of", "is_correct": false },
+        { "id": "b", "text": "forEach", "is_correct": false },
+        { "id": "c", "text": "for...in", "is_correct": true },
+        { "id": "d", "text": "loop", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which loop iterates iterable values?",
+      "options": [
+        { "id": "a", "text": "for...in", "is_correct": false },
+        { "id": "b", "text": "for...of", "is_correct": true },
+        { "id": "c", "text": "foreach", "is_correct": false },
+        { "id": "d", "text": "while", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which feature delays execution?",
+      "options": [
+        { "id": "a", "text": "setTimeout()", "is_correct": true },
+        { "id": "b", "text": "setInterval()", "is_correct": false },
+        { "id": "c", "text": "delay()", "is_correct": false },
+        { "id": "d", "text": "wait()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which feature repeats execution?",
+      "options": [
+        { "id": "a", "text": "setTimeout()", "is_correct": false },
+        { "id": "b", "text": "loop()", "is_correct": false },
+        { "id": "c", "text": "setInterval()", "is_correct": true },
+        { "id": "d", "text": "repeat()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which method cancels setTimeout?",
+      "options": [
+        { "id": "a", "text": "stopTimeout()", "is_correct": false },
+        { "id": "b", "text": "clearTimeout()", "is_correct": true },
+        { "id": "c", "text": "cancel()", "is_correct": false },
+        { "id": "d", "text": "endTimeout()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which method cancels setInterval?",
+      "options": [
+        { "id": "a", "text": "stopInterval()", "is_correct": false },
+        { "id": "b", "text": "clearInterval()", "is_correct": true },
+        { "id": "c", "text": "cancel()", "is_correct": false },
+        { "id": "d", "text": "endInterval()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword checks variable existence?",
+      "options": [
+        { "id": "a", "text": "exists", "is_correct": false },
+        { "id": "b", "text": "typeof", "is_correct": true },
+        { "id": "c", "text": "instance", "is_correct": false },
+        { "id": "d", "text": "defined", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which operator provides default value?",
+      "options": [
+        { "id": "a", "text": "&&", "is_correct": false },
+        { "id": "b", "text": "||", "is_correct": false },
+        { "id": "c", "text": "??", "is_correct": true },
+        { "id": "d", "text": "?:", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which operator checks optional property?",
+      "options": [
+        { "id": "a", "text": "?.", "is_correct": true },
+        { "id": "b", "text": ".", "is_correct": false },
+        { "id": "c", "text": "::", "is_correct": false },
+        { "id": "d", "text": "??", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword freezes object?",
+      "options": [
+        { "id": "a", "text": "Object.freeze()", "is_correct": true },
+        { "id": "b", "text": "Object.lock()", "is_correct": false },
+        { "id": "c", "text": "Object.seal()", "is_correct": false },
+        { "id": "d", "text": "Object.stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which method prevents adding new properties?",
+      "options": [
+        { "id": "a", "text": "Object.freeze()", "is_correct": false },
+        { "id": "b", "text": "Object.seal()", "is_correct": true },
+        { "id": "c", "text": "Object.lock()", "is_correct": false },
+        { "id": "d", "text": "Object.block()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which feature creates private class fields?",
+      "options": [
+        { "id": "a", "text": "_field", "is_correct": false },
+        { "id": "b", "text": "#field", "is_correct": true },
+        { "id": "c", "text": "private field", "is_correct": false },
+        { "id": "d", "text": "@field", "is_correct": false }
+      ]
+    }
+  ]
+}

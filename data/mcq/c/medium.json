@@ -1,0 +1,520 @@
+{
+  "quiz_id": "c_medium",
+  "language": "c",
+  "level": "medium",
+  "title": "C Programming Intermediate - Medium",
+  "description": "Pointers, arrays, functions, storage classes, file handling, memory management.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which of the following is a correct pointer declaration?",
+      "options": [
+        { "id": "a", "text": "int ptr;", "is_correct": false },
+        { "id": "b", "text": "int *ptr;", "is_correct": true },
+        { "id": "c", "text": "pointer int ptr;", "is_correct": false },
+        { "id": "d", "text": "int &ptr;", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "What does sizeof operator return?",
+      "options": [
+        { "id": "a", "text": "Number of elements", "is_correct": false },
+        { "id": "b", "text": "Memory size in bytes", "is_correct": true },
+        { "id": "c", "text": "Address of variable", "is_correct": false },
+        { "id": "d", "text": "Data type size only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which storage class makes variable available throughout program?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "extern", "is_correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which function allocates memory and initializes to zero?",
+      "options": [
+        { "id": "a", "text": "malloc()", "is_correct": false },
+        { "id": "b", "text": "calloc()", "is_correct": true },
+        { "id": "c", "text": "realloc()", "is_correct": false },
+        { "id": "d", "text": "alloc()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which function resizes allocated memory?",
+      "options": [
+        { "id": "a", "text": "malloc()", "is_correct": false },
+        { "id": "b", "text": "calloc()", "is_correct": false },
+        { "id": "c", "text": "realloc()", "is_correct": true },
+        { "id": "d", "text": "resize()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What does a dangling pointer point to?",
+      "options": [
+        { "id": "a", "text": "Allocated memory", "is_correct": false },
+        { "id": "b", "text": "Valid variable", "is_correct": false },
+        { "id": "c", "text": "Freed memory", "is_correct": true },
+        { "id": "d", "text": "NULL", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which is a correct way to pass array to function?",
+      "options": [
+        { "id": "a", "text": "func(arr[])", "is_correct": false },
+        { "id": "b", "text": "func(int arr)", "is_correct": false },
+        { "id": "c", "text": "func(int arr[])", "is_correct": true },
+        { "id": "d", "text": "func(*arr)", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which function compares memory blocks?",
+      "options": [
+        { "id": "a", "text": "strcmp()", "is_correct": false },
+        { "id": "b", "text": "memcmp()", "is_correct": true },
+        { "id": "c", "text": "memcpy()", "is_correct": false },
+        { "id": "d", "text": "strcpy()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which function copies memory blocks?",
+      "options": [
+        { "id": "a", "text": "memmove()", "is_correct": true },
+        { "id": "b", "text": "memcmp()", "is_correct": false },
+        { "id": "c", "text": "strcmp()", "is_correct": false },
+        { "id": "d", "text": "strlen()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which operator is used to access union members?",
+      "options": [
+        { "id": "a", "text": "->", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": false },
+        { "id": "c", "text": ".", "is_correct": true },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword makes variable retain value between calls?",
+      "options": [
+        { "id": "a", "text": "extern", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": true },
+        { "id": "d", "text": "volatile", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword tells compiler variable may change anytime?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "mutable", "is_correct": false },
+        { "id": "d", "text": "volatile", "is_correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which file mode opens file for reading and writing?",
+      "options": [
+        { "id": "a", "text": "r", "is_correct": false },
+        { "id": "b", "text": "w", "is_correct": false },
+        { "id": "c", "text": "a", "is_correct": false },
+        { "id": "d", "text": "r+", "is_correct": true }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which function moves file pointer?",
+      "options": [
+        { "id": "a", "text": "ftell()", "is_correct": false },
+        { "id": "b", "text": "fseek()", "is_correct": true },
+        { "id": "c", "text": "rewind()", "is_correct": false },
+        { "id": "d", "text": "fmove()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which function returns current file pointer position?",
+      "options": [
+        { "id": "a", "text": "fpos()", "is_correct": false },
+        { "id": "b", "text": "ftell()", "is_correct": true },
+        { "id": "c", "text": "fseek()", "is_correct": false },
+        { "id": "d", "text": "tell()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which header file contains malloc()?",
+      "options": [
+        { "id": "a", "text": "<stdio.h>", "is_correct": false },
+        { "id": "b", "text": "<string.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<math.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which pointer stores address of another pointer?",
+      "options": [
+        { "id": "a", "text": "Double pointer", "is_correct": true },
+        { "id": "b", "text": "Void pointer", "is_correct": false },
+        { "id": "c", "text": "Dangling pointer", "is_correct": false },
+        { "id": "d", "text": "NULL pointer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which pointer can hold any data type address?",
+      "options": [
+        { "id": "a", "text": "Char pointer", "is_correct": false },
+        { "id": "b", "text": "Void pointer", "is_correct": true },
+        { "id": "c", "text": "Function pointer", "is_correct": false },
+        { "id": "d", "text": "Double pointer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which pointer is safest to initialize?",
+      "options": [
+        { "id": "a", "text": "Dangling pointer", "is_correct": false },
+        { "id": "b", "text": "Wild pointer", "is_correct": false },
+        { "id": "c", "text": "NULL pointer", "is_correct": true },
+        { "id": "d", "text": "Function pointer", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which function pointer syntax is correct?",
+      "options": [
+        { "id": "a", "text": "int *func();", "is_correct": false },
+        { "id": "b", "text": "int (*func)();", "is_correct": true },
+        { "id": "c", "text": "int func*();", "is_correct": false },
+        { "id": "d", "text": "func int*();", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which operator has lowest precedence?",
+      "options": [
+        { "id": "a", "text": "*", "is_correct": false },
+        { "id": "b", "text": "+", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which macro is predefined in C?",
+      "options": [
+        { "id": "a", "text": "__FILE__", "is_correct": true },
+        { "id": "b", "text": "FILE__", "is_correct": false },
+        { "id": "c", "text": "_FILE_", "is_correct": false },
+        { "id": "d", "text": "STD_FILE", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which macro gives current line number?",
+      "options": [
+        { "id": "a", "text": "__ROW__", "is_correct": false },
+        { "id": "b", "text": "__LINE__", "is_correct": true },
+        { "id": "c", "text": "__COUNT__", "is_correct": false },
+        { "id": "d", "text": "__NUM__", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which operator accesses structure through pointer?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": false },
+        { "id": "b", "text": "*", "is_correct": false },
+        { "id": "c", "text": "->", "is_correct": true },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which function flushes output buffer?",
+      "options": [
+        { "id": "a", "text": "clear()", "is_correct": false },
+        { "id": "b", "text": "fflush()", "is_correct": true },
+        { "id": "c", "text": "flush()", "is_correct": false },
+        { "id": "d", "text": "reset()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword stops macro expansion?",
+      "options": [
+        { "id": "a", "text": "#undef", "is_correct": true },
+        { "id": "b", "text": "#stop", "is_correct": false },
+        { "id": "c", "text": "#remove", "is_correct": false },
+        { "id": "d", "text": "#end", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which type of file stores data in binary form?",
+      "options": [
+        { "id": "a", "text": "Text file", "is_correct": false },
+        { "id": "b", "text": "Binary file", "is_correct": true },
+        { "id": "c", "text": "Source file", "is_correct": false },
+        { "id": "d", "text": "Header file", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which function writes block of data to file?",
+      "options": [
+        { "id": "a", "text": "fprintf()", "is_correct": false },
+        { "id": "b", "text": "fputs()", "is_correct": false },
+        { "id": "c", "text": "fwrite()", "is_correct": true },
+        { "id": "d", "text": "puts()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which function reads block of data from file?",
+      "options": [
+        { "id": "a", "text": "fgets()", "is_correct": false },
+        { "id": "b", "text": "fread()", "is_correct": true },
+        { "id": "c", "text": "scanf()", "is_correct": false },
+        { "id": "d", "text": "gets()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which header file supports file handling?",
+      "options": [
+        { "id": "a", "text": "<stdlib.h>", "is_correct": false },
+        { "id": "b", "text": "<file.h>", "is_correct": false },
+        { "id": "c", "text": "<stdio.h>", "is_correct": true },
+        { "id": "d", "text": "<io.h>", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which concept allows function calling itself?",
+      "options": [
+        { "id": "a", "text": "Iteration", "is_correct": false },
+        { "id": "b", "text": "Recursion", "is_correct": true },
+        { "id": "c", "text": "Looping", "is_correct": false },
+        { "id": "d", "text": "Repetition", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which is mandatory in recursive function?",
+      "options": [
+        { "id": "a", "text": "Loop", "is_correct": false },
+        { "id": "b", "text": "Base condition", "is_correct": true },
+        { "id": "c", "text": "Pointer", "is_correct": false },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which function calculates power?",
+      "options": [
+        { "id": "a", "text": "pow()", "is_correct": true },
+        { "id": "b", "text": "power()", "is_correct": false },
+        { "id": "c", "text": "exp()", "is_correct": false },
+        { "id": "d", "text": "sqrt()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which header file contains pow()?",
+      "options": [
+        { "id": "a", "text": "<stdio.h>", "is_correct": false },
+        { "id": "b", "text": "<stdlib.h>", "is_correct": false },
+        { "id": "c", "text": "<math.h>", "is_correct": true },
+        { "id": "d", "text": "<string.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which operator increments value by 1?",
+      "options": [
+        { "id": "a", "text": "+=", "is_correct": false },
+        { "id": "b", "text": "++", "is_correct": true },
+        { "id": "c", "text": "--", "is_correct": false },
+        { "id": "d", "text": "+", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword creates type alias?",
+      "options": [
+        { "id": "a", "text": "typedef", "is_correct": true },
+        { "id": "b", "text": "define", "is_correct": false },
+        { "id": "c", "text": "alias", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which operator gives memory address?",
+      "options": [
+        { "id": "a", "text": "*", "is_correct": false },
+        { "id": "b", "text": "&", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": ".", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which function sorts array (library)?",
+      "options": [
+        { "id": "a", "text": "sort()", "is_correct": false },
+        { "id": "b", "text": "qsort()", "is_correct": true },
+        { "id": "c", "text": "arraysort()", "is_correct": false },
+        { "id": "d", "text": "order()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which header file contains qsort()?",
+      "options": [
+        { "id": "a", "text": "<math.h>", "is_correct": false },
+        { "id": "b", "text": "<string.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<stdio.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which function compares two strings lexicographically?",
+      "options": [
+        { "id": "a", "text": "strcpy()", "is_correct": false },
+        { "id": "b", "text": "strcmp()", "is_correct": true },
+        { "id": "c", "text": "strlen()", "is_correct": false },
+        { "id": "d", "text": "strcat()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which operator is ternary operator?",
+      "options": [
+        { "id": "a", "text": "?:", "is_correct": true },
+        { "id": "b", "text": "&&", "is_correct": false },
+        { "id": "c", "text": "||", "is_correct": false },
+        { "id": "d", "text": "??", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which keyword ensures function is inlined?",
+      "options": [
+        { "id": "a", "text": "inline", "is_correct": true },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "macro", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which C standard introduced inline?",
+      "options": [
+        { "id": "a", "text": "C89", "is_correct": false },
+        { "id": "b", "text": "C99", "is_correct": true },
+        { "id": "c", "text": "C11", "is_correct": false },
+        { "id": "d", "text": "ANSI C", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which keyword prevents optimization?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "register", "is_correct": false },
+        { "id": "c", "text": "volatile", "is_correct": true },
+        { "id": "d", "text": "const", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which type stores function address?",
+      "options": [
+        { "id": "a", "text": "Function pointer", "is_correct": true },
+        { "id": "b", "text": "Void pointer", "is_correct": false },
+        { "id": "c", "text": "Char pointer", "is_correct": false },
+        { "id": "d", "text": "Array pointer", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which function terminates program immediately?",
+      "options": [
+        { "id": "a", "text": "return", "is_correct": false },
+        { "id": "b", "text": "abort()", "is_correct": true },
+        { "id": "c", "text": "exit()", "is_correct": false },
+        { "id": "d", "text": "stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which header file contains abort()?",
+      "options": [
+        { "id": "a", "text": "<stdio.h>", "is_correct": false },
+        { "id": "b", "text": "<signal.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<unistd.h>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which keyword specifies no return value?",
+      "options": [
+        { "id": "a", "text": "null", "is_correct": false },
+        { "id": "b", "text": "void", "is_correct": true },
+        { "id": "c", "text": "empty", "is_correct": false },
+        { "id": "d", "text": "none", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which function converts string to integer?",
+      "options": [
+        { "id": "a", "text": "itoa()", "is_correct": false },
+        { "id": "b", "text": "atoi()", "is_correct": true },
+        { "id": "c", "text": "parseInt()", "is_correct": false },
+        { "id": "d", "text": "strint()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which header file contains atoi()?",
+      "options": [
+        { "id": "a", "text": "<string.h>", "is_correct": false },
+        { "id": "b", "text": "<math.h>", "is_correct": false },
+        { "id": "c", "text": "<stdlib.h>", "is_correct": true },
+        { "id": "d", "text": "<stdio.h>", "is_correct": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "quiz_id": "java_medium",
+  "language": "java",
+  "level": "medium",
+  "title": "Java Core Concepts - Medium",
+  "description": "OOP, collections, exceptions, strings, multithreading basics.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which concept allows using same method name with different parameters?",
+      "options": [
+        { "id": "a", "text": "Overriding", "is_correct": false },
+        { "id": "b", "text": "Encapsulation", "is_correct": false },
+        { "id": "c", "text": "Overloading", "is_correct": true },
+        { "id": "d", "text": "Inheritance", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which concept allows child class to use parent methods?",
+      "options": [
+        { "id": "a", "text": "Polymorphism", "is_correct": false },
+        { "id": "b", "text": "Inheritance", "is_correct": true },
+        { "id": "c", "text": "Abstraction", "is_correct": false },
+        { "id": "d", "text": "Encapsulation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which keyword is used to achieve abstraction?",
+      "options": [
+        { "id": "a", "text": "interface", "is_correct": false },
+        { "id": "b", "text": "abstract", "is_correct": true },
+        { "id": "c", "text": "extends", "is_correct": false },
+        { "id": "d", "text": "implements", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which feature hides internal details?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Encapsulation", "is_correct": true },
+        { "id": "c", "text": "Polymorphism", "is_correct": false },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which collection does NOT allow duplicates?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "ArrayList", "is_correct": false },
+        { "id": "c", "text": "Set", "is_correct": true },
+        { "id": "d", "text": "LinkedList", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which collection maintains insertion order?",
+      "options": [
+        { "id": "a", "text": "HashSet", "is_correct": false },
+        { "id": "b", "text": "TreeSet", "is_correct": false },
+        { "id": "c", "text": "LinkedHashSet", "is_correct": true },
+        { "id": "d", "text": "Set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which collection stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "Set", "is_correct": false },
+        { "id": "c", "text": "Map", "is_correct": true },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which Map implementation is not synchronized?",
+      "options": [
+        { "id": "a", "text": "Hashtable", "is_correct": false },
+        { "id": "b", "text": "HashMap", "is_correct": true },
+        { "id": "c", "text": "ConcurrentHashMap", "is_correct": false },
+        { "id": "d", "text": "Properties", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which class allows dynamic array size?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Vector", "is_correct": false },
+        { "id": "c", "text": "ArrayList", "is_correct": true },
+        { "id": "d", "text": "List", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which iterator allows element removal?",
+      "options": [
+        { "id": "a", "text": "Iterator", "is_correct": true },
+        { "id": "b", "text": "Enumeration", "is_correct": false },
+        { "id": "c", "text": "ForEach", "is_correct": false },
+        { "id": "d", "text": "Loop", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which exception is unchecked?",
+      "options": [
+        { "id": "a", "text": "IOException", "is_correct": false },
+        { "id": "b", "text": "SQLException", "is_correct": false },
+        { "id": "c", "text": "NullPointerException", "is_correct": true },
+        { "id": "d", "text": "ClassNotFoundException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which exception must be handled at compile time?",
+      "options": [
+        { "id": "a", "text": "RuntimeException", "is_correct": false },
+        { "id": "b", "text": "ArithmeticException", "is_correct": false },
+        { "id": "c", "text": "Checked Exception", "is_correct": true },
+        { "id": "d", "text": "NullPointerException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which block executes even if exception occurs?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "finally", "is_correct": true },
+        { "id": "d", "text": "throw", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which keyword is used to create thread?",
+      "options": [
+        { "id": "a", "text": "Runnable", "is_correct": false },
+        { "id": "b", "text": "extends Thread", "is_correct": true },
+        { "id": "c", "text": "implements", "is_correct": false },
+        { "id": "d", "text": "start", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which method starts thread execution?",
+      "options": [
+        { "id": "a", "text": "run()", "is_correct": false },
+        { "id": "b", "text": "begin()", "is_correct": false },
+        { "id": "c", "text": "start()", "is_correct": true },
+        { "id": "d", "text": "execute()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which interface is used to create thread?",
+      "options": [
+        { "id": "a", "text": "Callable", "is_correct": false },
+        { "id": "b", "text": "Runnable", "is_correct": true },
+        { "id": "c", "text": "Threadable", "is_correct": false },
+        { "id": "d", "text": "Executor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which method pauses thread?",
+      "options": [
+        { "id": "a", "text": "wait()", "is_correct": false },
+        { "id": "b", "text": "sleep()", "is_correct": true },
+        { "id": "c", "text": "pause()", "is_correct": false },
+        { "id": "d", "text": "stop()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which keyword ensures thread safety?",
+      "options": [
+        { "id": "a", "text": "volatile", "is_correct": false },
+        { "id": "b", "text": "synchronized", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "final", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword prevents method overriding?",
+      "options": [
+        { "id": "a", "text": "private", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which keyword prevents inheritance?",
+      "options": [
+        { "id": "a", "text": "abstract", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "private", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which class is immutable?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": true },
+        { "id": "b", "text": "StringBuilder", "is_correct": false },
+        { "id": "c", "text": "StringBuffer", "is_correct": false },
+        { "id": "d", "text": "ArrayList", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which class is mutable and thread-safe?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "StringBuilder", "is_correct": false },
+        { "id": "c", "text": "StringBuffer", "is_correct": true },
+        { "id": "d", "text": "CharSequence", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which class is fastest for string operations?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "StringBuffer", "is_correct": false },
+        { "id": "c", "text": "StringBuilder", "is_correct": true },
+        { "id": "d", "text": "Text", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which keyword converts primitive to object?",
+      "options": [
+        { "id": "a", "text": "boxing", "is_correct": true },
+        { "id": "b", "text": "casting", "is_correct": false },
+        { "id": "c", "text": "wrapping", "is_correct": false },
+        { "id": "d", "text": "parsing", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which feature converts object to primitive automatically?",
+      "options": [
+        { "id": "a", "text": "Casting", "is_correct": false },
+        { "id": "b", "text": "Auto-unboxing", "is_correct": true },
+        { "id": "c", "text": "Parsing", "is_correct": false },
+        { "id": "d", "text": "Wrapping", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which package supports lambda expressions?",
+      "options": [
+        { "id": "a", "text": "java.lang", "is_correct": false },
+        { "id": "b", "text": "java.util.function", "is_correct": true },
+        { "id": "c", "text": "java.util.stream", "is_correct": false },
+        { "id": "d", "text": "java.io", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which feature processes collections functionally?",
+      "options": [
+        { "id": "a", "text": "Iterator", "is_correct": false },
+        { "id": "b", "text": "Streams API", "is_correct": true },
+        { "id": "c", "text": "Collections", "is_correct": false },
+        { "id": "d", "text": "Lambda", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which method converts stream to list?",
+      "options": [
+        { "id": "a", "text": "map()", "is_correct": false },
+        { "id": "b", "text": "filter()", "is_correct": false },
+        { "id": "c", "text": "collect()", "is_correct": true },
+        { "id": "d", "text": "forEach()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which functional interface has single abstract method?",
+      "options": [
+        { "id": "a", "text": "Runnable", "is_correct": true },
+        { "id": "b", "text": "Comparator", "is_correct": false },
+        { "id": "c", "text": "Serializable", "is_correct": false },
+        { "id": "d", "text": "Cloneable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which annotation marks functional interface?",
+      "options": [
+        { "id": "a", "text": "@Override", "is_correct": false },
+        { "id": "b", "text": "@FunctionalInterface", "is_correct": true },
+        { "id": "c", "text": "@Interface", "is_correct": false },
+        { "id": "d", "text": "@Lambda", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which JVM component loads classes?",
+      "options": [
+        { "id": "a", "text": "JIT", "is_correct": false },
+        { "id": "b", "text": "ClassLoader", "is_correct": true },
+        { "id": "c", "text": "Garbage Collector", "is_correct": false },
+        { "id": "d", "text": "Heap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which memory stores objects?",
+      "options": [
+        { "id": "a", "text": "Stack", "is_correct": false },
+        { "id": "b", "text": "Method Area", "is_correct": false },
+        { "id": "c", "text": "Heap", "is_correct": true },
+        { "id": "d", "text": "Register", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which memory stores method calls?",
+      "options": [
+        { "id": "a", "text": "Heap", "is_correct": false },
+        { "id": "b", "text": "Stack", "is_correct": true },
+        { "id": "c", "text": "Cache", "is_correct": false },
+        { "id": "d", "text": "Pool", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which JVM component converts bytecode to machine code?",
+      "options": [
+        { "id": "a", "text": "Interpreter", "is_correct": false },
+        { "id": "b", "text": "JIT Compiler", "is_correct": true },
+        { "id": "c", "text": "Loader", "is_correct": false },
+        { "id": "d", "text": "Executor", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which process removes unused objects?",
+      "options": [
+        { "id": "a", "text": "Compilation", "is_correct": false },
+        { "id": "b", "text": "Garbage Collection", "is_correct": true },
+        { "id": "c", "text": "Finalization", "is_correct": false },
+        { "id": "d", "text": "Optimization", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword hints garbage collection?",
+      "options": [
+        { "id": "a", "text": "gc()", "is_correct": false },
+        { "id": "b", "text": "System.gc()", "is_correct": true },
+        { "id": "c", "text": "finalize()", "is_correct": false },
+        { "id": "d", "text": "collect()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which file stores compiled bytecode?",
+      "options": [
+        { "id": "a", "text": ".java", "is_correct": false },
+        { "id": "b", "text": ".class", "is_correct": true },
+        { "id": "c", "text": ".jar", "is_correct": false },
+        { "id": "d", "text": ".exe", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which feature allows platform independence?",
+      "options": [
+        { "id": "a", "text": "JIT", "is_correct": false },
+        { "id": "b", "text": "Bytecode", "is_correct": true },
+        { "id": "c", "text": "JVM", "is_correct": false },
+        { "id": "d", "text": "Compiler", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which Java version introduced lambda expressions?",
+      "options": [
+        { "id": "a", "text": "Java 5", "is_correct": false },
+        { "id": "b", "text": "Java 7", "is_correct": false },
+        { "id": "c", "text": "Java 8", "is_correct": true },
+        { "id": "d", "text": "Java 11", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which Java version introduced modules?",
+      "options": [
+        { "id": "a", "text": "Java 8", "is_correct": false },
+        { "id": "b", "text": "Java 9", "is_correct": true },
+        { "id": "c", "text": "Java 11", "is_correct": false },
+        { "id": "d", "text": "Java 14", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which keyword creates immutable variable?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "final", "is_correct": true },
+        { "id": "c", "text": "const", "is_correct": false },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which keyword allows multiple catch blocks?",
+      "options": [
+        { "id": "a", "text": "multi-catch", "is_correct": false },
+        { "id": "b", "text": "|", "is_correct": true },
+        { "id": "c", "text": "or", "is_correct": false },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which statement automatically closes resources?",
+      "options": [
+        { "id": "a", "text": "try-catch", "is_correct": false },
+        { "id": "b", "text": "try-finally", "is_correct": false },
+        { "id": "c", "text": "try-with-resources", "is_correct": true },
+        { "id": "d", "text": "auto-close", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which interface supports sorting?",
+      "options": [
+        { "id": "a", "text": "Serializable", "is_correct": false },
+        { "id": "b", "text": "Comparable", "is_correct": true },
+        { "id": "c", "text": "Runnable", "is_correct": false },
+        { "id": "d", "text": "Iterable", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which class provides utility methods for collections?",
+      "options": [
+        { "id": "a", "text": "Collection", "is_correct": false },
+        { "id": "b", "text": "Collections", "is_correct": true },
+        { "id": "c", "text": "Arrays", "is_correct": false },
+        { "id": "d", "text": "List", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which method sorts list?",
+      "options": [
+        { "id": "a", "text": "sort()", "is_correct": false },
+        { "id": "b", "text": "Collections.sort()", "is_correct": true },
+        { "id": "c", "text": "Arrays.sort()", "is_correct": false },
+        { "id": "d", "text": "List.sort()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which class is thread-safe?",
+      "options": [
+        { "id": "a", "text": "ArrayList", "is_correct": false },
+        { "id": "b", "text": "HashMap", "is_correct": false },
+        { "id": "c", "text": "Vector", "is_correct": true },
+        { "id": "d", "text": "LinkedList", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which Map allows null key?",
+      "options": [
+        { "id": "a", "text": "Hashtable", "is_correct": false },
+        { "id": "b", "text": "TreeMap", "is_correct": false },
+        { "id": "c", "text": "HashMap", "is_correct": true },
+        { "id": "d", "text": "ConcurrentHashMap", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which method compares objects logically?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "equals()", "is_correct": true },
+        { "id": "c", "text": "compare()", "is_correct": false },
+        { "id": "d", "text": "match()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which method returns hash code?",
+      "options": [
+        { "id": "a", "text": "getHash()", "is_correct": false },
+        { "id": "b", "text": "hash()", "is_correct": false },
+        { "id": "c", "text": "hashCode()", "is_correct": true },
+        { "id": "d", "text": "code()", "is_correct": false }
+      ]
+    }
+  ]
+}

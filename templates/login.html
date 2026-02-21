@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Login - CodeMCQ Arena{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card glass-card">
+        <h2 class="auth-title">Login</h2>
+        <form method="POST" action="{{ url_for('login') }}" class="auth-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required class="form-input" placeholder="Enter your email" value="{{ email|default('', true) }}">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required class="form-input" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="auth-switch">
+            <a href="{{ url_for('forgot_password') }}">Forgot Password?</a>
+        </p>
+        <p class="auth-switch">
+            Don't have an account? <a href="{{ url_for('signup') }}">Sign up</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
+

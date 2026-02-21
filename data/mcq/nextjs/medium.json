@@ -1,0 +1,520 @@
+{
+  "quiz_id": "nextjs_medium",
+  "language": "nextjs",
+  "level": "medium",
+  "title": "Next.js Intermediate - Medium",
+  "description": "Routing strategies, data fetching, ISR, middleware, performance, App Router basics.",
+  "duration_minutes": 30,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the main difference between SSR and SSG?",
+      "options": [
+        { "id": "a", "text": "SSR runs at build time", "is_correct": false },
+        { "id": "b", "text": "SSG runs on every request", "is_correct": false },
+        { "id": "c", "text": "SSR runs on every request, SSG at build time", "is_correct": true },
+        { "id": "d", "text": "Both run only on client", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "When should you prefer getServerSideProps?",
+      "options": [
+        { "id": "a", "text": "When data rarely changes", "is_correct": false },
+        { "id": "b", "text": "When SEO is not required", "is_correct": false },
+        { "id": "c", "text": "When data must be fresh on every request", "is_correct": true },
+        { "id": "d", "text": "When no backend exists", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "What happens if getServerSideProps throws an error?",
+      "options": [
+        { "id": "a", "text": "App crashes permanently", "is_correct": false },
+        { "id": "b", "text": "Next.js shows 500 error page", "is_correct": true },
+        { "id": "c", "text": "User is redirected automatically", "is_correct": false },
+        { "id": "d", "text": "Page becomes static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "What does fallback: 'blocking' do in getStaticPaths?",
+      "options": [
+        { "id": "a", "text": "Blocks build process", "is_correct": false },
+        { "id": "b", "text": "Renders page after data is generated on request", "is_correct": true },
+        { "id": "c", "text": "Shows loading state forever", "is_correct": false },
+        { "id": "d", "text": "Disables dynamic routes", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which fallback option shows a loading state?",
+      "options": [
+        { "id": "a", "text": "false", "is_correct": false },
+        { "id": "b", "text": "true", "is_correct": true },
+        { "id": "c", "text": "blocking", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "What is the main benefit of ISR?",
+      "options": [
+        { "id": "a", "text": "Always fresh data", "is_correct": false },
+        { "id": "b", "text": "Rebuild entire app on request", "is_correct": false },
+        { "id": "c", "text": "Update static pages without full rebuild", "is_correct": true },
+        { "id": "d", "text": "Client-side rendering only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which property enables ISR?",
+      "options": [
+        { "id": "a", "text": "fallback", "is_correct": false },
+        { "id": "b", "text": "revalidate", "is_correct": true },
+        { "id": "c", "text": "cache", "is_correct": false },
+        { "id": "d", "text": "refresh", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Where is getStaticProps executed?",
+      "options": [
+        { "id": "a", "text": "Browser", "is_correct": false },
+        { "id": "b", "text": "Server at build time", "is_correct": true },
+        { "id": "c", "text": "Client only", "is_correct": false },
+        { "id": "d", "text": "Edge runtime", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which data fetching method supports redirects?",
+      "options": [
+        { "id": "a", "text": "getStaticProps", "is_correct": false },
+        { "id": "b", "text": "getServerSideProps", "is_correct": true },
+        { "id": "c", "text": "useEffect", "is_correct": false },
+        { "id": "d", "text": "useRouter", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which return value is required from getStaticProps?",
+      "options": [
+        { "id": "a", "text": "state", "is_correct": false },
+        { "id": "b", "text": "props", "is_correct": true },
+        { "id": "c", "text": "data", "is_correct": false },
+        { "id": "d", "text": "response", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "What is the App Router introduced in Next.js 13?",
+      "options": [
+        { "id": "a", "text": "Replacement for React Router", "is_correct": false },
+        { "id": "b", "text": "New routing system using app directory", "is_correct": true },
+        { "id": "c", "text": "Backend routing engine", "is_correct": false },
+        { "id": "d", "text": "Only for APIs", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which folder is used in App Router?",
+      "options": [
+        { "id": "a", "text": "pages", "is_correct": false },
+        { "id": "b", "text": "routes", "is_correct": false },
+        { "id": "c", "text": "app", "is_correct": true },
+        { "id": "d", "text": "src/pages", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which file defines layout in App Router?",
+      "options": [
+        { "id": "a", "text": "_app.js", "is_correct": false },
+        { "id": "b", "text": "layout.js", "is_correct": true },
+        { "id": "c", "text": "_document.js", "is_correct": false },
+        { "id": "d", "text": "index.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "What is the default rendering type in App Router?",
+      "options": [
+        { "id": "a", "text": "CSR", "is_correct": false },
+        { "id": "b", "text": "Client Components", "is_correct": false },
+        { "id": "c", "text": "Server Components", "is_correct": true },
+        { "id": "d", "text": "Static only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which directive enables client components?",
+      "options": [
+        { "id": "a", "text": "use client", "is_correct": true },
+        { "id": "b", "text": "use server", "is_correct": false },
+        { "id": "c", "text": "clientOnly", "is_correct": false },
+        { "id": "d", "text": "enableClient", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "What is the main benefit of Server Components?",
+      "options": [
+        { "id": "a", "text": "More JavaScript in browser", "is_correct": false },
+        { "id": "b", "text": "Smaller client bundle", "is_correct": true },
+        { "id": "c", "text": "Faster API routes", "is_correct": false },
+        { "id": "d", "text": "Better CSS support", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which hook is NOT allowed in Server Components?",
+      "options": [
+        { "id": "a", "text": "useState", "is_correct": true },
+        { "id": "b", "text": "fetch", "is_correct": false },
+        { "id": "c", "text": "async/await", "is_correct": false },
+        { "id": "d", "text": "cookies()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "How do Server Components fetch data?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "Direct async fetch calls", "is_correct": true },
+        { "id": "c", "text": "Axios in browser", "is_correct": false },
+        { "id": "d", "text": "Redux middleware", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which caching behavior is default for fetch in App Router?",
+      "options": [
+        { "id": "a", "text": "no-store", "is_correct": false },
+        { "id": "b", "text": "force-cache", "is_correct": true },
+        { "id": "c", "text": "reload", "is_correct": false },
+        { "id": "d", "text": "dynamic", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "How do you disable fetch caching?",
+      "options": [
+        { "id": "a", "text": "cache: 'reload'", "is_correct": false },
+        { "id": "b", "text": "cache: 'no-store'", "is_correct": true },
+        { "id": "c", "text": "revalidate: 0", "is_correct": false },
+        { "id": "d", "text": "dynamic: false", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "What is Route Segment in App Router?",
+      "options": [
+        { "id": "a", "text": "API endpoint", "is_correct": false },
+        { "id": "b", "text": "Each folder in app directory", "is_correct": true },
+        { "id": "c", "text": "Middleware function", "is_correct": false },
+        { "id": "d", "text": "Client route only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "What does loading.js represent?",
+      "options": [
+        { "id": "a", "text": "Error UI", "is_correct": false },
+        { "id": "b", "text": "Fallback UI during loading", "is_correct": true },
+        { "id": "c", "text": "SEO metadata", "is_correct": false },
+        { "id": "d", "text": "Static page", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which file handles errors in App Router?",
+      "options": [
+        { "id": "a", "text": "error.js", "is_correct": true },
+        { "id": "b", "text": "404.js", "is_correct": false },
+        { "id": "c", "text": "_error.js", "is_correct": false },
+        { "id": "d", "text": "catch.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "What is notFound() used for?",
+      "options": [
+        { "id": "a", "text": "Redirecting user", "is_correct": false },
+        { "id": "b", "text": "Triggering 404 page", "is_correct": true },
+        { "id": "c", "text": "Throwing server error", "is_correct": false },
+        { "id": "d", "text": "Stopping build", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which file defines 404 page in App Router?",
+      "options": [
+        { "id": "a", "text": "404.js", "is_correct": false },
+        { "id": "b", "text": "not-found.js", "is_correct": true },
+        { "id": "c", "text": "_error.js", "is_correct": false },
+        { "id": "d", "text": "error.js", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "What is Middleware mainly used for?",
+      "options": [
+        { "id": "a", "text": "UI rendering", "is_correct": false },
+        { "id": "b", "text": "Authentication and redirects", "is_correct": true },
+        { "id": "c", "text": "Database queries", "is_correct": false },
+        { "id": "d", "text": "CSS optimization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Middleware runs before which stage?",
+      "options": [
+        { "id": "a", "text": "Client render", "is_correct": false },
+        { "id": "b", "text": "Request is completed", "is_correct": false },
+        { "id": "c", "text": "Request is processed", "is_correct": true },
+        { "id": "d", "text": "Browser hydration", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which runtime does middleware use?",
+      "options": [
+        { "id": "a", "text": "Node.js", "is_correct": false },
+        { "id": "b", "text": "Edge Runtime", "is_correct": true },
+        { "id": "c", "text": "Browser", "is_correct": false },
+        { "id": "d", "text": "Deno", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which object is used to rewrite or redirect in middleware?",
+      "options": [
+        { "id": "a", "text": "Response", "is_correct": false },
+        { "id": "b", "text": "NextResponse", "is_correct": true },
+        { "id": "c", "text": "Router", "is_correct": false },
+        { "id": "d", "text": "Context", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which feature allows partial rendering with streaming?",
+      "options": [
+        { "id": "a", "text": "Suspense", "is_correct": true },
+        { "id": "b", "text": "useEffect", "is_correct": false },
+        { "id": "c", "text": "Link", "is_correct": false },
+        { "id": "d", "text": "Router.push", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "What is hydration mismatch?",
+      "options": [
+        { "id": "a", "text": "CSS conflict", "is_correct": false },
+        { "id": "b", "text": "Server and client HTML differ", "is_correct": true },
+        { "id": "c", "text": "Broken routing", "is_correct": false },
+        { "id": "d", "text": "API error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which practice helps avoid hydration mismatch?",
+      "options": [
+        { "id": "a", "text": "Using Math.random()", "is_correct": false },
+        { "id": "b", "text": "Avoid browser-only APIs in server render", "is_correct": true },
+        { "id": "c", "text": "Using inline styles", "is_correct": false },
+        { "id": "d", "text": "Using useEffect everywhere", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which component optimizes third-party scripts?",
+      "options": [
+        { "id": "a", "text": "Head", "is_correct": false },
+        { "id": "b", "text": "Script", "is_correct": true },
+        { "id": "c", "text": "Link", "is_correct": false },
+        { "id": "d", "text": "Image", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "What does strategy='lazyOnload' do?",
+      "options": [
+        { "id": "a", "text": "Loads script immediately", "is_correct": false },
+        { "id": "b", "text": "Loads script after page idle", "is_correct": true },
+        { "id": "c", "text": "Loads script before HTML", "is_correct": false },
+        { "id": "d", "text": "Blocks rendering", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which feature reduces JavaScript bundle size?",
+      "options": [
+        { "id": "a", "text": "Context API", "is_correct": false },
+        { "id": "b", "text": "Server Components", "is_correct": true },
+        { "id": "c", "text": "Global CSS", "is_correct": false },
+        { "id": "d", "text": "useState", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which rendering strategy is best for authenticated dashboards?",
+      "options": [
+        { "id": "a", "text": "SSG", "is_correct": false },
+        { "id": "b", "text": "SSR", "is_correct": true },
+        { "id": "c", "text": "Static HTML", "is_correct": false },
+        { "id": "d", "text": "ISR only", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which feature helps protect routes?",
+      "options": [
+        { "id": "a", "text": "Link", "is_correct": false },
+        { "id": "b", "text": "Middleware", "is_correct": true },
+        { "id": "c", "text": "Image", "is_correct": false },
+        { "id": "d", "text": "Head", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which approach improves SEO most?",
+      "options": [
+        { "id": "a", "text": "CSR only", "is_correct": false },
+        { "id": "b", "text": "SSR / SSG", "is_correct": true },
+        { "id": "c", "text": "Client hooks", "is_correct": false },
+        { "id": "d", "text": "Redux", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which file controls metadata in App Router?",
+      "options": [
+        { "id": "a", "text": "head.js", "is_correct": false },
+        { "id": "b", "text": "metadata export", "is_correct": true },
+        { "id": "c", "text": "_document.js", "is_correct": false },
+        { "id": "d", "text": "seo.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "What is staticParams used for?",
+      "options": [
+        { "id": "a", "text": "API calls", "is_correct": false },
+        { "id": "b", "text": "Generate static routes in App Router", "is_correct": true },
+        { "id": "c", "text": "Client routing", "is_correct": false },
+        { "id": "d", "text": "Middleware config", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which command enables production optimizations?",
+      "options": [
+        { "id": "a", "text": "npm run dev", "is_correct": false },
+        { "id": "b", "text": "npm run build", "is_correct": true },
+        { "id": "c", "text": "npm test", "is_correct": false },
+        { "id": "d", "text": "npm init", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which environment variable is exposed to browser?",
+      "options": [
+        { "id": "a", "text": "NEXT_PRIVATE_", "is_correct": false },
+        { "id": "b", "text": "NEXT_PUBLIC_", "is_correct": true },
+        { "id": "c", "text": "PUBLIC_", "is_correct": false },
+        { "id": "d", "text": "CLIENT_", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which file customizes webpack config?",
+      "options": [
+        { "id": "a", "text": "webpack.config.js", "is_correct": false },
+        { "id": "b", "text": "next.config.js", "is_correct": true },
+        { "id": "c", "text": "config.js", "is_correct": false },
+        { "id": "d", "text": "build.js", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which export disables SSR for a page?",
+      "options": [
+        { "id": "a", "text": "ssr: false", "is_correct": false },
+        { "id": "b", "text": "dynamic(() => import(), { ssr: false })", "is_correct": true },
+        { "id": "c", "text": "use client", "is_correct": false },
+        { "id": "d", "text": "noSSR()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which hook performs client-side navigation?",
+      "options": [
+        { "id": "a", "text": "usePathname", "is_correct": false },
+        { "id": "b", "text": "useRouter", "is_correct": true },
+        { "id": "c", "text": "useParams", "is_correct": false },
+        { "id": "d", "text": "useSearch", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which hook reads route params in App Router?",
+      "options": [
+        { "id": "a", "text": "useRouter", "is_correct": false },
+        { "id": "b", "text": "useParams", "is_correct": true },
+        { "id": "c", "text": "useRoute", "is_correct": false },
+        { "id": "d", "text": "useQuery", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which hook reads query string values?",
+      "options": [
+        { "id": "a", "text": "useParams", "is_correct": false },
+        { "id": "b", "text": "useSearchParams", "is_correct": true },
+        { "id": "c", "text": "useRouter", "is_correct": false },
+        { "id": "d", "text": "useLocation", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which feature supports streaming HTML?",
+      "options": [
+        { "id": "a", "text": "useEffect", "is_correct": false },
+        { "id": "b", "text": "Suspense", "is_correct": true },
+        { "id": "c", "text": "Link", "is_correct": false },
+        { "id": "d", "text": "Router.push", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which approach avoids prop drilling at scale?",
+      "options": [
+        { "id": "a", "text": "Props only", "is_correct": false },
+        { "id": "b", "text": "Context / Server Components", "is_correct": true },
+        { "id": "c", "text": "Inline state", "is_correct": false },
+        { "id": "d", "text": "CSS modules", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which Next.js feature makes apps production-ready by default?",
+      "options": [
+        { "id": "a", "text": "Manual optimizations", "is_correct": false },
+        { "id": "b", "text": "Built-in performance optimizations", "is_correct": true },
+        { "id": "c", "text": "Custom servers", "is_correct": false },
+        { "id": "d", "text": "Third-party plugins", "is_correct": false }
+      ]
+    }
+  ]
+}

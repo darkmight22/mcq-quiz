@@ -1,0 +1,520 @@
+{
+  "quiz_id": "java_easy",
+  "language": "java",
+  "level": "easy",
+  "title": "Java Basics - Easy",
+  "description": "Java syntax, data types, OOP basics, and core concepts.",
+  "duration_minutes": 15,
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Java is a ____ language.",
+      "options": [
+        { "id": "a", "text": "Procedural", "is_correct": false },
+        { "id": "b", "text": "Functional", "is_correct": false },
+        { "id": "c", "text": "Object-Oriented", "is_correct": true },
+        { "id": "d", "text": "Assembly", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword is used to define a class in Java?",
+      "options": [
+        { "id": "a", "text": "define", "is_correct": false },
+        { "id": "b", "text": "class", "is_correct": true },
+        { "id": "c", "text": "struct", "is_correct": false },
+        { "id": "d", "text": "object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which method is the entry point of Java program?",
+      "options": [
+        { "id": "a", "text": "start()", "is_correct": false },
+        { "id": "b", "text": "run()", "is_correct": false },
+        { "id": "c", "text": "main()", "is_correct": true },
+        { "id": "d", "text": "init()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which keyword is used to create an object?",
+      "options": [
+        { "id": "a", "text": "object", "is_correct": false },
+        { "id": "b", "text": "create", "is_correct": false },
+        { "id": "c", "text": "new", "is_correct": true },
+        { "id": "d", "text": "make", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which data type stores whole numbers?",
+      "options": [
+        { "id": "a", "text": "float", "is_correct": false },
+        { "id": "b", "text": "double", "is_correct": false },
+        { "id": "c", "text": "int", "is_correct": true },
+        { "id": "d", "text": "char", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which data type stores single character?",
+      "options": [
+        { "id": "a", "text": "String", "is_correct": false },
+        { "id": "b", "text": "char", "is_correct": true },
+        { "id": "c", "text": "int", "is_correct": false },
+        { "id": "d", "text": "boolean", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which keyword is used to inherit a class?",
+      "options": [
+        { "id": "a", "text": "implement", "is_correct": false },
+        { "id": "b", "text": "inherits", "is_correct": false },
+        { "id": "c", "text": "extends", "is_correct": true },
+        { "id": "d", "text": "super", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which keyword is used to implement interface?",
+      "options": [
+        { "id": "a", "text": "extends", "is_correct": false },
+        { "id": "b", "text": "implements", "is_correct": true },
+        { "id": "c", "text": "interface", "is_correct": false },
+        { "id": "d", "text": "inherits", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which access modifier makes members visible everywhere?",
+      "options": [
+        { "id": "a", "text": "private", "is_correct": false },
+        { "id": "b", "text": "protected", "is_correct": false },
+        { "id": "c", "text": "public", "is_correct": true },
+        { "id": "d", "text": "default", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which access modifier restricts access within same class?",
+      "options": [
+        { "id": "a", "text": "public", "is_correct": false },
+        { "id": "b", "text": "protected", "is_correct": false },
+        { "id": "c", "text": "private", "is_correct": true },
+        { "id": "d", "text": "default", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword is used to call parent constructor?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": false },
+        { "id": "b", "text": "parent", "is_correct": false },
+        { "id": "c", "text": "super", "is_correct": true },
+        { "id": "d", "text": "base", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which keyword refers to current object?",
+      "options": [
+        { "id": "a", "text": "self", "is_correct": false },
+        { "id": "b", "text": "this", "is_correct": true },
+        { "id": "c", "text": "current", "is_correct": false },
+        { "id": "d", "text": "object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which loop checks condition first?",
+      "options": [
+        { "id": "a", "text": "do-while", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": true },
+        { "id": "c", "text": "foreach", "is_correct": false },
+        { "id": "d", "text": "repeat", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which loop executes at least once?",
+      "options": [
+        { "id": "a", "text": "for", "is_correct": false },
+        { "id": "b", "text": "while", "is_correct": false },
+        { "id": "c", "text": "do-while", "is_correct": true },
+        { "id": "d", "text": "foreach", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which statement stops loop execution?",
+      "options": [
+        { "id": "a", "text": "exit", "is_correct": false },
+        { "id": "b", "text": "stop", "is_correct": false },
+        { "id": "c", "text": "break", "is_correct": true },
+        { "id": "d", "text": "return", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which statement skips current iteration?",
+      "options": [
+        { "id": "a", "text": "skip", "is_correct": false },
+        { "id": "b", "text": "continue", "is_correct": true },
+        { "id": "c", "text": "break", "is_correct": false },
+        { "id": "d", "text": "pass", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which keyword is used for exception handling?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": true },
+        { "id": "c", "text": "handle", "is_correct": false },
+        { "id": "d", "text": "fix", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which block always executes?",
+      "options": [
+        { "id": "a", "text": "try", "is_correct": false },
+        { "id": "b", "text": "catch", "is_correct": false },
+        { "id": "c", "text": "finally", "is_correct": true },
+        { "id": "d", "text": "throw", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword throws an exception?",
+      "options": [
+        { "id": "a", "text": "catch", "is_correct": false },
+        { "id": "b", "text": "throws", "is_correct": false },
+        { "id": "c", "text": "throw", "is_correct": true },
+        { "id": "d", "text": "error", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which keyword declares exception in method?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": false },
+        { "id": "b", "text": "throws", "is_correct": true },
+        { "id": "c", "text": "catch", "is_correct": false },
+        { "id": "d", "text": "error", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which class is parent of all classes?",
+      "options": [
+        { "id": "a", "text": "Main", "is_correct": false },
+        { "id": "b", "text": "Object", "is_correct": true },
+        { "id": "c", "text": "System", "is_correct": false },
+        { "id": "d", "text": "Class", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which package contains Scanner class?",
+      "options": [
+        { "id": "a", "text": "java.io", "is_correct": false },
+        { "id": "b", "text": "java.util", "is_correct": true },
+        { "id": "c", "text": "java.lang", "is_correct": false },
+        { "id": "d", "text": "java.net", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which class is used for user input?",
+      "options": [
+        { "id": "a", "text": "Input", "is_correct": false },
+        { "id": "b", "text": "Reader", "is_correct": false },
+        { "id": "c", "text": "Scanner", "is_correct": true },
+        { "id": "d", "text": "System", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which method prints output?",
+      "options": [
+        { "id": "a", "text": "print()", "is_correct": false },
+        { "id": "b", "text": "println()", "is_correct": false },
+        { "id": "c", "text": "System.out.println()", "is_correct": true },
+        { "id": "d", "text": "echo()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword is used to define constant?",
+      "options": [
+        { "id": "a", "text": "const", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which data type stores true or false?",
+      "options": [
+        { "id": "a", "text": "int", "is_correct": false },
+        { "id": "b", "text": "boolean", "is_correct": true },
+        { "id": "c", "text": "char", "is_correct": false },
+        { "id": "d", "text": "String", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which operator compares values?",
+      "options": [
+        { "id": "a", "text": "=", "is_correct": false },
+        { "id": "b", "text": "==", "is_correct": true },
+        { "id": "c", "text": "!=", "is_correct": false },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which operator assigns value?",
+      "options": [
+        { "id": "a", "text": "==", "is_correct": false },
+        { "id": "b", "text": "!=", "is_correct": false },
+        { "id": "c", "text": "=", "is_correct": true },
+        { "id": "d", "text": "<=", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which keyword is used for decision making?",
+      "options": [
+        { "id": "a", "text": "switch", "is_correct": false },
+        { "id": "b", "text": "if", "is_correct": true },
+        { "id": "c", "text": "loop", "is_correct": false },
+        { "id": "d", "text": "case", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which statement selects multiple cases?",
+      "options": [
+        { "id": "a", "text": "if", "is_correct": false },
+        { "id": "b", "text": "switch", "is_correct": true },
+        { "id": "c", "text": "choose", "is_correct": false },
+        { "id": "d", "text": "case", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which keyword defines interface?",
+      "options": [
+        { "id": "a", "text": "class", "is_correct": false },
+        { "id": "b", "text": "interface", "is_correct": true },
+        { "id": "c", "text": "implements", "is_correct": false },
+        { "id": "d", "text": "abstract", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which method converts string to integer?",
+      "options": [
+        { "id": "a", "text": "Integer.parseInt()", "is_correct": true },
+        { "id": "b", "text": "String.valueOf()", "is_correct": false },
+        { "id": "c", "text": "parse()", "is_correct": false },
+        { "id": "d", "text": "toInt()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which class wraps int primitive?",
+      "options": [
+        { "id": "a", "text": "Number", "is_correct": false },
+        { "id": "b", "text": "Int", "is_correct": false },
+        { "id": "c", "text": "Integer", "is_correct": true },
+        { "id": "d", "text": "Wrapper", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which keyword prevents inheritance?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "final", "is_correct": true },
+        { "id": "c", "text": "private", "is_correct": false },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which keyword makes method abstract?",
+      "options": [
+        { "id": "a", "text": "interface", "is_correct": false },
+        { "id": "b", "text": "virtual", "is_correct": false },
+        { "id": "c", "text": "abstract", "is_correct": true },
+        { "id": "d", "text": "empty", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which class is used for arrays?",
+      "options": [
+        { "id": "a", "text": "Array", "is_correct": false },
+        { "id": "b", "text": "Arrays", "is_correct": true },
+        { "id": "c", "text": "List", "is_correct": false },
+        { "id": "d", "text": "Collection", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which collection allows duplicates?",
+      "options": [
+        { "id": "a", "text": "Set", "is_correct": false },
+        { "id": "b", "text": "List", "is_correct": true },
+        { "id": "c", "text": "Map", "is_correct": false },
+        { "id": "d", "text": "Queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which collection stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "List", "is_correct": false },
+        { "id": "b", "text": "Set", "is_correct": false },
+        { "id": "c", "text": "Map", "is_correct": true },
+        { "id": "d", "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which package is imported by default?",
+      "options": [
+        { "id": "a", "text": "java.util", "is_correct": false },
+        { "id": "b", "text": "java.io", "is_correct": false },
+        { "id": "c", "text": "java.lang", "is_correct": true },
+        { "id": "d", "text": "java.net", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which keyword is used to exit method?",
+      "options": [
+        { "id": "a", "text": "stop", "is_correct": false },
+        { "id": "b", "text": "break", "is_correct": false },
+        { "id": "c", "text": "return", "is_correct": true },
+        { "id": "d", "text": "exit", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which exception occurs on divide by zero?",
+      "options": [
+        { "id": "a", "text": "NullPointerException", "is_correct": false },
+        { "id": "b", "text": "ArithmeticException", "is_correct": true },
+        { "id": "c", "text": "IOException", "is_correct": false },
+        { "id": "d", "text": "NumberFormatException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which exception occurs on null reference?",
+      "options": [
+        { "id": "a", "text": "RuntimeException", "is_correct": false },
+        { "id": "b", "text": "NullPointerException", "is_correct": true },
+        { "id": "c", "text": "IOException", "is_correct": false },
+        { "id": "d", "text": "ClassNotFoundException", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which keyword creates thread?",
+      "options": [
+        { "id": "a", "text": "thread", "is_correct": false },
+        { "id": "b", "text": "Runnable", "is_correct": false },
+        { "id": "c", "text": "extends Thread", "is_correct": true },
+        { "id": "d", "text": "start", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which method starts a thread?",
+      "options": [
+        { "id": "a", "text": "run()", "is_correct": false },
+        { "id": "b", "text": "begin()", "is_correct": false },
+        { "id": "c", "text": "start()", "is_correct": true },
+        { "id": "d", "text": "execute()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which keyword makes variable class-level?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": true },
+        { "id": "c", "text": "global", "is_correct": false },
+        { "id": "d", "text": "shared", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword ensures method overriding?",
+      "options": [
+        { "id": "a", "text": "override", "is_correct": false },
+        { "id": "b", "text": "@Override", "is_correct": true },
+        { "id": "c", "text": "@Overload", "is_correct": false },
+        { "id": "d", "text": "@Virtual", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which keyword prevents method override?",
+      "options": [
+        { "id": "a", "text": "private", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "sealed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which Java feature supports multiple inheritance?",
+      "options": [
+        { "id": "a", "text": "Class", "is_correct": false },
+        { "id": "b", "text": "Abstract class", "is_correct": false },
+        { "id": "c", "text": "Interface", "is_correct": true },
+        { "id": "d", "text": "Object", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which file extension is used for Java source code?",
+      "options": [
+        { "id": "a", "text": ".class", "is_correct": false },
+        { "id": "b", "text": ".exe", "is_correct": false },
+        { "id": "c", "text": ".java", "is_correct": true },
+        { "id": "d", "text": ".jar", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which command compiles Java code?",
+      "options": [
+        { "id": "a", "text": "java file.java", "is_correct": false },
+        { "id": "b", "text": "javac file.java", "is_correct": true },
+        { "id": "c", "text": "compile file.java", "is_correct": false },
+        { "id": "d", "text": "run file.java", "is_correct": false }
+      ]
+    }
+  ]
+}

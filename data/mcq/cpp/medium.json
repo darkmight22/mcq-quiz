@@ -1,0 +1,520 @@
+{
+  "quiz_id": "cpp_medium",
+  "language": "cpp",
+  "level": "medium",
+  "title": "C++ Intermediate - Medium",
+  "description": "OOP concepts, pointers, references, STL basics, memory management.",
+  "duration_minutes": 25,
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Which concept allows wrapping data and methods together?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Encapsulation", "is_correct": true },
+        { "id": "c", "text": "Polymorphism", "is_correct": false },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Which keyword is used to create a constant member function?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "final", "is_correct": false },
+        { "id": "c", "text": "const", "is_correct": true },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "Which access specifier allows access in derived classes only?",
+      "options": [
+        { "id": "a", "text": "private", "is_correct": false },
+        { "id": "b", "text": "public", "is_correct": false },
+        { "id": "c", "text": "protected", "is_correct": true },
+        { "id": "d", "text": "default", "is_correct": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "Which operator is used to allocate memory dynamically in C++?",
+      "options": [
+        { "id": "a", "text": "malloc", "is_correct": false },
+        { "id": "b", "text": "calloc", "is_correct": false },
+        { "id": "c", "text": "new", "is_correct": true },
+        { "id": "d", "text": "alloc", "is_correct": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Which operator is used to deallocate dynamic memory?",
+      "options": [
+        { "id": "a", "text": "free()", "is_correct": false },
+        { "id": "b", "text": "delete", "is_correct": true },
+        { "id": "c", "text": "remove()", "is_correct": false },
+        { "id": "d", "text": "clear()", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 6,
+      "question_text": "Which feature allows function with same name but different parameters?",
+      "options": [
+        { "id": "a", "text": "Overriding", "is_correct": false },
+        { "id": "b", "text": "Inheritance", "is_correct": false },
+        { "id": "c", "text": "Overloading", "is_correct": true },
+        { "id": "d", "text": "Abstraction", "is_correct": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "Which keyword is used to refer to current object?",
+      "options": [
+        { "id": "a", "text": "this", "is_correct": true },
+        { "id": "b", "text": "self", "is_correct": false },
+        { "id": "c", "text": "object", "is_correct": false },
+        { "id": "d", "text": "current", "is_correct": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Which function is automatically called when object is destroyed?",
+      "options": [
+        { "id": "a", "text": "Constructor", "is_correct": false },
+        { "id": "b", "text": "Destructor", "is_correct": true },
+        { "id": "c", "text": "Main", "is_correct": false },
+        { "id": "d", "text": "Delete", "is_correct": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "Which symbol is used to define destructor?",
+      "options": [
+        { "id": "a", "text": "#", "is_correct": false },
+        { "id": "b", "text": "~", "is_correct": true },
+        { "id": "c", "text": "!", "is_correct": false },
+        { "id": "d", "text": "$", "is_correct": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "Which type of inheritance is NOT supported directly in C++?",
+      "options": [
+        { "id": "a", "text": "Single", "is_correct": false },
+        { "id": "b", "text": "Multiple", "is_correct": false },
+        { "id": "c", "text": "Multilevel", "is_correct": false },
+        { "id": "d", "text": "Hybrid (without interfaces)", "is_correct": true }
+      ]
+    },
+
+    {
+      "id": 11,
+      "question_text": "Which keyword enables runtime polymorphism?",
+      "options": [
+        { "id": "a", "text": "inline", "is_correct": false },
+        { "id": "b", "text": "static", "is_correct": false },
+        { "id": "c", "text": "virtual", "is_correct": true },
+        { "id": "d", "text": "template", "is_correct": false }
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Which binding happens at runtime?",
+      "options": [
+        { "id": "a", "text": "Static binding", "is_correct": false },
+        { "id": "b", "text": "Early binding", "is_correct": false },
+        { "id": "c", "text": "Compile-time binding", "is_correct": false },
+        { "id": "d", "text": "Dynamic binding", "is_correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "question_text": "Which STL container stores elements in contiguous memory?",
+      "options": [
+        { "id": "a", "text": "list", "is_correct": false },
+        { "id": "b", "text": "deque", "is_correct": false },
+        { "id": "c", "text": "vector", "is_correct": true },
+        { "id": "d", "text": "set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 14,
+      "question_text": "Which STL container does not allow duplicate values?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "list", "is_correct": false },
+        { "id": "c", "text": "set", "is_correct": true },
+        { "id": "d", "text": "deque", "is_correct": false }
+      ]
+    },
+    {
+      "id": 15,
+      "question_text": "Which STL container stores key-value pairs?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "map", "is_correct": true },
+        { "id": "c", "text": "list", "is_correct": false },
+        { "id": "d", "text": "queue", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 16,
+      "question_text": "Which iterator points to element past the last?",
+      "options": [
+        { "id": "a", "text": "begin()", "is_correct": false },
+        { "id": "b", "text": "last()", "is_correct": false },
+        { "id": "c", "text": "end()", "is_correct": true },
+        { "id": "d", "text": "finish()", "is_correct": false }
+      ]
+    },
+    {
+      "id": 17,
+      "question_text": "Which keyword avoids copying objects unnecessarily?",
+      "options": [
+        { "id": "a", "text": "static", "is_correct": false },
+        { "id": "b", "text": "mutable", "is_correct": false },
+        { "id": "c", "text": "reference (&)", "is_correct": true },
+        { "id": "d", "text": "volatile", "is_correct": false }
+      ]
+    },
+    {
+      "id": 18,
+      "question_text": "Which operator is used to access class members via pointer?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": false },
+        { "id": "b", "text": "::", "is_correct": false },
+        { "id": "c", "text": "->", "is_correct": true },
+        { "id": "d", "text": "&", "is_correct": false }
+      ]
+    },
+    {
+      "id": 19,
+      "question_text": "Which keyword is used to define template?",
+      "options": [
+        { "id": "a", "text": "generic", "is_correct": false },
+        { "id": "b", "text": "template", "is_correct": true },
+        { "id": "c", "text": "typename", "is_correct": false },
+        { "id": "d", "text": "class", "is_correct": false }
+      ]
+    },
+    {
+      "id": 20,
+      "question_text": "Which feature supports generic programming in C++?",
+      "options": [
+        { "id": "a", "text": "Inheritance", "is_correct": false },
+        { "id": "b", "text": "Templates", "is_correct": true },
+        { "id": "c", "text": "Namespaces", "is_correct": false },
+        { "id": "d", "text": "Exceptions", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 21,
+      "question_text": "Which keyword is used to handle exceptions?",
+      "options": [
+        { "id": "a", "text": "error", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": true },
+        { "id": "c", "text": "catch", "is_correct": false },
+        { "id": "d", "text": "try", "is_correct": false }
+      ]
+    },
+    {
+      "id": 22,
+      "question_text": "Which block catches the exception?",
+      "options": [
+        { "id": "a", "text": "throw", "is_correct": false },
+        { "id": "b", "text": "try", "is_correct": false },
+        { "id": "c", "text": "catch", "is_correct": true },
+        { "id": "d", "text": "finally", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "question_text": "Which keyword is used to try risky code?",
+      "options": [
+        { "id": "a", "text": "test", "is_correct": false },
+        { "id": "b", "text": "throw", "is_correct": false },
+        { "id": "c", "text": "try", "is_correct": true },
+        { "id": "d", "text": "check", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "question_text": "Which C++ feature avoids name conflicts?",
+      "options": [
+        { "id": "a", "text": "Templates", "is_correct": false },
+        { "id": "b", "text": "Namespaces", "is_correct": true },
+        { "id": "c", "text": "STL", "is_correct": false },
+        { "id": "d", "text": "Pointers", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "question_text": "Which keyword is used to define namespace?",
+      "options": [
+        { "id": "a", "text": "package", "is_correct": false },
+        { "id": "b", "text": "namespace", "is_correct": true },
+        { "id": "c", "text": "using", "is_correct": false },
+        { "id": "d", "text": "scope", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 26,
+      "question_text": "Which keyword imports namespace?",
+      "options": [
+        { "id": "a", "text": "import", "is_correct": false },
+        { "id": "b", "text": "use", "is_correct": false },
+        { "id": "c", "text": "using", "is_correct": true },
+        { "id": "d", "text": "include", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "question_text": "Which container follows FIFO principle?",
+      "options": [
+        { "id": "a", "text": "stack", "is_correct": false },
+        { "id": "b", "text": "queue", "is_correct": true },
+        { "id": "c", "text": "deque", "is_correct": false },
+        { "id": "d", "text": "priority_queue", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "question_text": "Which container follows LIFO principle?",
+      "options": [
+        { "id": "a", "text": "queue", "is_correct": false },
+        { "id": "b", "text": "stack", "is_correct": true },
+        { "id": "c", "text": "list", "is_correct": false },
+        { "id": "d", "text": "set", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "question_text": "Which header file supports STL containers?",
+      "options": [
+        { "id": "a", "text": "<containers>", "is_correct": false },
+        { "id": "b", "text": "<stl>", "is_correct": false },
+        { "id": "c", "text": "<vector>", "is_correct": true },
+        { "id": "d", "text": "<array>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "question_text": "Which algorithm is used by sort()?",
+      "options": [
+        { "id": "a", "text": "Bubble sort", "is_correct": false },
+        { "id": "b", "text": "Insertion sort", "is_correct": false },
+        { "id": "c", "text": "Quick/Intro sort", "is_correct": true },
+        { "id": "d", "text": "Selection sort", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 31,
+      "question_text": "Which keyword creates constant object?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "const", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "fixed", "is_correct": false }
+      ]
+    },
+    {
+      "id": 32,
+      "question_text": "Which feature allows compile-time polymorphism?",
+      "options": [
+        { "id": "a", "text": "Virtual functions", "is_correct": false },
+        { "id": "b", "text": "Function overloading", "is_correct": true },
+        { "id": "c", "text": "Inheritance", "is_correct": false },
+        { "id": "d", "text": "Dynamic binding", "is_correct": false }
+      ]
+    },
+    {
+      "id": 33,
+      "question_text": "Which feature allows runtime polymorphism?",
+      "options": [
+        { "id": "a", "text": "Templates", "is_correct": false },
+        { "id": "b", "text": "Overloading", "is_correct": false },
+        { "id": "c", "text": "Virtual functions", "is_correct": true },
+        { "id": "d", "text": "Inline functions", "is_correct": false }
+      ]
+    },
+    {
+      "id": 34,
+      "question_text": "Which operator resolves scope?",
+      "options": [
+        { "id": "a", "text": ".", "is_correct": false },
+        { "id": "b", "text": "::", "is_correct": true },
+        { "id": "c", "text": "->", "is_correct": false },
+        { "id": "d", "text": ":", "is_correct": false }
+      ]
+    },
+    {
+      "id": 35,
+      "question_text": "Which feature prevents object copying?",
+      "options": [
+        { "id": "a", "text": "Reference", "is_correct": false },
+        { "id": "b", "text": "Private copy constructor", "is_correct": true },
+        { "id": "c", "text": "Destructor", "is_correct": false },
+        { "id": "d", "text": "Virtual class", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 36,
+      "question_text": "Which keyword allows method override check?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "override", "is_correct": true },
+        { "id": "c", "text": "final", "is_correct": false },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 37,
+      "question_text": "Which C++11 feature supports move semantics?",
+      "options": [
+        { "id": "a", "text": "Copy constructor", "is_correct": false },
+        { "id": "b", "text": "Move constructor", "is_correct": true },
+        { "id": "c", "text": "Destructor", "is_correct": false },
+        { "id": "d", "text": "Virtual function", "is_correct": false }
+      ]
+    },
+    {
+      "id": 38,
+      "question_text": "Which keyword enforces immutability of variable?",
+      "options": [
+        { "id": "a", "text": "final", "is_correct": false },
+        { "id": "b", "text": "const", "is_correct": true },
+        { "id": "c", "text": "static", "is_correct": false },
+        { "id": "d", "text": "volatile", "is_correct": false }
+      ]
+    },
+    {
+      "id": 39,
+      "question_text": "Which container provides fastest search?",
+      "options": [
+        { "id": "a", "text": "vector", "is_correct": false },
+        { "id": "b", "text": "map", "is_correct": false },
+        { "id": "c", "text": "unordered_map", "is_correct": true },
+        { "id": "d", "text": "list", "is_correct": false }
+      ]
+    },
+    {
+      "id": 40,
+      "question_text": "Which STL container uses hashing?",
+      "options": [
+        { "id": "a", "text": "map", "is_correct": false },
+        { "id": "b", "text": "set", "is_correct": false },
+        { "id": "c", "text": "unordered_map", "is_correct": true },
+        { "id": "d", "text": "deque", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 41,
+      "question_text": "Which operator checks object type at runtime?",
+      "options": [
+        { "id": "a", "text": "sizeof", "is_correct": false },
+        { "id": "b", "text": "dynamic_cast", "is_correct": true },
+        { "id": "c", "text": "typeid", "is_correct": false },
+        { "id": "d", "text": "static_cast", "is_correct": false }
+      ]
+    },
+    {
+      "id": 42,
+      "question_text": "Which cast is safest for polymorphism?",
+      "options": [
+        { "id": "a", "text": "static_cast", "is_correct": false },
+        { "id": "b", "text": "reinterpret_cast", "is_correct": false },
+        { "id": "c", "text": "dynamic_cast", "is_correct": true },
+        { "id": "d", "text": "const_cast", "is_correct": false }
+      ]
+    },
+    {
+      "id": 43,
+      "question_text": "Which cast removes constness?",
+      "options": [
+        { "id": "a", "text": "static_cast", "is_correct": false },
+        { "id": "b", "text": "reinterpret_cast", "is_correct": false },
+        { "id": "c", "text": "const_cast", "is_correct": true },
+        { "id": "d", "text": "dynamic_cast", "is_correct": false }
+      ]
+    },
+    {
+      "id": 44,
+      "question_text": "Which keyword defines lambda expression?",
+      "options": [
+        { "id": "a", "text": "()", "is_correct": false },
+        { "id": "b", "text": "[]", "is_correct": true },
+        { "id": "c", "text": "{}", "is_correct": false },
+        { "id": "d", "text": "<>", "is_correct": false }
+      ]
+    },
+    {
+      "id": 45,
+      "question_text": "Which C++ version introduced lambda?",
+      "options": [
+        { "id": "a", "text": "C++98", "is_correct": false },
+        { "id": "b", "text": "C++03", "is_correct": false },
+        { "id": "c", "text": "C++11", "is_correct": true },
+        { "id": "d", "text": "C++17", "is_correct": false }
+      ]
+    },
+
+    {
+      "id": 46,
+      "question_text": "Which keyword avoids dangling references?",
+      "options": [
+        { "id": "a", "text": "auto", "is_correct": false },
+        { "id": "b", "text": "nullptr", "is_correct": true },
+        { "id": "c", "text": "NULL", "is_correct": false },
+        { "id": "d", "text": "void", "is_correct": false }
+      ]
+    },
+    {
+      "id": 47,
+      "question_text": "Which keyword infers data type automatically?",
+      "options": [
+        { "id": "a", "text": "var", "is_correct": false },
+        { "id": "b", "text": "auto", "is_correct": true },
+        { "id": "c", "text": "decltype", "is_correct": false },
+        { "id": "d", "text": "type", "is_correct": false }
+      ]
+    },
+    {
+      "id": 48,
+      "question_text": "Which feature improves performance by avoiding deep copy?",
+      "options": [
+        { "id": "a", "text": "Move semantics", "is_correct": true },
+        { "id": "b", "text": "Inheritance", "is_correct": false },
+        { "id": "c", "text": "Polymorphism", "is_correct": false },
+        { "id": "d", "text": "Virtualization", "is_correct": false }
+      ]
+    },
+    {
+      "id": 49,
+      "question_text": "Which keyword prevents function override?",
+      "options": [
+        { "id": "a", "text": "virtual", "is_correct": false },
+        { "id": "b", "text": "override", "is_correct": false },
+        { "id": "c", "text": "final", "is_correct": true },
+        { "id": "d", "text": "static", "is_correct": false }
+      ]
+    },
+    {
+      "id": 50,
+      "question_text": "Which C++ feature supports RAII?",
+      "options": [
+        { "id": "a", "text": "Garbage collection", "is_correct": false },
+        { "id": "b", "text": "Constructors/Destructors", "is_correct": true },
+        { "id": "c", "text": "Templates", "is_correct": false },
+        { "id": "d", "text": "Macros", "is_correct": false }
+      ]
+    }
+  ]
+}

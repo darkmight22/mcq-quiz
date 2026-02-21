@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}CodeMCQ Arena - Home{% endblock %}
+
+{% block content %}
+<div class="landing-container">
+    <div class="landing-content">
+        <h1 class="landing-title">
+            <span class="title-word">Code</span>
+            <span class="title-separator">•</span>
+            <span class="title-word">Compete</span>
+            <span class="title-separator">•</span>
+            <span class="title-word">Conquer</span>
+        </h1>
+        <p class="landing-subtitle">A futuristic MCQ + coding practice platform</p>
+        <div class="landing-buttons">
+            <a href="{{ url_for('login') }}" class="btn btn-primary btn-glow">Login</a>
+            <a href="{{ url_for('signup') }}" class="btn btn-secondary btn-glow">Create Account</a>
+        </div>
+    </div>
+    <div class="particles"></div>
+</div>
+{% endblock %}
+
